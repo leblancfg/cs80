@@ -1,0 +1,10 @@
+CS80 0.2.0 for Linux (64-bit VST3, x86_64)
+
+Copy the CS80.vst3 folder to ~/.vst3/ (or /usr/lib/vst3/ for all users),
+then rescan plug-ins in your DAW (Reaper, Bitwig, Ardour). It is listed as
+leblancfg > CS80.
+
+The faceplate needs WebKitGTK 4.1 (libwebkit2gtk-4.1-0 on Debian and Ubuntu,
+webkit2gtk4.1 on Fedora).
+
+Source and notes: https://github.com/leblancfg/cs80

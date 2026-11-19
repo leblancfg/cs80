@@ -1,0 +1,85 @@
+/* The plugin faceplate. The panel rules below the marker are web/style.css's
+   faceplate section, copied as is; keep them in step with it. */
+:root {
+  --bg: #2f1e2e; --bg2: #41323f; --bg3: #4f424c; --line: #5a4a57;
+  --fg: #e7e9db; --dim: #a39e9b; --muted: #8d8687;
+  --green: #48b685; --cyan: #5bc4bf; --yellow: #fec418; --red: #ef6155;
+  --sans: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; --mono: ui-monospace, Menlo, "DejaVu Sans Mono", monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.4 var(--sans); }
+body { height: 100vh; display: flex; flex-direction: column; overflow: hidden; -webkit-user-select: none; user-select: none; cursor: default; }
+header { flex: none; display: flex; align-items: baseline; gap: 14px; padding: 4px 12px; border-bottom: 1px solid var(--line); }
+header .logo { font-weight: 700; font-size: 15px; letter-spacing: .04em; }
+.dim { color: var(--dim); font-weight: 400; }
+#prog { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#sound { flex: 1 1 auto; min-height: 0; padding: 4px; overflow: hidden; background: #0d0b0d; }
+#panel { min-height: 100%; display: flex; align-items: flex-start; justify-content: center; }
+
+/* ---- from web/style.css ---- */
+/* ---- the CS-80 faceplate ------------------------------------------------------
+   Black panel, white engraved small caps, long levers with coloured caps
+   (colours per section from the original; see README). Natural size, then
+   fitPanel() zooms it to the space above the keyboard. */
+.face {
+  --panel: #161514; --ink: #e9e6dc; --ink2: #9d988c; --rule: #8a857a; --caph: 16px; --fh: 96px;
+  background: linear-gradient(#1d1c1a, var(--panel) 30%, #121110); color: var(--ink);
+  border: 1px solid #000; border-radius: 6px; box-shadow: inset 0 1px 0 #34322e, 0 2px 10px rgba(0,0,0,.6);
+  padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 8px; width: max-content;
+  font-family: "Helvetica Neue", Arial, var(--sans); user-select: none;
+}
+.ftop { display: flex; gap: 10px; align-items: stretch; }
+.fleft { display: flex; flex-direction: column; gap: 8px; padding-right: 10px; border-right: 1px solid #2c2a27; }
+.fchans { display: flex; flex-direction: column; gap: 8px; }
+.fline { display: flex; gap: 6px; align-items: stretch; }
+.fleft .fline { flex: 1; }
+.fch { border: 1px solid #3a3833; border-radius: 3px; padding: 0 4px 0 0; }
+.fnum { font: 700 20px/1 Georgia, "Times New Roman", serif; color: var(--ink); width: 26px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #3a3833; }
+.fsec { display: flex; flex-direction: column; padding: 0 3px; }
+.fsec + .fsec { border-left: 1px solid #2c2a27; }
+.ftitle { font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); text-align: center; white-space: nowrap;
+  border-bottom: 1px solid var(--rule); margin: 3px 4px 2px; padding-bottom: 1px; position: relative; }
+.ftitle::before, .ftitle::after { content: ''; position: absolute; bottom: -4px; width: 1px; height: 4px; background: var(--rule); }
+.ftitle::before { left: 0; } .ftitle::after { right: 0; }
+.frow { display: flex; gap: 0; flex: 1; align-items: stretch; }
+.fstrip { padding-top: 6px; border-top: 1px solid #2c2a27; }
+.fextras { margin-left: auto; display: flex; flex-direction: column; border-left: 1px solid #2c2a27; }
+
+.fctl { width: 36px; display: flex; flex-direction: column; align-items: center; position: relative; }
+.fsc { font-size: 7.5px; letter-spacing: .06em; color: var(--ink2); line-height: 10px; height: 10px; white-space: nowrap; }
+.flab { font-size: 8px; letter-spacing: .03em; text-transform: uppercase; color: var(--ink); text-align: center; line-height: 1.1; min-height: 20px;
+  display: flex; align-items: flex-start; justify-content: center; margin-top: 2px; cursor: default; white-space: normal; width: 100%; }
+.fader { position: relative; width: 32px; height: var(--fh); margin: 3px 0; cursor: ns-resize; touch-action: none; outline: none; border-radius: 3px; }
+.fader:focus-visible { box-shadow: 0 0 0 2px var(--cyan); }
+.ftrack { position: absolute; left: 50%; top: -4px; bottom: -4px; width: 8px; margin-left: -4px; border-radius: 4px; background: #050505; box-shadow: inset 0 1px 2px #000, 0 0 0 1px #2a2826; }
+.fticks i { position: absolute; left: 6px; right: 6px; height: 1px; background: #6f6b63; transform: translateY(50%); }
+.fticks i.big { left: 3px; right: 3px; background: #a49f94; }
+.fader.lvl .fticks i { left: 1px; right: 1px; height: 2px; background: var(--ink); }
+.fader.steps .fticks i { left: 4px; right: 4px; background: #a49f94; }
+.fcap { position: absolute; left: 3px; right: 3px; height: var(--caph); border-radius: 2px; pointer-events: auto; cursor: grab;
+  box-shadow: 0 2px 2px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.45), inset 0 -2px 0 rgba(0,0,0,.25); transition: box-shadow .12s; }
+.fcap::before, .fcap::after { content: ''; position: absolute; top: 50%; width: 7px; height: 2px; margin-top: -1px; background: rgba(255,255,255,.85); box-shadow: 0 0 0 .5px rgba(0,0,0,.35); }
+.fcap::before { left: 2px; } .fcap::after { right: 2px; }
+.cap-w { background: linear-gradient(#fbfaf5, #dcd9cf); }
+.cap-s { background: linear-gradient(#c9c8c3, #9c9b96); }
+.cap-g { background: linear-gradient(#2cb07a, #138055); }
+.cap-r { background: linear-gradient(#e8403a, #b01f1c); }
+.cap-y { background: linear-gradient(#ffe24a, #e1bb10); }
+.cap-k { background: linear-gradient(#48464a, #1c1b1d); box-shadow: 0 2px 2px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.25); }
+.cap-x { background: linear-gradient(#c9c8c3, #9c9b96); }
+.drag .fcap { cursor: grabbing; }
+.fctl.hit .fcap, .fctl.drag .fcap { box-shadow: 0 0 0 2px var(--yellow), 0 0 10px 2px rgba(254,196,24,.7); }
+.fctl.hit .flab { color: var(--yellow); }
+.fctl.rock { justify-content: flex-start; }
+.rocker { width: 22px; height: 44px; padding: 0; margin: calc((var(--fh) - 38px) / 2) 0; border-radius: 4px; border: 1px solid #000; background: linear-gradient(#2a292b, #0c0c0d); box-shadow: 0 2px 3px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.18); position: relative; cursor: pointer; }
+.rocker span { position: absolute; left: 2px; right: 2px; top: 22px; bottom: 3px; border-radius: 3px; background: linear-gradient(#3b3a3d, #18171a); box-shadow: inset 0 1px 0 rgba(255,255,255,.18); }
+.rocker.on span { top: 3px; bottom: 22px; background: linear-gradient(#f7e05a, #d4b414); }
+.rocker:hover { border-color: var(--cyan); }
+.rocker:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
+
+.ftip { position: fixed; z-index: 20; pointer-events: none; background: #000; color: var(--yellow); border: 1px solid var(--yellow); border-radius: 3px; padding: 2px 6px; font: 12px var(--mono); white-space: nowrap; }
+.ftip[hidden] { display: none; }
+/* narrow screens: the rows wrap instead of shrinking past legibility */
+#panel.wrap .face, #panel.wrap .ftop, #panel.wrap .fline { flex-wrap: wrap; width: auto; }
+#panel.wrap .fleft { border-right: 0; padding-right: 0; }
+#panel.wrap .fextras { margin-left: 0; }

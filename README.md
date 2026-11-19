@@ -10,4 +10,14 @@ The controls are currently tuned specifically for an M-Audio Oxygen 49 (MKV): in
 
 The library has 160 sounds: Yamaha manual patches, Vangelis and Porcaro panels, and translations of popular presets. Your own sounds go in the User bank (Save, under the preset name), which stays in the browser and exports to JSON.
 
-MIT licensed.
+## Download
+
+The plug-ins are on the [latest release](https://github.com/leblancfg/cs80/releases/latest): AU and VST3 for macOS (Apple silicon and Intel), VST3 for Windows and Linux. Logic and GarageBand use the AU; Ableton Live, Cubase, FL Studio, Reaper, Bitwig and Studio One use the VST3. Your DAW lists it as leblancfg > CS80.
+
+- macOS: copy `CS80.component` to `~/Library/Audio/Plug-Ins/Components/` and `CS80.vst3` to `~/Library/Audio/Plug-Ins/VST3/`. The build is ad-hoc signed, not notarized, so clear the quarantine flag once: `xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/CS80.component ~/Library/Audio/Plug-Ins/VST3/CS80.vst3`
+- Windows: copy the `CS80.vst3` folder to `C:\Program Files\Common Files\VST3\`.
+- Linux: copy the `CS80.vst3` folder to `~/.vst3/`. The faceplate needs WebKitGTK 4.1 (`libwebkit2gtk-4.1-0`).
+
+The plug-in source and build notes are in [plugin/](plugin/).
+
+MIT licensed. The plug-ins are built with [JUCE](https://juce.com), which CMake downloads at build time; JUCE has its own licence (AGPLv3 or the JUCE licence), and these builds use the free JUCE Starter licence.

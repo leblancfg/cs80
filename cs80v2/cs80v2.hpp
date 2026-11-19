@@ -143,7 +143,14 @@ class Engine {
   public:
     Patch patch;
 
-    void init(float sample_rate, Patch const& p)
+    /* per-instance effect memory, for hosts that run several engines or rates
+       above 48 kHz; allocate echo_len_for(sr) and plate_len_for(sr) samples */
+    struct FxMem { int16_t* echo_l; int16_t* echo_r; uint32_t echo_len; float* plate; };
+    static uint32_t echo_len_for(float sr) { uint32_t n = ECHO_LEN; while ((float)n < 1.365f * sr) n <<= 1; return n; }
+    static int plate_len_for(float sr) { return Plate<float, 2>::mem_len((int)sr); }
+
+    /* mem == nullptr: the static buffers (48 kHz at most) */
+    void init(float sample_rate, Patch const& p, FxMem const* mem = nullptr)
     {
         memset(this, 0, sizeof *this);
         grng = 0x1234567u;
@@ -152,8 +159,13 @@ class Engine {
         inv_sr = 1.0f / sr;
         rate = sr / CTRL;
         chorus.init();
-        echo_line.init();
-        plate.init((int)sr);
+#ifdef CS80_NO_STATIC_FX
+        echo_line.init(mem->echo_l, mem->echo_r, mem->echo_len);
+        plate.init((int)sr, mem->plate);
+#else
+        if (mem) { echo_line.init(mem->echo_l, mem->echo_r, mem->echo_len); plate.init((int)sr, mem->plate); }
+        else { echo_line.init(); plate.init((int)sr); }
+#endif
         limiter.init(sr, CTRL);
         set_patch(p);
         uint32_t seed = 0x2545f491u;
@@ -163,7 +175,11 @@ class Engine {
         expression = 1.0f;
     }
 
-    void set_patch(Patch const& p) { patch = p; refresh_fx(); }
+    void set_patch(Patch const& p) { patch = p; echo_line.primed = false; refresh_fx(); }
+
+    /* echo time changes glide over about 60 ms instead of jumping (for
+       automation); patch loads still jump. Off after init. */
+    void set_echo_glide(bool on) { echo_line.glide = on; }
 
     /* call after editing patch.fx */
     void refresh_fx()

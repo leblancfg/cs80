@@ -2,7 +2,7 @@
 // The engine runs in cs80-worklet.js; this thread only sends messages.
 'use strict';
 
-const VERSION = '0.1.2';
+const VERSION = '0.2.0';
 const $ = (id) => document.getElementById(id);
 const status = (msg, cls = '') => { const s = $('status'); s.textContent = msg; s.className = 'status ' + cls; };
 

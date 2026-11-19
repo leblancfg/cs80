@@ -1,0 +1,24 @@
+CS80 0.2.0 for macOS (Apple silicon and Intel, macOS 11 or later)
+
+CS80.component is the Audio Unit, for Logic Pro and GarageBand.
+CS80.vst3 is the VST3, for Ableton Live, Cubase, FL Studio, Reaper, Bitwig and Studio One.
+
+1. Copy CS80.component to ~/Library/Audio/Plug-Ins/Components/
+   and CS80.vst3 to ~/Library/Audio/Plug-Ins/VST3/
+   (in Finder: Go > Go to Folder, then paste the path).
+
+2. The plug-ins are ad-hoc signed, not notarized by Apple, so macOS blocks
+   them until you clear the quarantine flag. In Terminal:
+
+   xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/CS80.component
+   xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/CS80.vst3
+
+3. Restart your DAW. It lists the plug-in as leblancfg > CS80.
+   In GarageBand: new Software Instrument track, then Plug-ins >
+   Instrument slot > AU Instruments > leblancfg > CS80.
+
+If Logic or GarageBand doesn't see it, run this in Terminal and restart the DAW:
+
+   killall -9 AudioComponentRegistrar; auval -v aumu Cs80 Lbfg
+
+Source and notes: https://github.com/leblancfg/cs80

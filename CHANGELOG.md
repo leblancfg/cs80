@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.0 (2026-11-19)
+
+- DAW plug-ins: the cs80v2 engine as an AU and VST3 for macOS (universal, ad-hoc signed) and a VST3 for Windows and Linux, built with JUCE 9 (`plugin/`). Hosts list it as leblancfg > CS80. The editor is the web page's faceplate, and the 160 library sounds are factory presets in the host's preset menu. Downloads are on the GitHub release.
+- Engine: per-instance echo and plate memory sized for the host's sample rate, and an opt-in glide on echo-time changes. The web and ESP32 builds sound as before.
+- Web app: the header link is now "About / Download", with a tooltip about the plug-ins.
+
 ## v0.1.2 (2026-11-19)
 
 - Link previews: Open Graph and Twitter card tags with a 1200x630 image of the faceplate (`web/og.png`), so a shared link shows the panel, the title and one line about the synth.

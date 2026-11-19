@@ -18,7 +18,22 @@
 #ifndef CS80_PSRAM /* EXT_RAM_BSS_ATTR on the S3 */
 #define CS80_PSRAM
 #endif
+#if defined(_MSC_VER) && !defined(__clang__)
+#define CS80_NOINLINE __declspec(noinline)
+#else
 #define CS80_NOINLINE __attribute__((noinline))
+#endif
+
+/* CS80_NO_STATIC_FX: no process-wide effect memory. The echo and plate then
+   run on buffers the host allocates per instance (Engine::FxMem), sized for
+   its sample rate. Without it, the echo and plate use the static buffers below,
+   sized for 48 kHz, as on the ESP32. */
+#ifndef CS80_CHORUS_LEN
+#define CS80_CHORUS_LEN 1024
+#endif
+#ifndef CS80_LIM_DMAX
+#define CS80_LIM_DMAX 128
+#endif
 
 namespace cs80v2 {
 
@@ -130,7 +145,7 @@ template <> struct Store<int16_t> { /* Q14: headroom to +-2.0 */
  * be on, as on the Arturia model. A 'side' input carries the optional
  * I/II pan spread around the effect untouched.
  */
-constexpr int CHORUS_LEN = 1024; /* 21 ms at 48 kHz, power of 2 */
+constexpr int CHORUS_LEN = CS80_CHORUS_LEN; /* 1024: 21 ms at 48 kHz, enough up to 96 kHz; power of 2 */
 
 struct ChorusParams {
     bool chorus_on, trem_on;
@@ -205,8 +220,10 @@ void Chorus::process(float const* mid, float const* side, float* out_l, float* o
 /* Echo, approach (a): stereo ping-pong delay line, int16 in PSRAM           */
 /* ======================================================================== */
 constexpr int ECHO_LEN = 65536; /* 1.37 s at 48 kHz per side */
+#ifndef CS80_NO_STATIC_FX
 CS80_PSRAM inline int16_t g_echo_l[ECHO_LEN];
 CS80_PSRAM inline int16_t g_echo_r[ECHO_LEN];
+#endif
 
 /* log2 for the limiter's gain computer: exponent bits plus a quadratic on the
    mantissa, |err| < 0.005 (0.03 dB) */
@@ -245,7 +262,7 @@ struct OutLimiter {
     static constexpr float KNEE_DB = 4.0f;
     static constexpr float KNEE_LO = 0.703882f; /* -3.05 dBFS = CEIL_DB - KNEE_DB / 2 */
     static constexpr float SAFE = 0.944061f;    /* -0.5 dBFS: the safety clip starts here */
-    static constexpr int DMAX = 128;            /* ring size (power of 2) */
+    static constexpr int DMAX = CS80_LIM_DMAX;  /* ring size (power of 2); D is at most DMAX - 32 */
     float dl[DMAX], dr[DMAX], box[DMAX], dq_v[DMAX];
     uint32_t dq_i[DMAX];
     uint32_t n, since;
@@ -257,7 +274,7 @@ struct OutLimiter {
     void init(float sr, int)
     {
         int d = (int)(0.0015f * sr + 0.5f);
-        D = d < 8 ? 8 : (d > 96 ? 96 : d);
+        D = d < 8 ? 8 : (d > DMAX - 32 ? DMAX - 32 : d);
         inv_d = 1.0f / (float)D;
         kf = 1.0f - expf(-1.0f / (0.05f * sr));
         ksa = 1.0f - expf(-1.0f / (0.10f * sr));
@@ -348,41 +365,92 @@ struct OutLimiter {
 };
 
 struct EchoLine {
-    uint32_t pos;
-    int32_t dsamp;
-    float fb, damp_k, lp_l, lp_r;
+    int16_t *bl, *br;
+    uint32_t pos, mask;
+    int32_t dsamp;                   /* target delay in samples */
+    float dcur;                      /* delay in use; glides to dsamp when the time changes */
+    float fb, damp_k, lp_l, lp_r, glide_k;
+    bool primed, glide;              /* glide: time changes glide (plugin automation); off, they jump */
 
-    void init() { pos = 0; dsamp = 1000; fb = 0; damp_k = 1; lp_l = lp_r = 0; memset(g_echo_l, 0, sizeof g_echo_l); memset(g_echo_r, 0, sizeof g_echo_r); }
+    /* len: a power of 2 */
+    void init(int16_t* l, int16_t* r, uint32_t len)
+    {
+        bl = l; br = r; mask = len - 1;
+        pos = 0; dsamp = 1000; dcur = 1000.0f; fb = 0; damp_k = 1; lp_l = lp_r = 0; glide_k = 1; primed = glide = false;
+        memset(l, 0, sizeof(int16_t) * len); memset(r, 0, sizeof(int16_t) * len);
+    }
+#ifndef CS80_NO_STATIC_FX
+    void init() { init(g_echo_l, g_echo_r, ECHO_LEN); }
+#endif
     void set(float seconds, float feedback, float damp_hz, float sr)
     {
         int d = (int)(seconds * sr);
-        dsamp = d < 1 ? 1 : (d > ECHO_LEN - 1 ? ECHO_LEN - 1 : d);
+        dsamp = d < 1 ? 1 : (d > (int)mask ? (int)mask : d);
+        if (!primed || !glide) { dcur = (float)dsamp; primed = true; } /* the first set after init or a patch load jumps */
         fb = feedback;
         damp_k = 1.0f - expf(-6.2831853f * damp_hz / sr);
+        glide_k = 1.0f - expf(-(float)CTRL / (0.06f * sr)); /* about 60 ms, like a tape speed change */
     }
     /* adds wet * echo to out_l/out_r; input is the stereo dry signal */
     CS80_NOINLINE inline CS80_IRAM void process(float const* in_l, float const* in_r, float* out_l, float* out_r, float wet);
+    CS80_NOINLINE inline void process_glide(float const* in_l, float const* in_r, float* out_l, float* out_r, float wet);
 };
 
 void EchoLine::process(float const* in_l, float const* in_r, float* out_l, float* out_r, float wet)
 {
+    if (dcur != (float)dsamp) { process_glide(in_l, in_r, out_l, out_r, wet); return; }
     typedef Store<int16_t> S;
     uint32_t p = pos;
-    uint32_t const d = (uint32_t)dsamp;
+    uint32_t const d = (uint32_t)dsamp, m = mask;
+    int16_t* const L = bl;
+    int16_t* const R = br;
     float a = lp_l, b = lp_r;
     float const k = damp_k, g = fb;
     for (int i = 0; i != CTRL; ++i) {
-        uint32_t const rp = (p - d) & (ECHO_LEN - 1);
-        float const yl = S::load(g_echo_l[rp]), yr = S::load(g_echo_r[rp]);
+        uint32_t const rp = (p - d) & m;
+        float const yl = S::load(L[rp]), yr = S::load(R[rp]);
         a += k * (yl - a);
         b += k * (yr - b);
         float const x = 0.5f * (in_l[i] + in_r[i]);
-        g_echo_l[p] = S::save(x + g * b); /* ping-pong: L feeds R feeds L */
-        g_echo_r[p] = S::save(g * a);
+        L[p] = S::save(x + g * b); /* ping-pong: L feeds R feeds L */
+        R[p] = S::save(g * a);
         out_l[i] += wet * yl;
         out_r[i] += wet * yr;
-        p = (p + 1) & (ECHO_LEN - 1);
+        p = (p + 1) & m;
     }
+    pos = p; lp_l = a; lp_r = b;
+}
+
+/* the delay time moved: read at a fractional delay that glides to the new
+   time, so automation bends the pitch of the repeats instead of clicking */
+void EchoLine::process_glide(float const* in_l, float const* in_r, float* out_l, float* out_r, float wet)
+{
+    typedef Store<int16_t> S;
+    float const t = (float)dsamp;
+    float next = dcur + (t - dcur) * glide_k;
+    if (fabsf(t - next) < 0.02f) next = t;
+    float dd = dcur, step = (next - dcur) * (1.0f / CTRL);
+    uint32_t p = pos;
+    uint32_t const m = mask;
+    float a = lp_l, b = lp_r;
+    float const k = damp_k, g = fb;
+    for (int i = 0; i != CTRL; ++i) {
+        uint32_t const id = (uint32_t)dd;
+        float const f = dd - (float)id;
+        uint32_t const r0 = (p - id) & m, r1 = (p - id - 1) & m;
+        float const yl = S::load(bl[r0]) + f * (S::load(bl[r1]) - S::load(bl[r0]));
+        float const yr = S::load(br[r0]) + f * (S::load(br[r1]) - S::load(br[r0]));
+        a += k * (yl - a);
+        b += k * (yr - b);
+        float const x = 0.5f * (in_l[i] + in_r[i]);
+        bl[p] = S::save(x + g * b);
+        br[p] = S::save(g * a);
+        out_l[i] += wet * yl;
+        out_r[i] += wet * yr;
+        p = (p + 1) & m;
+        dd += step;
+    }
+    dcur = next;
     pos = p; lp_l = a; lp_r = b;
 }
 
@@ -428,8 +496,10 @@ constexpr int PLATE_TOTAL_48K =
     + plate_len(908 + 2 * PLATE_EXC, 48000) + plate_len(4217, 48000) + plate_len(2656, 48000) + plate_len(3163, 48000)
     + 48000 / 10; /* up to 100 ms predelay */
 
+#ifndef CS80_NO_STATIC_FX
 template <typename S, int D> struct PlateMem { static S mem[PLATE_TOTAL_48K / D + 64]; };
 template <typename S, int D> S PlateMem<S, D>::mem[PLATE_TOTAL_48K / D + 64];
+#endif
 
 template <typename S, int DECIM> struct Plate {
     DLine<S> pre, in1, in2, in3, in4, apl1, dl1, apl2, dl2, apr1, dr1, apr2, dr2;
@@ -443,10 +513,22 @@ template <typename S, int DECIM> struct Plate {
     int bytes() const { return used * (int)sizeof(S); }
     int used;
 
-    void init(int sr)
+    /* samples of memory the tank needs at this sample rate */
+    static int mem_len(int sr)
+    {
+        int const e = sr / DECIM;
+        return e / 10 + plate_len(142, e) + plate_len(107, e) + plate_len(379, e) + plate_len(277, e)
+               + plate_len(672 + 2 * PLATE_EXC, e) + plate_len(4453, e) + plate_len(1800, e) + plate_len(3720, e)
+               + plate_len(908 + 2 * PLATE_EXC, e) + plate_len(4217, e) + plate_len(2656, e) + plate_len(3163, e);
+    }
+
+#ifndef CS80_NO_STATIC_FX
+    void init(int sr) { init(sr, PlateMem<S, DECIM>::mem); } /* 48 kHz at most */
+#endif
+    /* m: at least mem_len(sr) samples */
+    void init(int sr, S* m)
     {
         sr_eff = sr / DECIM;
-        S* m = PlateMem<S, DECIM>::mem;
         int off = 0;
         auto mk = [&](DLine<S>& d, int len29) { int const n = plate_len(len29, sr_eff); d.init(m + off, n); off += n; };
         pre.init(m, sr_eff / 10); off = sr_eff / 10;
@@ -470,7 +552,13 @@ template <typename S, int DECIM> struct Plate {
     }
     void set(PlateParams const& p)
     {
-        decay = p.decay; damp = p.damp; bw = p.bandwidth;
+        decay = p.decay;
+        if (sr_eff == 48000 / DECIM) { damp = p.damp; bw = p.bandwidth; }
+        else { /* same damping and bandwidth corners in Hz as at 48 kHz */
+            float const r = (float)(48000 / DECIM) / (float)sr_eff;
+            damp = powf(p.damp, r);
+            bw = 1.0f - powf(1.0f - p.bandwidth, r);
+        }
         int pd = (int)(p.predelay_s * sr_eff);
         predelay = pd < 1 ? 1 : (pd > pre.n - 1 ? pre.n - 1 : pd);
     }
