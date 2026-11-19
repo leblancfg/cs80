@@ -80,7 +80,7 @@ try {
   await cdp('Page.navigate', { url });
   for (let i = 0; i < 50 && !(await evaluate(`document.querySelector('#midi-in')?.options.length > 1`)); i++) await sleep(200);
   const served = await evaluate(`[...document.scripts].map(s => s.getAttribute('src')).join(' ')`);
-  check(/app\.js\?v=15/.test(served), 'served page uses the new app.js version: ' + served);
+  check(/app\.js\?v=16/.test(served), 'served page uses the new app.js version: ' + served);
   check(await evaluate(`$('midi-in').selectedOptions[0].textContent === 'Oxygen 49 USB MIDI'`), 'MIDI: the USB MIDI port is selected, not the Mackie port');
   check(await evaluate(`!$('learn-nudge').hidden && /Set up my controller/.test($('learn-nudge').textContent)`), 'first connect offers the guided setup');
 
@@ -102,9 +102,9 @@ try {
   // The public library: ten banks, each with the chart presets first, then the Core and
   // scouted sounds, then the Arturia translations; 128 to 160 in all.
   const libKind = await evaluate(`library && library.kind`), bankNames = await evaluate(`Object.keys(banks()).join('|')`);
-  check(libKind === 'public' && /^Brass\|Strings\|Pads/.test(bankNames) && /Sub Osc and Motion$/.test(bankNames) && await evaluate(`(() => { const all = Object.values(banks()).flat(), rank = { chart: 0, core: 1, scouted: 2, arturia: 3 };
+  check(libKind === 'public' && /^Brass\|Strings\|Pads/.test(bankNames) && /Sub Osc and Motion\|User$/.test(bankNames) && await evaluate(`(() => { const lib = Object.entries(banks()).filter(([b]) => b !== 'User').map(([, l]) => l), all = lib.flat(), rank = { chart: 0, core: 1, scouted: 2, arturia: 3 };
     return all.length >= 128 && all.length <= 160 && all.filter(p => p.origin === 'core').length === 8 && banks().Brass[0].name === 'Porcaro Brass (chart)'
-      && Object.values(banks()).every(b => b.every((p, i) => !i || rank[b[i - 1].origin] <= rank[p.origin])); })()`), `public combined library (${bankNames})`);
+      && lib.every(b => b.every((p, i) => !i || rank[b[i - 1].origin] <= rank[p.origin])); })()`), `public combined library, then the User bank (${bankNames})`);
   // output meter in the header: a note through the limiter shows a level and never passes -1 dBFS
   await evaluate(`window.__mx = 0; const o = showMeter; showMeter = (m) => { __mx = Math.max(__mx, m.peak); o(m); };`);
   await evaluate(`__midi('a', [0x90, 48, 127]); __midi('a', [0x90, 55, 127]); __midi('a', [0x90, 64, 127]); __midi('a', [0x90, 38, 127]); __midi('a', [0x90, 67, 127])`); await sleep(1200);
@@ -115,7 +115,15 @@ try {
   const titles = await evaluate(`[...document.querySelectorAll('#panel .ftitle')].map(t => t.textContent).join('|')`);
   for (const t of ['Sub oscillator', 'Ring modulator', 'Chorus / tremolo', 'Brilliance', 'Volume', 'VCO', 'VCF', 'VCA', 'Touch response', 'Feet', 'Keyboard control', 'Sustain / portamento', 'Echo', 'Reverb', 'Master']) check(titles.includes(t), `panel section ${t}`);
   check(await evaluate(`(() => { const want = new Set(info.fields); const have = new Set(controls.map(c => c.f)); return ['I.lpf_hz', 'II.after_level', 'sub_wave', 'ring_d', 'chorus.trem_depth', 'kbd_level_high', 'porta_time', 'fx.echo_fb', 'plate.decay', 'master', 'feet_II', 'detune_cents', 'gain'].every(f => have.has(f)) && controls.length >= 80; })()`), 'every panel control is on screen: ' + await evaluate(`controls.length`));
-  check(await evaluate(`[...document.querySelectorAll('.fextras .ftitle')].map(t => t.textContent).join(',') === 'Echo,Reverb,Master'`), 'Echo, Reverb and Master sit in a separate Extras box');
+  check(await evaluate(`[...document.querySelectorAll('.fextras .ftitle')].map(t => t.textContent).join(',') === 'Echo,Reverb,Master'`), 'Echo, Reverb and Master sit at the end of the strip');
+  check(!(await evaluate(`/not on the CS-80|CS-80 has none/i.test(document.body.innerText + document.body.innerHTML)`)), 'no "not on the CS-80" markings');
+  // Brilliance Mix: lever up = channel I (mix -1), down = channel II, as on the faceplate
+  await evaluate(`(() => { const f = document.querySelector('[data-field="mix"] .fader'); f.focus(); f.dispatchEvent(new KeyboardEvent('keydown', { key: 'End', bubbles: true })); })()`); await sleep(250);
+  const mixTop = await evaluate(`values[fieldIx.mix]`);
+  await evaluate(`(() => { const f = document.querySelector('[data-field="mix"] .fader'); f.dispatchEvent(new KeyboardEvent('keydown', { key: 'Home', bubbles: true })); f.blur(); })()`); await sleep(250);
+  check(Math.abs(mixTop + 1) < 1e-6 && Math.abs(await evaluate(`values[fieldIx.mix]`) - 1) < 1e-6 && await evaluate(`[...document.querySelectorAll('[data-field="mix"] .fsc')].map(e => e.textContent).join('/') === 'I/II'`), 'Mix lever: up = channel I, down = channel II, scale I over II');
+  await evaluate(`$('reset-preset').click()`); await sleep(200);
+  check(await evaluate(`(() => { const r = $('favicon-test') || document.querySelector('link[rel=icon][type="image/svg+xml"]'); return !!r && /favicon\.svg/.test(r.getAttribute('href')); })()`) && (await (await fetch(new URL('favicon.svg', url))).text()).includes('#815ba4'), 'favicon: a purple (#815ba4) SVG circle');
   check(await evaluate(`document.querySelectorAll('#panel .fader[role=slider][tabindex="0"]').length > 70 && document.querySelectorAll('#panel .rocker[role=switch]').length === 5`), 'levers are focusable sliders, on/off controls are rocker switches');
   check(await evaluate(`getComputedStyle(document.querySelector('[data-field="I.lpf_res"] .fcap')).backgroundImage.includes('232, 64, 58') && getComputedStyle(document.querySelector('[data-field="I.fr"] .fcap')).backgroundImage.includes('255, 226, 74')`), 'cap colours: resonance red, release yellow');
   // G: layout: presets left, panel fills the middle, keyboard pinned to the bottom, no sideways scrolling
@@ -250,6 +258,74 @@ try {
   check(await evaluate(`perf.gain`) === 0 && await evaluate(`${fsel('gain')}.getAttribute('aria-valuetext') === '-inf dB'`), 'knob 8 at 0: volume 0, shown on the Volume lever');
   await evaluate(`__midi('a', [0xb0, 67, 127])`);
 
+  // User bank: Save, Save as, overwrite confirm, rename, delete, undo, export/import, program change
+  check(await evaluate(visible('#save')) && await evaluate(visible('#save-as')) && /Saves to User 1 \(empty\)/.test(await evaluate(`$('save-target').textContent`)), 'Save and Save as sit under the preset name: ' + await evaluate(`$('save-target').textContent`));
+  check(await evaluate(`banks().User.length === 16 && banks().User.every(p => p.empty) && Object.keys(banks()).at(-1) === 'User'`), 'an empty 16-slot User bank, last in the list');
+  const base0 = await evaluate(`loaded.name`);
+  await evaluate(`(() => { const f = ${fsel('I.noise')}; f.focus(); for (let i = 0; i < 30; i++) f.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp', bubbles: true })); f.blur(); })()`); await sleep(250);
+  const noise1 = await evaluate(`values[fieldIx['I.noise']]`);
+  await evaluate(`$('save').click()`); await sleep(700);
+  check(await evaluate(`userBank[0] && userBank[0].name === ${JSON.stringify(base0)} && current.bank === 'User' && current.index === 0 && Math.abs(userBank[0].fields['I.noise'] - ${noise1}) < 1e-5`), `Save: the edited sound (noise ${noise1.toFixed(2)}) is in User 1 as "${base0}", now the current preset`);
+  check(await evaluate(`JSON.parse(localStorage.getItem('cs80.userbank')).slots[0].name === ${JSON.stringify(base0)}`), 'Save: kept in localStorage');
+  check(await evaluate(`$('save-ask').hidden && ${diffs} === 0`), 'Save: no question for an empty slot; Reset preset now returns to the saved sound');
+  // load something else, then reach User 1 by bank select + program change
+  await evaluate(`selectBank('Brass')`); await sleep(400);
+  check(Math.abs(await evaluate(`values[fieldIx['I.noise']]`) - noise1) > 0.05, 'another preset loaded');
+  const ub = await evaluate(`Object.keys(banks()).indexOf('User')`);
+  await evaluate(`__midi('a', [0xb0, 0, ${ub}]); __midi('a', [0xc0, 0])`); await sleep(400);
+  check(await evaluate(`current.bank === 'User' && current.index === 0 && loaded.origin === 'user'`) && Math.abs(await evaluate(`values[fieldIx['I.noise']]`) - noise1) < 1e-5, `bank select ${ub} + program change 1 loads User 1`);
+  await evaluate(`__midi('a', [0xc0, 4])`); await sleep(200);
+  check(await evaluate(`userSlot === 4 && current.index === 0 && /User 5 is empty/.test($('status').textContent) && /Saves to User 5/.test($('save-target').textContent)`), 'program change to an empty User slot selects it as the save target');
+  // Save as: name and slot
+  await evaluate(`$('save-as').click()`);
+  check(await evaluate(`!$('save-form').hidden && $('save-slot').value === '4' && document.activeElement === $('save-name')`), 'Save as: form opens on the target slot with the name selected');
+  await evaluate(`$('save-name').value = 'My Brass'; $('save-slot').value = '1'; $('save-form').requestSubmit()`); await sleep(700);
+  check(await evaluate(`userBank[1] && userBank[1].name === 'My Brass' && current.index === 1 && $('preset-name').textContent === 'My Brass' && $('save-form').hidden`), 'Save as: "My Brass" in User 2');
+  // overwrite asks first; Cancel keeps it, Replace replaces, Undo restores
+  await evaluate(`selectBank('Pads')`); await sleep(400);
+  await evaluate(`setUserSlot(1); $('save').click()`); await sleep(200);
+  check(await evaluate(`!$('save-ask').hidden && /User 2 holds "My Brass"/.test($('save-ask-text').textContent)`), 'Save over a different sound asks first: ' + await evaluate(`$('save-ask-text').textContent`));
+  await evaluate(`$('save-ask-no').click()`); await sleep(200);
+  check(await evaluate(`userBank[1].name === 'My Brass' && $('save-ask').hidden && current.bank === 'Pads'`), 'Cancel keeps User 2');
+  const padName = await evaluate(`loaded.name`);
+  await evaluate(`$('save').click()`); await sleep(200); await evaluate(`$('save-ask-ok').click()`); await sleep(700);
+  check(await evaluate(`userBank[1].name === ${JSON.stringify(padName)} && !$('user-undo').hidden`), 'Replace overwrites User 2 and offers Undo');
+  await evaluate(`$('user-undo').click()`); await sleep(200);
+  check(await evaluate(`userBank[1].name === 'My Brass' && $('user-undo').hidden`), 'Undo brings "My Brass" back');
+  // rename and delete the selected slot
+  await evaluate(`pickSlot(1); $('user-rename').click()`); await sleep(400);
+  await evaluate(`$('save-name').value = 'Brass Two'; $('save-form').requestSubmit()`); await sleep(200);
+  check(await evaluate(`userBank[1].name === 'Brass Two' && [...$('presets').children][1].textContent.includes('Brass Two')`), 'Rename');
+  await evaluate(`$('user-delete').click()`); await sleep(100); await evaluate(`$('save-ask-ok').click()`); await sleep(200);
+  check(await evaluate(`userBank[1] === null && [...$('presets').children][1].classList.contains('empty')`), 'Delete empties the slot');
+  await evaluate(`$('user-undo').click()`); await sleep(200);
+  check(await evaluate(`userBank[1] && userBank[1].name === 'Brass Two'`), 'Undo after Delete');
+  // a hardware button mapped to "Save to current user slot" saves without a dialog
+  await evaluate(`setTarget('t_loop', 'user_save'); pickSlot(0)`); await sleep(400);
+  await evaluate(`(() => { const f = ${fsel('I.noise')}; f.focus(); for (let i = 0; i < 10; i++) f.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true })); f.blur(); })()`); await sleep(250);
+  const noise2 = await evaluate(`values[fieldIx['I.noise']]`);
+  await evaluate(`__midi('a', [0xb0, 113, 127]); __midi('a', [0xb0, 113, 0])`); await sleep(700);
+  check(await evaluate(`$('save-ask').hidden && Math.abs(userBank[0].fields['I.noise'] - ${noise2}) < 1e-5 && /Saved/.test($('status').textContent)`), 'Loop mapped to "Save to current user slot" saves the edit to User 1');
+  check(await evaluate(`(() => { const s = document.createElement('select'); targetOptions(s, 'none'); return [...s.options].some(o => o.value === 'user_save' && o.textContent === 'Save to current user slot'); })() && P.DEFAULT_MAP.t_rec === 'user_save'`), '"Save to current user slot" is a learnable action (Record by default)');
+  await evaluate(`setTarget('t_loop', 'preset_reset')`);
+  // export, then import into an emptied bank
+  await evaluate(`window.__dl = null; HTMLAnchorElement.prototype.__click = HTMLAnchorElement.prototype.click; HTMLAnchorElement.prototype.click = function () { if (this.download) window.__dl = { name: this.download, href: this.href }; else this.__click(); }`);
+  await evaluate(`$('user-export').click()`);
+  const exported = await evaluate(`window.__dl ? fetch(__dl.href).then(r => r.text()) : ''`);
+  let ex = null; try { ex = JSON.parse(exported); } catch {}
+  check(await evaluate(`window.__dl && __dl.name === 'cs80-user-bank.json'`) && ex && ex.format === 'cs80v2-user-bank' && ex.slots.length === 2 && ex.slots[1].slot === 2 && ex.slots[1].name === 'Brass Two' && Object.keys(ex.slots[0].fields).length > 100, `Export: cs80-user-bank.json with ${ex ? ex.slots.length : 0} presets and every field`);
+  await evaluate(`userBank = userBank.map(() => null); refreshUser()`);
+  check(await evaluate(`importUser(${JSON.stringify(exported)})`) && await evaluate(`userBank[0] && userBank[1].name === 'Brass Two' && !userBank[2]`), 'Import restores the exported bank');
+  const imp2 = evaluate(`importUser(${JSON.stringify(exported)})`); await sleep(100);
+  check(await evaluate(`!$('save-ask').hidden && /replaces 2 User presets/.test($('save-ask-text').textContent)`), 'Import over saved presets asks first');
+  await evaluate(`$('save-ask-ok').click()`); await imp2;
+  const copied = await evaluate(`settingsJSON()`);
+  await evaluate(`setUserSlot(7)`);
+  check(await evaluate(`importUser(${JSON.stringify(copied)})`) && await evaluate(`!!userBank[7]`), 'Import takes Copy settings text into the selected slot');
+  check(!(await evaluate(`importUser('{"nope": 1}')`)) && /Could not import/.test(await evaluate(`$('status').textContent`)), 'Import rejects other JSON');
+  await evaluate(`$('user-undo').click()`);
+  await evaluate(`$('panic').onclick()`);
+
   // screenshots: the faceplate with each tab, Advanced open, then other screen sizes
   await cdp('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 2, y: 2 });
   await evaluate(`$('learn-nudge').hidden = true; $('tab-keyboard').click(); document.activeElement.blur(); fitPanel()`); await sleep(500);
@@ -293,10 +369,22 @@ try {
   await evaluate(`$('reset-setup').click()`);
   const left = await evaluate(`['cs80.layout', 'cs80.perfmap', 'cs80.favs', 'cs80.ccmode'].filter(k => localStorage.getItem(k) !== null)`);
   check(left.length === 0, 'Reset clears the saved layout, map, favourites and mode' + (left.length ? ': ' + left : ''));
+  check(await evaluate(`JSON.parse(localStorage.getItem('cs80.userbank')).slots.filter(Boolean).length === 2`), 'Reset controller setup leaves the User bank alone');
   check(await evaluate(`!Object.keys(perf.layout.controls).length && perf.map.k1 === 'chorus' && favs.every(f => !f) && /not set up/.test($('legend-title').textContent)`), 'Reset puts the running page back to defaults');
   await evaluate(`__midi('a', [0x90, 36, 100])`); await sleep(100);
   check(await evaluate(`!!document.querySelector('.key.on[data-note="36"]')`), 'after Reset, keys play');
   await evaluate(`__midi('a', [0x80, 36, 0])`);
+
+  // the User bank survives a reload
+  await evaluate(`sessionStorage.setItem('kept', '1')`);
+  await cdp('Page.reload');
+  for (let i = 0; i < 50 && !(await evaluate(`typeof $ === 'function' && !!$('start')`)); i++) await sleep(200);
+  await sleep(500);
+  await evaluate(`$('start').click()`);
+  for (let i = 0; i < 40 && !(await evaluate(`!!info && !!values`)); i++) await sleep(250);
+  await evaluate(`selectBank('User')`); await sleep(400);
+  check(await evaluate(`banks().User.filter(p => !p.empty).length === 2 && loaded.origin === 'user' && loaded.slot === 1 && Math.abs(values[fieldIx['I.noise']] - userBank[0].fields['I.noise']) < 1e-5`), 'after a reload the User bank is back and User 1 loads its sound');
+  await evaluate(`sessionStorage.removeItem('kept')`);
 } catch (e) { console.log('FAIL', e.message); bad++; }
 const errs = logs.filter((l) => /^(error|EXCEPTION)/.test(l));
 check(errs.length === 0, 'no console errors' + (errs.length ? ': ' + errs.join(' | ') : ''));

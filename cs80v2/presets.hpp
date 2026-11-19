@@ -42,7 +42,7 @@ inline Patch patch_init(char const* name)
     q.bend_up = 2.0f; q.bend_down = 2.0f;
     q.chorus = {false, false, 0.8f, 0.5f, 6.0f, 0.3f};
     q.drift = 1.0f;
-    q.master = 0.5f;
+    q.master = 0.3f;
     FxParams& f = p.fx;
     f.echo_mode = ECHO_OFF;
     f.echo_time = 0.469f; f.echo_fb = 0.35f; f.echo_mix = 0.25f; f.echo_damp_hz = 3500.0f;
@@ -53,9 +53,10 @@ inline Patch patch_init(char const* name)
 }
 
 /* Levels: each preset's master puts a held C major chord (C3 E3 G3 C4,
-   velocity 100) at -13 dBFS RMS over the frames that sound. The engine's output
-   limiter (ceiling -1 dBFS) takes the peaks, so short sounds such as the clav
-   sit as loud as the pads. */
+   velocity 100) at -18.5 dBFS RMS over the frames that sound, the public
+   library's level (web/tools/build_library.py), so its peaks stay clear of the
+   output limiter. The clav would need limiting to get there and sits at
+   -20.6 dBFS. */
 
 /* 1. Blade Runner brass ("Memories of Green" / "Tears in Rain" swells).
    Brass 1 + Brass 2 style pair: IL/AL swell, strong after-touch brilliance
@@ -85,7 +86,7 @@ inline Patch blade_runner_brass()
     q.kbd_level_high = -0.2f;
     q.sustain_time = 2.0f;
     q.chorus = {true, false, 0.7f, 0.6f, 6.0f, 0.0f};
-    q.master = 0.608f;
+    q.master = 0.322f;
     p.fx.echo_mode = ECHO_LINE; p.fx.echo_mix = 0.15f; p.fx.echo_fb = 0.3f;
     p.fx.reverb_mix = 0.35f; p.fx.plate = {0.85f, 0.3f, 0.65f, 0.03f};
     return p;
@@ -115,7 +116,7 @@ inline Patch chariots()
     q.sub_hz = 5.5f; q.sub_vco = 0.04f; q.at_sub_vco = 0.25f;
     q.sustain_time = 2.5f;
     q.chorus = {true, false, 0.5f, 0.35f, 6.0f, 0.0f};
-    q.master = 0.745f;
+    q.master = 0.389f;
     p.fx.reverb_mix = 0.42f; p.fx.plate = {0.9f, 0.25f, 0.7f, 0.04f};
     return p;
 }
@@ -141,7 +142,7 @@ inline Patch africa_strings()
     q.brilliance = -0.8f; q.resonance = 0.35f;
     q.detune_cents = -7.0f;
     q.chorus = {true, false, 0.9f, 0.35f, 6.0f, 0.0f};
-    q.master = 0.365f;
+    q.master = 0.193f;
     p.fx.reverb_mix = 0.22f;
     return p;
 }
@@ -167,7 +168,7 @@ inline Patch human_nature()
     q.brilliance = -0.32f * 3.0f;
     q.detune_cents = 5.0f;
     q.chorus = {true, false, 1.2f, 0.9f, 6.0f, 0.0f};
-    q.master = 0.5f;
+    q.master = 0.261f;
     p.fx.reverb_mix = 0.18f;
     return p;
 }
@@ -191,7 +192,7 @@ inline Patch organ()
     q.key_track = 1.0f;
     q.sustain_time = 0.6f;
     q.chorus = {true, true, 1.0f, 0.5f, 6.4f, 0.35f};
-    q.master = 0.612f;
+    q.master = 0.318f;
     p.fx.reverb_mix = 0.2f;
     return p;
 }
@@ -217,7 +218,7 @@ inline Patch funky_clav()
     PerfParams& q = p.perf;
     q.feet[1] = 3;
     q.sustain_time = 0.4f;
-    q.master = 2.48f;
+    q.master = 0.864f;
     p.fx.reverb_mix = 0.1f;
     return p;
 }
@@ -240,7 +241,7 @@ inline Patch christmastime()
     q.sub_wave = SUB_SAW_DOWN; q.sub_hz = 2.85f; q.sub_vcf = 0.9f;
     q.resonance = 0.45f; q.brilliance = 0.7f;
     q.sustain_time = 0.5f;
-    q.master = 0.369f;
+    q.master = 0.196f;
     p.fx.reverb_mix = 0.12f;
     return p;
 }
@@ -270,7 +271,7 @@ inline Patch blade_runner_pad()
     q.ring_mod = 0.25f; q.ring_hz = 0.6f;
     q.sustain_time = 3.0f;
     q.chorus = {true, false, 0.5f, 0.8f, 6.0f, 0.0f};
-    q.master = 0.883f;
+    q.master = 0.443f;
     p.fx.echo_mode = ECHO_LINE; p.fx.echo_mix = 0.25f; p.fx.echo_fb = 0.4f; p.fx.echo_time = 0.625f;
     p.fx.reverb_mix = 0.5f; p.fx.plate = {0.9f, 0.35f, 0.6f, 0.05f};
     return p;

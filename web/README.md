@@ -20,7 +20,7 @@ Build and check:
     node tools/test_perf.mjs    # controller layer -> worklet -> wasm, simulated CCs
     node tools/test_browser.mjs [URL] # headless Chromium, fake Web MIDI (SHOT=dir saves PNGs)
 
-Deploy: the page is static. Serve `index.html`, `app.js`, `perf.js`, `style.css`, `cs80-worklet.js`, `cs80v2.wasm` and `presets-library.json` from one directory over HTTPS (or localhost), with `.wasm` served as `application/wasm`. The public copy is at https://leblancfg.com/cs80/.
+Deploy: the page is static. Serve `index.html`, `app.js`, `perf.js`, `style.css`, `cs80-worklet.js`, `cs80v2.wasm`, `presets-library.json` and the icons (`favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`) from one directory over HTTPS (or localhost), with `.wasm` served as `application/wasm`. The public copy is at https://leblancfg.com/cs80/.
 
 ## Translating presets.json
 
@@ -39,16 +39,16 @@ Every remaining simplification is listed in `../docs/limitations.md`.
 
 ## The page
 
-The window has three fixed parts. The header holds Start audio, the MIDI input, "Set up my controller" and the Advanced drop-down. The middle is the preset list on the left with Copy settings / Load settings, and the full CS-80 panel filling the rest. The bottom strip spans the full width down to the window edge, with two tabs: Keyboard and Controls (the hardware legend). Advanced is collapsed and holds only technical tools: the fixed CC maps (Oxygen firmware, PM-80), Assign, the last MIDI message, on-screen bend/mod/aftertouch/sustain, Stop all notes, the CPU meter with sample rate and latency, and the translation notes for the current preset.
+The window has three fixed parts. The header holds Start audio, the MIDI input, "Set up my controller" and the Advanced drop-down. The middle is the preset list on the left (with the Save box under the preset name, and Copy settings / Load settings at the bottom), and the full CS-80 panel filling the rest. The bottom strip spans the full width down to the window edge, with two tabs: Keyboard and Controls (the hardware legend). Advanced is collapsed and holds only technical tools: the fixed CC maps (Oxygen firmware, PM-80), Assign, the last MIDI message, on-screen bend/mod/aftertouch/sustain, Stop all notes, the CPU meter with sample rate and latency, and the translation notes for the current preset.
 
 ### The faceplate
 
 Every panel control is on screen at once, drawn in HTML/CSS as a CS-80 faceplate: black panel, engraved small-caps labels, long vertical levers with coloured caps, grouped in bracketed sections.
 
-- Left block: Sub oscillator (Function lever with six detents, Speed, VCO, VCF, VCA) and Ring modulator (Attack, Decay, Depth, Speed, Mod); below them Chorus / tremolo (on/off rockers, speed, depth), Brilliance (Mix, Brilliance, Resonance) and Volume (the post-effects level that knob 8 drives).
+- Left block: Sub oscillator (Function lever with six detents, Speed, VCO, VCF, VCA) and Ring modulator (Attack, Decay, Depth, Speed, Mod); below them Chorus / tremolo (on/off rockers, speed, depth), Brilliance (Mix, Brilliance, Resonance) and Volume (the post-effects level that knob 8 drives). Mix follows the faceplate: up is channel I, down is channel II (the fixed CC maps and the Balance macro agree).
 - Channel I and Channel II rows, each in panel order: VCO (Speed, PWM, PW, Square, Saw, Noise), VCF (HPF, Res, LPF, Res, IL, AL, A, D, R, plus our Invert rocker), VCA (VCF level, Sine, A, D, S, R, Level), Touch response (initial and after brilliance and level).
 - Performance strip: Feet I and II (detented levers) and Detune, Touch response (pitch bend, after-touch sub speed, VCO, VCF, AT mode), Keyboard control (brilliance and level, low and high), Sustain / portamento.
-- Extras, in a dashed cyan box with cyan caps because the CS-80 has none of them: Echo, Reverb, and Master (pan spread, drift, bend range, master level).
+- At the right end of the strip: Echo, Reverb, and Master (pan spread, drift, bend range, master level).
 
 Square and Saw are continuous 0 to 1 levels, so they are levers with heavy ticks at 0 and 1 (the original has on/off rocker tabs there). Real booleans (chorus, tremolo, glissando, filter invert) are rocker tabs.
 
@@ -64,6 +64,17 @@ Reference for section order, labels and cap colours:
 
 Deviations: the left block mixes the left-hand panel and the lower performance strip of the original to keep everything on one screen; the IL lever uses normal travel; Volume is a lever, not the original's round knob.
 
+## Saving sounds: the User bank
+
+The User bank (last in the bank list) has 16 slots, empty at first, kept in the browser's localStorage. The Save box sits right under the preset name:
+
+- **Save** (or Ctrl+S / Cmd+S) stores the sound as you hear it, every panel value, in the selected User slot. The line under the buttons names that slot. Click an empty slot in the User bank, or send it a program change, to make it the target; loading a User preset makes its own slot the target, so Save after an edit updates it in place.
+- **Save as…** asks for a name and a slot. Saving over a different sound asks first ("User 2 holds … Replace it?").
+- **Rename** and **Delete** act on the selected slot. **Undo** brings back the bank as it was before the last save, rename, delete or import.
+- **Export** downloads the bank as `cs80-user-bank.json` (`{"format": "cs80v2-user-bank", "v": 1, "slots": [{"slot", "name", "base", "t", "fields"}]}`). **Import** loads such a file (asking before it replaces saved slots), or a single preset: Copy settings text, or any JSON with a `fields` object, goes into the selected slot.
+- **From the controller**: "Save to current user slot" is an action like Reset preset. It is on the Record button by default, once Learn has seen Record, and any learned button or pad can take it from the Controls tab or Assign. A hardware save has no dialog, so it replaces the slot directly; Undo is there if that was a mistake.
+- Reset controller setup does not touch the User bank.
+
 ## MIDI controller: Learn and the performance map
 
 The page drives the synth through performance macros, not raw CC numbers. It learns which CC, Mackie fader (pitch bend) or note each physical control sends, and on which input, then maps each control to a macro. Details, the default map and the reasoning are in `../docs/midi-map.md`.
@@ -78,4 +89,5 @@ The page drives the synth through performance macros, not raw CC numbers. It lea
 - **Aftertouch** (slider 9) sends channel pressure, re-sent after each new note. The Oxygen MKV has no aftertouch, and the CS-80's touch expression depends on it.
 - **Reset preset** puts every panel control back to the loaded preset's stored values and discards live tweaks. Held notes keep playing, and macros pick up where their controls sit, so nothing jumps on the next move. Three ways: the Reset preset button beside the preset name (top of the preset list), a double-click on the name, or the Loop transport button (default map; Loop was free, pads 1 to 8 all have jobs and Stop is Stop all notes). Any learned button or pad can take it from the Controls tab or Assign.
 - **Favourites**: pads 5 to 8 and the four buttons in the Controls tab. Shift-click or long-press a button to store the current preset.
+- **Program change** loads a sound from the bank on screen (program 1 = the first sound). Bank select (CC 0, the MSB) sent before it picks the bank by its place in the bank list, counting from 0; the User bank is last (bank 10 with the current library). The Controls tab lists the numbers.
 - Advanced still offers the fixed CC maps (`oxygen49_map()` on CCs 20-28 and 102-109, and the proposed PM-80 map) for keyboards programmed to those numbers.

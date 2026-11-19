@@ -117,7 +117,9 @@ check(engineValue('I.a') > base['I.a'] && engineValue('I.fa') > base['I.fa'] && 
 cc(46, 64); cc(46, 0);
 check(engineValue('I.r') < base['I.r'] && engineValue('II.fr') < base['II.fr'], 'Release: shorter on both channels');
 cc(47, 64); cc(47, 0);
-check(near(engineValue('mix'), -1), 'Balance: full down = channel I only');
+check(near(engineValue('mix'), 1), 'Balance: full down = channel II only, as on the faceplate');
+cc(47, 127);
+check(near(engineValue('mix'), -1), 'Balance: full up = channel I only');
 perf.setMap({ s9: 'vibrato' }); // assignable; slider 9 defaults to aftertouch
 cc(48, 64); cc(48, 127);
 check(near(engineValue('sub_vco'), Math.max(1.5, base.sub_vco)), 'Vibrato: full up = 1.5 st sub-osc to pitch');

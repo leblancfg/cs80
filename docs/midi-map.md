@@ -15,7 +15,7 @@ Hardware controls drive performance macros. A macro moves several panel fields a
 | Slider 5 | Filter envelope depth (both) | `il` and `al`, toward 0 / 5 oct |
 | Slider 6 | Attack (VCA and filter env, both) | `a`, `fa`, +-4 oct in time |
 | Slider 7 | Release (both) | `r`, `fr`, +-3 oct in time |
-| Slider 8 | Channel I/II balance | `mix`, toward I only / II only |
+| Slider 8 | Channel I/II balance | `mix`: up toward I only, down toward II only, as the faceplate Mix lever |
 | Slider 9 | Aftertouch (swell) | absolute channel pressure 0..127, re-sent after each new note. The Oxygen MKV has no aftertouch, so this is the only way to reach the CS-80's After Brilliance, After Level and aftertouch vibrato. Vibrato depth (`sub_vco`, toward 0 / 1.5 st) is still a macro; the mod wheel also adds vibrato. |
 | Knob 1 | Chorus depth | `chorus_depth`, toward 0 / 1; switches the chorus on if the preset had it off |
 | Knob 2 | Chorus/tremolo speed | `chorus_hz` and `trem_hz`, +-2 oct |
@@ -181,7 +181,7 @@ PM-80 note: GLT says its IL and AL faders move the same way, while on the CS-80 
 | 79 | Sub osc VCA | 0 to 1 |
 | 80 | Feet I | 16', 8', 5 1/3', 4', 2 2/3', 2' (6 zones) |
 | 81 | Feet II | same |
-| 82 | Mix I/II | I only at 0, II only at 127 |
+| 82 | Mix I/II | I only at 127, II only at 0 (lever up = I, as on the faceplate) |
 | 83 | Pan spread (not on the CS-80) | 0 = mono, 127 = I left, II right |
 | 84 | Detune (channel II) | -100 to +100 cents |
 | 85 | Brilliance | -3 to +3 octaves on all four filters |

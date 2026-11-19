@@ -278,3 +278,35 @@ Two other choices were removed: the translator added 12% reverb to every preset 
 The old level guard allowed a six-note stress chord about +10 dBFS before the limiter. In the first corrected 137-patch selection, 55 required more than 6 dB of gain reduction and 24 exceeded 9 dB. With a +4 dBFS pre-limiter guard, the final 128 Arturia patches have a median 4.3 dB reduction on that stress chord, a maximum 6.4 dB, and none above 9 dB. The quieter percussive sounds keep more of their attack. `presets/arturia/spot-audit.md` has measurements for two sounds per bank, and `audition/v3/` has four MP3s.
 
 The rest of the V2-to-cs80v2 curves are still estimates, not an acoustic comparison with Arturia's plugin. “Faithful” in the data means no known route was omitted; it does not certify a sound match. The v0.1 release stays on hold until François listens.
+
+## 13. Level and limiter, v0.1.1 (November 2026)
+
+**What went wrong.** Played live, the library was too hot: raising any VCO's level slider usually meant pulling it back to about 60%, and the limiter often clipped audibly. The panel's level curves were not the cause. The VCF level, Sine and Level sliders are linear on the page, in the engine (`apply_param`) and in both translators, so they agree with each other. A log taper does not fit the hardware evidence better either: Yamaha's 22 preset tones from the owner's manual, played through channel I alone, spread by 11.2 dB (standard deviation) with linear sliders, 11.6 dB with x², and 12.3 dB with a 40 dB audio taper. The spread comes from the resonance-10 tones (Organ 1, Funky 1), not from the levels. The cause was the level budget set in section 11. The library builder put the chord test at -13 dBFS RMS, which with the chord's 12 dB crest factor already peaks at about -1 dBFS, and it allowed up to 8 dB of limiting on that chord (the guard `GR4_MAX`). Half the library was in the limiter at velocity 100 before anyone touched a slider. A harder chord, more notes or a raised slider went straight into a block-rate gain stage whose soft clip starts bending at -3 dBFS.
+
+**Level.** The target is now -18.5 dBFS RMS: a brass chord peaks at -6.7 dBFS (median of the Brass bank) before the limiter. The limiter is a safety net, not part of the level: the chord test may peak at most -0.5 dBFS before it (under 1 dB of gain reduction, inside the soft knee), and the six-note velocity-127 stress chord at most +3 dBFS (+10 before). The Core masters in `cs80v2/presets.hpp` and the init patch moved by the same 5.5 dB; plucks and clavs that a guard holds lower stay the same distance below the target as before.
+
+**Limiter.** `OutLimiter` in `cs80v2/dsp.hpp`, still at the end of `Engine::post`:
+
+- stereo-linked gain computer with a 4 dB soft knee around a -1.05 dBFS ceiling (log2 from the exponent bits plus a quadratic, 0.03 dB error, so the output stays under -1 dBFS);
+- 1.5 ms look-ahead (72 samples at 48 kHz, 71 of added latency): the gain is the running minimum of the computer's gain over the window (a monotonic queue), averaged over the same window, so each peak meets a smooth ramp that has already reached its gain;
+- program-dependent release: a fast follower (50 ms) and a slow one (attack 100 ms, release 700 ms), the lower applies. A lone transient recovers in about 50 ms; sustained limiting holds a steady gain instead of pumping on every waveform peak;
+- a tanh-shaped safety clip from -0.5 dBFS to 0 dBFS. The limiter keeps its output under -1 dBFS, so the clip never acted in any of the renders below;
+- when the block, the look-ahead window and both followers are idle, it only runs the delay.
+
+**Before and after** (all 160 presets; chord test = C3 E3 G3 C4 at velocity 100, stress = D2 F3 A3 C4 E4 G4 at velocity 127; each rendered with the limiter bypassed and on, gain reduction per sample on the louder channel, over samples above -60 dBFS):
+
+| | Chord before | Chord after | Stress before | Stress after |
+|-|-|-|-|-|
+| Median RMS / loudness | -13.0 dBFS / -11.2 LUFS | -18.5 dBFS / -16.7 LUFS | -11.8 dBFS / -9.7 LUFS | -16.6 dBFS / -14.7 LUFS |
+| Median peak before the limiter | -0.2 dBFS | -5.9 dBFS | +2.3 dBFS | -3.3 dBFS |
+| 90th percentile peak before the limiter | +7.0 dBFS | -1.3 dBFS | +9.5 dBFS | +1.0 dBFS |
+| Presets with any sample above 1 dB of gain reduction | 88 | 0 | 159 | 29 |
+| Presets with more than 1% of samples above 1 dB | 78 | 0 | 151 | 22 |
+| Mean share of samples above 1 dB | 7.2% | 0.0% | 27.1% | 0.4% |
+| Deepest gain reduction | 10.4 dB | 0.8 dB | 11.9 dB | 4.0 dB |
+
+The edit that prompted this: on every preset, both channels' VCF level pushed to full (where the channel sounds at all). Before, 121 presets spent more than 1% of the chord test above 1 dB of gain reduction (median 18.3% of samples, deepest 25.6 dB). After, 30 do (median 0%, deepest 10.7 dB).
+
+With the old library and only the new limiter, the chord test already went from 78 to 68 presets above 1%, and the stress chord's median share from 21.1% to 8.3%, because gain reduction now arrives as a ramp instead of a quarter-block step plus clipping.
+
+**Cost.** WebAssembly: 8 voices with every effect run 27.6x real time (26.4x with the old limiter; the difference is noise). ESP32-S3, static (`cs80v2/s3_count.sh`): the idle path is 10 instructions of peak scan plus 16 of delay per stereo sample, 26 in all (11 before). The limiting path has branches, so it was not counted as a loop. Its code is 345 instructions, but each sample runs only part of it: the gain computer only above the knee, the queue only when the gain changes. It has not been timed on hardware. The state grew from 16 bytes to about 2.6 KB (delay, average and queue rings of 128).

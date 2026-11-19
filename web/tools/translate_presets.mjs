@@ -74,7 +74,7 @@ function translate(pr) {
   if (q.channel_I.key_level !== q.channel_II.key_level || q.channel_I.key_brilliance !== q.channel_II.key_brilliance)
     notes.add('per-channel keyboard level/brilliance averaged (global in cs80v2)');
 
-  set('P_MIX', q.balance_I_II);
+  set('P_MIX', 1 - q.balance_I_II); // source 0 = channel I; the Mix lever is up (1) for I
   field('detune_cents', 25 * q.detune); // source detune is an amount; 1.0 = 25 cents on channel II
 
   // touch response: same for both channels; Level (the dynamics floor) leaves room for the touch terms

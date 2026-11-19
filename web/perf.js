@@ -27,10 +27,12 @@ const HARDWIRED_NOTE = { oxygen: 'The button under slider 9 is skipped: on the O
    A relative macro maps d in -1..1 (0 = the pickup position) to field values
    around the preset's own value ("base"). Field rules:
      ['tw', lo, hi]      d<0 moves base toward lo, d>0 toward hi
+     ['twr', lo, hi]     the same, reversed (d>0 toward lo)
      ['oct', span, lo, hi] base * 2^(d*span), clamped
    extra(d, base, out) adds dependent fields (switches an effect on, etc). */
 const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
 function rule(r, b, d) {
+  if (r[0] === 'twr') return rule(['tw', r[1], r[2]], b, -d); // reversed: up moves toward lo
   if (r[0] === 'tw') {
     const lo = Math.min(r[1], b), hi = Math.max(r[2], b);
     return d < 0 ? b + d * (b - lo) : b + d * (hi - b);
@@ -51,7 +53,7 @@ const MACROS = [
   { id: 'envdepth', l: 'Filter sweep', f: [...both('il', ['tw', 0, 5]), ...both('al', ['tw', 0, 5])], u: 'oct' },
   { id: 'attack', l: 'Attack', f: [...both('a', ['oct', 4, 0.002, 0.885]), ...both('fa', ['oct', 4, 0.002, 0.58])], u: 's' },
   { id: 'release', l: 'Release', f: [...both('r', ['oct', 3, 0.002, 11.5]), ...both('fr', ['oct', 3, 0.002, 11])], u: 's' },
-  { id: 'balance', l: 'Balance I/II', f: [['mix', ['tw', -1, 1]]] },
+  { id: 'balance', l: 'Balance I/II', f: [['mix', ['twr', -1, 1]]] }, // up = channel I (mix -1), as on the faceplate
   { id: 'vibrato', l: 'Vibrato', f: [['sub_vco', ['tw', 0, 1.5]]], u: 'st' },
   { id: 'chorus', l: 'Chorus', f: [['chorus.chorus_depth', ['tw', 0, 1]]], extra: switchOn('chorus.chorus_on', 'chorus.chorus_depth') },
   { id: 'modspeed', l: 'Chorus speed', f: [['chorus.chorus_hz', ['oct', 2, 0.4, 5]], ['chorus.trem_hz', ['oct', 2, 1.18, 16.3]]], u: 'Hz' },
@@ -71,6 +73,7 @@ const ACTIONS = [
   { id: 'bank_prev', l: 'Prev bank' }, { id: 'bank_next', l: 'Next bank' },
   { id: 'fav1', l: 'Favourite 1' }, { id: 'fav2', l: 'Favourite 2' }, { id: 'fav3', l: 'Favourite 3' }, { id: 'fav4', l: 'Favourite 4' },
   { id: 'preset_reset', l: 'Reset preset' },
+  { id: 'user_save', l: 'Save to current user slot' },
   { id: 'panic', l: 'Stop all notes' },
 ];
 const MACRO = Object.fromEntries(MACROS.map((m) => [m.id, m]));
@@ -81,7 +84,7 @@ const DEFAULT_MAP = {
   s1: 'brilliance', s2: 'lpf', s3: 'res', s4: 'hpf', s5: 'envdepth', s6: 'attack', s7: 'release', s8: 'balance', s9: 'pressure',
   k1: 'chorus', k2: 'modspeed', k3: 'echomix', k4: 'echotime', k5: 'reverb', k6: 'detune', k7: 'ring', k8: 'master',
   p1: 'preset_prev', p2: 'preset_next', p3: 'bank_prev', p4: 'bank_next', p5: 'fav1', p6: 'fav2', p7: 'fav3', p8: 'fav4',
-  t_loop: 'preset_reset', t_stop: 'panic',
+  t_loop: 'preset_reset', t_stop: 'panic', t_rec: 'user_save',
 };
 
 // Performance-wide settings applied after every preset load

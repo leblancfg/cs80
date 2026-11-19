@@ -103,6 +103,9 @@ API void cs80_render_block() { cs80_render(out_l, out_r, 128); }
    reduction) and the highest peak before the limiter */
 API float cs80_lim_gain() { float const g = engine.limiter.gmin; engine.limiter.gmin = engine.limiter.g; return g; }
 API float cs80_lim_peak_in() { float const p = engine.limiter.peak_in; engine.limiter.peak_in = 0.0f; return p; }
+/* the limiter's look-ahead delay in samples, and a bypass for level surveys (tools only) */
+API int cs80_lim_latency() { return engine.limiter.latency(); }
+API void cs80_lim_bypass(int on) { engine.limiter.bypass = on != 0; }
 
 /* ---- MIDI ------------------------------------------------------------------- */
 

@@ -2,6 +2,7 @@
 // The engine runs in cs80-worklet.js; this thread only sends messages.
 'use strict';
 
+const VERSION = '0.1.1';
 const $ = (id) => document.getElementById(id);
 const status = (msg, cls = '') => { const s = $('status'); s.textContent = msg; s.className = 'status ' + cls; };
 
@@ -12,10 +13,13 @@ let values = null;          // latest patch snapshot (Float32Array)
 let patchName = '';
 let library = null;         // public library: chart, Core, earlier and translated presets, by bank
 async function loadLibrary() {
-  const j = await fetch('presets-library.json?v=8').then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const j = await fetch('presets-library.json?v=9').then((r) => (r.ok ? r.json() : null)).catch(() => null);
   return j && Array.isArray(j.presets) && j.presets.length ? { kind: 'public', presets: j.presets } : null;
 }
+// the bank shown in the browser and the index loaded from it (-1: nothing from this bank is
+// loaded, e.g. an empty User bank); loaded is the preset object the sound came from
 let current = { bank: null, index: 0 }; // the library's first bank once it loads
+let loaded = null;
 const send = (m) => node && node.port.postMessage(m);
 
 /* ---- control definitions ----------------------------------------------------
@@ -23,7 +27,7 @@ const send = (m) => node && node.port.postMessage(m);
    cs80v2/midimap.hpp; used here only to place faders and to drive the
    field-only controls). p: the midimap Param that the fader sends.
    pl: the engraved panel label; cap: lever cap colour as on the CS-80
-   (w white, s grey, g green, r red, y yellow, k black; x = our extras);
+   (w white, s grey, g green, r red, y yellow, k black; x = echo, reverb and master, grey);
    sc: scale legend [top, bottom]. Layout and colours follow the faceplate
    (see README for the photo and diagrams used). */
 const FEET = ["16'", "8'", "5 1/3'", "4'", "2 2/3'", "2'"];
@@ -70,7 +74,7 @@ const ch = (c) => {
   ];
 };
 // the faceplate: the left block (two rows), the two channel rows, the
-// performance strip, then our extras in their own box
+// performance strip, then echo, reverb and master at its right end
 const FACE = {
   left: [
     [
@@ -99,7 +103,7 @@ const FACE = {
         { l: 'Tr depth', pl: 'Depth', f: 'chorus.trem_depth', p: 'P_TREM_DEPTH', m: ['lin', 1], cap: 's' },
       ]],
       ['Brilliance', [
-        { l: 'Mix I/II', pl: 'Mix', f: 'mix', p: 'P_MIX', m: ['bip', 1], cap: 'k', sc: ['II', 'I'] },
+        { l: 'Mix I/II', pl: 'Mix', f: 'mix', p: 'P_MIX', m: ['bip', -1], cap: 'k', sc: ['I', 'II'] }, // up = channel I (mix -1)
         { l: 'Brilliance', pl: 'Bril', f: 'brilliance', p: 'P_BRILLIANCE', m: ['bip', 3], u: 'oct', cap: 'g', sc: PM },
         { l: 'Resonance', pl: 'Reson', f: 'resonance', p: 'P_RESONANCE', m: ['lin', 1], cap: 'r' },
       ]],
@@ -236,7 +240,6 @@ function buildPanel() {
   const strip = el('div', 'fline fstrip');
   for (const [t, l] of FACE.strip) strip.appendChild(section(t, l));
   const ex = el('div', 'fextras');
-  ex.appendChild(el('div', 'fextitle', 'Extras (not on the CS-80)'));
   const exl = el('div', 'fline');
   for (const [t, l] of FACE.extras) exl.appendChild(section(t, l));
   ex.appendChild(exl);
@@ -430,42 +433,84 @@ window.addEventListener('resize', () => requestAnimationFrame(fitPanel));
 
 function banks() {
   // without the library (offline, fetch failed) the engine's built-in sounds are the only bank
-  if (!library) return { Core: info.presets.map((name, i) => ({ name, core: i })) };
   const b = {};
-  for (const p of library.presets) (b[p.bank] = b[p.bank] || []).push(p);
+  if (!library) b.Core = info.presets.map((name, i) => ({ name, core: i, bank: 'Core', slot: i + 1 }));
+  else for (const p of library.presets) (b[p.bank] = b[p.bank] || []).push(p);
+  b[USER_BANK] = userBank.map((u, i) => (u ? { ...u, bank: USER_BANK, slot: i + 1, origin: 'user' } : { name: 'empty', bank: USER_BANK, slot: i + 1, empty: true }));
   return b;
 }
+const firstLoadable = (list, from = 0) => { for (let k = 0; k < list.length; k++) { const i = (from + k) % list.length; if (!list[i].empty) return i; } return -1; };
 
 function buildBrowser() {
   const sel = $('bank');
   sel.innerHTML = '';
   const all = banks();
   if (!all[current.bank]) current = { bank: Object.keys(all)[0], index: 0 };
-  for (const name of Object.keys(all)) sel.add(new Option(`${name} (${all[name].length})`, name));
+  for (const name of Object.keys(all)) {
+    const n = name === USER_BANK ? `${all[name].filter((p) => !p.empty).length}/${USER_SLOTS}` : all[name].length;
+    sel.add(new Option(`${name} (${n})`, name));
+  }
   sel.value = current.bank;
-  sel.onchange = () => { current = { bank: sel.value, index: 0 }; listPresets(); loadCurrent(); };
+  sel.onchange = () => { midiBank = null; selectBank(sel.value); };
+  const names = Object.keys(all);
+  $('pc-hint').textContent = `Program change loads sounds from the bank on screen; bank select (CC 0) before it picks the bank: ${names.map((n, i) => `${i} ${n}`).join(', ')}. ` +
+    `User slots are programs 1 to ${USER_SLOTS} in bank ${names.indexOf(USER_BANK)}. "Save to current user slot" can go on any button (Record by default).`;
   listPresets();
-  $('preset-name').textContent = all[current.bank][current.index].name;
+  const p = all[current.bank][current.index];
+  if (p && !p.empty) $('preset-name').textContent = p.name;
+}
+
+/* show a bank and load its first sound; an empty User bank keeps the sound playing */
+function selectBank(name) {
+  const list = banks()[name];
+  if (!list) return;
+  const i = name === USER_BANK ? firstLoadable(list, userSlot) : 0;
+  current = { bank: name, index: i };
+  $('bank').value = name;
+  listPresets();
+  if (i >= 0) loadCurrent();
+  else { showSaveTarget(); status(`The User bank is empty. Press Save to keep the sound you hear in User ${userSlot + 1}.`); }
 }
 
 function listPresets() {
   const ol = $('presets');
   ol.innerHTML = '';
+  const user = current.bank === USER_BANK;
+  ol.classList.toggle('user', user);
   banks()[current.bank].forEach((p, i) => {
     const li = document.createElement('li');
     li.innerHTML = '<span></span>';
-    li.firstChild.textContent = p.name;
-    if (i === current.index) li.className = 'sel';
-    li.onclick = () => { current.index = i; loadCurrent(); };
+    li.firstChild.textContent = user ? `${i + 1}  ${p.name}` : p.name;
+    li.classList.toggle('sel', i === current.index);
+    li.classList.toggle('empty', !!p.empty);
+    li.classList.toggle('target', user && i === userSlot);
+    li.onclick = () => pickSlot(i);
     ol.appendChild(li);
   });
+}
+
+/* a click on a list entry: load it, or make an empty User slot the save target */
+function pickSlot(i) {
+  const p = banks()[current.bank][i];
+  if (!p) return;
+  if (p.empty) {
+    setUserSlot(i);
+    status(`User ${i + 1} is empty. Press Save to keep the sound you hear there.`);
+    return;
+  }
+  current.index = i;
+  loadCurrent();
 }
 
 function loadCurrent() {
   const list = banks()[current.bank];
   const p = list[current.index];
+  if (!p || p.empty) return;
+  loaded = p;
+  if (p.origin === 'user') userSlot = p.slot - 1;
   $('preset-name').textContent = p.name;
-  [...$('presets').children].forEach((li, i) => li.classList.toggle('sel', i === current.index));
+  [...$('presets').children].forEach((li, i) => { li.classList.toggle('sel', i === current.index); li.classList.toggle('target', current.bank === USER_BANK && i === userSlot); });
+  showSaveTarget();
   const infoEl = $('preset-info');
   infoEl.innerHTML = '';
   const add = (cls, text) => { const d = document.createElement('div'); if (cls) d.className = cls; d.textContent = text; infoEl.appendChild(d); };
@@ -474,7 +519,9 @@ function loadCurrent() {
     add('', p.reference ? `${p.bank} ${p.slot}: Core sound, built into the engine. ${p.reference}.` : 'Built-in patch.');
   } else {
     loadFields(p.fields);
-    if (p.origin === 'chart') {
+    if (p.origin === 'user') {
+      add('', `User ${p.slot}: saved ${new Date(p.t || 0).toLocaleString()}` + (p.base ? `, started from ${p.base}.` : '.'));
+    } else if (p.origin === 'chart') {
       add('', `${p.bank} ${p.slot}: built from a published CS-80 panel chart. ${p.reference}`);
       if (p.chart_source) add('', `Chart: ${p.chart_source}`);
     } else if (p.arturia_name) {
@@ -497,8 +544,29 @@ function loadFields(fields) {
 
 function step(d) {
   const list = banks()[current.bank];
-  current.index = (current.index + d + list.length) % list.length;
-  loadCurrent();
+  const n = list.length;
+  let i = current.index < 0 ? (d > 0 ? n - 1 : 0) : current.index;
+  for (let k = 0; k < n; k++) { i = (i + d + n) % n; if (!list[i].empty) { current.index = i; loadCurrent(); return; } }
+  status(`The ${current.bank} bank is empty.`);
+}
+
+/* MIDI program change: bank select (CC 0) picks the bank by its place in the list, else the
+   bank on screen; the program number picks the slot */
+let midiBank = null;
+function programChange(n) {
+  if (!info) return;
+  const all = banks(), names = Object.keys(all);
+  const bank = midiBank !== null && names[midiBank] ? names[midiBank] : current.bank;
+  const list = all[bank];
+  if (n >= list.length) { status(`Program ${n + 1}: the ${bank} bank has ${list.length} sounds.`, 'err'); return; }
+  if (bank !== current.bank) { current = { bank, index: -1 }; $('bank').value = bank; }
+  if (list[n].empty) {
+    listPresets(); setUserSlot(n);
+    status(`User ${n + 1} is empty. Save sends the sound you hear there.`);
+    return;
+  }
+  current.index = n;
+  listPresets(); loadCurrent();
 }
 
 const pct = (d) => (Math.abs(d) < 0.005 ? 'preset' : (d > 0 ? '+' : '') + Math.round(d * 100) + '%');
@@ -512,8 +580,7 @@ function settingsJSON() {
     const v = values[i], d = info.defaults[i];
     if (Math.abs(v - d) > 1e-6) fields[f] = +v.toPrecision(4);
   });
-  const list = banks()[current.bank];
-  return JSON.stringify({ v: 1, engine: 'cs80v2', base: `${current.bank}/${list[current.index].name}`, fields });
+  return JSON.stringify({ v: 1, engine: 'cs80v2', base: loaded ? `${loaded.bank}/${loaded.name}` : patchName, fields });
 }
 
 async function copySettings() {
@@ -593,12 +660,13 @@ function doAction(id) {
   if (id === 'panic') { $('panic').onclick(); return; }
   if (!info) { status('Start audio first.', 'err'); return; }
   if (id === 'preset_reset') resetPreset();
+  else if (id === 'user_save') quickSave(false);
   else if (id === 'preset_prev') step(-1);
   else if (id === 'preset_next') step(1);
   else if (id === 'bank_prev' || id === 'bank_next') {
     const names = Object.keys(banks()), i = names.indexOf(current.bank), d = id === 'bank_next' ? 1 : -1;
-    current = { bank: names[(i + d + names.length) % names.length], index: 0 };
-    $('bank').value = current.bank; listPresets(); loadCurrent();
+    midiBank = null;
+    selectBank(names[(i + d + names.length) % names.length]);
   } else if (/^fav\d$/.test(id)) recallFav(+id[3] - 1);
 }
 
@@ -622,7 +690,7 @@ function recallFav(i) {
   if (!f) { status(`Favourite ${i + 1} is empty. Shift-click it to save the current preset there.`); return; }
   if (!info) return;
   // a sound that moved bank (the old Core bank was split up) is still found by name
-  const all = banks(), inBank = (b) => (all[b] ? all[b].findIndex((p) => p.name === f.name) : -1);
+  const all = banks(), inBank = (b) => (all[b] ? all[b].findIndex((p) => !p.empty && p.name === f.name) : -1);
   const bank = inBank(f.bank) >= 0 ? f.bank : Object.keys(all).find((b) => inBank(b) >= 0);
   if (!bank) { status(`Favourite ${i + 1} (${f.name}) is no longer in the library.`, 'err'); return; }
   const j = inBank(bank);
@@ -632,8 +700,9 @@ function recallFav(i) {
 }
 function storeFav(i) {
   if (!info) { status('Start audio first.', 'err'); return; }
-  const p = banks()[current.bank][current.index];
-  favs[i] = { bank: current.bank, name: p.name };
+  const p = loaded;
+  if (!p) { status('Load a preset first.', 'err'); return; }
+  favs[i] = { bank: p.bank, name: p.name };
   save(LS.favs, favs); buildFavs();
   status(`Saved ${p.name} as favourite ${i + 1}.`, 'ok');
 }
@@ -651,6 +720,192 @@ function buildFavs() {
     b.onclick = (e) => { if (long) return; if (e.shiftKey) storeFav(i); else recallFav(i); };
     box.appendChild(b);
   });
+}
+
+/* ---- User bank: saved sounds, in localStorage -------------------------------------
+   USER_SLOTS slots, each null or {name, fields (every engine field by name), base, t}.
+   Save writes the sound as you hear it to the selected slot (userSlot); Save as picks a
+   name and slot. Replacing a different sound asks first, except from a hardware button
+   (no dialog there): Undo brings back the bank as it was before the last change. The
+   bank is kept apart from the controller setup, so Reset controller setup leaves it. */
+
+const USER_BANK = 'User', USER_SLOTS = 16;
+const USER_KEY = 'cs80.userbank', USER_SLOT_KEY = 'cs80.userslot';
+const cleanSlot = (u) => (u && typeof u.name === 'string' && u.fields && typeof u.fields === 'object' ? { name: u.name.slice(0, 40), fields: u.fields, base: u.base || '', t: u.t || 0 } : null);
+let userBank = (() => { const j = load(USER_KEY, null), a = j && Array.isArray(j.slots) ? j.slots : []; return Array.from({ length: USER_SLOTS }, (_, i) => cleanSlot(a[i])); })();
+let userSlot = Math.min(USER_SLOTS - 1, Math.max(0, +load(USER_SLOT_KEY, 0) || 0));
+let userUndo = null; // the bank before the last change
+const persistUser = () => { save(USER_KEY, { v: 1, slots: userBank }); save(USER_SLOT_KEY, userSlot); };
+const slotLabel = (i) => `User ${i + 1}` + (userBank[i] ? `: ${userBank[i].name}` : ' (empty)');
+const isLoadedUser = (i) => !!loaded && loaded.origin === 'user' && loaded.slot === i + 1;
+
+function setUserSlot(i) {
+  userSlot = i;
+  save(USER_SLOT_KEY, userSlot);
+  if (current.bank === USER_BANK) [...$('presets').children].forEach((li, k) => li.classList.toggle('target', k === i));
+  showSaveTarget();
+}
+function showSaveTarget() {
+  const u = userBank[userSlot];
+  $('save-target').textContent = `Saves to ${slotLabel(userSlot)}` + (u && !isLoadedUser(userSlot) ? ' (asks first)' : '') + '.';
+  $('user-rename').disabled = $('user-delete').disabled = !u;
+  $('user-undo').hidden = !userUndo;
+}
+// the bank dropdown counts, the list and the target line after the bank changed
+function refreshUser() {
+  persistUser();
+  const keep = current;
+  buildBrowser();
+  current = keep; $('bank').value = current.bank;
+  listPresets(); showSaveTarget();
+}
+const remember = () => { userUndo = userBank.slice(); };
+
+/* the patch as the engine has it now (edits still in flight are flushed first) */
+let patchWaiters = [];
+function freshFields() {
+  flushFields();
+  return new Promise((res) => {
+    const done = () => res(Object.fromEntries(info.fields.map((f, i) => [f, +values[i].toPrecision(7)])));
+    const t = setTimeout(() => { patchWaiters = patchWaiters.filter((w) => w !== done); done(); }, 400);
+    patchWaiters.push(() => { clearTimeout(t); done(); });
+    send({ type: 'getpatch' });
+  });
+}
+
+/* inline confirm in the save box: resolves true for the OK button */
+let askDone = null;
+function ask(text, ok) {
+  if (askDone) askDone(false);
+  $('save-ask-text').textContent = text;
+  $('save-ask-ok').textContent = ok;
+  $('save-ask').hidden = false;
+  $('save-ask-ok').focus();
+  return new Promise((res) => { askDone = (v) => { askDone = null; $('save-ask').hidden = true; res(v); }; });
+}
+$('save-ask-ok').onclick = () => askDone && askDone(true);
+$('save-ask-no').onclick = () => askDone && askDone(false);
+
+async function saveTo(slot, name, confirmIt) {
+  if (!info || !values) { status('Start audio first.', 'err'); return false; }
+  const prev = userBank[slot], self = isLoadedUser(slot);
+  if (prev && !self && confirmIt && !(await ask(`User ${slot + 1} holds "${prev.name}". Replace it?`, 'Replace'))) { status('Not saved.'); return false; }
+  const fields = await freshFields();
+  remember();
+  const base = loaded ? (loaded.origin === 'user' ? loaded.base : `${loaded.bank}/${loaded.name}`) : patchName;
+  userBank[slot] = { name: (name || '').trim().slice(0, 40) || 'Untitled', fields, base, t: Date.now() };
+  userSlot = slot;
+  current = { bank: USER_BANK, index: slot };
+  refreshUser();
+  loadCurrent(); // the stored copy becomes the preset: Reset preset and the macros start from it
+  status(`Saved "${userBank[slot].name}" to User ${slot + 1}.` + (prev && !self ? ` It replaced "${prev.name}"; Undo brings that back.` : ''), 'ok');
+  return true;
+}
+function quickSave(confirmIt = true) {
+  const u = userBank[userSlot];
+  return saveTo(userSlot, isLoadedUser(userSlot) && u ? u.name : (loaded ? loaded.name : patchName), confirmIt);
+}
+
+let formMode = null; // 'save' | 'rename'
+function openForm(mode) {
+  if (!info) { status('Start audio first.', 'err'); return; }
+  formMode = mode;
+  const sel = $('save-slot');
+  sel.innerHTML = '';
+  for (let i = 0; i < USER_SLOTS; i++) sel.add(new Option(slotLabel(i), String(i)));
+  const firstEmpty = userBank.findIndex((u) => !u);
+  sel.value = String(mode === 'rename' || !userBank[userSlot] || isLoadedUser(userSlot) || firstEmpty < 0 ? userSlot : firstEmpty);
+  sel.hidden = mode === 'rename';
+  $('save-name').value = mode === 'rename' ? userBank[userSlot].name : (loaded ? loaded.name : patchName);
+  $('save-ok').textContent = mode === 'rename' ? 'Rename' : 'Save';
+  $('save-form').hidden = false;
+  $('save-name').focus(); $('save-name').select();
+}
+const closeForm = () => { $('save-form').hidden = true; formMode = null; };
+$('save-form').onsubmit = async (e) => {
+  e.preventDefault();
+  const name = $('save-name').value.trim().slice(0, 40) || 'Untitled', mode = formMode;
+  closeForm();
+  if (mode === 'rename') {
+    const u = userBank[userSlot]; if (!u) return;
+    remember();
+    userBank[userSlot] = { ...u, name };
+    if (isLoadedUser(userSlot)) { loaded = { ...loaded, name }; $('preset-name').textContent = name; }
+    refreshUser();
+    status(`User ${userSlot + 1} renamed to "${name}".`, 'ok');
+  } else await saveTo(+$('save-slot').value, name, true);
+};
+$('save-cancel').onclick = closeForm;
+$('save-form').onkeydown = (e) => { if (e.key === 'Escape') { e.stopPropagation(); closeForm(); } };
+$('save').onclick = () => quickSave(true);
+$('save-as').onclick = () => openForm('save');
+$('user-rename').onclick = () => userBank[userSlot] && openForm('rename');
+$('user-delete').onclick = async () => {
+  const u = userBank[userSlot]; if (!u) return;
+  if (!(await ask(`Delete "${u.name}" from User ${userSlot + 1}?`, 'Delete'))) return;
+  remember();
+  userBank[userSlot] = null;
+  if (current.bank === USER_BANK && current.index === userSlot) current.index = -1;
+  if (isLoadedUser(userSlot)) loaded = { ...loaded, origin: 'deleted' }; // the sound keeps playing
+  refreshUser();
+  status(`Deleted "${u.name}" from User ${userSlot + 1}. Undo brings it back.`, 'ok');
+};
+$('user-undo').onclick = () => {
+  if (!userUndo) return;
+  userBank = userUndo; userUndo = null;
+  if (current.bank === USER_BANK && current.index >= 0 && !userBank[current.index]) current.index = -1;
+  refreshUser();
+  status('User bank restored.', 'ok');
+};
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && !e.altKey && !e.shiftKey && e.code === 'KeyS') {
+    e.preventDefault();
+    if (!$('save-form').hidden) $('save-form').requestSubmit(); else quickSave(true);
+  }
+});
+
+/* Export / Import: {format: 'cs80v2-user-bank', v: 1, slots: [{slot, name, base, t, fields}]}.
+   Import also takes Copy settings text or a single exported preset ({fields}), into the selected slot. */
+function userBankJSON() {
+  const slots = userBank.map((u, i) => (u ? { slot: i + 1, ...u } : null)).filter(Boolean);
+  return { format: 'cs80v2-user-bank', v: 1, engine: 'cs80v2', app: VERSION, exported: new Date().toISOString(), slots };
+}
+$('user-export').onclick = () => {
+  const j = userBankJSON();
+  if (!j.slots.length) { status('The User bank is empty, so there is nothing to export yet.', 'err'); return; }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(j, null, 1)], { type: 'application/json' }));
+  a.download = 'cs80-user-bank.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  status(`Exported ${j.slots.length} User preset${j.slots.length > 1 ? 's' : ''} to cs80-user-bank.json.`, 'ok');
+};
+$('user-import').onclick = () => $('user-file').click();
+$('user-file').onchange = async (e) => {
+  const f = e.target.files[0]; e.target.value = '';
+  if (f) await importUser(await f.text());
+};
+async function importUser(text) {
+  let entries;
+  try {
+    const j = JSON.parse(text);
+    const ok = (fl) => fl && typeof fl === 'object' && Object.values(fl).every((v) => typeof v === 'number' && Number.isFinite(v));
+    if (j && j.format === 'cs80v2-user-bank' && Array.isArray(j.slots)) {
+      entries = j.slots.map((u) => ({ i: (u.slot | 0) - 1, u: cleanSlot(u) }));
+      if (entries.some((x) => x.i < 0 || x.i >= USER_SLOTS || !x.u || !ok(x.u.fields))) throw new Error('a slot is out of range or has no sound');
+    } else if (j && ok(j.fields) && Object.keys(j.fields).length) {
+      const name = j.name || (j.base ? String(j.base).split('/').pop() : 'Imported');
+      entries = [{ i: userSlot, u: { name: String(name).slice(0, 40), fields: j.fields, base: j.base || '', t: Date.now() } }];
+    } else throw new Error('this is not a User bank or settings file');
+  } catch (err) { status('Could not import: ' + err.message, 'err'); return false; }
+  const hit = entries.filter((x) => userBank[x.i]);
+  if (hit.length && !(await ask(`Import replaces ${hit.length} User preset${hit.length > 1 ? 's' : ''} (${hit.map((x) => 'User ' + (x.i + 1)).join(', ')}). Replace?`, 'Replace'))) { status('Nothing imported.'); return false; }
+  remember();
+  for (const x of entries) userBank[x.i] = x.u;
+  current = { bank: USER_BANK, index: -1 };
+  refreshUser();
+  status(`Imported ${entries.length} User preset${entries.length > 1 ? 's' : ''}.` + (hit.length ? ' Undo brings back what they replaced.' : ''), 'ok');
+  return true;
 }
 
 /* ---- Controls tab: what each hardware control does ---------------------------- */
@@ -1078,9 +1333,13 @@ function onMidi(e, input) {
     case 0x80: noteOff(d1); break;
     case 0xa0: send({ type: 'pp', note: d1, value: d2 }); break;
     case 0xb0:
+      // bank select (MSB; the LSB is ignored): takes effect at the next program change
+      if (d1 === 0) { midiBank = d2; break; }
+      if (d1 === 32) break;
       // performance mode: only the standard performance CCs reach the engine
       if (ccMode === 'perf' && ![1, 7, 11, 64, 120, 123].includes(d1)) break;
       send({ type: 'cc', num: d1, value: d2 }); if (d1 === 1) $('mod').value = d2; if (d1 === 64) $('sustain').checked = d2 >= 64; break;
+    case 0xc0: programChange(d1); break;
     case 0xd0: atLevel = 0; send({ type: 'cp', value: d1 }); $('pressure').value = d1; break;
     case 0xe0: send({ type: 'bend', value: d1 | (d2 << 7) }); $('bend').value = (d1 | (d2 << 7)) - 8192; break;
   }
@@ -1290,7 +1549,7 @@ async function start() {
     ctx = new AudioContext({ latencyHint: 0 });
     if (ctx.sampleRate > 48000) { await ctx.close(); ctx = new AudioContext({ sampleRate: 48000, latencyHint: 0 }); }
     const [bytes, lib] = await Promise.all([
-      fetch('cs80v2.wasm?v=6').then((r) => { if (!r.ok) throw new Error('cs80v2.wasm: HTTP ' + r.status); return r.arrayBuffer(); }),
+      fetch('cs80v2.wasm?v=7').then((r) => { if (!r.ok) throw new Error('cs80v2.wasm: HTTP ' + r.status); return r.arrayBuffer(); }),
       loadLibrary(),
       ctx.audioWorklet.addModule('cs80-worklet.js?v=4'),
     ]);
@@ -1331,6 +1590,7 @@ function onWorklet(e) {
       values = m.values; patchName = m.name;
       refreshPanel();
       perfPatch(m);
+      if (patchWaiters.length) { const w = patchWaiters; patchWaiters = []; w.forEach((f) => f()); }
       break;
     case 'meter': showMeter(m); break;
     case 'cpu': {
@@ -1350,6 +1610,8 @@ function onWorklet(e) {
 buildKeyboard();
 showKbd();
 buildFavs();
+showSaveTarget();
+$('app-version').textContent = 'v' + VERSION;
 $('cc-map').value = ccMode;
 buildLegend();
 initMidi();

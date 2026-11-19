@@ -62,7 +62,7 @@ function build(ch) {
   set('P_FEET_I', enumX(FEET.indexOf(p.feet_I ?? "8'"), 6));
   set('P_FEET_II', enumX(FEET.indexOf(p.feet_II ?? "8'"), 6));
   set('P_DETUNE', twoWay(p.detune));
-  set('P_MIX', twoWay(p.mix));
+  set('P_MIX', twoWay(-(p.mix ?? 0))); // + (toward the player) is down, channel II
   set('P_BRILLIANCE', twoWay(p.brilliance));
   set('P_RESONANCE', lever(p.resonance));
   const sub = p.sub || {};

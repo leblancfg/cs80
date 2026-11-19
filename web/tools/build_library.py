@@ -9,11 +9,17 @@ Every bank lists, in this order:
      as many as fit, so the library holds 128 to 160 sounds.
 
 All but the Core sounds are level-matched here with the Arturia translator's chord test
-(presets/arturia/tools/engine.mjs): -13 dBFS RMS over the sounding frames. Two guards keep
-the -1 dBFS output limiter from flattening plucks: at most GR4_MAX of gain reduction on that
-chord, and the six-note full-velocity stress chord at most PRE6_MAX before the limiter.
-A sound that hits a guard stays quieter than -13 dBFS. The Core masters live in presets.hpp
-and are only measured.
+(presets/arturia/tools/engine.mjs): -18.5 dBFS RMS over the sounding frames, which puts a
+brass chord's peaks near -6.5 dBFS (saw and pulse chords have about 12 dB of crest factor).
+The output limiter is a safety net, not part of the level: the level chord may peak at most
+PRE4_MAX before it (under 1 dB of gain reduction in its soft knee), and the six-note
+full-velocity stress chord at most PRE6_MAX. A sound that hits a guard (plucks, clavs, very
+resonant patches) stays quieter than the target. The Core masters live in presets.hpp and are
+only measured.
+
+v0.1.1 lowered the target from -13 dBFS and dropped the old allowance of 8 dB of limiting on
+the level chord: half the library sat in the limiter at the chord test, and raising any level
+slider pushed it into audible clipping.
 
     python3 web/tools/build_library.py
 """
@@ -35,10 +41,9 @@ BANKS = ["Brass", "Strings", "Pads", "Leads", "Keys and Organs", "Bass", "Bells 
 TOTAL_MAX = 160
 BANK_TARGET = 14   # Arturia translations fill a bank up to this size...
 ARTURIA_MIN = 2    # ...and every bank keeps at least this many of them
-TARGET_DBFS = -13.0
-CEIL = 0.891251    # the limiter's ceiling, -1 dBFS (cs80v2/dsp.hpp OutLimiter)
-GR4_MAX = 8.0      # dB of limiting allowed on the level chord; the Core clav takes 10
-PRE6_MAX = 3.16    # +10 dBFS before the limiter on the six-note stress chord
+TARGET_DBFS = -18.5
+PRE4_MAX = 0.944   # -0.5 dBFS before the limiter on the level chord (0.8 dB into its soft knee)
+PRE6_MAX = 1.413   # +3 dBFS before the limiter on the six-note stress chord
 MASTER_MAX = 8.0
 
 # Core sounds (cs80v2/presets.hpp, in engine order) and the bank each one sounds like
@@ -138,7 +143,7 @@ def level(presets):
         for k, p in ids.items():
             s, f = m[k], p["fields"]
             up = min(10 ** ((TARGET_DBFS - s["dbfs"]) / 20), MASTER_MAX / f["master"],
-                     CEIL * 10 ** (GR4_MAX / 20) / s["pre4"], PRE6_MAX / s["pre6"])
+                     PRE4_MAX / s["pre4"], PRE6_MAX / s["pre6"])
             f["master"] = float(f"{f['master'] * up:.4g}")
             settled = settled and abs(20 * math.log10(up)) < 0.2
         if settled:

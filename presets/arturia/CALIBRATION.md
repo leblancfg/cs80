@@ -80,6 +80,6 @@ The Yamaha Organ 1 and Funky 1 tones put both resonances at 10 (Q ≈ 17 in cs80
 
 Spot audit (22 sounds, `spot-audit.md`): Arturia detune beats on A4 are 0.7–1.7 Hz. Chart strings beat at 2 Hz (±8 ct from the manual's "slightly"). Releases moved to 0.45 s (strings), 0.6–1.05 s (pads) and 0.95 s (timpani), where they had been 0.05–0.1 s. Vibrato from "slightly down" sub-osc VCO reads 8–19 ct of wobble, about a player's vibrato. Porcaro Brass reaches its level in about 0.2 s; the t90 column's 2.25 s reflects a flat sustain, not a slow swell.
 
-Library: 160 sounds = 23 chart + 8 Core + 95 scouted + 34 Arturia. All sit at −13 dBFS RMS, except plucks and clavs that the limiter guard holds lower (down to −24.8 dBFS for the scouted Honky Clav).
+Library: 160 sounds = 23 chart + 8 Core + 95 scouted + 34 Arturia. Since v0.1.1 they sit at −18.5 dBFS RMS (−13 before), with the output limiter kept out of the level chord; plucks, clavs and the most resonant patches that the peak guards hold lower keep the same distance below the target as before (down to −29.8 dBFS for the Arturia Wonder Clav).
 
 Still open: detune sign (follows the old rule); CS-80 resonance Q at 10; whether V3/V4 screenshots share V2's detune curve. Charts from Arturia screenshots enter their detune as centre.

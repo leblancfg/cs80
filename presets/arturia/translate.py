@@ -30,7 +30,7 @@ WASM_SNAPSHOT = os.path.join(HERE, "tools", "cs80v2.wasm")
 # Level of the chord test (C3 E3 G3 C4 at velocity 100): RMS over the frames within 20 dB of the
 # loudest, the same target as the Core presets (cs80v2/presets.hpp). The engine's output limiter
 # (ceiling -1 dBFS) takes the peaks, so plucks and clavs sit as loud as pads.
-TARGET_DBFS = -13.0
+TARGET_DBFS = -13.0  # first pass only: web/tools/build_library.py sets the shipped level (-18.5 dBFS since v0.1.1)
 # Keep the six-note, full-velocity chord near +4 dBFS before the -1 dBFS
 # limiter. The old +10 dBFS allowance drove 55/137 curated patches beyond
 # 6 dB of gain reduction, flattening their transients on dense chords.

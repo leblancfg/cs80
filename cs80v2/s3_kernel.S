@@ -14,68 +14,50 @@ Disassembly of section .literal:
   18:	c0555555 	
   1c:	3e99999a 	
 	...
-  78:	00001812 	
-  7c:	01234567 	
-  80:	00010000 	
-  84:	0000bb80 	
-  88:	0000ffff 	
-  8c:	9e3779b9 	
-  90:	2545f491 	
-  94:	8ff34781 	
-  98:	00000ef8 	
-  9c:	3f800000 	
-  a0:	3e99999a 	
-  a4:	3f19999a 	
-  a8:	3f000000 	
-  ac:	42200000 	
-  b0:	44fa0000 	
-  b4:	3dcccccd 	
-  b8:	3c23d70a 	
-  bc:	3ba3d70a 	
-  c0:	3eb33333 	
-  c4:	40000000 	
-  c8:	3e19999a 	
-  cc:	3f333333 	
-  d0:	3d4ccccd 	
-  d4:	41f00000 	
-  d8:	3ef020c5 	
-  dc:	455ac000 	
-  e0:	42dc0000 	
-  e4:	43be0000 	
-  e8:	400ccccd 	
-  ec:	3fcccccd 	
-  f0:	3f666666 	
-  f4:	3db851ec 	
-  f8:	3f59999a 	
-  fc:	3f99999a 	
- 100:	3ee66666 	
- 104:	3ecccccd 	
- 108:	3f400000 	
- 10c:	42b40000 	
- 110:	440c0000 	
- 114:	3e4ccccd 	
- 118:	3f4ccccd 	
- 11c:	3fd9999a 	
- 120:	3e0f5c29 	
- 124:	3df5c28f 	
- 128:	3f0ccccd 	
- 12c:	40c00000 	
- 130:	40a66666 	
- 134:	be4ccccd 	
- 138:	3ee8f5c3 	
- 13c:	473b8000 	
- 140:	37aec33e 	
- 144:	44bb8000 	
- 148:	43700000 	
- 14c:	c3855556 	
- 150:	c0c90fdb 	
- 154:	30a00000 	
- 158:	2e23d70a 	
- 15c:	2df5c28f 	
- 160:	2dcccccd 	
- 164:	30000000 	
+  64:	0000bb80 	
+  68:	3f800000 	
+  6c:	3e99999a 	
+  70:	3f19999a 	
+  74:	3f000000 	
+  78:	42200000 	
+  7c:	44fa0000 	
+  80:	3dcccccd 	
+  84:	3c23d70a 	
+  88:	3ba3d70a 	
+  8c:	3eb33333 	
+  90:	40000000 	
+  94:	3f333333 	
+  98:	3d4ccccd 	
+  9c:	41f00000 	
+  a0:	3ef020c5 	
+  a4:	455ac000 	
+  a8:	42dc0000 	
+  ac:	3e19999a 	
+  b0:	43be0000 	
+  b4:	400ccccd 	
+  b8:	3fcccccd 	
+  bc:	3f666666 	
+  c0:	3db851ec 	
+  c4:	3f59999a 	
+  c8:	3f99999a 	
+  cc:	3ee66666 	
+  d0:	3ecccccd 	
+  d4:	3f400000 	
+  d8:	42b40000 	
+  dc:	440c0000 	
+  e0:	3e4ccccd 	
+  e4:	3f4ccccd 	
+  e8:	3fd9999a 	
+  ec:	3e0f5c29 	
+  f0:	3df5c28f 	
+  f4:	3f0ccccd 	
+  f8:	40c00000 	
+  fc:	40a66666 	
+ 100:	be4ccccd 	
+ 104:	473b8000 	
+ 108:	3ea4dd2f 	
 	...
- 1c4:	3e99999a 	
+ 158:	3e99999a 	
 	...
 
 Disassembly of section .literal._ZN6cs80v26Chorus7processEPKfS2_PfS3_:
@@ -251,19 +233,66 @@ Disassembly of section .literal._ZN6cs80v25PlateIfLi2EE4initEi:
   40:	3f7fdf3b 	
 	...
 
+Disassembly of section .literal._ZN6cs80v26Engine4initEfRKNS_5PatchE:
+
+00000000 <.literal._ZN6cs80v26Engine4initEfRKNS_5PatchE>:
+	...
+   8:	00006a7c 	
+   c:	01234567 	
+  10:	00001040 	
+  14:	00004e60 	
+  18:	00010000 	
+  1c:	000068fc 	
+  20:	00005eb8 	
+  24:	000062b8 	
+  28:	0000ffff 	
+  2c:	9e3779b9 	
+  30:	2545f491 	
+  34:	00000d20 	
+  38:	00000ef8 	
+  3c:	3f800000 	
+  40:	3d000000 	
+  44:	43700000 	
+  48:	3f000000 	
+  4c:	3ac49ba6 	
+  50:	c1a00000 	
+  54:	c1200000 	
+  58:	bfb6db6e 	
+  5c:	c0c90fdb 	
+  60:	30a00000 	
+  64:	2e23d70a 	
+  68:	2df5c28f 	
+  6c:	2dcccccd 	
+  70:	30000000 	
+	...
+
 Disassembly of section .literal._ZN6cs80v210OutLimiter7processILi32EEEvPfS2_:
 
 00000000 <.literal._ZN6cs80v210OutLimiter7processILi32EEEvPfS2_>:
-   0:	3f5765aa 	
-   4:	3f353bf3 	
-   8:	3e000000 	
-   c:	3f800000 	
-  10:	3d000000 	
-  14:	3f898b0e 	
-  18:	3e3bb450 	
-  1c:	3fae9289 	
-  20:	3f7fff58 	
-  24:	00000000 	
+   0:	3f800000 	
+   4:	3f34319c 	
+   8:	3f71adfb 	
+   c:	40019420 	
+  10:	beb08ff9 	
+  14:	3f2cc4c7 	
+  18:	40c0a8c1 	
+  1c:	3f5529cf 	
+  20:	3f866666 	
+  24:	40433333 	
+  28:	3e000000 	
+  2c:	c1f00000 	
+  30:	be2a152d 	
+  34:	3e67aae8 	
+  38:	3da1d5b6 	
+  3c:	3f31f73a 	
+  40:	3f7fff58 	
+  44:	3f7ff972 	
+  48:	3f8e5205 	
+  4c:	41d80000 	
+  50:	418f034c 	
+  54:	41100000 	
+  58:	3d652050 	
+	...
 
 Disassembly of section .literal._ZN6cs80v25PlateIfLi1EE4initEi:
 
@@ -336,7 +365,7 @@ Disassembly of section .literal._ZN6cs80v26Engine4postEPfS1_S1_S1_:
 00000000 <.literal._ZN6cs80v26Engine4postEPfS1_S1_S1_>:
    0:	00004e60 	
    4:	00005ea0 	
-   8:	00005ec8 	
+   8:	000068fc 	
    c:	00005eb8 	
   10:	3f000000 	
 	...
@@ -397,730 +426,431 @@ Disassembly of section .text:
 
 00000000 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0>:
    0:	006136        	entry	a1, 48
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	ca5400        	float.s	f5, a4, 0
    9:	fa0850        	wfr	f0, a8
-   c:	000081        	l32r	a8, fffc000c <engine+0xfffbf810>
+   c:	000081        	l32r	a8, fffc000c <engine+0xfffbeddc>
    f:	1a2050        	sub.s	f2, f0, f5
   12:	fa0850        	wfr	f0, a8
-  15:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
+  15:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
   18:	0c0163        	lsi	f6, a1, 48
   1b:	fa1850        	wfr	f1, a8
   1e:	1a3510        	sub.s	f3, f5, f1
   21:	2a2200        	mul.s	f2, f2, f0
-  24:	000081        	l32r	a8, fffc0024 <engine+0xfffbf828>
-  27:	01d3b2        	addmi	a11, a3, 0x100
+  24:	000081        	l32r	a8, fffc0024 <engine+0xfffbedf4>
+  27:	01d3c2        	addmi	a12, a3, 0x100
   2a:	fa8850        	wfr	f8, a8
   2d:	2a3300        	mul.s	f3, f3, f0
   30:	080c      	movi.n	a8, 0
   32:	fa1850        	wfr	f1, a8
   35:	6b0280        	ole.s	b0, f2, f8
-  38:	000081        	l32r	a8, fffc0038 <engine+0xfffbf83c>
+  38:	000081        	l32r	a8, fffc0038 <engine+0xfffbee08>
   3b:	cb2800        	movf.s	f2, f8, b0
-  3e:	9b4b42        	s8i	a4, a11, 155
+  3e:	9b4c42        	s8i	a4, a12, 155
   41:	fa0850        	wfr	f0, a8
-  44:	5fd292        	addmi	a9, a2, 0x5f00
+  44:	6ad2a2        	addmi	a10, a2, 0x6a00
   47:	6b0120        	ole.s	b0, f1, f2
-  4a:	3c29a2        	l32i	a10, a9, 240
-  4d:	cb2100        	movf.s	f2, f1, b0
-  50:	1a9060        	sub.s	f9, f0, f6
-  53:	6b0380        	ole.s	b0, f3, f8
-  56:	0a6600        	add.s	f6, f6, f0
-  59:	0000c1        	l32r	a12, fffc005c <engine+0xfffbf860>
-  5c:	cb3800        	movf.s	f3, f8, b0
-  5f:	9e0b82        	l8ui	a8, a11, 158
-  62:	aa1b      	addi.n	a10, a10, 1
+  4a:	9ab8      	l32i.n	a11, a10, 36
+  4c:	cb2100        	movf.s	f2, f1, b0
+  4f:	1a9060        	sub.s	f9, f0, f6
+  52:	000091        	l32r	a9, fffc0054 <engine+0xfffbee24>
+  55:	6b0380        	ole.s	b0, f3, f8
+  58:	0a6600        	add.s	f6, f6, f0
+  5b:	cb3800        	movf.s	f3, f8, b0
+  5e:	9e0c82        	l8ui	a8, a12, 158
+  61:	fa4200        	mov.s	f4, f2
   64:	5a6352        	s32i	a5, a3, 0x168
   67:	5b4313        	ssi	f1, a3, 0x16c
-  6a:	fa4200        	mov.s	f4, f2
-  6d:	6b0130        	ole.s	b0, f1, f3
-  70:	fa2550        	wfr	f2, a5
-  73:	6763c2        	s32i	a12, a3, 0x19c
-  76:	3c69a2        	s32i	a10, a9, 240
-  79:	cb3100        	movf.s	f3, f1, b0
-  7c:	2a2220        	mul.s	f2, f2, f2
-  7f:	090c      	movi.n	a9, 0
-  81:	626362        	s32i	a6, a3, 0x188
-  84:	636372        	s32i	a7, a3, 0x18c
-  87:	644393        	ssi	f9, a3, 0x190
-  8a:	654363        	ssi	f6, a3, 0x194
-  8d:	604343        	ssi	f4, a3, 0x180
-  90:	614333        	ssi	f3, a3, 0x184
-  93:	929a      	add.n	a9, a2, a9
-  95:	4b0933        	lsi	f3, a9, 0x12c
-  98:	0189      	s32i.n	a8, a1, 0
-  9a:	2a2230        	mul.s	f2, f2, f3
-  9d:	5963a2        	s32i	a10, a3, 0x164
-  a0:	60d2a2        	addmi	a10, a2, 0x6000
-  a3:	fa2260        	neg.s	f2, f2
-  a6:	5d4323        	ssi	f2, a3, 0x174
-  a9:	5b0923        	lsi	f2, a9, 0x16c
-  ac:	4b0120        	olt.s	b0, f1, f2
-  af:	031076        	bt	b0, b6 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0xb6>
-  b2:	000206        	j	be <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0xbe>
-  b5:	00          	.byte	00
-  b6:	0a98      	l32i.n	a9, a10, 0
-  b8:	ca2900        	float.s	f2, a9, 0
-  bb:	bb5290        	movgez.s	f5, f2, a9
-  be:	5c4353        	ssi	f5, a3, 0x170
-  c1:	030a23        	lsi	f2, a10, 12
-  c4:	0188      	l32i.n	a8, a1, 0
-  c6:	5e4323        	ssi	f2, a3, 0x178
-  c9:	040a23        	lsi	f2, a10, 16
-  cc:	150c      	movi.n	a5, 1
-  ce:	5f4323        	ssi	f2, a3, 0x17c
-  d1:	30a850        	xor	a10, a8, a5
-  d4:	20a162        	movi	a6, 0x120
-  d7:	a04ba2        	s8i	a10, a11, 160
-  da:	1cc332        	addi	a3, a3, 28
-  dd:	48c272        	addi	a7, a2, 72
-  e0:	806260        	add	a6, a2, a6
-  e3:	00a042        	movi	a4, 0
-  e6:	0188      	l32i.n	a8, a1, 0
-  e8:	0000a1        	l32r	a10, fffc00e8 <engine+0xfffbf8ec>
-  eb:	01d856        	bnez	a8, 10c <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x10c>
-  ee:	0a4313        	ssi	f1, a3, 40
-  f1:	094313        	ssi	f1, a3, 36
-  f4:	014313        	ssi	f1, a3, 4
-  f7:	004313        	ssi	f1, a3, 0
-  fa:	144313        	ssi	f1, a3, 80
-  fd:	124313        	ssi	f1, a3, 72
- 100:	000723        	lsi	f2, a7, 0
- 103:	1b4313        	ssi	f1, a3, 108
- 106:	fa2260        	neg.s	f2, f2
- 109:	164323        	ssi	f2, a3, 88
- 10c:	020753        	lsi	f5, a7, 8
- 10f:	220323        	lsi	f2, a3, 136
- 112:	010743        	lsi	f4, a7, 4
- 115:	160363        	lsi	f6, a3, 88
- 118:	2a5250        	mul.s	f5, f2, f5
- 11b:	1a7460        	sub.s	f7, f4, f6
- 11e:	750233        	lsi	f3, a2, 0x1d4
- 121:	000081        	l32r	a8, fffc0124 <engine+0xfffbf928>
- 124:	2a3350        	mul.s	f3, f3, f5
- 127:	6b0640        	ole.s	b0, f6, f4
- 12a:	fa5400        	mov.s	f5, f4
- 12d:	fa6850        	wfr	f6, a8
- 130:	4a5760        	madd.s	f5, f7, f6
- 133:	1d0c      	movi.n	a13, 1
- 135:	c3d400        	movf	a13, a4, b0
- 138:	684352        	s8i	a5, a3, 104
- 13b:	194343        	ssi	f4, a3, 100
- 13e:	174353        	ssi	f5, a3, 92
- 141:	6943d2        	s8i	a13, a3, 105
- 144:	6b0030        	ole.s	b0, f0, f3
- 147:	fab340        	rfr	a11, f3
- 14a:	260076        	bf	b0, 174 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x174>
- 14d:	014123        	ssi	f2, a1, 4
- 150:	000081        	l32r	a8, fffc0150 <engine+0xfffbf954>
- 153:	0008e0        	callx8	a8
- 156:	000081        	l32r	a8, fffc0158 <engine+0xfffbf95c>
- 159:	0008e0        	callx8	a8
- 15c:	000081        	l32r	a8, fffc015c <engine+0xfffbf960>
- 15f:	fa3a50        	wfr	f3, a10
- 162:	fa0850        	wfr	f0, a8
- 165:	080c      	movi.n	a8, 0
- 167:	1a3030        	sub.s	f3, f0, f3
- 16a:	010123        	lsi	f2, a1, 4
- 16d:	fa1850        	wfr	f1, a8
- 170:	0000c6        	j	177 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x177>
- 173:	00          	.byte	00
- 174:	fa3000        	mov.s	f3, f0
- 177:	184333        	ssi	f3, a3, 96
- 17a:	080733        	lsi	f3, a7, 32
- 17d:	1b0343        	lsi	f4, a3, 108
- 180:	2a3230        	mul.s	f3, f2, f3
- 183:	1a5040        	sub.s	f5, f0, f4
- 186:	750223        	lsi	f2, a2, 0x1d4
- 189:	000081        	l32r	a8, fffc018c <engine+0xfffbf990>
- 18c:	2a2230        	mul.s	f2, f2, f3
- 18f:	6b0400        	ole.s	b0, f4, f0
- 192:	fa3000        	mov.s	f3, f0
- 195:	fa4850        	wfr	f4, a8
- 198:	4a3540        	madd.s	f3, f5, f4
- 19b:	1d0c      	movi.n	a13, 1
- 19d:	c3d400        	movf	a13, a4, b0
- 1a0:	7c4352        	s8i	a5, a3, 124
- 1a3:	1e4303        	ssi	f0, a3, 120
- 1a6:	7d43d2        	s8i	a13, a3, 125
- 1a9:	1c4333        	ssi	f3, a3, 112
- 1ac:	6b0020        	ole.s	b0, f0, f2
- 1af:	0000a1        	l32r	a10, fffc01b0 <engine+0xfffbf9b4>
- 1b2:	fab240        	rfr	a11, f2
- 1b5:	1f0076        	bf	b0, 1d8 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1d8>
- 1b8:	000081        	l32r	a8, fffc01b8 <engine+0xfffbf9bc>
- 1bb:	0008e0        	callx8	a8
- 1be:	000081        	l32r	a8, fffc01c0 <engine+0xfffbf9c4>
- 1c1:	0008e0        	callx8	a8
- 1c4:	000081        	l32r	a8, fffc01c4 <engine+0xfffbf9c8>
- 1c7:	fa2a50        	wfr	f2, a10
- 1ca:	fa0850        	wfr	f0, a8
- 1cd:	080c      	movi.n	a8, 0
- 1cf:	1a2020        	sub.s	f2, f0, f2
- 1d2:	fa1850        	wfr	f1, a8
- 1d5:	000086        	j	1db <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1db>
- 1d8:	fa2000        	mov.s	f2, f0
- 1db:	1d4323        	ssi	f2, a3, 116
- 1de:	b0a082        	movi	a8, 176
- 1e1:	6cc772        	addi	a7, a7, 108
- 1e4:	338a      	add.n	a3, a3, a8
- 1e6:	021767        	beq	a7, a6, 1ec <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1ec>
- 1e9:	ffbe46        	j	e6 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0xe6>
- 1ec:	f01d      	retw.n
+  6a:	bb1b      	addi.n	a11, a11, 1
+  6c:	676392        	s32i	a9, a3, 0x19c
+  6f:	6b0130        	ole.s	b0, f1, f3
+  72:	fa2550        	wfr	f2, a5
+  75:	9ab9      	s32i.n	a11, a10, 36
+  77:	cb3100        	movf.s	f3, f1, b0
+  7a:	2a2220        	mul.s	f2, f2, f2
+  7d:	090c      	movi.n	a9, 0
+  7f:	626362        	s32i	a6, a3, 0x188
+  82:	636372        	s32i	a7, a3, 0x18c
+  85:	644393        	ssi	f9, a3, 0x190
+  88:	654363        	ssi	f6, a3, 0x194
+  8b:	604343        	ssi	f4, a3, 0x180
+  8e:	614333        	ssi	f3, a3, 0x184
+  91:	929a      	add.n	a9, a2, a9
+  93:	4b0933        	lsi	f3, a9, 0x12c
+  96:	0189      	s32i.n	a8, a1, 0
+  98:	2a2230        	mul.s	f2, f2, f3
+  9b:	5963b2        	s32i	a11, a3, 0x164
+  9e:	fa2260        	neg.s	f2, f2
+  a1:	5d4323        	ssi	f2, a3, 0x174
+  a4:	5b0923        	lsi	f2, a9, 0x16c
+  a7:	4b0120        	olt.s	b0, f1, f2
+  aa:	070076        	bf	b0, b5 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0xb5>
+  ad:	da98      	l32i.n	a9, a10, 52
+  af:	ca2900        	float.s	f2, a9, 0
+  b2:	bb5290        	movgez.s	f5, f2, a9
+  b5:	5c4353        	ssi	f5, a3, 0x170
+  b8:	100a23        	lsi	f2, a10, 64
+  bb:	0188      	l32i.n	a8, a1, 0
+  bd:	5e4323        	ssi	f2, a3, 0x178
+  c0:	110a23        	lsi	f2, a10, 68
+  c3:	01a052        	movi	a5, 1
+  c6:	5f4323        	ssi	f2, a3, 0x17c
+  c9:	30a850        	xor	a10, a8, a5
+  cc:	20a162        	movi	a6, 0x120
+  cf:	a04ca2        	s8i	a10, a12, 160
+  d2:	1cc332        	addi	a3, a3, 28
+  d5:	48c272        	addi	a7, a2, 72
+  d8:	806260        	add	a6, a2, a6
+  db:	00a042        	movi	a4, 0
+  de:	0188      	l32i.n	a8, a1, 0
+  e0:	0000a1        	l32r	a10, fffc00e0 <engine+0xfffbeeb0>
+  e3:	01d856        	bnez	a8, 104 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x104>
+  e6:	0a4313        	ssi	f1, a3, 40
+  e9:	094313        	ssi	f1, a3, 36
+  ec:	014313        	ssi	f1, a3, 4
+  ef:	004313        	ssi	f1, a3, 0
+  f2:	144313        	ssi	f1, a3, 80
+  f5:	124313        	ssi	f1, a3, 72
+  f8:	000723        	lsi	f2, a7, 0
+  fb:	1b4313        	ssi	f1, a3, 108
+  fe:	fa2260        	neg.s	f2, f2
+ 101:	164323        	ssi	f2, a3, 88
+ 104:	020753        	lsi	f5, a7, 8
+ 107:	220323        	lsi	f2, a3, 136
+ 10a:	010743        	lsi	f4, a7, 4
+ 10d:	160363        	lsi	f6, a3, 88
+ 110:	2a5250        	mul.s	f5, f2, f5
+ 113:	1a7460        	sub.s	f7, f4, f6
+ 116:	750233        	lsi	f3, a2, 0x1d4
+ 119:	000081        	l32r	a8, fffc011c <engine+0xfffbeeec>
+ 11c:	2a3350        	mul.s	f3, f3, f5
+ 11f:	6b0640        	ole.s	b0, f6, f4
+ 122:	fa5400        	mov.s	f5, f4
+ 125:	fa6850        	wfr	f6, a8
+ 128:	4a5760        	madd.s	f5, f7, f6
+ 12b:	1d0c      	movi.n	a13, 1
+ 12d:	c3d400        	movf	a13, a4, b0
+ 130:	684352        	s8i	a5, a3, 104
+ 133:	194343        	ssi	f4, a3, 100
+ 136:	174353        	ssi	f5, a3, 92
+ 139:	6943d2        	s8i	a13, a3, 105
+ 13c:	6b0030        	ole.s	b0, f0, f3
+ 13f:	fab340        	rfr	a11, f3
+ 142:	260076        	bf	b0, 16c <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x16c>
+ 145:	014123        	ssi	f2, a1, 4
+ 148:	000081        	l32r	a8, fffc0148 <engine+0xfffbef18>
+ 14b:	0008e0        	callx8	a8
+ 14e:	000081        	l32r	a8, fffc0150 <engine+0xfffbef20>
+ 151:	0008e0        	callx8	a8
+ 154:	000081        	l32r	a8, fffc0154 <engine+0xfffbef24>
+ 157:	fa3a50        	wfr	f3, a10
+ 15a:	fa0850        	wfr	f0, a8
+ 15d:	080c      	movi.n	a8, 0
+ 15f:	1a3030        	sub.s	f3, f0, f3
+ 162:	010123        	lsi	f2, a1, 4
+ 165:	fa1850        	wfr	f1, a8
+ 168:	0000c6        	j	16f <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x16f>
+ 16b:	00          	.byte	00
+ 16c:	fa3000        	mov.s	f3, f0
+ 16f:	184333        	ssi	f3, a3, 96
+ 172:	080733        	lsi	f3, a7, 32
+ 175:	1b0343        	lsi	f4, a3, 108
+ 178:	2a3230        	mul.s	f3, f2, f3
+ 17b:	1a5040        	sub.s	f5, f0, f4
+ 17e:	750223        	lsi	f2, a2, 0x1d4
+ 181:	000081        	l32r	a8, fffc0184 <engine+0xfffbef54>
+ 184:	2a2230        	mul.s	f2, f2, f3
+ 187:	6b0400        	ole.s	b0, f4, f0
+ 18a:	fa3000        	mov.s	f3, f0
+ 18d:	fa4850        	wfr	f4, a8
+ 190:	4a3540        	madd.s	f3, f5, f4
+ 193:	1d0c      	movi.n	a13, 1
+ 195:	c3d400        	movf	a13, a4, b0
+ 198:	7c4352        	s8i	a5, a3, 124
+ 19b:	1e4303        	ssi	f0, a3, 120
+ 19e:	7d43d2        	s8i	a13, a3, 125
+ 1a1:	1c4333        	ssi	f3, a3, 112
+ 1a4:	6b0020        	ole.s	b0, f0, f2
+ 1a7:	0000a1        	l32r	a10, fffc01a8 <engine+0xfffbef78>
+ 1aa:	fab240        	rfr	a11, f2
+ 1ad:	1f0076        	bf	b0, 1d0 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1d0>
+ 1b0:	000081        	l32r	a8, fffc01b0 <engine+0xfffbef80>
+ 1b3:	0008e0        	callx8	a8
+ 1b6:	000081        	l32r	a8, fffc01b8 <engine+0xfffbef88>
+ 1b9:	0008e0        	callx8	a8
+ 1bc:	000081        	l32r	a8, fffc01bc <engine+0xfffbef8c>
+ 1bf:	fa2a50        	wfr	f2, a10
+ 1c2:	fa0850        	wfr	f0, a8
+ 1c5:	080c      	movi.n	a8, 0
+ 1c7:	1a2020        	sub.s	f2, f0, f2
+ 1ca:	fa1850        	wfr	f1, a8
+ 1cd:	000086        	j	1d3 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1d3>
+ 1d0:	fa2000        	mov.s	f2, f0
+ 1d3:	1d4323        	ssi	f2, a3, 116
+ 1d6:	b0a082        	movi	a8, 176
+ 1d9:	6cc772        	addi	a7, a7, 108
+ 1dc:	338a      	add.n	a3, a3, a8
+ 1de:	021767        	beq	a7, a6, 1e4 <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0x1e4>
+ 1e1:	ffbe46        	j	de <_ZN6cs80v26Engine11start_voiceERNS_5VoiceEiffffff$isra$0+0xde>
+ 1e4:	f01d      	retw.n
 	...
 
-000001f0 <cs80_note_on>:
- 1f0:	004136        	entry	a1, 32
- 1f3:	0000a1        	l32r	a10, fffc01f4 <engine+0xfffbf9f8>
- 1f6:	02bd      	mov.n	a11, a2
- 1f8:	03cd      	mov.n	a12, a3
- 1fa:	000081        	l32r	a8, fffc01fc <engine+0xfffbfa00>
- 1fd:	0008e0        	callx8	a8
- 200:	f01d      	retw.n
+000001e8 <cs80_note_on>:
+ 1e8:	004136        	entry	a1, 32
+ 1eb:	0000a1        	l32r	a10, fffc01ec <engine+0xfffbefbc>
+ 1ee:	02bd      	mov.n	a11, a2
+ 1f0:	03cd      	mov.n	a12, a3
+ 1f2:	000081        	l32r	a8, fffc01f4 <engine+0xfffbefc4>
+ 1f5:	0008e0        	callx8	a8
+ 1f8:	f01d      	retw.n
 	...
 
-00000204 <lim_block>:
- 204:	004136        	entry	a1, 32
- 207:	0000c1        	l32r	a12, fffc0208 <engine+0xfffbfa0c>
- 20a:	0000b1        	l32r	a11, fffc020c <engine+0xfffbfa10>
- 20d:	0000a1        	l32r	a10, fffc0210 <engine+0xfffbfa14>
- 210:	000081        	l32r	a8, fffc0210 <engine+0xfffbfa14>
- 213:	0008e0        	callx8	a8
- 216:	f01d      	retw.n
+000001fc <lim_block>:
+ 1fc:	004136        	entry	a1, 32
+ 1ff:	0000c1        	l32r	a12, fffc0200 <engine+0xfffbefd0>
+ 202:	0000b1        	l32r	a11, fffc0204 <engine+0xfffbefd4>
+ 205:	0000a1        	l32r	a10, fffc0208 <engine+0xfffbefd8>
+ 208:	000081        	l32r	a8, fffc0208 <engine+0xfffbefd8>
+ 20b:	0008e0        	callx8	a8
+ 20e:	f01d      	retw.n
 
-00000218 <cs80_init>:
- 218:	04e136        	entry	a1, 0x270
- 21b:	019d      	mov.n	a9, a1
- 21d:	0a0c      	movi.n	a10, 0
- 21f:	73a082        	movi	a8, 115
- 222:	038876        	loop	a8, 229 <cs80_init+0x11>
- 225:	09a9      	s32i.n	a10, a9, 0
- 227:	994b      	addi.n	a9, a9, 4
- 229:	0000b1        	l32r	a11, fffc022c <engine+0xfffbfa30>
- 22c:	13a0c2        	movi	a12, 19
- 22f:	20a110        	or	a10, a1, a1
- 232:	000081        	l32r	a8, fffc0234 <engine+0xfffbfa38>
- 235:	0008e0        	callx8	a8
- 238:	cca182        	movi	a8, 0x1cc
- 23b:	818a      	add.n	a8, a1, a8
- 23d:	0a0c      	movi.n	a10, 0
- 23f:	b91c      	movi.n	a9, 27
- 241:	038976        	loop	a9, 248 <cs80_init+0x30>
- 244:	08a9      	s32i.n	a10, a8, 0
- 246:	884b      	addi.n	a8, a8, 4
- 248:	cca182        	movi	a8, 0x1cc
- 24b:	b18a      	add.n	a11, a1, a8
- 24d:	000081        	l32r	a8, fffc0250 <engine+0xfffbfa54>
- 250:	000071        	l32r	a7, fffc0250 <engine+0xfffbfa54>
- 253:	fa0850        	wfr	f0, a8
- 256:	000081        	l32r	a8, fffc0258 <engine+0xfffbfa5c>
- 259:	000041        	l32r	a4, fffc025c <engine+0xfffbfa60>
- 25c:	fac850        	wfr	f12, a8
- 25f:	8ca082        	movi	a8, 140
- 262:	618a      	add.n	a6, a1, a8
- 264:	000081        	l32r	a8, fffc0264 <engine+0xfffbfa68>
- 267:	044b03        	ssi	f0, a11, 16
- 26a:	6b89      	s32i.n	a8, a11, 24
- 26c:	000081        	l32r	a8, fffc026c <engine+0xfffbfa70>
- 26f:	134bc3        	ssi	f12, a11, 76
- 272:	8b89      	s32i.n	a8, a11, 32
- 274:	000081        	l32r	a8, fffc0274 <engine+0xfffbfa78>
- 277:	144b03        	ssi	f0, a11, 80
- 27a:	9b89      	s32i.n	a8, a11, 36
- 27c:	000081        	l32r	a8, fffc027c <engine+0xfffbfa80>
- 27f:	164b03        	ssi	f0, a11, 88
- 282:	cb89      	s32i.n	a8, a11, 48
- 284:	000081        	l32r	a8, fffc0284 <engine+0xfffbfa88>
- 287:	6ca0c2        	movi	a12, 108
- 28a:	126b82        	s32i	a8, a11, 72
- 28d:	20a660        	or	a10, a6, a6
- 290:	0d6b72        	s32i	a7, a11, 52
- 293:	0e6b72        	s32i	a7, a11, 56
- 296:	106b42        	s32i	a4, a11, 64
- 299:	156b72        	s32i	a7, a11, 84
- 29c:	000081        	l32r	a8, fffc029c <engine+0xfffbfaa0>
- 29f:	0008e0        	callx8	a8
- 2a2:	20b660        	or	a11, a6, a6
- 2a5:	6ca0c2        	movi	a12, 108
- 2a8:	20c1a2        	addi	a10, a1, 32
- 2ab:	000081        	l32r	a8, fffc02ac <engine+0xfffbfab0>
- 2ae:	0008e0        	callx8	a8
- 2b1:	01d122        	addmi	a2, a1, 0x100
- 2b4:	0a0c      	movi.n	a10, 0
- 2b6:	1442a2        	s8i	a10, a2, 20
- 2b9:	6442a2        	s8i	a10, a2, 100
- 2bc:	0000a1        	l32r	a10, fffc02bc <engine+0xfffbfac0>
- 2bf:	000091        	l32r	a9, fffc02c0 <engine+0xfffbfac4>
- 2c2:	6761a2        	s32i	a10, a1, 0x19c
- 2c5:	0000a1        	l32r	a10, fffc02c8 <engine+0xfffbfacc>
- 2c8:	01a1b2        	movi	a11, 0x101
- 2cb:	6a61a2        	s32i	a10, a1, 0x1a8
- 2ce:	3a0c      	movi.n	a10, 3
- 2d0:	7c51b2        	s16i	a11, a1, 248
- 2d3:	446192        	s32i	a9, a1, 0x110
- 2d6:	0000b1        	l32r	a11, fffc02d8 <engine+0xfffbfadc>
- 2d9:	000091        	l32r	a9, fffc02dc <engine+0xfffbfae0>
- 2dc:	ac42a2        	s8i	a10, a2, 172
- 2df:	0000a1        	l32r	a10, fffc02e0 <engine+0xfffbfae4>
- 2e2:	000081        	l32r	a8, fffc02e4 <engine+0xfffbfae8>
- 2e5:	000031        	l32r	a3, fffc02e8 <engine+0xfffbfaec>
- 2e8:	000051        	l32r	a5, fffc02e8 <engine+0xfffbfaec>
- 2eb:	fac950        	wfr	f12, a9
- 2ee:	5461b2        	s32i	a11, a1, 0x150
- 2f1:	556192        	s32i	a9, a1, 0x154
- 2f4:	0000b1        	l32r	a11, fffc02f4 <engine+0xfffbfaf8>
- 2f7:	000091        	l32r	a9, fffc02f8 <engine+0xfffbfafc>
- 2fa:	e1a9      	s32i.n	a10, a1, 56
- 2fc:	0000a1        	l32r	a10, fffc02fc <engine+0xfffbfb00>
- 2ff:	5d6182        	s32i	a8, a1, 0x174
- 302:	5e6182        	s32i	a8, a1, 0x178
- 305:	6d41c3        	ssi	f12, a1, 0x1b4
- 308:	5761b2        	s32i	a11, a1, 0x15c
- 30b:	646192        	s32i	a9, a1, 0x190
- 30e:	1061a2        	s32i	a10, a1, 64
- 311:	4a6132        	s32i	a3, a1, 0x128
- 314:	6c6142        	s32i	a4, a1, 0x1b0
- 317:	f159      	s32i.n	a5, a1, 60
- 319:	116172        	s32i	a7, a1, 68
- 31c:	126192        	s32i	a9, a1, 72
- 31f:	0000f1        	l32r	a15, fffc0320 <engine+0xfffbfb24>
- 322:	0000e1        	l32r	a14, fffc0324 <engine+0xfffbfb28>
- 325:	1661f2        	s32i	a15, a1, 88
- 328:	0000f1        	l32r	a15, fffc0328 <engine+0xfffbfb2c>
- 32b:	fa0950        	wfr	f0, a9
- 32e:	1a61f2        	s32i	a15, a1, 104
- 331:	0000f1        	l32r	a15, fffc0334 <engine+0xfffbfb38>
- 334:	000091        	l32r	a9, fffc0334 <engine+0xfffbfb38>
- 337:	1c61f2        	s32i	a15, a1, 112
- 33a:	0000f1        	l32r	a15, fffc033c <engine+0xfffbfb40>
- 33d:	1561e2        	s32i	a14, a1, 84
- 340:	1d61f2        	s32i	a15, a1, 116
- 343:	0000f1        	l32r	a15, fffc0344 <engine+0xfffbfb48>
- 346:	2261e2        	s32i	a14, a1, 136
- 349:	1f61f2        	s32i	a15, a1, 124
- 34c:	0000e1        	l32r	a14, fffc034c <engine+0xfffbfb50>
- 34f:	0000f1        	l32r	a15, fffc0350 <engine+0xfffbfb54>
- 352:	6ca0c2        	movi	a12, 108
- 355:	20c1b2        	addi	a11, a1, 32
- 358:	06ad      	mov.n	a10, a6
- 35a:	136192        	s32i	a9, a1, 76
- 35d:	2061f2        	s32i	a15, a1, 128
- 360:	214103        	ssi	f0, a1, 132
- 363:	1861e2        	s32i	a14, a1, 96
- 366:	1b6182        	s32i	a8, a1, 108
- 369:	906182        	s32i	a8, a1, 0x240
- 36c:	146132        	s32i	a3, a1, 80
- 36f:	1e6132        	s32i	a3, a1, 120
- 372:	000081        	l32r	a8, fffc0374 <engine+0xfffbfb78>
- 375:	0008e0        	callx8	a8
- 378:	0000a1        	l32r	a10, fffc0378 <engine+0xfffbfb7c>
- 37b:	000081        	l32r	a8, fffc037c <engine+0xfffbfb80>
- 37e:	2961a2        	s32i	a10, a1, 164
- 381:	0000a1        	l32r	a10, fffc0384 <engine+0xfffbfb88>
- 384:	266182        	s32i	a8, a1, 152
- 387:	2b61a2        	s32i	a10, a1, 172
- 38a:	0000a1        	l32r	a10, fffc038c <engine+0xfffbfb90>
- 38d:	000081        	l32r	a8, fffc0390 <engine+0xfffbfb94>
- 390:	2c61a2        	s32i	a10, a1, 176
- 393:	0000a1        	l32r	a10, fffc0394 <engine+0xfffbfb98>
- 396:	246182        	s32i	a8, a1, 144
- 399:	2d61a2        	s32i	a10, a1, 180
- 39c:	0000a1        	l32r	a10, fffc039c <engine+0xfffbfba0>
- 39f:	000081        	l32r	a8, fffc03a0 <engine+0xfffbfba4>
- 3a2:	2e61a2        	s32i	a10, a1, 184
- 3a5:	0000a1        	l32r	a10, fffc03a8 <engine+0xfffbfbac>
- 3a8:	2f6182        	s32i	a8, a1, 188
- 3ab:	3561a2        	s32i	a10, a1, 212
- 3ae:	0000a1        	l32r	a10, fffc03b0 <engine+0xfffbfbb4>
- 3b1:	000081        	l32r	a8, fffc03b4 <engine+0xfffbfbb8>
- 3b4:	3461a2        	s32i	a10, a1, 208
- 3b7:	0000a1        	l32r	a10, fffc03b8 <engine+0xfffbfbbc>
- 3ba:	256152        	s32i	a5, a1, 148
- 3bd:	3361a2        	s32i	a10, a1, 204
- 3c0:	0000a1        	l32r	a10, fffc03c0 <engine+0xfffbfbc4>
- 3c3:	236142        	s32i	a4, a1, 140
- 3c6:	3f61a2        	s32i	a10, a1, 252
- 3c9:	0000a1        	l32r	a10, fffc03cc <engine+0xfffbfbd0>
- 3cc:	306182        	s32i	a8, a1, 192
- 3cf:	4661a2        	s32i	a10, a1, 0x118
- 3d2:	4d6132        	s32i	a3, a1, 0x134
- 3d5:	4c6172        	s32i	a7, a1, 0x130
- 3d8:	000081        	l32r	a8, fffc03d8 <engine+0xfffbfbdc>
- 3db:	0000a1        	l32r	a10, fffc03dc <engine+0xfffbfbe0>
- 3de:	0000b1        	l32r	a11, fffc03e0 <engine+0xfffbfbe4>
- 3e1:	4b6182        	s32i	a8, a1, 0x12c
- 3e4:	902182        	l32i	a8, a1, 0x240
- 3e7:	5361a2        	s32i	a10, a1, 0x14c
- 3ea:	4c1c      	movi.n	a12, 20
- 3ec:	7cc2a2        	addi	a10, a2, 124
- 3ef:	5a6182        	s32i	a8, a1, 0x168
- 3f2:	000081        	l32r	a8, fffc03f4 <engine+0xfffbfbf8>
- 3f5:	0008e0        	callx8	a8
- 3f8:	000081        	l32r	a8, fffc03f8 <engine+0xfffbfbfc>
- 3fb:	000061        	l32r	a6, fffc03fc <engine+0xfffbfc00>
- 3fe:	38b8      	l32i.n	a11, a8, 12
- 400:	08f8      	l32i.n	a15, a8, 0
- 402:	18e8      	l32i.n	a14, a8, 4
- 404:	28c8      	l32i.n	a12, a8, 8
- 406:	080c      	movi.n	a8, 0
- 408:	828a      	add.n	a8, a2, a8
- 40a:	3268b2        	s32i	a11, a8, 200
- 40d:	0000b1        	l32r	a11, fffc0410 <engine+0xfffbfc14>
- 410:	656162        	s32i	a6, a1, 0x194
- 413:	2f68f2        	s32i	a15, a8, 188
- 416:	160c      	movi.n	a6, 1
- 418:	3068e2        	s32i	a14, a8, 192
- 41b:	3168c2        	s32i	a12, a8, 196
- 41e:	0000a1        	l32r	a10, fffc0420 <engine+0xfffbfc24>
- 421:	000081        	l32r	a8, fffc0424 <engine+0xfffbfc28>
- 424:	984262        	s8i	a6, a2, 152
- 427:	696152        	s32i	a5, a1, 0x1a4
- 42a:	686172        	s32i	a7, a1, 0x1a0
- 42d:	6e6132        	s32i	a3, a1, 0x1b8
- 430:	090c      	movi.n	a9, 0
- 432:	fa0b50        	wfr	f0, a11
- 435:	038a76        	loop	a10, 43c <cs80_init+0x224>
- 438:	0899      	s32i.n	a9, a8, 0
- 43a:	884b      	addi.n	a8, a8, 4
- 43c:	000081        	l32r	a8, fffc043c <engine+0xfffbfc40>
- 43f:	0000a1        	l32r	a10, fffc0440 <engine+0xfffbfc44>
- 442:	5fd862        	addmi	a6, a8, 0x5f00
- 445:	000081        	l32r	a8, fffc0448 <engine+0xfffbfc4c>
- 448:	000091        	l32r	a9, fffc0448 <engine+0xfffbfc4c>
- 44b:	3d6682        	s32i	a8, a6, 244
- 44e:	000081        	l32r	a8, fffc0450 <engine+0xfffbfc54>
- 451:	0f4803        	ssi	f0, a8, 60
- 454:	000081        	l32r	a8, fffc0454 <engine+0xfffbfc58>
- 457:	736a82        	s32i	a8, a10, 0x1cc
- 45a:	000081        	l32r	a8, fffc045c <engine+0xfffbfc60>
- 45d:	746a82        	s32i	a8, a10, 0x1d0
- 460:	000081        	l32r	a8, fffc0460 <engine+0xfffbfc64>
- 463:	756a82        	s32i	a8, a10, 0x1d4
- 466:	0a0c      	movi.n	a10, 0
- 468:	10a482        	movi	a8, 0x410
- 46b:	038876        	loop	a8, 472 <cs80_init+0x25a>
- 46e:	09a9      	s32i.n	a10, a9, 0
- 470:	994b      	addi.n	a9, a9, 4
- 472:	000081        	l32r	a8, fffc0474 <engine+0xfffbfc78>
- 475:	0000a1        	l32r	a10, fffc0478 <engine+0xfffbfc7c>
- 478:	5ed872        	addmi	a7, a8, 0x5e00
- 47b:	00a4b2        	movi	a11, 0x400
- 47e:	1c67a2        	s32i	a10, a7, 112
- 481:	1b67a2        	s32i	a10, a7, 108
- 484:	000091        	l32r	a9, fffc0484 <engine+0xfffbfc88>
- 487:	e8a3a2        	movi	a10, 0x3e8
- 48a:	000081        	l32r	a8, fffc048c <engine+0xfffbfc90>
- 48d:	2967a2        	s32i	a10, a7, 164
- 490:	1867b2        	s32i	a11, a7, 96
- 493:	1e4703        	ssi	f0, a7, 120
- 496:	1d4703        	ssi	f0, a7, 116
- 499:	2b4703        	ssi	f0, a7, 172
- 49c:	0a0c      	movi.n	a10, 0
- 49e:	048876        	loop	a8, 4a6 <cs80_init+0x28e>
- 4a1:	0059a2        	s16i	a10, a9, 0
- 4a4:	992b      	addi.n	a9, a9, 2
- 4a6:	000091        	l32r	a9, fffc04a8 <engine+0xfffbfcac>
- 4a9:	000081        	l32r	a8, fffc04ac <engine+0xfffbfcb0>
- 4ac:	0a0c      	movi.n	a10, 0
- 4ae:	048876        	loop	a8, 4b6 <cs80_init+0x29e>
- 4b1:	0059a2        	s16i	a10, a9, 0
- 4b4:	992b      	addi.n	a9, a9, 2
- 4b6:	0000b1        	l32r	a11, fffc04b8 <engine+0xfffbfcbc>
- 4b9:	0000a1        	l32r	a10, fffc04bc <engine+0xfffbfcc0>
- 4bc:	01a052        	movi	a5, 1
- 4bf:	000081        	l32r	a8, fffc04c0 <engine+0xfffbfcc4>
- 4c2:	0008e0        	callx8	a8
- 4c5:	000081        	l32r	a8, fffc04c8 <engine+0xfffbfccc>
- 4c8:	730823        	lsi	f2, a8, 0x1cc
- 4cb:	000081        	l32r	a8, fffc04cc <engine+0xfffbfcd0>
- 4ce:	fab240        	rfr	a11, f2
- 4d1:	08ad      	mov.n	a10, a8
- 4d3:	306782        	s32i	a8, a7, 192
- 4d6:	2e6782        	s32i	a8, a7, 184
- 4d9:	00a082        	movi	a8, 0
- 4dc:	924123        	ssi	f2, a1, 0x248
- 4df:	316782        	s32i	a8, a7, 196
- 4e2:	000081        	l32r	a8, fffc04e4 <engine+0xfffbfce8>
- 4e5:	0008e0        	callx8	a8
- 4e8:	000081        	l32r	a8, fffc04e8 <engine+0xfffbfcec>
- 4eb:	fa1a50        	wfr	f1, a10
- 4ee:	fa0850        	wfr	f0, a8
- 4f1:	2a0100        	mul.s	f0, f1, f0
- 4f4:	9161a2        	s32i	a10, a1, 0x244
- 4f7:	faa040        	rfr	a10, f0
- 4fa:	000081        	l32r	a8, fffc04fc <engine+0xfffbfd00>
- 4fd:	0008e0        	callx8	a8
- 500:	000081        	l32r	a8, fffc0500 <engine+0xfffbfd04>
- 503:	fa3a50        	wfr	f3, a10
- 506:	fa0850        	wfr	f0, a8
- 509:	1a3030        	sub.s	f3, f0, f3
- 50c:	0000a1        	l32r	a10, fffc050c <engine+0xfffbfd10>
- 50f:	cca1c2        	movi	a12, 0x1cc
- 512:	01bd      	mov.n	a11, a1
- 514:	2f4733        	ssi	f3, a7, 188
- 517:	000081        	l32r	a8, fffc0518 <engine+0xfffbfd1c>
- 51a:	0008e0        	callx8	a8
- 51d:	000081        	l32r	a8, fffc0520 <engine+0xfffbfd24>
- 520:	920123        	lsi	f2, a1, 0x248
- 523:	6a2882        	l32i	a8, a8, 0x1a8
- 526:	000091        	l32r	a9, fffc0528 <engine+0xfffbfd2c>
- 529:	906182        	s32i	a8, a1, 0x240
- 52c:	000081        	l32r	a8, fffc052c <engine+0xfffbfd30>
- 52f:	900103        	lsi	f0, a1, 0x240
- 532:	670833        	lsi	f3, a8, 0x19c
- 535:	000081        	l32r	a8, fffc0538 <engine+0xfffbfd3c>
- 538:	2a2230        	mul.s	f2, f2, f3
- 53b:	fa1850        	wfr	f1, a8
- 53e:	2a3010        	mul.s	f3, f0, f1
- 541:	000081        	l32r	a8, fffc0544 <engine+0xfffbfd48>
- 544:	910113        	lsi	f1, a1, 0x244
- 547:	680843        	lsi	f4, a8, 0x1a0
- 54a:	2a0310        	mul.s	f0, f3, f1
- 54d:	9a8200        	trunc.s	a8, f2, 0
- 550:	2a4743        	ssi	f4, a7, 168
- 553:	438890        	min	a8, a8, a9
- 556:	538850        	max	a8, a8, a5
- 559:	faa040        	rfr	a10, f0
- 55c:	296782        	s32i	a8, a7, 164
- 55f:	000081        	l32r	a8, fffc0560 <engine+0xfffbfd64>
- 562:	0008e0        	callx8	a8
- 565:	000091        	l32r	a9, fffc0568 <engine+0xfffbfd6c>
- 568:	2a2682        	l32i	a8, a6, 168
- 56b:	720933        	lsi	f3, a9, 0x1c8
- 56e:	ca2800        	float.s	f2, a8, 0
- 571:	000081        	l32r	a8, fffc0574 <engine+0xfffbfd78>
- 574:	2a2230        	mul.s	f2, f2, f3
- 577:	fa0850        	wfr	f0, a8
- 57a:	fa1a50        	wfr	f1, a10
- 57d:	1a1010        	sub.s	f1, f0, f1
- 580:	6f0953        	lsi	f5, a9, 0x1bc
- 583:	700943        	lsi	f4, a9, 0x1c0
- 586:	710933        	lsi	f3, a9, 0x1c4
- 589:	000081        	l32r	a8, fffc058c <engine+0xfffbfd90>
- 58c:	9a9200        	trunc.s	a9, f2, 0
- 58f:	2b4713        	ssi	f1, a7, 172
- 592:	1e4653        	ssi	f5, a6, 120
- 595:	1f4643        	ssi	f4, a6, 124
- 598:	204633        	ssi	f3, a6, 128
- 59b:	fac850        	wfr	f12, a8
- 59e:	0c19a6        	blti	a9, 1, 5ae <cs80_init+0x396>
- 5a1:	332782        	l32i	a8, a7, 204
- 5a4:	082987        	blt	a9, a8, 5b0 <cs80_init+0x398>
- 5a7:	980b      	addi.n	a9, a8, -1
- 5a9:	0000c6        	j	5b0 <cs80_init+0x398>
- 5ac:	00          	.byte	00
- 5ad:	00          	.byte	00
- 5ae:	059d      	mov.n	a9, a5
- 5b0:	0000a1        	l32r	a10, fffc05b0 <engine+0xfffbfdb4>
- 5b3:	2b6692        	s32i	a9, a6, 172
- 5b6:	fa8a50        	wfr	f8, a10
- 5b9:	0000a1        	l32r	a10, fffc05bc <engine+0xfffbfdc0>
- 5bc:	0000f1        	l32r	a15, fffc05bc <engine+0xfffbfdc0>
- 5bf:	fa9a50        	wfr	f9, a10
- 5c2:	0000a1        	l32r	a10, fffc05c4 <engine+0xfffbfdc8>
- 5c5:	000081        	l32r	a8, fffc05c8 <engine+0xfffbfdcc>
- 5c8:	faaa50        	wfr	f10, a10
- 5cb:	0000a1        	l32r	a10, fffc05cc <engine+0xfffbfdd0>
- 5ce:	000021        	l32r	a2, fffc05d0 <engine+0xfffbfdd4>
- 5d1:	faba50        	wfr	f11, a10
- 5d4:	0000a1        	l32r	a10, fffc05d4 <engine+0xfffbfdd8>
- 5d7:	000071        	l32r	a7, fffc05d8 <engine+0xfffbfddc>
- 5da:	fa7a50        	wfr	f7, a10
- 5dd:	030c      	movi.n	a3, 0
- 5df:	b0a062        	movi	a6, 176
- 5e2:	150c      	movi.n	a5, 1
- 5e4:	002bc6        	j	697 <cs80_init+0x47f>
- 5e7:	00          	.byte	00
- 5e8:	054d      	mov.n	a4, a5
- 5ea:	11a830        	slli	a10, a8, 13
- 5ed:	30aa80        	xor	a10, a10, a8
- 5f0:	e581a0        	extui	a8, a10, 17, 15
- 5f3:	3088a0        	xor	a8, a8, a10
- 5f6:	11d8b0        	slli	a13, a8, 5
- 5f9:	30dd80        	xor	a13, a13, a8
- 5fc:	11ad30        	slli	a10, a13, 13
- 5ff:	30aad0        	xor	a10, a10, a13
- 602:	e581a0        	extui	a8, a10, 17, 15
- 605:	3088a0        	xor	a8, a8, a10
- 608:	11c8b0        	slli	a12, a8, 5
- 60b:	30cc80        	xor	a12, a12, a8
- 60e:	11ac30        	slli	a10, a12, 13
- 611:	30aac0        	xor	a10, a10, a12
- 614:	e581a0        	extui	a8, a10, 17, 15
- 617:	3088a0        	xor	a8, a8, a10
- 61a:	11b8b0        	slli	a11, a8, 5
- 61d:	30bb80        	xor	a11, a11, a8
- 620:	11ab30        	slli	a10, a11, 13
- 623:	30aab0        	xor	a10, a10, a11
- 626:	e581a0        	extui	a8, a10, 17, 15
- 629:	3088a0        	xor	a8, a8, a10
- 62c:	11a8b0        	slli	a10, a8, 5
- 62f:	30aa80        	xor	a10, a10, a8
- 632:	118a30        	slli	a8, a10, 13
- 635:	3088a0        	xor	a8, a8, a10
- 638:	e5e180        	extui	a14, a8, 17, 15
- 63b:	30ee80        	xor	a14, a14, a8
- 63e:	118eb0        	slli	a8, a14, 5
- 641:	3088e0        	xor	a8, a8, a14
- 644:	ca2800        	float.s	f2, a8, 0
- 647:	fa1000        	mov.s	f1, f0
- 64a:	4a1270        	madd.s	f1, f2, f7
- 64d:	ca4b00        	float.s	f4, a11, 0
- 650:	ca3d00        	float.s	f3, a13, 0
- 653:	ca2c00        	float.s	f2, a12, 0
- 656:	ca6a00        	float.s	f6, a10, 0
- 659:	fa5000        	mov.s	f5, f0
- 65c:	4a54a0        	madd.s	f5, f4, f10
- 65f:	fa4000        	mov.s	f4, f0
- 662:	2a3380        	mul.s	f3, f3, f8
- 665:	2a2290        	mul.s	f2, f2, f9
- 668:	4a46b0        	madd.s	f4, f6, f11
- 66b:	2a11c0        	mul.s	f1, f1, f12
- 66e:	9d4933        	ssi	f3, a9, 0x274
- 671:	9e4923        	ssi	f2, a9, 0x278
- 674:	9f4953        	ssi	f5, a9, 0x27c
- 677:	a04943        	ssi	f4, a9, 0x280
- 67a:	764913        	ssi	f1, a9, 0x1d8
- 67d:	996a      	add.n	a9, a9, a6
- 67f:	021426        	beqi	a4, 1, 685 <cs80_init+0x46d>
- 682:	ffd886        	j	5e8 <cs80_init+0x3d0>
- 685:	98fa      	add.n	a9, a8, a15
- 687:	ce6792        	s32i	a9, a7, 0x338
- 68a:	000091        	l32r	a9, fffc068c <engine+0xfffbfe90>
- 68d:	ff9a      	add.n	a15, a15, a9
- 68f:	a4a192        	movi	a9, 0x1a4
- 692:	779a      	add.n	a7, a7, a9
- 694:	061f27        	beq	a15, a2, 69e <cs80_init+0x486>
- 697:	079d      	mov.n	a9, a7
- 699:	034d      	mov.n	a4, a3
- 69b:	ffd2c6        	j	5ea <cs80_init+0x3d2>
- 69e:	000071        	l32r	a7, fffc06a0 <engine+0xfffbfea4>
- 6a1:	000091        	l32r	a9, fffc06a4 <engine+0xfffbfea8>
- 6a4:	000021        	l32r	a2, fffc06a4 <engine+0xfffbfea8>
- 6a7:	00a062        	movi	a6, 0
- 6aa:	807970        	add	a7, a9, a7
- 6ad:	b0a032        	movi	a3, 176
- 6b0:	24f060        	extui	a15, a6, 0, 3
- 6b3:	079d      	mov.n	a9, a7
- 6b5:	050c      	movi.n	a5, 0
- 6b7:	000046        	j	6bc <cs80_init+0x4a4>
- 6ba:	045d      	mov.n	a5, a4
- 6bc:	11a830        	slli	a10, a8, 13
- 6bf:	30aa80        	xor	a10, a10, a8
- 6c2:	e581a0        	extui	a8, a10, 17, 15
- 6c5:	3088a0        	xor	a8, a8, a10
- 6c8:	11d8b0        	slli	a13, a8, 5
- 6cb:	30dd80        	xor	a13, a13, a8
- 6ce:	11ad30        	slli	a10, a13, 13
- 6d1:	30aad0        	xor	a10, a10, a13
- 6d4:	e581a0        	extui	a8, a10, 17, 15
- 6d7:	3088a0        	xor	a8, a8, a10
- 6da:	11c8b0        	slli	a12, a8, 5
- 6dd:	30cc80        	xor	a12, a12, a8
- 6e0:	11ac30        	slli	a10, a12, 13
- 6e3:	30aac0        	xor	a10, a10, a12
- 6e6:	e581a0        	extui	a8, a10, 17, 15
- 6e9:	3088a0        	xor	a8, a8, a10
- 6ec:	11b8b0        	slli	a11, a8, 5
- 6ef:	30bb80        	xor	a11, a11, a8
- 6f2:	11ab30        	slli	a10, a11, 13
- 6f5:	30aab0        	xor	a10, a10, a11
- 6f8:	e581a0        	extui	a8, a10, 17, 15
- 6fb:	3088a0        	xor	a8, a8, a10
- 6fe:	11a8b0        	slli	a10, a8, 5
- 701:	30aa80        	xor	a10, a10, a8
- 704:	118a30        	slli	a8, a10, 13
- 707:	3088a0        	xor	a8, a8, a10
- 70a:	e5e180        	extui	a14, a8, 17, 15
- 70d:	30ee80        	xor	a14, a14, a8
- 710:	118eb0        	slli	a8, a14, 5
- 713:	3088e0        	xor	a8, a8, a14
- 716:	ca2800        	float.s	f2, a8, 0
- 719:	fa1000        	mov.s	f1, f0
- 71c:	4a1270        	madd.s	f1, f2, f7
- 71f:	ca4b00        	float.s	f4, a11, 0
- 722:	ca3d00        	float.s	f3, a13, 0
- 725:	ca2c00        	float.s	f2, a12, 0
- 728:	ca6a00        	float.s	f6, a10, 0
- 72b:	fa5000        	mov.s	f5, f0
- 72e:	4a54a0        	madd.s	f5, f4, f10
- 731:	fa4000        	mov.s	f4, f0
- 734:	2a3380        	mul.s	f3, f3, f8
- 737:	2a2290        	mul.s	f2, f2, f9
- 73a:	4a46b0        	madd.s	f4, f6, f11
- 73d:	2a11c0        	mul.s	f1, f1, f12
- 740:	274933        	ssi	f3, a9, 156
- 743:	284923        	ssi	f2, a9, 160
- 746:	294953        	ssi	f5, a9, 164
- 749:	2a4943        	ssi	f4, a9, 168
- 74c:	004913        	ssi	f1, a9, 0
- 74f:	993a      	add.n	a9, a9, a3
- 751:	021526        	beqi	a5, 1, 757 <cs80_init+0x53f>
- 754:	ffd886        	j	6ba <cs80_init+0x4a2>
- 757:	ff5a      	add.n	a15, a15, a5
- 759:	82ff20        	mull	a15, a15, a2
- 75c:	a4a192        	movi	a9, 0x1a4
- 75f:	ff8a      	add.n	a15, a15, a8
- 761:	5867f2        	s32i	a15, a7, 0x160
- 764:	665a      	add.n	a6, a6, a5
- 766:	779a      	add.n	a7, a7, a9
- 768:	891c      	movi.n	a9, 24
- 76a:	021697        	beq	a6, a9, 770 <cs80_init+0x558>
- 76d:	ffcfc6        	j	6b0 <cs80_init+0x498>
- 770:	000091        	l32r	a9, fffc0770 <engine+0xfffbff74>
- 773:	ffaf82        	movi	a8, -1
- 776:	0000b1        	l32r	a11, fffc0778 <engine+0xfffbff7c>
- 779:	0000a1        	l32r	a10, fffc077c <engine+0xfffbff80>
- 77c:	006982        	s32i	a8, a9, 0
- 77f:	104903        	ssi	f0, a9, 64
- 782:	000081        	l32r	a8, fffc0784 <engine+0xfffbff88>
- 785:	0008e0        	callx8	a8
- 788:	0000b1        	l32r	a11, fffc0788 <engine+0xfffbff8c>
- 78b:	0000a1        	l32r	a10, fffc078c <engine+0xfffbff90>
- 78e:	000081        	l32r	a8, fffc0790 <engine+0xfffbff94>
- 791:	0008e0        	callx8	a8
- 794:	0000b1        	l32r	a11, fffc0794 <engine+0xfffbff98>
- 797:	0000a1        	l32r	a10, fffc0798 <engine+0xfffbff9c>
- 79a:	000081        	l32r	a8, fffc079c <engine+0xfffbffa0>
- 79d:	0008e0        	callx8	a8
- 7a0:	f01d      	retw.n
+00000210 <cs80_init>:
+ 210:	04e136        	entry	a1, 0x270
+ 213:	019d      	mov.n	a9, a1
+ 215:	0a0c      	movi.n	a10, 0
+ 217:	73a082        	movi	a8, 115
+ 21a:	038876        	loop	a8, 221 <cs80_init+0x11>
+ 21d:	09a9      	s32i.n	a10, a9, 0
+ 21f:	994b      	addi.n	a9, a9, 4
+ 221:	0000b1        	l32r	a11, fffc0224 <engine+0xfffbeff4>
+ 224:	13a0c2        	movi	a12, 19
+ 227:	20a110        	or	a10, a1, a1
+ 22a:	000081        	l32r	a8, fffc022c <engine+0xfffbeffc>
+ 22d:	0008e0        	callx8	a8
+ 230:	cca182        	movi	a8, 0x1cc
+ 233:	818a      	add.n	a8, a1, a8
+ 235:	0a0c      	movi.n	a10, 0
+ 237:	b91c      	movi.n	a9, 27
+ 239:	038976        	loop	a9, 240 <cs80_init+0x30>
+ 23c:	08a9      	s32i.n	a10, a8, 0
+ 23e:	884b      	addi.n	a8, a8, 4
+ 240:	cca182        	movi	a8, 0x1cc
+ 243:	b18a      	add.n	a11, a1, a8
+ 245:	8ca082        	movi	a8, 140
+ 248:	618a      	add.n	a6, a1, a8
+ 24a:	000081        	l32r	a8, fffc024c <engine+0xfffbf01c>
+ 24d:	000021        	l32r	a2, fffc0250 <engine+0xfffbf020>
+ 250:	6b89      	s32i.n	a8, a11, 24
+ 252:	000081        	l32r	a8, fffc0254 <engine+0xfffbf024>
+ 255:	000071        	l32r	a7, fffc0258 <engine+0xfffbf028>
+ 258:	8b89      	s32i.n	a8, a11, 32
+ 25a:	000081        	l32r	a8, fffc025c <engine+0xfffbf02c>
+ 25d:	000051        	l32r	a5, fffc0260 <engine+0xfffbf030>
+ 260:	9b89      	s32i.n	a8, a11, 36
+ 262:	000081        	l32r	a8, fffc0264 <engine+0xfffbf034>
+ 265:	000031        	l32r	a3, fffc0268 <engine+0xfffbf038>
+ 268:	cb89      	s32i.n	a8, a11, 48
+ 26a:	000081        	l32r	a8, fffc026c <engine+0xfffbf03c>
+ 26d:	4b29      	s32i.n	a2, a11, 16
+ 26f:	126b82        	s32i	a8, a11, 72
+ 272:	db79      	s32i.n	a7, a11, 52
+ 274:	0e6b72        	s32i	a7, a11, 56
+ 277:	106b32        	s32i	a3, a11, 64
+ 27a:	136b52        	s32i	a5, a11, 76
+ 27d:	146b22        	s32i	a2, a11, 80
+ 280:	156b72        	s32i	a7, a11, 84
+ 283:	166b22        	s32i	a2, a11, 88
+ 286:	6ca0c2        	movi	a12, 108
+ 289:	20a660        	or	a10, a6, a6
+ 28c:	000081        	l32r	a8, fffc028c <engine+0xfffbf05c>
+ 28f:	0008e0        	callx8	a8
+ 292:	20b660        	or	a11, a6, a6
+ 295:	6ca0c2        	movi	a12, 108
+ 298:	20c1a2        	addi	a10, a1, 32
+ 29b:	000081        	l32r	a8, fffc029c <engine+0xfffbf06c>
+ 29e:	0008e0        	callx8	a8
+ 2a1:	01d182        	addmi	a8, a1, 0x100
+ 2a4:	0a0c      	movi.n	a10, 0
+ 2a6:	1448a2        	s8i	a10, a8, 20
+ 2a9:	6448a2        	s8i	a10, a8, 100
+ 2ac:	0000a1        	l32r	a10, fffc02ac <engine+0xfffbf07c>
+ 2af:	01a1b2        	movi	a11, 0x101
+ 2b2:	6761a2        	s32i	a10, a1, 0x19c
+ 2b5:	0000a1        	l32r	a10, fffc02b8 <engine+0xfffbf088>
+ 2b8:	7c51b2        	s16i	a11, a1, 248
+ 2bb:	6a61a2        	s32i	a10, a1, 0x1a8
+ 2be:	3a0c      	movi.n	a10, 3
+ 2c0:	0000b1        	l32r	a11, fffc02c0 <engine+0xfffbf090>
+ 2c3:	ac48a2        	s8i	a10, a8, 172
+ 2c6:	0000a1        	l32r	a10, fffc02c8 <engine+0xfffbf098>
+ 2c9:	000081        	l32r	a8, fffc02cc <engine+0xfffbf09c>
+ 2cc:	000091        	l32r	a9, fffc02cc <engine+0xfffbf09c>
+ 2cf:	000041        	l32r	a4, fffc02d0 <engine+0xfffbf0a0>
+ 2d2:	0000d1        	l32r	a13, fffc02d4 <engine+0xfffbf0a4>
+ 2d5:	5461b2        	s32i	a11, a1, 0x150
+ 2d8:	e1a9      	s32i.n	a10, a1, 56
+ 2da:	0000b1        	l32r	a11, fffc02dc <engine+0xfffbf0ac>
+ 2dd:	0000a1        	l32r	a10, fffc02e0 <engine+0xfffbf0b0>
+ 2e0:	f189      	s32i.n	a8, a1, 60
+ 2e2:	000081        	l32r	a8, fffc02e4 <engine+0xfffbf0b4>
+ 2e5:	446192        	s32i	a9, a1, 0x110
+ 2e8:	5d61d2        	s32i	a13, a1, 0x174
+ 2eb:	5e61d2        	s32i	a13, a1, 0x178
+ 2ee:	556152        	s32i	a5, a1, 0x154
+ 2f1:	5761b2        	s32i	a11, a1, 0x15c
+ 2f4:	6c6132        	s32i	a3, a1, 0x1b0
+ 2f7:	6d6152        	s32i	a5, a1, 0x1b4
+ 2fa:	1061a2        	s32i	a10, a1, 64
+ 2fd:	4a6142        	s32i	a4, a1, 0x128
+ 300:	646122        	s32i	a2, a1, 0x190
+ 303:	116172        	s32i	a7, a1, 68
+ 306:	126122        	s32i	a2, a1, 72
+ 309:	136182        	s32i	a8, a1, 76
+ 30c:	0000f1        	l32r	a15, fffc030c <engine+0xfffbf0dc>
+ 30f:	0000e1        	l32r	a14, fffc0310 <engine+0xfffbf0e0>
+ 312:	1661f2        	s32i	a15, a1, 88
+ 315:	0000f1        	l32r	a15, fffc0318 <engine+0xfffbf0e8>
+ 318:	1561e2        	s32i	a14, a1, 84
+ 31b:	1a61f2        	s32i	a15, a1, 104
+ 31e:	0000f1        	l32r	a15, fffc0320 <engine+0xfffbf0f0>
+ 321:	2261e2        	s32i	a14, a1, 136
+ 324:	1c61f2        	s32i	a15, a1, 112
+ 327:	0000f1        	l32r	a15, fffc0328 <engine+0xfffbf0f8>
+ 32a:	0000e1        	l32r	a14, fffc032c <engine+0xfffbf0fc>
+ 32d:	1d61f2        	s32i	a15, a1, 116
+ 330:	0000f1        	l32r	a15, fffc0330 <engine+0xfffbf100>
+ 333:	20c1b2        	addi	a11, a1, 32
+ 336:	1f61f2        	s32i	a15, a1, 124
+ 339:	0000f1        	l32r	a15, fffc033c <engine+0xfffbf10c>
+ 33c:	6ca0c2        	movi	a12, 108
+ 33f:	06ad      	mov.n	a10, a6
+ 341:	2061f2        	s32i	a15, a1, 128
+ 344:	1861e2        	s32i	a14, a1, 96
+ 347:	1b61d2        	s32i	a13, a1, 108
+ 34a:	9061d2        	s32i	a13, a1, 0x240
+ 34d:	146142        	s32i	a4, a1, 80
+ 350:	1e6142        	s32i	a4, a1, 120
+ 353:	216122        	s32i	a2, a1, 132
+ 356:	000081        	l32r	a8, fffc0358 <engine+0xfffbf128>
+ 359:	0008e0        	callx8	a8
+ 35c:	0000a1        	l32r	a10, fffc035c <engine+0xfffbf12c>
+ 35f:	000081        	l32r	a8, fffc0360 <engine+0xfffbf130>
+ 362:	2961a2        	s32i	a10, a1, 164
+ 365:	0000a1        	l32r	a10, fffc0368 <engine+0xfffbf138>
+ 368:	256182        	s32i	a8, a1, 148
+ 36b:	2b61a2        	s32i	a10, a1, 172
+ 36e:	0000a1        	l32r	a10, fffc0370 <engine+0xfffbf140>
+ 371:	000081        	l32r	a8, fffc0374 <engine+0xfffbf144>
+ 374:	2c61a2        	s32i	a10, a1, 176
+ 377:	0000a1        	l32r	a10, fffc0378 <engine+0xfffbf148>
+ 37a:	246182        	s32i	a8, a1, 144
+ 37d:	2d61a2        	s32i	a10, a1, 180
+ 380:	0000a1        	l32r	a10, fffc0380 <engine+0xfffbf150>
+ 383:	000081        	l32r	a8, fffc0384 <engine+0xfffbf154>
+ 386:	2e61a2        	s32i	a10, a1, 184
+ 389:	0000a1        	l32r	a10, fffc038c <engine+0xfffbf15c>
+ 38c:	306182        	s32i	a8, a1, 192
+ 38f:	3561a2        	s32i	a10, a1, 212
+ 392:	0000a1        	l32r	a10, fffc0394 <engine+0xfffbf164>
+ 395:	000081        	l32r	a8, fffc0398 <engine+0xfffbf168>
+ 398:	3461a2        	s32i	a10, a1, 208
+ 39b:	0000a1        	l32r	a10, fffc039c <engine+0xfffbf16c>
+ 39e:	236132        	s32i	a3, a1, 140
+ 3a1:	3361a2        	s32i	a10, a1, 204
+ 3a4:	0000a1        	l32r	a10, fffc03a4 <engine+0xfffbf174>
+ 3a7:	2f6152        	s32i	a5, a1, 188
+ 3aa:	3f61a2        	s32i	a10, a1, 252
+ 3ad:	0000a1        	l32r	a10, fffc03b0 <engine+0xfffbf180>
+ 3b0:	266122        	s32i	a2, a1, 152
+ 3b3:	4661a2        	s32i	a10, a1, 0x118
+ 3b6:	4d6142        	s32i	a4, a1, 0x134
+ 3b9:	4c6172        	s32i	a7, a1, 0x130
+ 3bc:	4b6182        	s32i	a8, a1, 0x12c
+ 3bf:	0000a1        	l32r	a10, fffc03c0 <engine+0xfffbf190>
+ 3c2:	9021d2        	l32i	a13, a1, 0x240
+ 3c5:	01d182        	addmi	a8, a1, 0x100
+ 3c8:	0000b1        	l32r	a11, fffc03c8 <engine+0xfffbf198>
+ 3cb:	5361a2        	s32i	a10, a1, 0x14c
+ 3ce:	4c1c      	movi.n	a12, 20
+ 3d0:	7cc8a2        	addi	a10, a8, 124
+ 3d3:	5a61d2        	s32i	a13, a1, 0x168
+ 3d6:	000081        	l32r	a8, fffc03d8 <engine+0xfffbf1a8>
+ 3d9:	0008e0        	callx8	a8
+ 3dc:	0000a1        	l32r	a10, fffc03dc <engine+0xfffbf1ac>
+ 3df:	000031        	l32r	a3, fffc03e0 <engine+0xfffbf1b0>
+ 3e2:	2af8      	l32i.n	a15, a10, 8
+ 3e4:	3ae8      	l32i.n	a14, a10, 12
+ 3e6:	0a58      	l32i.n	a5, a10, 0
+ 3e8:	1a68      	l32i.n	a6, a10, 4
+ 3ea:	01d182        	addmi	a8, a1, 0x100
+ 3ed:	656132        	s32i	a3, a1, 0x194
+ 3f0:	bca0d2        	movi	a13, 188
+ 3f3:	130c      	movi.n	a3, 1
+ 3f5:	d8da      	add.n	a13, a8, a13
+ 3f7:	984832        	s8i	a3, a8, 152
+ 3fa:	0000b1        	l32r	a11, fffc03fc <engine+0xfffbf1cc>
+ 3fd:	000081        	l32r	a8, fffc0400 <engine+0xfffbf1d0>
+ 400:	0000a1        	l32r	a10, fffc0400 <engine+0xfffbf1d0>
+ 403:	01cd      	mov.n	a12, a1
+ 405:	0d59      	s32i.n	a5, a13, 0
+ 407:	1d69      	s32i.n	a6, a13, 4
+ 409:	2df9      	s32i.n	a15, a13, 8
+ 40b:	3de9      	s32i.n	a14, a13, 12
+ 40d:	696182        	s32i	a8, a1, 0x1a4
+ 410:	686172        	s32i	a7, a1, 0x1a0
+ 413:	6e6142        	s32i	a4, a1, 0x1b8
+ 416:	000081        	l32r	a8, fffc0418 <engine+0xfffbf1e8>
+ 419:	0008e0        	callx8	a8
+ 41c:	0000b1        	l32r	a11, fffc041c <engine+0xfffbf1ec>
+ 41f:	0000a1        	l32r	a10, fffc0420 <engine+0xfffbf1f0>
+ 422:	000081        	l32r	a8, fffc0424 <engine+0xfffbf1f4>
+ 425:	0008e0        	callx8	a8
+ 428:	0000b1        	l32r	a11, fffc0428 <engine+0xfffbf1f8>
+ 42b:	0000a1        	l32r	a10, fffc042c <engine+0xfffbf1fc>
+ 42e:	000081        	l32r	a8, fffc0430 <engine+0xfffbf200>
+ 431:	0008e0        	callx8	a8
+ 434:	0000b1        	l32r	a11, fffc0434 <engine+0xfffbf204>
+ 437:	0000a1        	l32r	a10, fffc0438 <engine+0xfffbf208>
+ 43a:	000081        	l32r	a8, fffc043c <engine+0xfffbf20c>
+ 43d:	0008e0        	callx8	a8
+ 440:	f01d      	retw.n
 	...
 
-000007a4 <cs80_render_block>:
- 7a4:	004136        	entry	a1, 32
- 7a7:	0000c1        	l32r	a12, fffc07a8 <engine+0xfffbffac>
- 7aa:	0000b1        	l32r	a11, fffc07ac <engine+0xfffbffb0>
- 7ad:	0000a1        	l32r	a10, fffc07b0 <engine+0xfffbffb4>
- 7b0:	80a0d2        	movi	a13, 128
- 7b3:	000081        	l32r	a8, fffc07b4 <engine+0xfffbffb8>
- 7b6:	0008e0        	callx8	a8
- 7b9:	f01d      	retw.n
+00000444 <cs80_render_block>:
+ 444:	004136        	entry	a1, 32
+ 447:	0000c1        	l32r	a12, fffc0448 <engine+0xfffbf218>
+ 44a:	0000b1        	l32r	a11, fffc044c <engine+0xfffbf21c>
+ 44d:	0000a1        	l32r	a10, fffc0450 <engine+0xfffbf220>
+ 450:	80a0d2        	movi	a13, 128
+ 453:	000081        	l32r	a8, fffc0454 <engine+0xfffbf224>
+ 456:	0008e0        	callx8	a8
+ 459:	f01d      	retw.n
 	...
 
-000007bc <plates>:
- 7bc:	004136        	entry	a1, 32
- 7bf:	0000a1        	l32r	a10, fffc07c0 <engine+0xfffbffc4>
- 7c2:	0000e1        	l32r	a14, fffc07c4 <engine+0xfffbffc8>
- 7c5:	0000d1        	l32r	a13, fffc07c8 <engine+0xfffbffcc>
- 7c8:	0000c1        	l32r	a12, fffc07c8 <engine+0xfffbffcc>
- 7cb:	0000b1        	l32r	a11, fffc07cc <engine+0xfffbffd0>
- 7ce:	000081        	l32r	a8, fffc07d0 <engine+0xfffbffd4>
- 7d1:	0008e0        	callx8	a8
- 7d4:	0000e1        	l32r	a14, fffc07d4 <engine+0xfffbffd8>
- 7d7:	0000d1        	l32r	a13, fffc07d8 <engine+0xfffbffdc>
- 7da:	0000c1        	l32r	a12, fffc07dc <engine+0xfffbffe0>
- 7dd:	0000b1        	l32r	a11, fffc07e0 <engine+0xfffbffe4>
- 7e0:	0000a1        	l32r	a10, fffc07e0 <engine+0xfffbffe4>
- 7e3:	000081        	l32r	a8, fffc07e4 <engine+0xfffbffe8>
- 7e6:	0008e0        	callx8	a8
- 7e9:	0000e1        	l32r	a14, fffc07ec <engine+0xfffbfff0>
- 7ec:	0000d1        	l32r	a13, fffc07ec <engine+0xfffbfff0>
- 7ef:	0000c1        	l32r	a12, fffc07f0 <engine+0xfffbfff4>
- 7f2:	0000b1        	l32r	a11, fffc07f4 <engine+0xfffbfff8>
- 7f5:	0000a1        	l32r	a10, fffc07f8 <engine+0xfffbfffc>
- 7f8:	000081        	l32r	a8, fffc07f8 <engine+0xfffbfffc>
- 7fb:	0008e0        	callx8	a8
- 7fe:	f01d      	retw.n
+0000045c <plates>:
+ 45c:	004136        	entry	a1, 32
+ 45f:	0000a1        	l32r	a10, fffc0460 <engine+0xfffbf230>
+ 462:	0000e1        	l32r	a14, fffc0464 <engine+0xfffbf234>
+ 465:	0000d1        	l32r	a13, fffc0468 <engine+0xfffbf238>
+ 468:	0000c1        	l32r	a12, fffc0468 <engine+0xfffbf238>
+ 46b:	0000b1        	l32r	a11, fffc046c <engine+0xfffbf23c>
+ 46e:	000081        	l32r	a8, fffc0470 <engine+0xfffbf240>
+ 471:	0008e0        	callx8	a8
+ 474:	0000e1        	l32r	a14, fffc0474 <engine+0xfffbf244>
+ 477:	0000d1        	l32r	a13, fffc0478 <engine+0xfffbf248>
+ 47a:	0000c1        	l32r	a12, fffc047c <engine+0xfffbf24c>
+ 47d:	0000b1        	l32r	a11, fffc0480 <engine+0xfffbf250>
+ 480:	0000a1        	l32r	a10, fffc0480 <engine+0xfffbf250>
+ 483:	000081        	l32r	a8, fffc0484 <engine+0xfffbf254>
+ 486:	0008e0        	callx8	a8
+ 489:	0000e1        	l32r	a14, fffc048c <engine+0xfffbf25c>
+ 48c:	0000d1        	l32r	a13, fffc048c <engine+0xfffbf25c>
+ 48f:	0000c1        	l32r	a12, fffc0490 <engine+0xfffbf260>
+ 492:	0000b1        	l32r	a11, fffc0494 <engine+0xfffbf264>
+ 495:	0000a1        	l32r	a10, fffc0498 <engine+0xfffbf268>
+ 498:	000081        	l32r	a8, fffc0498 <engine+0xfffbf268>
+ 49b:	0008e0        	callx8	a8
+ 49e:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v26Chorus7processEPKfS2_PfS3_:
 
@@ -1150,10 +880,10 @@ Disassembly of section .text._ZN6cs80v26Chorus7processEPKfS2_PfS3_:
   37:	fafe00        	mov.s	f15, f14
   3a:	978a      	add.n	a9, a7, a8
   3c:	000913        	lsi	f1, a9, 0
-  3f:	000091        	l32r	a9, fffc0040 <engine+0xfffbf844>
+  3f:	000091        	l32r	a9, fffc0040 <engine+0xfffbee10>
   42:	2a6110        	mul.s	f6, f1, f1
   45:	fa5950        	wfr	f5, a9
-  48:	000091        	l32r	a9, fffc0048 <engine+0xfffbf84c>
+  48:	000091        	l32r	a9, fffc0048 <engine+0xfffbee18>
   4b:	da0c00        	ufloat.s	f0, a12, 0
   4e:	fa7950        	wfr	f7, a9
   51:	1a20b0        	sub.s	f2, f0, f11
@@ -1239,24 +969,24 @@ Disassembly of section .text._ZN6cs80v28EchoLine7processEPKfS2_PfS3_f:
 
 00000000 <cs80v2::EchoLine::process(float const*, float const*, float*, float*, float)>:
    0:	004136        	entry	a1, 32
-   3:	000091        	l32r	a9, fffc0004 <engine+0xfffbf808>
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
+   3:	000091        	l32r	a9, fffc0004 <engine+0xfffbedd4>
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
    9:	fa9950        	wfr	f9, a9
-   c:	000091        	l32r	a9, fffc000c <engine+0xfffbf810>
+   c:	000091        	l32r	a9, fffc000c <engine+0xfffbeddc>
    f:	0202c3        	lsi	f12, a2, 8
   12:	fab850        	wfr	f11, a8
   15:	fad950        	wfr	f13, a9
-  18:	000091        	l32r	a9, fffc0018 <engine+0xfffbf81c>
+  18:	000091        	l32r	a9, fffc0018 <engine+0xfffbede8>
   1b:	2aecb0        	mul.s	f14, f12, f11
   1e:	fa6950        	wfr	f6, a9
-  21:	000091        	l32r	a9, fffc0024 <engine+0xfffbf828>
+  21:	000091        	l32r	a9, fffc0024 <engine+0xfffbedf4>
   24:	0288      	l32i.n	a8, a2, 0
   26:	0122d2        	l32i	a13, a2, 4
   29:	040243        	lsi	f4, a2, 16
   2c:	050233        	lsi	f3, a2, 20
   2f:	0302a3        	lsi	f10, a2, 12
-  32:	0000c1        	l32r	a12, fffc0034 <engine+0xfffbf838>
-  35:	0000b1        	l32r	a11, fffc0038 <engine+0xfffbf83c>
+  32:	0000c1        	l32r	a12, fffc0034 <engine+0xfffbee04>
+  35:	0000b1        	l32r	a11, fffc0038 <engine+0xfffbee08>
   38:	fa8750        	wfr	f8, a7
   3b:	fa5950        	wfr	f5, a9
   3e:	20a0a2        	movi	a10, 32
@@ -1333,7 +1063,7 @@ Disassembly of section .text._ZN6cs80v26Engine7releaseERNS_5VoiceEb:
   20:	fa5950        	wfr	f5, a9
   23:	fa6950        	wfr	f6, a9
   26:	01d392        	addmi	a9, a3, 0x100
-  29:	0000a1        	l32r	a10, fffc002c <engine+0xfffbf830>
+  29:	0000a1        	l32r	a10, fffc002c <engine+0xfffbedfc>
   2c:	20a172        	movi	a7, 0x120
   2f:	727a      	add.n	a7, a2, a7
   31:	4199      	s32i.n	a9, a1, 16
@@ -1363,17 +1093,17 @@ Disassembly of section .text._ZN6cs80v26Engine7releaseERNS_5VoiceEb:
   73:	014513        	ssi	f1, a5, 4
   76:	114592        	s8i	a9, a5, 17
   79:	6b0300        	ole.s	b0, f3, f0
-  7c:	0000a1        	l32r	a10, fffc007c <engine+0xfffbf880>
+  7c:	0000a1        	l32r	a10, fffc007c <engine+0xfffbee4c>
   7f:	fab040        	rfr	a11, f0
   82:	2e0076        	bf	b0, b4 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0xb4>
   85:	024153        	ssi	f5, a1, 8
   88:	014123        	ssi	f2, a1, 4
   8b:	004163        	ssi	f6, a1, 0
-  8e:	000081        	l32r	a8, fffc0090 <engine+0xfffbf894>
+  8e:	000081        	l32r	a8, fffc0090 <engine+0xfffbee60>
   91:	0008e0        	callx8	a8
-  94:	000081        	l32r	a8, fffc0094 <engine+0xfffbf898>
+  94:	000081        	l32r	a8, fffc0094 <engine+0xfffbee64>
   97:	0008e0        	callx8	a8
-  9a:	000081        	l32r	a8, fffc009c <engine+0xfffbf8a0>
+  9a:	000081        	l32r	a8, fffc009c <engine+0xfffbee6c>
   9d:	fa0a50        	wfr	f0, a10
   a0:	fa3850        	wfr	f3, a8
   a3:	1a0300        	sub.s	f0, f3, f0
@@ -1399,49 +1129,50 @@ Disassembly of section .text._ZN6cs80v26Engine7releaseERNS_5VoiceEb:
   da:	254592        	s8i	a9, a5, 37
   dd:	064553        	ssi	f5, a5, 24
   e0:	6b0300        	ole.s	b0, f3, f0
-  e3:	0000a1        	l32r	a10, fffc00e4 <engine+0xfffbf8e8>
+  e3:	0000a1        	l32r	a10, fffc00e4 <engine+0xfffbeeb4>
   e6:	fab040        	rfr	a11, f0
-  e9:	270076        	bf	b0, 114 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x114>
+  e9:	280076        	bf	b0, 115 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x115>
   ec:	014153        	ssi	f5, a1, 4
   ef:	004163        	ssi	f6, a1, 0
-  f2:	000081        	l32r	a8, fffc00f4 <engine+0xfffbf8f8>
+  f2:	000081        	l32r	a8, fffc00f4 <engine+0xfffbeec4>
   f5:	0008e0        	callx8	a8
-  f8:	000081        	l32r	a8, fffc00f8 <engine+0xfffbf8fc>
+  f8:	000081        	l32r	a8, fffc00f8 <engine+0xfffbeec8>
   fb:	0008e0        	callx8	a8
-  fe:	000081        	l32r	a8, fffc0100 <engine+0xfffbf904>
+  fe:	000081        	l32r	a8, fffc0100 <engine+0xfffbeed0>
  101:	fa0a50        	wfr	f0, a10
  104:	fa3850        	wfr	f3, a8
  107:	1a0300        	sub.s	f0, f3, f0
  10a:	000163        	lsi	f6, a1, 0
  10d:	010153        	lsi	f5, a1, 4
- 110:	0000c6        	j	117 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x117>
+ 110:	000106        	j	118 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x118>
  113:	00          	.byte	00
- 114:	fa0300        	mov.s	f0, f3
- 117:	074503        	ssi	f0, a5, 28
- 11a:	b0a082        	movi	a8, 176
- 11d:	6cc772        	addi	a7, a7, 108
- 120:	558a      	add.n	a5, a5, a8
- 122:	021737        	beq	a7, a3, 128 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x128>
- 125:	ffc806        	j	49 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x49>
- 128:	d8a182        	movi	a8, 0x1d8
- 12b:	3138      	l32i.n	a3, a1, 12
- 12d:	828a      	add.n	a8, a2, a8
- 12f:	02b387        	bgeu	a3, a8, 135 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x135>
- 132:	002306        	j	1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
- 135:	000081        	l32r	a8, fffc0138 <engine+0xfffbf93c>
- 138:	828a      	add.n	a8, a2, a8
- 13a:	023387        	bltu	a3, a8, 140 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x140>
- 13d:	002046        	j	1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
- 140:	01d292        	addmi	a9, a2, 0x100
- 143:	980982        	l8ui	a8, a9, 152
- 146:	782866        	bnei	a8, 2, 1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
- 149:	ac0982        	l8ui	a8, a9, 172
- 14c:	072816        	beqz	a8, 1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
- 14f:	670203        	lsi	f0, a2, 0x19c
- 152:	730213        	lsi	f1, a2, 0x1cc
- 155:	5fd292        	addmi	a9, a2, 0x5f00
- 158:	2a0010        	mul.s	f0, f0, f1
- 15b:	3b2992        	l32i	a9, a9, 236
+ 114:	00          	.byte	00
+ 115:	fa0300        	mov.s	f0, f3
+ 118:	074503        	ssi	f0, a5, 28
+ 11b:	b0a082        	movi	a8, 176
+ 11e:	6cc772        	addi	a7, a7, 108
+ 121:	558a      	add.n	a5, a5, a8
+ 123:	021737        	beq	a7, a3, 129 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x129>
+ 126:	ffc7c6        	j	49 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x49>
+ 129:	d8a182        	movi	a8, 0x1d8
+ 12c:	3138      	l32i.n	a3, a1, 12
+ 12e:	828a      	add.n	a8, a2, a8
+ 130:	02b387        	bgeu	a3, a8, 136 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x136>
+ 133:	0022c6        	j	1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
+ 136:	000081        	l32r	a8, fffc0138 <engine+0xfffbef08>
+ 139:	828a      	add.n	a8, a2, a8
+ 13b:	023387        	bltu	a3, a8, 141 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x141>
+ 13e:	002006        	j	1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
+ 141:	01d292        	addmi	a9, a2, 0x100
+ 144:	980982        	l8ui	a8, a9, 152
+ 147:	772866        	bnei	a8, 2, 1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
+ 14a:	ac0982        	l8ui	a8, a9, 172
+ 14d:	071816        	beqz	a8, 1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
+ 150:	670203        	lsi	f0, a2, 0x19c
+ 153:	730213        	lsi	f1, a2, 0x1cc
+ 156:	6ad292        	addmi	a9, a2, 0x6a00
+ 159:	2a0010        	mul.s	f0, f0, f1
+ 15c:	8998      	l32i.n	a9, a9, 32
  15e:	160c      	movi.n	a6, 1
  160:	08bd      	mov.n	a11, a8
  162:	eaa000        	utrunc.s	a10, f0, 0
@@ -1451,14 +1182,14 @@ Disassembly of section .text._ZN6cs80v26Engine7releaseERNS_5VoiceEb:
  16b:	4ed2a2        	addmi	a10, a2, 0x4e00
  16e:	508b76        	loop	a11, 1c2 <cs80v2::Engine::release(cs80v2::Voice&, bool)+0x1c2>
  171:	162a42        	l32i	a4, a10, 88
- 174:	0000c1        	l32r	a12, fffc0174 <engine+0xfffbf978>
+ 174:	0000c1        	l32r	a12, fffc0174 <engine+0xfffbef44>
  177:	908440        	addx2	a8, a4, a4
  17a:	a08820        	addx4	a8, a8, a2
  17d:	78ca      	add.n	a7, a8, a12
  17f:	cc4b      	addi.n	a12, a12, 4
  181:	f8ca      	add.n	a15, a8, a12
  183:	cc2b      	addi.n	a12, a12, 2
- 185:	000031        	l32r	a3, fffc0188 <engine+0xfffbf98c>
+ 185:	000031        	l32r	a3, fffc0188 <engine+0xfffbef58>
  188:	e8ca      	add.n	a14, a8, a12
  18a:	cc1b      	addi.n	a12, a12, 1
  18c:	d8ca      	add.n	a13, a8, a12
@@ -1488,406 +1219,399 @@ Disassembly of section .text._ZN6cs80v26Engine7releaseERNS_5VoiceEb:
 Disassembly of section .text._ZN6cs80v26Engine7note_onEii:
 
 00000000 <cs80v2::Engine::note_on(int, int)>:
-   0:	00e136        	entry	a1, 112
+   0:	00c136        	entry	a1, 96
    3:	04dd      	mov.n	a13, a4
    5:	038d      	mov.n	a8, a3
-   7:	06d456        	bnez	a4, 78 <cs80v2::Engine::note_on(int, int)+0x78>
-   a:	000041        	l32r	a4, fffc000c <engine+0xfffbf810>
-   d:	5fd262        	addmi	a6, a2, 0x5f00
-  10:	73a372        	movi	a7, 0x373
-  13:	60d292        	addmi	a9, a2, 0x6000
-  16:	0d5d      	mov.n	a5, a13
-  18:	727a      	add.n	a7, a2, a7
-  1a:	06dd      	mov.n	a13, a6
-  1c:	424a      	add.n	a4, a2, a4
-  1e:	5199      	s32i.n	a9, a1, 20
-  20:	65ae32        	movi	a3, 0xfffffe65
-  23:	086d      	mov.n	a6, a8
-  25:	030792        	l8ui	a9, a7, 3
-  28:	041916        	beqz	a9, 6d <cs80v2::Engine::note_on(int, int)+0x6d>
-  2b:	010792        	l8ui	a9, a7, 1
-  2e:	b9bc      	beqz.n	a9, 6d <cs80v2::Engine::note_on(int, int)+0x6d>
-  30:	000792        	l8ui	a9, a7, 0
-  33:	b73a      	add.n	a11, a7, a3
-  35:	239900        	sext	a9, a9, 7
-  38:	02ad      	mov.n	a10, a2
-  3a:	2f9697        	bne	a6, a9, 6d <cs80v2::Engine::note_on(int, int)+0x6d>
-  3d:	3f2d92        	l32i	a9, a13, 252
-  40:	014752        	s8i	a5, a7, 1
-  43:	01d2e2        	addmi	a14, a2, 0x100
-  46:	c90b      	addi.n	a12, a9, -1
-  48:	0219a6        	blti	a9, 1, 4e <cs80v2::Engine::note_on(int, int)+0x4e>
-  4b:	3f6dc2        	s32i	a12, a13, 252
-  4e:	5188      	l32i.n	a8, a1, 20
-  50:	4408c2        	l8ui	a12, a8, 68
-  53:	cc8c      	beqz.n	a12, 63 <cs80v2::Engine::note_on(int, int)+0x63>
-  55:	640e92        	l8ui	a9, a14, 100
-  58:	072966        	bnei	a9, 2, 63 <cs80v2::Engine::note_on(int, int)+0x63>
-  5b:	190c      	movi.n	a9, 1
-  5d:	024792        	s8i	a9, a7, 2
-  60:	000246        	j	6d <cs80v2::Engine::note_on(int, int)+0x6d>
-  63:	41d9      	s32i.n	a13, a1, 16
-  65:	000081        	l32r	a8, fffc0068 <engine+0xfffbf86c>
-  68:	0008e0        	callx8	a8
-  6b:	41d8      	l32i.n	a13, a1, 16
-  6d:	a4a192        	movi	a9, 0x1a4
-  70:	779a      	add.n	a7, a7, a9
-  72:	af9747        	bne	a7, a4, 25 <cs80v2::Engine::note_on(int, int)+0x25>
-  75:	f01d      	retw.n
-  77:	00          	.byte	00
-  78:	f8a092        	movi	a9, 248
-  7b:	929a      	add.n	a9, a2, a9
-  7d:	6c09f2        	l8ui	a15, a9, 108
-  80:	021f26        	beqi	a15, 1, 86 <cs80v2::Engine::note_on(int, int)+0x86>
-  83:	002b86        	j	135 <cs80v2::Engine::note_on(int, int)+0x135>
-  86:	0000a1        	l32r	a10, fffc0088 <engine+0xfffbf88c>
-  89:	74a372        	movi	a7, 0x374
-  8c:	a2aa      	add.n	a10, a2, a10
-  8e:	040c      	movi.n	a4, 0
-  90:	727a      	add.n	a7, a2, a7
-  92:	4e0c      	movi.n	a14, 4
-  94:	b0a0c2        	movi	a12, 176
-  97:	a4a152        	movi	a5, 0x1a4
-  9a:	0a3d      	mov.n	a3, a10
-  9c:	7189      	s32i.n	a8, a1, 28
-  9e:	81d9      	s32i.n	a13, a1, 32
-  a0:	020792        	l8ui	a9, a7, 2
-  a3:	082916        	beqz	a9, 129 <cs80v2::Engine::note_on(int, int)+0x129>
-  a6:	000782        	l8ui	a8, a7, 0
-  a9:	07c856        	bnez	a8, 129 <cs80v2::Engine::note_on(int, int)+0x129>
-  ac:	4cc792        	addi	a9, a7, 76
-  af:	ecae82        	movi	a8, 0xfffffeec
-  b2:	678a      	add.n	a6, a7, a8
-  b4:	5179      	s32i.n	a7, a1, 20
-  b6:	6139      	s32i.n	a3, a1, 24
-  b8:	0f7d      	mov.n	a7, a15
-  ba:	093d      	mov.n	a3, a9
-  bc:	000613        	lsi	f1, a6, 0
-  bf:	080c      	movi.n	a8, 0
-  c1:	fa2850        	wfr	f2, a8
-  c4:	6b0120        	ole.s	b0, f1, f2
-  c7:	048d      	mov.n	a8, a4
-  c9:	d38700        	movt	a8, a7, b0
-  cc:	750203        	lsi	f0, a2, 0x1d4
-  cf:	114682        	s8i	a8, a6, 17
-  d2:	000081        	l32r	a8, fffc00d4 <engine+0xfffbf8d8>
-  d5:	1046e2        	s8i	a14, a6, 16
-  d8:	fa1850        	wfr	f1, a8
-  db:	034623        	ssi	f2, a6, 12
-  de:	014623        	ssi	f2, a6, 4
-  e1:	6b0100        	ole.s	b0, f1, f0
-  e4:	0000a1        	l32r	a10, fffc00e4 <engine+0xfffbf8e8>
-  e7:	fab040        	rfr	a11, f0
-  ea:	220076        	bf	b0, 110 <cs80v2::Engine::note_on(int, int)+0x110>
-  ed:	41e9      	s32i.n	a14, a1, 16
-  ef:	000081        	l32r	a8, fffc00f0 <engine+0xfffbf8f4>
-  f2:	0008e0        	callx8	a8
-  f5:	000081        	l32r	a8, fffc00f8 <engine+0xfffbf8fc>
-  f8:	0008e0        	callx8	a8
-  fb:	000081        	l32r	a8, fffc00fc <engine+0xfffbf900>
-  fe:	fa0a50        	wfr	f0, a10
- 101:	fa1850        	wfr	f1, a8
- 104:	1a0100        	sub.s	f0, f1, f0
- 107:	41e8      	l32i.n	a14, a1, 16
- 109:	b0a0c2        	movi	a12, 176
- 10c:	000186        	j	116 <cs80v2::Engine::note_on(int, int)+0x116>
- 10f:	00          	.byte	00
- 110:	000081        	l32r	a8, fffc0110 <engine+0xfffbf914>
- 113:	fa0850        	wfr	f0, a8
- 116:	024603        	ssi	f0, a6, 8
- 119:	66ca      	add.n	a6, a6, a12
- 11b:	9d9367        	bne	a3, a6, bc <cs80v2::Engine::note_on(int, int)+0xbc>
- 11e:	07fd      	mov.n	a15, a7
- 120:	5178      	l32i.n	a7, a1, 20
- 122:	080c      	movi.n	a8, 0
- 124:	6138      	l32i.n	a3, a1, 24
- 126:	034782        	s8i	a8, a7, 3
- 129:	775a      	add.n	a7, a7, a5
- 12b:	021737        	beq	a7, a3, 131 <cs80v2::Engine::note_on(int, int)+0x131>
- 12e:	ffdb86        	j	a0 <cs80v2::Engine::note_on(int, int)+0xa0>
- 131:	7188      	l32i.n	a8, a1, 28
- 133:	81d8      	l32i.n	a13, a1, 32
- 135:	5fd232        	addmi	a3, a2, 0x5f00
- 138:	60d2a2        	addmi	a10, a2, 0x6000
- 13b:	3f2392        	l32i	a9, a3, 252
- 13e:	81a9      	s32i.n	a10, a1, 32
- 140:	0abd      	mov.n	a11, a10
- 142:	39cc      	bnez.n	a9, 149 <cs80v2::Engine::note_on(int, int)+0x149>
- 144:	1a0c      	movi.n	a10, 1
- 146:	304ba2        	s8i	a10, a11, 48
- 149:	991b      	addi.n	a9, a9, 1
- 14b:	fb7c      	movi.n	a11, -1
- 14d:	3f6392        	s32i	a9, a3, 252
- 150:	0a0c      	movi.n	a10, 0
- 152:	3ca362        	movi	a6, 0x33c
- 155:	0b7d      	mov.n	a7, a11
- 157:	a4a1c2        	movi	a12, 0x1a4
- 15a:	002686        	j	1f8 <cs80v2::Engine::note_on(int, int)+0x1f8>
- 15d:	0a4d      	mov.n	a4, a10
- 15f:	07fd      	mov.n	a15, a7
- 161:	3a09e2        	l8ui	a14, a9, 58
- 164:	048e16        	beqz	a14, 1b0 <cs80v2::Engine::note_on(int, int)+0x1b0>
- 167:	441b      	addi.n	a4, a4, 1
- 169:	4f8466        	bnei	a4, 8, 1bc <cs80v2::Engine::note_on(int, int)+0x1bc>
- 16c:	002006        	j	1f0 <cs80v2::Engine::note_on(int, int)+0x1f0>
- 16f:	00          	.byte	00
- 170:	5c1a66        	bnei	a10, 1, 1d0 <cs80v2::Engine::note_on(int, int)+0x1d0>
- 173:	f8c4e2        	addi	a14, a4, -8
- 176:	60e0e0        	neg	a14, a14
- 179:	088e76        	loop	a14, 185 <cs80v2::Engine::note_on(int, int)+0x185>
- 17c:	380952        	l8ui	a5, a9, 56
- 17f:	558c      	beqz.n	a5, 188 <cs80v2::Engine::note_on(int, int)+0x188>
- 181:	441b      	addi.n	a4, a4, 1
- 183:	99ca      	add.n	a9, a9, a12
- 185:	0019c6        	j	1f0 <cs80v2::Engine::note_on(int, int)+0x1f0>
- 188:	3909e2        	l8ui	a14, a9, 57
- 18b:	1e8c      	beqz.n	a14, 190 <cs80v2::Engine::note_on(int, int)+0x190>
- 18d:	000106        	j	195 <cs80v2::Engine::note_on(int, int)+0x195>
- 190:	09e8      	l32i.n	a14, a9, 0
- 192:	0a3eb7        	bltu	a14, a11, 1a0 <cs80v2::Engine::note_on(int, int)+0x1a0>
- 195:	441b      	addi.n	a4, a4, 1
- 197:	558426        	beqi	a4, 8, 1f0 <cs80v2::Engine::note_on(int, int)+0x1f0>
- 19a:	99ca      	add.n	a9, a9, a12
- 19c:	fff4c6        	j	173 <cs80v2::Engine::note_on(int, int)+0x173>
- 19f:	00          	.byte	00
- 1a0:	541b      	addi.n	a5, a4, 1
- 1a2:	627426        	beqi	a4, 7, 208 <cs80v2::Engine::note_on(int, int)+0x208>
- 1a5:	04fd      	mov.n	a15, a4
- 1a7:	99ca      	add.n	a9, a9, a12
- 1a9:	0ebd      	mov.n	a11, a14
- 1ab:	054d      	mov.n	a4, a5
- 1ad:	fff086        	j	173 <cs80v2::Engine::note_on(int, int)+0x173>
- 1b0:	09e8      	l32i.n	a14, a9, 0
- 1b2:	541b      	addi.n	a5, a4, 1
- 1b4:	093eb7        	bltu	a14, a11, 1c1 <cs80v2::Engine::note_on(int, int)+0x1c1>
- 1b7:	054d      	mov.n	a4, a5
- 1b9:	338526        	beqi	a5, 8, 1f0 <cs80v2::Engine::note_on(int, int)+0x1f0>
- 1bc:	99ca      	add.n	a9, a9, a12
- 1be:	ffe7c6        	j	161 <cs80v2::Engine::note_on(int, int)+0x161>
- 1c1:	437426        	beqi	a4, 7, 208 <cs80v2::Engine::note_on(int, int)+0x208>
- 1c4:	04fd      	mov.n	a15, a4
- 1c6:	99ca      	add.n	a9, a9, a12
- 1c8:	0ebd      	mov.n	a11, a14
- 1ca:	054d      	mov.n	a4, a5
- 1cc:	ffe446        	j	161 <cs80v2::Engine::note_on(int, int)+0x161>
- 1cf:	00          	.byte	00
- 1d0:	09e8      	l32i.n	a14, a9, 0
- 1d2:	541b      	addi.n	a5, a4, 1
- 1d4:	093eb7        	bltu	a14, a11, 1e1 <cs80v2::Engine::note_on(int, int)+0x1e1>
- 1d7:	054d      	mov.n	a4, a5
- 1d9:	138526        	beqi	a5, 8, 1f0 <cs80v2::Engine::note_on(int, int)+0x1f0>
- 1dc:	99ca      	add.n	a9, a9, a12
- 1de:	ffe386        	j	170 <cs80v2::Engine::note_on(int, int)+0x170>
- 1e1:	237426        	beqi	a4, 7, 208 <cs80v2::Engine::note_on(int, int)+0x208>
- 1e4:	04fd      	mov.n	a15, a4
- 1e6:	99ca      	add.n	a9, a9, a12
- 1e8:	0ebd      	mov.n	a11, a14
- 1ea:	054d      	mov.n	a4, a5
- 1ec:	ffe006        	j	170 <cs80v2::Engine::note_on(int, int)+0x170>
- 1ef:	00          	.byte	00
- 1f0:	aa1b      	addi.n	a10, a10, 1
- 1f2:	103a26        	beqi	a10, 3, 206 <cs80v2::Engine::note_on(int, int)+0x206>
- 1f5:	0d0f66        	bnei	a15, -1, 206 <cs80v2::Engine::note_on(int, int)+0x206>
- 1f8:	926a      	add.n	a9, a2, a6
- 1fa:	f5fa16        	beqz	a10, 15d <cs80v2::Engine::note_on(int, int)+0x15d>
- 1fd:	07fd      	mov.n	a15, a7
- 1ff:	040c      	movi.n	a4, 0
- 201:	ffdac6        	j	170 <cs80v2::Engine::note_on(int, int)+0x170>
- 204:	00          	.byte	00
- 205:	00          	.byte	00
- 206:	0f4d      	mov.n	a4, a15
- 208:	f0a440        	subx8	a10, a4, a4
- 20b:	119ac0        	slli	a9, a10, 4
- 20e:	c099a0        	sub	a9, a9, a10
- 211:	a0a920        	addx4	a10, a9, a2
- 214:	74a3b2        	movi	a11, 0x374
- 217:	baba      	add.n	a11, a10, a11
- 219:	000b62        	l8ui	a6, a11, 0
- 21c:	d8a1b2        	movi	a11, 0x1d8
- 21f:	a099b0        	addx4	a9, a9, a11
- 222:	929a      	add.n	a9, a2, a9
- 224:	11b4d0        	slli	a11, a4, 3
- 227:	71b9      	s32i.n	a11, a1, 28
- 229:	6199      	s32i.n	a9, a1, 24
- 22b:	01d252        	addmi	a5, a2, 0x100
- 22e:	76cc      	bnez.n	a6, 239 <cs80v2::Engine::note_on(int, int)+0x239>
- 230:	4ed292        	addmi	a9, a2, 0x4e00
- 233:	5199      	s32i.n	a9, a1, 20
- 235:	002d06        	j	2ed <cs80v2::Engine::note_on(int, int)+0x2ed>
- 238:	00          	.byte	00
- 239:	4ed2f2        	addmi	a15, a2, 0x4e00
- 23c:	980592        	l8ui	a9, a5, 152
- 23f:	51f9      	s32i.n	a15, a1, 20
- 241:	022926        	beqi	a9, 2, 247 <cs80v2::Engine::note_on(int, int)+0x247>
- 244:	002946        	j	2ed <cs80v2::Engine::note_on(int, int)+0x2ed>
- 247:	ac05e2        	l8ui	a14, a5, 172
- 24a:	09fe16        	beqz	a14, 2ed <cs80v2::Engine::note_on(int, int)+0x2ed>
- 24d:	270503        	lsi	f0, a5, 156
- 250:	730213        	lsi	f1, a2, 0x1cc
- 253:	70a392        	movi	a9, 0x370
- 256:	2a0010        	mul.s	f0, f0, f1
- 259:	9a9a      	add.n	a9, a10, a9
- 25b:	73a3b2        	movi	a11, 0x373
- 25e:	3b23c2        	l32i	a12, a3, 236
- 261:	ea7000        	utrunc.s	a7, f0, 0
- 264:	001992        	l16ui	a9, a9, 0
- 267:	aaba      	add.n	a10, a10, a11
- 269:	0b0c      	movi.n	a11, 0
- 26b:	000aa2        	l8ui	a10, a10, 0
- 26e:	41b9      	s32i.n	a11, a1, 16
- 270:	9199      	s32i.n	a9, a1, 36
- 272:	c7ca      	add.n	a12, a7, a12
- 274:	162f92        	l32i	a9, a15, 88
- 277:	07fd      	mov.n	a15, a7
- 279:	100172        	l8ui	a7, a1, 16
- 27c:	a1a9      	s32i.n	a10, a1, 40
- 27e:	106132        	s32i	a3, a1, 64
- 281:	1b0c      	movi.n	a11, 1
- 283:	0ead      	mov.n	a10, a14
- 285:	b169      	s32i.n	a6, a1, 44
- 287:	c149      	s32i.n	a4, a1, 48
- 289:	d189      	s32i.n	a8, a1, 52
- 28b:	e1d9      	s32i.n	a13, a1, 56
- 28d:	f159      	s32i.n	a5, a1, 60
- 28f:	0f3d      	mov.n	a3, a15
- 291:	448a76        	loop	a10, 2d9 <cs80v2::Engine::note_on(int, int)+0x2d9>
- 294:	0000d1        	l32r	a13, fffc0294 <engine+0xfffbfa98>
- 297:	908990        	addx2	a8, a9, a9
- 29a:	a08820        	addx4	a8, a8, a2
- 29d:	48da      	add.n	a4, a8, a13
- 29f:	dd4b      	addi.n	a13, a13, 4
- 2a1:	58da      	add.n	a5, a8, a13
- 2a3:	dd2b      	addi.n	a13, a13, 2
- 2a5:	000061        	l32r	a6, fffc02a8 <engine+0xfffbfaac>
- 2a8:	f8da      	add.n	a15, a8, a13
- 2aa:	dd1b      	addi.n	a13, a13, 1
- 2ac:	e8da      	add.n	a14, a8, a13
- 2ae:	dd1b      	addi.n	a13, a13, 1
- 2b0:	d8da      	add.n	a13, a8, a13
- 2b2:	886a      	add.n	a8, a8, a6
- 2b4:	00a262        	movi	a6, 0x200
- 2b7:	1a1967        	beq	a9, a6, 2d5 <cs80v2::Engine::note_on(int, int)+0x2d5>
- 2ba:	9168      	l32i.n	a6, a1, 36
- 2bc:	04c9      	s32i.n	a12, a4, 0
- 2be:	005562        	s16i	a6, a5, 0
- 2c1:	004f72        	s8i	a7, a15, 0
- 2c4:	004eb2        	s8i	a11, a14, 0
- 2c7:	a1e8      	l32i.n	a14, a1, 40
- 2c9:	991b      	addi.n	a9, a9, 1
- 2cb:	004de2        	s8i	a14, a13, 0
- 2ce:	004872        	s8i	a7, a8, 0
- 2d1:	b188      	l32i.n	a8, a1, 44
- 2d3:	4189      	s32i.n	a8, a1, 16
- 2d5:	bb1b      	addi.n	a11, a11, 1
- 2d7:	cc3a      	add.n	a12, a12, a3
- 2d9:	41a8      	l32i.n	a10, a1, 16
- 2db:	c148      	l32i.n	a4, a1, 48
- 2dd:	d188      	l32i.n	a8, a1, 52
- 2df:	e1d8      	l32i.n	a13, a1, 56
- 2e1:	f158      	l32i.n	a5, a1, 60
- 2e3:	102132        	l32i	a3, a1, 64
- 2e6:	3a8c      	beqz.n	a10, 2ed <cs80v2::Engine::note_on(int, int)+0x2ed>
- 2e8:	51a8      	l32i.n	a10, a1, 20
- 2ea:	166a92        	s32i	a9, a10, 88
- 2ed:	090c      	movi.n	a9, 0
- 2ef:	0199      	s32i.n	a9, a1, 0
- 2f1:	000091        	l32r	a9, fffc02f4 <engine+0xfffbfaf8>
- 2f4:	ca0d00        	float.s	f0, a13, 0
- 2f7:	fa1950        	wfr	f1, a9
- 2fa:	2a0010        	mul.s	f0, f0, f1
- 2fd:	6178      	l32i.n	a7, a1, 24
- 2ff:	0000e1        	l32r	a14, fffc0300 <engine+0xfffbfb04>
- 302:	08cd      	mov.n	a12, a8
- 304:	07bd      	mov.n	a11, a7
- 306:	02ad      	mov.n	a10, a2
- 308:	fad040        	rfr	a13, f0
- 30b:	0f0c      	movi.n	a15, 0
- 30d:	4189      	s32i.n	a8, a1, 16
- 30f:	000081        	l32r	a8, fffc0310 <engine+0xfffbfb14>
- 312:	0008e0        	callx8	a8
- 315:	7188      	l32i.n	a8, a1, 28
- 317:	7c13a2        	l16ui	a10, a3, 248
- 31a:	c09840        	sub	a9, a8, a4
- 31d:	11b9c0        	slli	a11, a9, 4
- 320:	c09b90        	sub	a9, a11, a9
- 323:	aa1b      	addi.n	a10, a10, 1
- 325:	a09920        	addx4	a9, a9, a2
- 328:	70a3b2        	movi	a11, 0x370
- 32b:	7c53a2        	s16i	a10, a3, 248
- 32e:	5188      	l32i.n	a8, a1, 20
- 330:	b9ba      	add.n	a11, a9, a11
- 332:	005ba2        	s16i	a10, a11, 0
- 335:	176872        	s32i	a7, a8, 92
- 338:	81b8      	l32i.n	a11, a1, 32
- 33a:	4188      	l32i.n	a8, a1, 16
- 33c:	0b89      	s32i.n	a8, a11, 0
- 33e:	980582        	l8ui	a8, a5, 152
- 341:	022826        	beqi	a8, 2, 347 <cs80v2::Engine::note_on(int, int)+0x347>
- 344:	002706        	j	3e4 <cs80v2::Engine::note_on(int, int)+0x3e4>
- 347:	ac0582        	l8ui	a8, a5, 172
- 34a:	096816        	beqz	a8, 3e4 <cs80v2::Engine::note_on(int, int)+0x3e4>
- 34d:	730203        	lsi	f0, a2, 0x1cc
- 350:	0000b1        	l32r	a11, fffc0350 <engine+0xfffbfb54>
- 353:	270513        	lsi	f1, a5, 156
- 356:	d00923        	lsi	f2, a9, 0x340
- 359:	2a1100        	mul.s	f1, f1, f0
- 35c:	fa0b50        	wfr	f0, a11
- 35f:	0000b1        	l32r	a11, fffc0360 <engine+0xfffbfb64>
- 362:	3b23d2        	l32i	a13, a3, 236
- 365:	fa3b50        	wfr	f3, a11
- 368:	4a0230        	madd.s	f0, f2, f3
- 36b:	73a3b2        	movi	a11, 0x373
- 36e:	99ba      	add.n	a9, a9, a11
- 370:	000992        	l8ui	a9, a9, 0
- 373:	9ab000        	trunc.s	a11, f0, 0
- 376:	6199      	s32i.n	a9, a1, 24
- 378:	5198      	l32i.n	a9, a1, 20
- 37a:	ea4100        	utrunc.s	a4, f1, 0
- 37d:	71b9      	s32i.n	a11, a1, 28
- 37f:	162992        	l32i	a9, a9, 88
- 382:	0b0c      	movi.n	a11, 0
- 384:	41b9      	s32i.n	a11, a1, 16
- 386:	1c0c      	movi.n	a12, 1
- 388:	d4da      	add.n	a13, a4, a13
- 38a:	00a232        	movi	a3, 0x200
- 38d:	08bd      	mov.n	a11, a8
- 38f:	81a9      	s32i.n	a10, a1, 32
- 391:	458b76        	loop	a11, 3da <cs80v2::Engine::note_on(int, int)+0x3da>
- 394:	0000e1        	l32r	a14, fffc0394 <engine+0xfffbfb98>
- 397:	908990        	addx2	a8, a9, a9
- 39a:	a08820        	addx4	a8, a8, a2
- 39d:	58ea      	add.n	a5, a8, a14
- 39f:	ee4b      	addi.n	a14, a14, 4
- 3a1:	68ea      	add.n	a6, a8, a14
- 3a3:	ee2b      	addi.n	a14, a14, 2
- 3a5:	78ea      	add.n	a7, a8, a14
- 3a7:	0000a1        	l32r	a10, fffc03a8 <engine+0xfffbfbac>
- 3aa:	ee1b      	addi.n	a14, a14, 1
- 3ac:	f8ea      	add.n	a15, a8, a14
- 3ae:	ee1b      	addi.n	a14, a14, 1
- 3b0:	e8ea      	add.n	a14, a8, a14
- 3b2:	88aa      	add.n	a8, a8, a10
- 3b4:	1e1937        	beq	a9, a3, 3d6 <cs80v2::Engine::note_on(int, int)+0x3d6>
- 3b7:	81a8      	l32i.n	a10, a1, 32
- 3b9:	05d9      	s32i.n	a13, a5, 0
- 3bb:	0056a2        	s16i	a10, a6, 0
- 3be:	1a0c      	movi.n	a10, 1
- 3c0:	0047a2        	s8i	a10, a7, 0
- 3c3:	61a8      	l32i.n	a10, a1, 24
- 3c5:	004fc2        	s8i	a12, a15, 0
- 3c8:	004ea2        	s8i	a10, a14, 0
- 3cb:	71a8      	l32i.n	a10, a1, 28
- 3cd:	991b      	addi.n	a9, a9, 1
- 3cf:	0048a2        	s8i	a10, a8, 0
- 3d2:	180c      	movi.n	a8, 1
- 3d4:	4189      	s32i.n	a8, a1, 16
- 3d6:	cc1b      	addi.n	a12, a12, 1
- 3d8:	dd4a      	add.n	a13, a13, a4
- 3da:	4188      	l32i.n	a8, a1, 16
- 3dc:	488c      	beqz.n	a8, 3e4 <cs80v2::Engine::note_on(int, int)+0x3e4>
- 3de:	052182        	l32i	a8, a1, 20
- 3e1:	166892        	s32i	a9, a8, 88
- 3e4:	f01d      	retw.n
+   7:	063456        	bnez	a4, 6e <cs80v2::Engine::note_on(int, int)+0x6e>
+   a:	000041        	l32r	a4, fffc000c <engine+0xfffbeddc>
+   d:	73a372        	movi	a7, 0x373
+  10:	01d292        	addmi	a9, a2, 0x100
+  13:	727a      	add.n	a7, a2, a7
+  15:	424a      	add.n	a4, a2, a4
+  17:	0d6d      	mov.n	a6, a13
+  19:	6ad232        	addmi	a3, a2, 0x6a00
+  1c:	65ae52        	movi	a5, 0xfffffe65
+  1f:	5199      	s32i.n	a9, a1, 20
+  21:	030792        	l8ui	a9, a7, 3
+  24:	c9bc      	beqz.n	a9, 64 <cs80v2::Engine::note_on(int, int)+0x64>
+  26:	010792        	l8ui	a9, a7, 1
+  29:	79bc      	beqz.n	a9, 64 <cs80v2::Engine::note_on(int, int)+0x64>
+  2b:	000792        	l8ui	a9, a7, 0
+  2e:	b75a      	add.n	a11, a7, a5
+  30:	239900        	sext	a9, a9, 7
+  33:	02ad      	mov.n	a10, a2
+  35:	2b9897        	bne	a8, a9, 64 <cs80v2::Engine::note_on(int, int)+0x64>
+  38:	c398      	l32i.n	a9, a3, 48
+  3a:	014762        	s8i	a6, a7, 1
+  3d:	c90b      	addi.n	a12, a9, -1
+  3f:	0119a6        	blti	a9, 1, 44 <cs80v2::Engine::note_on(int, int)+0x44>
+  42:	c3c9      	s32i.n	a12, a3, 48
+  44:	7803c2        	l8ui	a12, a3, 120
+  47:	fc8c      	beqz.n	a12, 5a <cs80v2::Engine::note_on(int, int)+0x5a>
+  49:	5198      	l32i.n	a9, a1, 20
+  4b:	640992        	l8ui	a9, a9, 100
+  4e:	082966        	bnei	a9, 2, 5a <cs80v2::Engine::note_on(int, int)+0x5a>
+  51:	190c      	movi.n	a9, 1
+  53:	024792        	s8i	a9, a7, 2
+  56:	000286        	j	64 <cs80v2::Engine::note_on(int, int)+0x64>
+  59:	00          	.byte	00
+  5a:	4189      	s32i.n	a8, a1, 16
+  5c:	000081        	l32r	a8, fffc005c <engine+0xfffbee2c>
+  5f:	0008e0        	callx8	a8
+  62:	4188      	l32i.n	a8, a1, 16
+  64:	a4a192        	movi	a9, 0x1a4
+  67:	779a      	add.n	a7, a7, a9
+  69:	b49747        	bne	a7, a4, 21 <cs80v2::Engine::note_on(int, int)+0x21>
+  6c:	f01d      	retw.n
+  6e:	f8a092        	movi	a9, 248
+  71:	929a      	add.n	a9, a2, a9
+  73:	6c09f2        	l8ui	a15, a9, 108
+  76:	021f26        	beqi	a15, 1, 7c <cs80v2::Engine::note_on(int, int)+0x7c>
+  79:	002c06        	j	12d <cs80v2::Engine::note_on(int, int)+0x12d>
+  7c:	0000a1        	l32r	a10, fffc007c <engine+0xfffbee4c>
+  7f:	74a372        	movi	a7, 0x374
+  82:	a2aa      	add.n	a10, a2, a10
+  84:	040c      	movi.n	a4, 0
+  86:	727a      	add.n	a7, a2, a7
+  88:	4e0c      	movi.n	a14, 4
+  8a:	b0a0c2        	movi	a12, 176
+  8d:	a4a152        	movi	a5, 0x1a4
+  90:	203aa0        	or	a3, a10, a10
+  93:	7189      	s32i.n	a8, a1, 28
+  95:	0861d2        	s32i	a13, a1, 32
+  98:	020792        	l8ui	a9, a7, 2
+  9b:	082916        	beqz	a9, 121 <cs80v2::Engine::note_on(int, int)+0x121>
+  9e:	000782        	l8ui	a8, a7, 0
+  a1:	07c856        	bnez	a8, 121 <cs80v2::Engine::note_on(int, int)+0x121>
+  a4:	4cc792        	addi	a9, a7, 76
+  a7:	ecae82        	movi	a8, 0xfffffeec
+  aa:	678a      	add.n	a6, a7, a8
+  ac:	5179      	s32i.n	a7, a1, 20
+  ae:	6139      	s32i.n	a3, a1, 24
+  b0:	0f7d      	mov.n	a7, a15
+  b2:	093d      	mov.n	a3, a9
+  b4:	000613        	lsi	f1, a6, 0
+  b7:	080c      	movi.n	a8, 0
+  b9:	fa2850        	wfr	f2, a8
+  bc:	6b0120        	ole.s	b0, f1, f2
+  bf:	048d      	mov.n	a8, a4
+  c1:	d38700        	movt	a8, a7, b0
+  c4:	750203        	lsi	f0, a2, 0x1d4
+  c7:	114682        	s8i	a8, a6, 17
+  ca:	000081        	l32r	a8, fffc00cc <engine+0xfffbee9c>
+  cd:	1046e2        	s8i	a14, a6, 16
+  d0:	fa1850        	wfr	f1, a8
+  d3:	034623        	ssi	f2, a6, 12
+  d6:	014623        	ssi	f2, a6, 4
+  d9:	6b0100        	ole.s	b0, f1, f0
+  dc:	0000a1        	l32r	a10, fffc00dc <engine+0xfffbeeac>
+  df:	fab040        	rfr	a11, f0
+  e2:	220076        	bf	b0, 108 <cs80v2::Engine::note_on(int, int)+0x108>
+  e5:	41e9      	s32i.n	a14, a1, 16
+  e7:	000081        	l32r	a8, fffc00e8 <engine+0xfffbeeb8>
+  ea:	0008e0        	callx8	a8
+  ed:	000081        	l32r	a8, fffc00f0 <engine+0xfffbeec0>
+  f0:	0008e0        	callx8	a8
+  f3:	000081        	l32r	a8, fffc00f4 <engine+0xfffbeec4>
+  f6:	fa0a50        	wfr	f0, a10
+  f9:	fa1850        	wfr	f1, a8
+  fc:	1a0100        	sub.s	f0, f1, f0
+  ff:	41e8      	l32i.n	a14, a1, 16
+ 101:	b0a0c2        	movi	a12, 176
+ 104:	000186        	j	10e <cs80v2::Engine::note_on(int, int)+0x10e>
+ 107:	00          	.byte	00
+ 108:	000081        	l32r	a8, fffc0108 <engine+0xfffbeed8>
+ 10b:	fa0850        	wfr	f0, a8
+ 10e:	024603        	ssi	f0, a6, 8
+ 111:	66ca      	add.n	a6, a6, a12
+ 113:	9d9367        	bne	a3, a6, b4 <cs80v2::Engine::note_on(int, int)+0xb4>
+ 116:	07fd      	mov.n	a15, a7
+ 118:	5178      	l32i.n	a7, a1, 20
+ 11a:	080c      	movi.n	a8, 0
+ 11c:	6138      	l32i.n	a3, a1, 24
+ 11e:	034782        	s8i	a8, a7, 3
+ 121:	775a      	add.n	a7, a7, a5
+ 123:	021737        	beq	a7, a3, 129 <cs80v2::Engine::note_on(int, int)+0x129>
+ 126:	ffdb86        	j	98 <cs80v2::Engine::note_on(int, int)+0x98>
+ 129:	7188      	l32i.n	a8, a1, 28
+ 12b:	81d8      	l32i.n	a13, a1, 32
+ 12d:	6ad232        	addmi	a3, a2, 0x6a00
+ 130:	c398      	l32i.n	a9, a3, 48
+ 132:	39cc      	bnez.n	a9, 139 <cs80v2::Engine::note_on(int, int)+0x139>
+ 134:	1a0c      	movi.n	a10, 1
+ 136:	6443a2        	s8i	a10, a3, 100
+ 139:	991b      	addi.n	a9, a9, 1
+ 13b:	fb7c      	movi.n	a11, -1
+ 13d:	c399      	s32i.n	a9, a3, 48
+ 13f:	0a0c      	movi.n	a10, 0
+ 141:	3ca362        	movi	a6, 0x33c
+ 144:	0b7d      	mov.n	a7, a11
+ 146:	a4a1c2        	movi	a12, 0x1a4
+ 149:	002686        	j	1e7 <cs80v2::Engine::note_on(int, int)+0x1e7>
+ 14c:	0a4d      	mov.n	a4, a10
+ 14e:	07fd      	mov.n	a15, a7
+ 150:	3a09e2        	l8ui	a14, a9, 58
+ 153:	049e16        	beqz	a14, 1a0 <cs80v2::Engine::note_on(int, int)+0x1a0>
+ 156:	441b      	addi.n	a4, a4, 1
+ 158:	508466        	bnei	a4, 8, 1ac <cs80v2::Engine::note_on(int, int)+0x1ac>
+ 15b:	002006        	j	1df <cs80v2::Engine::note_on(int, int)+0x1df>
+ 15e:	00          	.byte	00
+ 15f:	00          	.byte	00
+ 160:	5c1a66        	bnei	a10, 1, 1c0 <cs80v2::Engine::note_on(int, int)+0x1c0>
+ 163:	f8c4e2        	addi	a14, a4, -8
+ 166:	60e0e0        	neg	a14, a14
+ 169:	088e76        	loop	a14, 175 <cs80v2::Engine::note_on(int, int)+0x175>
+ 16c:	380952        	l8ui	a5, a9, 56
+ 16f:	558c      	beqz.n	a5, 178 <cs80v2::Engine::note_on(int, int)+0x178>
+ 171:	441b      	addi.n	a4, a4, 1
+ 173:	99ca      	add.n	a9, a9, a12
+ 175:	001986        	j	1df <cs80v2::Engine::note_on(int, int)+0x1df>
+ 178:	3909e2        	l8ui	a14, a9, 57
+ 17b:	1e8c      	beqz.n	a14, 180 <cs80v2::Engine::note_on(int, int)+0x180>
+ 17d:	000106        	j	185 <cs80v2::Engine::note_on(int, int)+0x185>
+ 180:	09e8      	l32i.n	a14, a9, 0
+ 182:	0a3eb7        	bltu	a14, a11, 190 <cs80v2::Engine::note_on(int, int)+0x190>
+ 185:	441b      	addi.n	a4, a4, 1
+ 187:	548426        	beqi	a4, 8, 1df <cs80v2::Engine::note_on(int, int)+0x1df>
+ 18a:	99ca      	add.n	a9, a9, a12
+ 18c:	fff4c6        	j	163 <cs80v2::Engine::note_on(int, int)+0x163>
+ 18f:	00          	.byte	00
+ 190:	541b      	addi.n	a5, a4, 1
+ 192:	627426        	beqi	a4, 7, 1f8 <cs80v2::Engine::note_on(int, int)+0x1f8>
+ 195:	04fd      	mov.n	a15, a4
+ 197:	99ca      	add.n	a9, a9, a12
+ 199:	0ebd      	mov.n	a11, a14
+ 19b:	054d      	mov.n	a4, a5
+ 19d:	fff086        	j	163 <cs80v2::Engine::note_on(int, int)+0x163>
+ 1a0:	09e8      	l32i.n	a14, a9, 0
+ 1a2:	541b      	addi.n	a5, a4, 1
+ 1a4:	093eb7        	bltu	a14, a11, 1b1 <cs80v2::Engine::note_on(int, int)+0x1b1>
+ 1a7:	054d      	mov.n	a4, a5
+ 1a9:	328526        	beqi	a5, 8, 1df <cs80v2::Engine::note_on(int, int)+0x1df>
+ 1ac:	99ca      	add.n	a9, a9, a12
+ 1ae:	ffe786        	j	150 <cs80v2::Engine::note_on(int, int)+0x150>
+ 1b1:	437426        	beqi	a4, 7, 1f8 <cs80v2::Engine::note_on(int, int)+0x1f8>
+ 1b4:	04fd      	mov.n	a15, a4
+ 1b6:	99ca      	add.n	a9, a9, a12
+ 1b8:	0ebd      	mov.n	a11, a14
+ 1ba:	054d      	mov.n	a4, a5
+ 1bc:	ffe406        	j	150 <cs80v2::Engine::note_on(int, int)+0x150>
+ 1bf:	00          	.byte	00
+ 1c0:	09e8      	l32i.n	a14, a9, 0
+ 1c2:	541b      	addi.n	a5, a4, 1
+ 1c4:	093eb7        	bltu	a14, a11, 1d1 <cs80v2::Engine::note_on(int, int)+0x1d1>
+ 1c7:	054d      	mov.n	a4, a5
+ 1c9:	128526        	beqi	a5, 8, 1df <cs80v2::Engine::note_on(int, int)+0x1df>
+ 1cc:	99ca      	add.n	a9, a9, a12
+ 1ce:	ffe386        	j	160 <cs80v2::Engine::note_on(int, int)+0x160>
+ 1d1:	237426        	beqi	a4, 7, 1f8 <cs80v2::Engine::note_on(int, int)+0x1f8>
+ 1d4:	04fd      	mov.n	a15, a4
+ 1d6:	99ca      	add.n	a9, a9, a12
+ 1d8:	0ebd      	mov.n	a11, a14
+ 1da:	054d      	mov.n	a4, a5
+ 1dc:	ffe006        	j	160 <cs80v2::Engine::note_on(int, int)+0x160>
+ 1df:	aa1b      	addi.n	a10, a10, 1
+ 1e1:	113a26        	beqi	a10, 3, 1f6 <cs80v2::Engine::note_on(int, int)+0x1f6>
+ 1e4:	0e0f66        	bnei	a15, -1, 1f6 <cs80v2::Engine::note_on(int, int)+0x1f6>
+ 1e7:	926a      	add.n	a9, a2, a6
+ 1e9:	f5fa16        	beqz	a10, 14c <cs80v2::Engine::note_on(int, int)+0x14c>
+ 1ec:	07fd      	mov.n	a15, a7
+ 1ee:	040c      	movi.n	a4, 0
+ 1f0:	ffdb06        	j	160 <cs80v2::Engine::note_on(int, int)+0x160>
+ 1f3:	00          	.byte	00
+ 1f4:	00          	.byte	00
+ 1f5:	00          	.byte	00
+ 1f6:	0f4d      	mov.n	a4, a15
+ 1f8:	f0a440        	subx8	a10, a4, a4
+ 1fb:	119ac0        	slli	a9, a10, 4
+ 1fe:	c099a0        	sub	a9, a9, a10
+ 201:	a0a920        	addx4	a10, a9, a2
+ 204:	74a3b2        	movi	a11, 0x374
+ 207:	baba      	add.n	a11, a10, a11
+ 209:	000b62        	l8ui	a6, a11, 0
+ 20c:	d8a1b2        	movi	a11, 0x1d8
+ 20f:	a099b0        	addx4	a9, a9, a11
+ 212:	929a      	add.n	a9, a2, a9
+ 214:	11b4d0        	slli	a11, a4, 3
+ 217:	71b9      	s32i.n	a11, a1, 28
+ 219:	6199      	s32i.n	a9, a1, 24
+ 21b:	01d252        	addmi	a5, a2, 0x100
+ 21e:	66cc      	bnez.n	a6, 228 <cs80v2::Engine::note_on(int, int)+0x228>
+ 220:	4ed292        	addmi	a9, a2, 0x4e00
+ 223:	5199      	s32i.n	a9, a1, 20
+ 225:	002c06        	j	2d9 <cs80v2::Engine::note_on(int, int)+0x2d9>
+ 228:	4ed2f2        	addmi	a15, a2, 0x4e00
+ 22b:	980592        	l8ui	a9, a5, 152
+ 22e:	51f9      	s32i.n	a15, a1, 20
+ 230:	022926        	beqi	a9, 2, 236 <cs80v2::Engine::note_on(int, int)+0x236>
+ 233:	002886        	j	2d9 <cs80v2::Engine::note_on(int, int)+0x2d9>
+ 236:	ac05e2        	l8ui	a14, a5, 172
+ 239:	09ce16        	beqz	a14, 2d9 <cs80v2::Engine::note_on(int, int)+0x2d9>
+ 23c:	270503        	lsi	f0, a5, 156
+ 23f:	730213        	lsi	f1, a2, 0x1cc
+ 242:	70a392        	movi	a9, 0x370
+ 245:	2a0010        	mul.s	f0, f0, f1
+ 248:	9a9a      	add.n	a9, a10, a9
+ 24a:	73a3b2        	movi	a11, 0x373
+ 24d:	83c8      	l32i.n	a12, a3, 32
+ 24f:	ea7000        	utrunc.s	a7, f0, 0
+ 252:	001992        	l16ui	a9, a9, 0
+ 255:	aaba      	add.n	a10, a10, a11
+ 257:	0b0c      	movi.n	a11, 0
+ 259:	000aa2        	l8ui	a10, a10, 0
+ 25c:	41b9      	s32i.n	a11, a1, 16
+ 25e:	8199      	s32i.n	a9, a1, 32
+ 260:	c7ca      	add.n	a12, a7, a12
+ 262:	162f92        	l32i	a9, a15, 88
+ 265:	07fd      	mov.n	a15, a7
+ 267:	100172        	l8ui	a7, a1, 16
+ 26a:	91a9      	s32i.n	a10, a1, 36
+ 26c:	e139      	s32i.n	a3, a1, 56
+ 26e:	1b0c      	movi.n	a11, 1
+ 270:	0ead      	mov.n	a10, a14
+ 272:	a169      	s32i.n	a6, a1, 40
+ 274:	b149      	s32i.n	a4, a1, 44
+ 276:	c189      	s32i.n	a8, a1, 48
+ 278:	d1d9      	s32i.n	a13, a1, 52
+ 27a:	0f3d      	mov.n	a3, a15
+ 27c:	f159      	s32i.n	a5, a1, 60
+ 27e:	448a76        	loop	a10, 2c6 <cs80v2::Engine::note_on(int, int)+0x2c6>
+ 281:	0000d1        	l32r	a13, fffc0284 <engine+0xfffbf054>
+ 284:	908990        	addx2	a8, a9, a9
+ 287:	a08820        	addx4	a8, a8, a2
+ 28a:	48da      	add.n	a4, a8, a13
+ 28c:	dd4b      	addi.n	a13, a13, 4
+ 28e:	58da      	add.n	a5, a8, a13
+ 290:	dd2b      	addi.n	a13, a13, 2
+ 292:	000061        	l32r	a6, fffc0294 <engine+0xfffbf064>
+ 295:	f8da      	add.n	a15, a8, a13
+ 297:	dd1b      	addi.n	a13, a13, 1
+ 299:	e8da      	add.n	a14, a8, a13
+ 29b:	dd1b      	addi.n	a13, a13, 1
+ 29d:	d8da      	add.n	a13, a8, a13
+ 29f:	886a      	add.n	a8, a8, a6
+ 2a1:	00a262        	movi	a6, 0x200
+ 2a4:	1a1967        	beq	a9, a6, 2c2 <cs80v2::Engine::note_on(int, int)+0x2c2>
+ 2a7:	8168      	l32i.n	a6, a1, 32
+ 2a9:	04c9      	s32i.n	a12, a4, 0
+ 2ab:	005562        	s16i	a6, a5, 0
+ 2ae:	004f72        	s8i	a7, a15, 0
+ 2b1:	004eb2        	s8i	a11, a14, 0
+ 2b4:	91e8      	l32i.n	a14, a1, 36
+ 2b6:	991b      	addi.n	a9, a9, 1
+ 2b8:	004de2        	s8i	a14, a13, 0
+ 2bb:	004872        	s8i	a7, a8, 0
+ 2be:	a188      	l32i.n	a8, a1, 40
+ 2c0:	4189      	s32i.n	a8, a1, 16
+ 2c2:	bb1b      	addi.n	a11, a11, 1
+ 2c4:	cc3a      	add.n	a12, a12, a3
+ 2c6:	41a8      	l32i.n	a10, a1, 16
+ 2c8:	b148      	l32i.n	a4, a1, 44
+ 2ca:	c188      	l32i.n	a8, a1, 48
+ 2cc:	d1d8      	l32i.n	a13, a1, 52
+ 2ce:	e138      	l32i.n	a3, a1, 56
+ 2d0:	f158      	l32i.n	a5, a1, 60
+ 2d2:	3a8c      	beqz.n	a10, 2d9 <cs80v2::Engine::note_on(int, int)+0x2d9>
+ 2d4:	51a8      	l32i.n	a10, a1, 20
+ 2d6:	166a92        	s32i	a9, a10, 88
+ 2d9:	090c      	movi.n	a9, 0
+ 2db:	0199      	s32i.n	a9, a1, 0
+ 2dd:	000091        	l32r	a9, fffc02e0 <engine+0xfffbf0b0>
+ 2e0:	ca0d00        	float.s	f0, a13, 0
+ 2e3:	fa1950        	wfr	f1, a9
+ 2e6:	2a0010        	mul.s	f0, f0, f1
+ 2e9:	6178      	l32i.n	a7, a1, 24
+ 2eb:	0000e1        	l32r	a14, fffc02ec <engine+0xfffbf0bc>
+ 2ee:	08cd      	mov.n	a12, a8
+ 2f0:	07bd      	mov.n	a11, a7
+ 2f2:	02ad      	mov.n	a10, a2
+ 2f4:	fad040        	rfr	a13, f0
+ 2f7:	0f0c      	movi.n	a15, 0
+ 2f9:	4189      	s32i.n	a8, a1, 16
+ 2fb:	000081        	l32r	a8, fffc02fc <engine+0xfffbf0cc>
+ 2fe:	0008e0        	callx8	a8
+ 301:	7188      	l32i.n	a8, a1, 28
+ 303:	1613a2        	l16ui	a10, a3, 44
+ 306:	c09840        	sub	a9, a8, a4
+ 309:	11b9c0        	slli	a11, a9, 4
+ 30c:	c09b90        	sub	a9, a11, a9
+ 30f:	aa1b      	addi.n	a10, a10, 1
+ 311:	a09920        	addx4	a9, a9, a2
+ 314:	70a3b2        	movi	a11, 0x370
+ 317:	1653a2        	s16i	a10, a3, 44
+ 31a:	5188      	l32i.n	a8, a1, 20
+ 31c:	b9ba      	add.n	a11, a9, a11
+ 31e:	005ba2        	s16i	a10, a11, 0
+ 321:	176872        	s32i	a7, a8, 92
+ 324:	4188      	l32i.n	a8, a1, 16
+ 326:	d389      	s32i.n	a8, a3, 52
+ 328:	980582        	l8ui	a8, a5, 152
+ 32b:	022826        	beqi	a8, 2, 331 <cs80v2::Engine::note_on(int, int)+0x331>
+ 32e:	0026c6        	j	3cd <cs80v2::Engine::note_on(int, int)+0x3cd>
+ 331:	ac0582        	l8ui	a8, a5, 172
+ 334:	095816        	beqz	a8, 3cd <cs80v2::Engine::note_on(int, int)+0x3cd>
+ 337:	730203        	lsi	f0, a2, 0x1cc
+ 33a:	0000b1        	l32r	a11, fffc033c <engine+0xfffbf10c>
+ 33d:	270513        	lsi	f1, a5, 156
+ 340:	d00923        	lsi	f2, a9, 0x340
+ 343:	2a1100        	mul.s	f1, f1, f0
+ 346:	fa0b50        	wfr	f0, a11
+ 349:	0000b1        	l32r	a11, fffc034c <engine+0xfffbf11c>
+ 34c:	83d8      	l32i.n	a13, a3, 32
+ 34e:	fa3b50        	wfr	f3, a11
+ 351:	4a0230        	madd.s	f0, f2, f3
+ 354:	73a3b2        	movi	a11, 0x373
+ 357:	99ba      	add.n	a9, a9, a11
+ 359:	000992        	l8ui	a9, a9, 0
+ 35c:	9ab000        	trunc.s	a11, f0, 0
+ 35f:	6199      	s32i.n	a9, a1, 24
+ 361:	5198      	l32i.n	a9, a1, 20
+ 363:	ea4100        	utrunc.s	a4, f1, 0
+ 366:	71b9      	s32i.n	a11, a1, 28
+ 368:	162992        	l32i	a9, a9, 88
+ 36b:	0b0c      	movi.n	a11, 0
+ 36d:	41b9      	s32i.n	a11, a1, 16
+ 36f:	1c0c      	movi.n	a12, 1
+ 371:	d4da      	add.n	a13, a4, a13
+ 373:	00a232        	movi	a3, 0x200
+ 376:	08bd      	mov.n	a11, a8
+ 378:	81a9      	s32i.n	a10, a1, 32
+ 37a:	468b76        	loop	a11, 3c4 <cs80v2::Engine::note_on(int, int)+0x3c4>
+ 37d:	0000e1        	l32r	a14, fffc0380 <engine+0xfffbf150>
+ 380:	908990        	addx2	a8, a9, a9
+ 383:	a08820        	addx4	a8, a8, a2
+ 386:	58ea      	add.n	a5, a8, a14
+ 388:	ee4b      	addi.n	a14, a14, 4
+ 38a:	68ea      	add.n	a6, a8, a14
+ 38c:	ee2b      	addi.n	a14, a14, 2
+ 38e:	78ea      	add.n	a7, a8, a14
+ 390:	0000a1        	l32r	a10, fffc0390 <engine+0xfffbf160>
+ 393:	ee1b      	addi.n	a14, a14, 1
+ 395:	f8ea      	add.n	a15, a8, a14
+ 397:	ee1b      	addi.n	a14, a14, 1
+ 399:	e8ea      	add.n	a14, a8, a14
+ 39b:	88aa      	add.n	a8, a8, a10
+ 39d:	1f1937        	beq	a9, a3, 3c0 <cs80v2::Engine::note_on(int, int)+0x3c0>
+ 3a0:	81a8      	l32i.n	a10, a1, 32
+ 3a2:	05d9      	s32i.n	a13, a5, 0
+ 3a4:	0056a2        	s16i	a10, a6, 0
+ 3a7:	1a0c      	movi.n	a10, 1
+ 3a9:	0047a2        	s8i	a10, a7, 0
+ 3ac:	61a8      	l32i.n	a10, a1, 24
+ 3ae:	004fc2        	s8i	a12, a15, 0
+ 3b1:	004ea2        	s8i	a10, a14, 0
+ 3b4:	71a8      	l32i.n	a10, a1, 28
+ 3b6:	991b      	addi.n	a9, a9, 1
+ 3b8:	0048a2        	s8i	a10, a8, 0
+ 3bb:	180c      	movi.n	a8, 1
+ 3bd:	046182        	s32i	a8, a1, 16
+ 3c0:	cc1b      	addi.n	a12, a12, 1
+ 3c2:	dd4a      	add.n	a13, a13, a4
+ 3c4:	4188      	l32i.n	a8, a1, 16
+ 3c6:	388c      	beqz.n	a8, 3cd <cs80v2::Engine::note_on(int, int)+0x3cd>
+ 3c8:	5188      	l32i.n	a8, a1, 20
+ 3ca:	166892        	s32i	a9, a8, 88
+ 3cd:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
 
@@ -1898,35 +1622,37 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
    9:	025d      	mov.n	a5, a2
    b:	4189      	s32i.n	a8, a1, 16
    d:	207816        	beqz	a8, 218 <cs80v2::Engine::run_events()+0x218>
-  10:	5fd282        	addmi	a8, a2, 0x5f00
-  13:	3b2882        	l32i	a8, a8, 236
-  16:	030c      	movi.n	a3, 0
-  18:	20c882        	addi	a8, a8, 32
-  1b:	5189      	s32i.n	a8, a1, 20
-  1d:	000081        	l32r	a8, fffc0020 <engine+0xfffbf824>
-  20:	4139      	s32i.n	a3, a1, 16
-  22:	428a      	add.n	a4, a2, a8
-  24:	000021        	l32r	a2, fffc0024 <engine+0xfffbf828>
-  27:	097d      	mov.n	a7, a9
-  29:	802520        	add	a2, a5, a2
-  2c:	0498      	l32i.n	a9, a4, 0
-  2e:	5188      	l32i.n	a8, a1, 20
-  30:	c08980        	sub	a8, a9, a8
-  33:	01d896        	bltz	a8, 54 <cs80v2::Engine::run_events()+0x54>
-  36:	41b8      	l32i.n	a11, a1, 16
-  38:	0000a1        	l32r	a10, fffc0038 <engine+0xfffbf83c>
-  3b:	908bb0        	addx2	a8, a11, a11
-  3e:	a08850        	addx4	a8, a8, a5
-  41:	88aa      	add.n	a8, a8, a10
-  43:	14a8      	l32i.n	a10, a4, 4
-  45:	2899      	s32i.n	a9, a8, 8
-  47:	2498      	l32i.n	a9, a4, 8
-  49:	bb1b      	addi.n	a11, a11, 1
-  4b:	41b9      	s32i.n	a11, a1, 16
-  4d:	38a9      	s32i.n	a10, a8, 12
-  4f:	4899      	s32i.n	a9, a8, 16
-  51:	006d06        	j	209 <cs80v2::Engine::run_events()+0x209>
-  54:	000091        	l32r	a9, fffc0054 <engine+0xfffbf858>
+  10:	6ad282        	addmi	a8, a2, 0x6a00
+  13:	8888      	l32i.n	a8, a8, 32
+  15:	030c      	movi.n	a3, 0
+  17:	20c882        	addi	a8, a8, 32
+  1a:	5189      	s32i.n	a8, a1, 20
+  1c:	000081        	l32r	a8, fffc001c <engine+0xfffbedec>
+  1f:	4139      	s32i.n	a3, a1, 16
+  21:	428a      	add.n	a4, a2, a8
+  23:	000021        	l32r	a2, fffc0024 <engine+0xfffbedf4>
+  26:	097d      	mov.n	a7, a9
+  28:	252a      	add.n	a2, a5, a2
+  2a:	0498      	l32i.n	a9, a4, 0
+  2c:	5188      	l32i.n	a8, a1, 20
+  2e:	c08980        	sub	a8, a9, a8
+  31:	01f896        	bltz	a8, 54 <cs80v2::Engine::run_events()+0x54>
+  34:	41b8      	l32i.n	a11, a1, 16
+  36:	0000a1        	l32r	a10, fffc0038 <engine+0xfffbee08>
+  39:	908bb0        	addx2	a8, a11, a11
+  3c:	a08850        	addx4	a8, a8, a5
+  3f:	88aa      	add.n	a8, a8, a10
+  41:	14a8      	l32i.n	a10, a4, 4
+  43:	2899      	s32i.n	a9, a8, 8
+  45:	2498      	l32i.n	a9, a4, 8
+  47:	bb1b      	addi.n	a11, a11, 1
+  49:	41b9      	s32i.n	a11, a1, 16
+  4b:	38a9      	s32i.n	a10, a8, 12
+  4d:	4899      	s32i.n	a9, a8, 16
+  4f:	006d86        	j	209 <cs80v2::Engine::run_events()+0x209>
+  52:	00          	.byte	00
+  53:	00          	.byte	00
+  54:	000091        	l32r	a9, fffc0054 <engine+0xfffbee24>
   57:	060482        	l8ui	a8, a4, 6
   5a:	659a      	add.n	a6, a5, a9
   5c:	a4a192        	movi	a9, 0x1a4
@@ -1935,7 +1661,7 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
   65:	070482        	l8ui	a8, a4, 7
   68:	6189      	s32i.n	a8, a1, 24
   6a:	f89c      	beqz.n	a8, 8d <cs80v2::Engine::run_events()+0x8d>
-  6c:	000091        	l32r	a9, fffc006c <engine+0xfffbf870>
+  6c:	000091        	l32r	a9, fffc006c <engine+0xfffbee3c>
   6f:	680513        	lsi	f1, a5, 0x1a0
   72:	fa0950        	wfr	f0, a9
   75:	01d5a2        	addmi	a10, a5, 0x100
@@ -1949,7 +1675,7 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
   8a:	0003c6        	j	9d <cs80v2::Engine::run_events()+0x9d>
   8d:	080c      	movi.n	a8, 0
   8f:	fa2850        	wfr	f2, a8
-  92:	000081        	l32r	a8, fffc0094 <engine+0xfffbf898>
+  92:	000081        	l32r	a8, fffc0094 <engine+0xfffbee64>
   95:	61e8      	l32i.n	a14, a1, 24
   97:	fa0850        	wfr	f0, a8
   9a:	01d5a2        	addmi	a10, a5, 0x100
@@ -1981,19 +1707,19 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
   db:	148c      	beqz.n	a4, e0 <cs80v2::Engine::run_events()+0xe0>
   dd:	000106        	j	e5 <cs80v2::Engine::run_events()+0xe5>
   e0:	0b48      	l32i.n	a4, a11, 0
-  e2:	0934d7        	bltu	a4, a13, ef <cs80v2::Engine::run_events()+0xef>
+  e2:	0a34d7        	bltu	a4, a13, f0 <cs80v2::Engine::run_events()+0xf0>
   e5:	881b      	addi.n	a8, a8, 1
   e7:	551897        	beq	a8, a9, 140 <cs80v2::Engine::run_events()+0x140>
   ea:	bbca      	add.n	a11, a11, a12
   ec:	fff4c6        	j	c3 <cs80v2::Engine::run_events()+0xc3>
-  ef:	381b      	addi.n	a3, a8, 1
-  f1:	6c1397        	beq	a3, a9, 161 <cs80v2::Engine::run_events()+0x161>
-  f4:	086d      	mov.n	a6, a8
-  f6:	bbca      	add.n	a11, a11, a12
-  f8:	04dd      	mov.n	a13, a4
-  fa:	038d      	mov.n	a8, a3
-  fc:	fff0c6        	j	c3 <cs80v2::Engine::run_events()+0xc3>
-  ff:	00          	.byte	00
+  ef:	00          	.byte	00
+  f0:	381b      	addi.n	a3, a8, 1
+  f2:	6b1397        	beq	a3, a9, 161 <cs80v2::Engine::run_events()+0x161>
+  f5:	086d      	mov.n	a6, a8
+  f7:	bbca      	add.n	a11, a11, a12
+  f9:	04dd      	mov.n	a13, a4
+  fb:	038d      	mov.n	a8, a3
+  fd:	fff086        	j	c3 <cs80v2::Engine::run_events()+0xc3>
  100:	0b48      	l32i.n	a4, a11, 0
  102:	381b      	addi.n	a3, a8, 1
  104:	0934d7        	bltu	a4, a13, 111 <cs80v2::Engine::run_events()+0x111>
@@ -2025,7 +1751,7 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
  140:	ff1b      	addi.n	a15, a15, 1
  142:	123f26        	beqi	a15, 3, 158 <cs80v2::Engine::run_events()+0x158>
  145:	0f0666        	bnei	a6, -1, 158 <cs80v2::Engine::run_events()+0x158>
- 148:	000081        	l32r	a8, fffc0148 <engine+0xfffbf94c>
+ 148:	000081        	l32r	a8, fffc0148 <engine+0xfffbef18>
  14b:	b58a      	add.n	a11, a5, a8
  14d:	f5cf16        	beqz	a15, ad <cs80v2::Engine::run_events()+0xad>
  150:	f67c      	movi.n	a6, -1
@@ -2041,13 +1767,13 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
  165:	090492        	l8ui	a9, a4, 9
  168:	2d0a43        	lsi	f4, a10, 180
  16b:	2c0a13        	lsi	f1, a10, 176
- 16e:	0000a1        	l32r	a10, fffc0170 <engine+0xfffbf974>
+ 16e:	0000a1        	l32r	a10, fffc0170 <engine+0xfffbef40>
  171:	ca3900        	float.s	f3, a9, 0
  174:	2a2240        	mul.s	f2, f2, f4
  177:	fa4a50        	wfr	f4, a10
  17a:	2a3340        	mul.s	f3, f3, f4
  17d:	f08880        	subx8	a8, a8, a8
- 180:	0000b1        	l32r	a11, fffc0180 <engine+0xfffbf984>
+ 180:	0000b1        	l32r	a11, fffc0180 <engine+0xfffbef50>
  183:	1198c0        	slli	a9, a8, 4
  186:	c08980        	sub	a8, a9, a8
  189:	fad340        	rfr	a13, f3
@@ -2064,14 +1790,14 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
  1a7:	fae040        	rfr	a14, f0
  1aa:	b5ba      	add.n	a11, a5, a11
  1ac:	1168e0        	slli	a6, a8, 2
- 1af:	000081        	l32r	a8, fffc01b0 <engine+0xfffbf9b4>
+ 1af:	000081        	l32r	a8, fffc01b0 <engine+0xfffbef80>
  1b2:	0008e0        	callx8	a8
- 1b5:	000091        	l32r	a9, fffc01b8 <engine+0xfffbf9bc>
+ 1b5:	000091        	l32r	a9, fffc01b8 <engine+0xfffbef88>
  1b8:	0214a2        	l16ui	a10, a4, 4
  1bb:	856a      	add.n	a8, a5, a6
  1bd:	989a      	add.n	a9, a8, a9
  1bf:	0059a2        	s16i	a10, a9, 0
- 1c2:	000091        	l32r	a9, fffc01c4 <engine+0xfffbf9c8>
+ 1c2:	000091        	l32r	a9, fffc01c4 <engine+0xfffbef94>
  1c5:	889a      	add.n	a8, a8, a9
  1c7:	6198      	l32i.n	a9, a1, 24
  1c9:	004892        	s8i	a9, a8, 0
@@ -2093,7 +1819,7 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
  1f4:	0c0c      	movi.n	a12, 0
  1f6:	b6ba      	add.n	a11, a6, a11
  1f8:	20a550        	or	a10, a5, a5
- 1fb:	000081        	l32r	a8, fffc01fc <engine+0xfffbfa00>
+ 1fb:	000081        	l32r	a8, fffc01fc <engine+0xfffbefcc>
  1fe:	0008e0        	callx8	a8
  201:	a4a192        	movi	a9, 0x1a4
  204:	669a      	add.n	a6, a6, a9
@@ -2102,7 +1828,7 @@ Disassembly of section .text._ZN6cs80v26Engine10run_eventsEv:
  20c:	331b      	addi.n	a3, a3, 1
  20e:	44cb      	addi.n	a4, a4, 12
  210:	021837        	beq	a8, a3, 216 <cs80v2::Engine::run_events()+0x216>
- 213:	ff8546        	j	2c <cs80v2::Engine::run_events()+0x2c>
+ 213:	ff84c6        	j	2a <cs80v2::Engine::run_events()+0x2a>
  216:	079d      	mov.n	a9, a7
  218:	4188      	l32i.n	a8, a1, 16
  21a:	166982        	s32i	a8, a9, 88
@@ -2113,1345 +1839,1343 @@ Disassembly of section .text._ZN6cs80v26Engine12control_tickEv:
 00000000 <cs80v2::Engine::control_tick()>:
    0:	014136        	entry	a1, 160
    3:	752282        	l32i	a8, a2, 0x1d4
-   6:	0000a1        	l32r	a10, fffc0008 <engine+0xfffbf80c>
+   6:	0000a1        	l32r	a10, fffc0008 <engine+0xfffbedd8>
    9:	f189      	s32i.n	a8, a1, 60
    b:	08bd      	mov.n	a11, a8
    d:	4129      	s32i.n	a2, a1, 16
-   f:	000081        	l32r	a8, fffc0010 <engine+0xfffbf814>
+   f:	000081        	l32r	a8, fffc0010 <engine+0xfffbede0>
   12:	0008e0        	callx8	a8
   15:	460203        	lsi	f0, a2, 0x118
   18:	fa1a50        	wfr	f1, a10
   1b:	2a2100        	mul.s	f2, f1, f0
-  1e:	60d282        	addmi	a8, a2, 0x6000
-  21:	030803        	lsi	f0, a8, 12
-  24:	000091        	l32r	a9, fffc0024 <engine+0xfffbf828>
+  1e:	6ad282        	addmi	a8, a2, 0x6a00
+  21:	100803        	lsi	f0, a8, 64
+  24:	000091        	l32r	a9, fffc0024 <engine+0xfffbedf4>
   27:	0a0200        	add.s	f0, f2, f0
   2a:	fac950        	wfr	f12, a9
   2d:	104123        	ssi	f2, a1, 64
   30:	02ed      	mov.n	a14, a2
   32:	6b0c00        	ole.s	b0, f12, f0
-  35:	071076        	bt	b0, 40 <cs80v2::Engine::control_tick()+0x40>
-  38:	034803        	ssi	f0, a8, 12
-  3b:	000c46        	j	70 <cs80v2::Engine::control_tick()+0x70>
-  3e:	00          	.byte	00
-  3f:	00          	.byte	00
-  40:	5fd2b2        	addmi	a11, a2, 0x5f00
-  43:	3d2ba2        	l32i	a10, a11, 244
-  46:	1a00c0        	sub.s	f0, f0, f12
-  49:	119a30        	slli	a9, a10, 13
-  4c:	3099a0        	xor	a9, a9, a10
-  4f:	e5a190        	extui	a10, a9, 17, 15
-  52:	30aa90        	xor	a10, a10, a9
-  55:	119ab0        	slli	a9, a10, 5
-  58:	3099a0        	xor	a9, a9, a10
-  5b:	0000a1        	l32r	a10, fffc005c <engine+0xfffbf860>
-  5e:	ca2900        	float.s	f2, a9, 0
-  61:	034803        	ssi	f0, a8, 12
-  64:	fa0a50        	wfr	f0, a10
-  67:	2a0200        	mul.s	f0, f2, f0
-  6a:	3d6b92        	s32i	a9, a11, 244
-  6d:	044803        	ssi	f0, a8, 16
-  70:	f8a092        	movi	a9, 248
-  73:	9e9a      	add.n	a9, a14, a9
-  75:	1c0992        	l8ui	a9, a9, 28
-  78:	295966        	bnei	a9, 5, a5 <cs80v2::Engine::control_tick()+0xa5>
-  7b:	5fdeb2        	addmi	a11, a14, 0x5f00
-  7e:	3d2ba2        	l32i	a10, a11, 244
-  81:	119a30        	slli	a9, a10, 13
-  84:	3099a0        	xor	a9, a9, a10
-  87:	e5a190        	extui	a10, a9, 17, 15
-  8a:	30aa90        	xor	a10, a10, a9
-  8d:	119ab0        	slli	a9, a10, 5
-  90:	3099a0        	xor	a9, a9, a10
-  93:	ca0900        	float.s	f0, a9, 0
-  96:	3d6b92        	s32i	a9, a11, 244
-  99:	000091        	l32r	a9, fffc009c <engine+0xfffbf8a0>
-  9c:	fa2950        	wfr	f2, a9
-  9f:	2a0020        	mul.s	f0, f0, f2
-  a2:	044803        	ssi	f0, a8, 16
-  a5:	080e33        	lsi	f3, a14, 32
-  a8:	010823        	lsi	f2, a8, 4
-  ab:	020803        	lsi	f0, a8, 8
-  ae:	4a2130        	madd.s	f2, f1, f3
-  b1:	000091        	l32r	a9, fffc00b4 <engine+0xfffbf8b8>
-  b4:	0d0833        	lsi	f3, a8, 52
-  b7:	fa9950        	wfr	f9, a9
-  ba:	1a42c0        	sub.s	f4, f2, f12
-  bd:	6b0c20        	ole.s	b0, f12, f2
-  c0:	090c      	movi.n	a9, 0
-  c2:	faf950        	wfr	f15, a9
-  c5:	db2400        	movt.s	f2, f4, b0
-  c8:	014823        	ssi	f2, a8, 4
-  cb:	230e53        	lsi	f5, a14, 140
-  ce:	fa4c00        	mov.s	f4, f12
-  d1:	4a0150        	madd.s	f0, f1, f5
-  d4:	5a4290        	msub.s	f4, f2, f9
-  d7:	000091        	l32r	a9, fffc00d8 <engine+0xfffbf8dc>
-  da:	1a60c0        	sub.s	f6, f0, f12
-  dd:	6b0c00        	ole.s	b0, f12, f0
-  e0:	fa5950        	wfr	f5, a9
-  e3:	2a5450        	mul.s	f5, f4, f5
-  e6:	db0600        	movt.s	f0, f6, b0
-  e9:	fa2410        	abs.s	f2, f4
-  ec:	fa4c00        	mov.s	f4, f12
-  ef:	5a4090        	msub.s	f4, f0, f9
-  f2:	1a2c20        	sub.s	f2, f12, f2
-  f5:	024803        	ssi	f0, a8, 8
-  f8:	6b0f30        	ole.s	b0, f15, f3
-  fb:	fa0410        	abs.s	f0, f4
-  fe:	2a2250        	mul.s	f2, f2, f5
- 101:	fa5950        	wfr	f5, a9
- 104:	2a4450        	mul.s	f4, f4, f5
- 107:	1a0c00        	sub.s	f0, f12, f0
- 10a:	000091        	l32r	a9, fffc010c <engine+0xfffbf910>
- 10d:	fa5210        	abs.s	f5, f2
- 110:	fa6950        	wfr	f6, a9
- 113:	2a0040        	mul.s	f0, f0, f4
- 116:	1a55c0        	sub.s	f5, f5, f12
- 119:	2a6260        	mul.s	f6, f2, f6
- 11c:	fa4010        	abs.s	f4, f0
- 11f:	1a44c0        	sub.s	f4, f4, f12
- 122:	4a2650        	madd.s	f2, f6, f5
- 125:	fa5950        	wfr	f5, a9
- 128:	2a5050        	mul.s	f5, f0, f5
- 12b:	024123        	ssi	f2, a1, 8
- 12e:	4a0540        	madd.s	f0, f5, f4
- 131:	034103        	ssi	f0, a1, 12
- 134:	080076        	bf	b0, 140 <cs80v2::Engine::control_tick()+0x140>
- 137:	5d0e03        	lsi	f0, a14, 0x174
- 13a:	2a0300        	mul.s	f0, f3, f0
- 13d:	000146        	j	146 <cs80v2::Engine::control_tick()+0x146>
- 140:	5e0e03        	lsi	f0, a14, 0x178
- 143:	2a0300        	mul.s	f0, f3, f0
- 146:	5b0e23        	lsi	f2, a14, 0x16c
- 149:	4b0f20        	olt.s	b0, f15, f2
- 14c:	400076        	bf	b0, 190 <cs80v2::Engine::control_tick()+0x190>
- 14f:	7189      	s32i.n	a8, a1, 28
- 151:	000081        	l32r	a8, fffc0154 <engine+0xfffbf958>
- 154:	054103        	ssi	f0, a1, 20
- 157:	fa3850        	wfr	f3, a8
- 15a:	2a0130        	mul.s	f0, f1, f3
- 15d:	61e9      	s32i.n	a14, a1, 24
- 15f:	044113        	ssi	f1, a1, 16
- 162:	fab240        	rfr	a11, f2
- 165:	faa040        	rfr	a10, f0
- 168:	000081        	l32r	a8, fffc0168 <engine+0xfffbf96c>
- 16b:	0008e0        	callx8	a8
- 16e:	080c      	movi.n	a8, 0
- 170:	faf850        	wfr	f15, a8
- 173:	000081        	l32r	a8, fffc0174 <engine+0xfffbf978>
- 176:	040113        	lsi	f1, a1, 16
- 179:	fac850        	wfr	f12, a8
- 17c:	000081        	l32r	a8, fffc017c <engine+0xfffbf980>
- 17f:	050103        	lsi	f0, a1, 20
- 182:	fa9850        	wfr	f9, a8
- 185:	61e8      	l32i.n	a14, a1, 24
- 187:	7188      	l32i.n	a8, a1, 28
- 189:	1361a2        	s32i	a10, a1, 76
- 18c:	000186        	j	196 <cs80v2::Engine::control_tick()+0x196>
- 18f:	00          	.byte	00
- 190:	000091        	l32r	a9, fffc0190 <engine+0xfffbf994>
- 193:	136192        	s32i	a9, a1, 76
- 196:	000091        	l32r	a9, fffc0198 <engine+0xfffbf99c>
- 199:	400e23        	lsi	f2, a14, 0x100
- 19c:	fa3950        	wfr	f3, a9
- 19f:	2a3130        	mul.s	f3, f1, f3
- 1a2:	6b02c0        	ole.s	b0, f2, f12
- 1a5:	1b4133        	ssi	f3, a1, 108
- 1a8:	051076        	bt	b0, 1b1 <cs80v2::Engine::control_tick()+0x1b1>
- 1ab:	0041f3        	ssi	f15, a1, 0
- 1ae:	0005c6        	j	1c9 <cs80v2::Engine::control_tick()+0x1c9>
- 1b1:	1a3c20        	sub.s	f3, f12, f2
- 1b4:	000091        	l32r	a9, fffc01b4 <engine+0xfffbf9b8>
- 1b7:	fa4950        	wfr	f4, a9
- 1ba:	6b03c0        	ole.s	b0, f3, f12
- 1bd:	cb3c00        	movf.s	f3, f12, b0
- 1c0:	004133        	ssi	f3, a1, 0
- 1c3:	6b0420        	ole.s	b0, f4, f2
- 1c6:	0b0076        	bf	b0, 1d5 <cs80v2::Engine::control_tick()+0x1d5>
- 1c9:	0a22c0        	add.s	f2, f2, f12
- 1cc:	6b02c0        	ole.s	b0, f2, f12
- 1cf:	cb2c00        	movf.s	f2, f12, b0
- 1d2:	000086        	j	1d8 <cs80v2::Engine::control_tick()+0x1d8>
- 1d5:	fa2f00        	mov.s	f2, f15
- 1d8:	f8a092        	movi	a9, 248
- 1db:	de9a      	add.n	a13, a14, a9
- 1dd:	270d33        	lsi	f3, a13, 156
- 1e0:	0f0853        	lsi	f5, a8, 60
- 1e3:	100843        	lsi	f4, a8, 64
- 1e6:	2a3350        	mul.s	f3, f3, f5
- 1e9:	000091        	l32r	a9, fffc01ec <engine+0xfffbf9f0>
- 1ec:	01deb2        	addmi	a11, a14, 0x100
- 1ef:	1961b2        	s32i	a11, a1, 100
- 1f2:	2a3340        	mul.s	f3, f3, f4
- 1f5:	0000b1        	l32r	a11, fffc01f8 <engine+0xfffbf9fc>
- 1f8:	d8a1f2        	movi	a15, 0x1d8
- 1fb:	5eba      	add.n	a5, a14, a11
- 1fd:	114133        	ssi	f3, a1, 68
- 200:	fa3950        	wfr	f3, a9
- 203:	1a0030        	sub.s	f0, f0, f3
- 206:	262d92        	l32i	a9, a13, 152
- 209:	014123        	ssi	f2, a1, 4
- 20c:	6199      	s32i.n	a9, a1, 24
- 20e:	000091        	l32r	a9, fffc0210 <engine+0xfffbfa14>
- 211:	124103        	ssi	f0, a1, 72
- 214:	fab950        	wfr	f11, a9
- 217:	070c      	movi.n	a7, 0
- 219:	9efa      	add.n	a9, a14, a15
- 21b:	8a0c      	movi.n	a10, 8
- 21d:	1d4113        	ssi	f1, a1, 116
- 220:	0e4d      	mov.n	a4, a14
- 222:	e189      	s32i.n	a8, a1, 56
- 224:	1c6152        	s32i	a5, a1, 112
- 227:	000206        	j	233 <cs80v2::Engine::control_tick()+0x233>
- 22a:	00          	.byte	00
- 22b:	00          	.byte	00
- 22c:	1c2192        	l32i	a9, a1, 112
- 22f:	170c      	movi.n	a7, 1
- 231:	8a1c      	movi.n	a10, 24
- 233:	f0aaa0        	subx8	a10, a10, a10
- 236:	118ac0        	slli	a8, a10, 4
- 239:	60a1b2        	movi	a11, 0x160
- 23c:	39ba      	add.n	a3, a9, a11
- 23e:	c088a0        	sub	a8, a8, a10
- 241:	0000f1        	l32r	a15, fffc0244 <engine+0xfffbfa48>
- 244:	a08830        	addx4	a8, a8, a3
- 247:	0e0c      	movi.n	a14, 0
- 249:	1a6172        	s32i	a7, a1, 104
- 24c:	3e0392        	l8ui	a9, a3, 62
- 24f:	19cc      	bnez.n	a9, 254 <cs80v2::Engine::control_tick()+0x254>
- 251:	025ec6        	j	bd0 <cs80v2::Engine::control_tick()+0xbd0>
- 254:	0e0d23        	lsi	f2, a13, 56
- 257:	0303e3        	lsi	f14, a3, 12
- 25a:	fa1c00        	mov.s	f1, f12
- 25d:	4a12e0        	madd.s	f1, f2, f14
- 260:	060303        	lsi	f0, a3, 24
- 263:	100123        	lsi	f2, a1, 64
- 266:	0358      	l32i.n	a5, a3, 0
- 268:	4a0120        	madd.s	f0, f1, f2
- 26b:	6b0c00        	ole.s	b0, f12, f0
- 26e:	061076        	bt	b0, 278 <cs80v2::Engine::control_tick()+0x278>
- 271:	064303        	ssi	f0, a3, 24
- 274:	000a46        	j	2a1 <cs80v2::Engine::control_tick()+0x2a1>
- 277:	00          	.byte	00
- 278:	11a530        	slli	a10, a5, 13
- 27b:	30aa50        	xor	a10, a10, a5
- 27e:	e591a0        	extui	a9, a10, 17, 15
- 281:	3099a0        	xor	a9, a9, a10
- 284:	1159b0        	slli	a5, a9, 5
- 287:	305590        	xor	a5, a5, a9
- 28a:	000091        	l32r	a9, fffc028c <engine+0xfffbfa90>
- 28d:	ca1500        	float.s	f1, a5, 0
- 290:	fa2950        	wfr	f2, a9
- 293:	1a00c0        	sub.s	f0, f0, f12
- 296:	2a1120        	mul.s	f1, f1, f2
- 299:	0359      	s32i.n	a5, a3, 0
- 29b:	064303        	ssi	f0, a3, 24
- 29e:	074313        	ssi	f1, a3, 28
- 2a1:	1c0d92        	l8ui	a9, a13, 28
- 2a4:	055926        	beqi	a9, 5, 2ad <cs80v2::Engine::control_tick()+0x2ad>
- 2a7:	070313        	lsi	f1, a3, 28
- 2aa:	000346        	j	2bb <cs80v2::Engine::control_tick()+0x2bb>
- 2ad:	e198      	l32i.n	a9, a1, 56
- 2af:	040913        	lsi	f1, a9, 16
- 2b2:	192192        	l32i	a9, a1, 100
- 2b5:	074313        	ssi	f1, a3, 28
- 2b8:	140992        	l8ui	a9, a9, 20
- 2bb:	613926        	beqi	a9, 3, 320 <cs80v2::Engine::control_tick()+0x320>
- 2be:	0a49f6        	bgeui	a9, 4, 2cc <cs80v2::Engine::control_tick()+0x2cc>
- 2c1:	231926        	beqi	a9, 1, 2e8 <cs80v2::Engine::control_tick()+0x2e8>
- 2c4:	382926        	beqi	a9, 2, 300 <cs80v2::Engine::control_tick()+0x300>
- 2c7:	001c06        	j	33b <cs80v2::Engine::control_tick()+0x33b>
- 2ca:	00          	.byte	00
- 2cb:	00          	.byte	00
- 2cc:	fcc992        	addi	a9, a9, -4
- 2cf:	749090        	extui	a9, a9, 0, 8
- 2d2:	6529f6        	bgeui	a9, 2, 33b <cs80v2::Engine::control_tick()+0x33b>
- 2d5:	000091        	l32r	a9, fffc02d8 <engine+0xfffbfadc>
- 2d8:	1a51c0        	sub.s	f5, f1, f12
- 2db:	fa6950        	wfr	f6, a9
- 2de:	000091        	l32r	a9, fffc02e0 <engine+0xfffbfae4>
- 2e1:	fa7950        	wfr	f7, a9
- 2e4:	002706        	j	384 <cs80v2::Engine::control_tick()+0x384>
- 2e7:	00          	.byte	00
- 2e8:	0a0000        	add.s	f0, f0, f0
- 2eb:	000091        	l32r	a9, fffc02ec <engine+0xfffbfaf0>
- 2ee:	fa6950        	wfr	f6, a9
- 2f1:	000091        	l32r	a9, fffc02f4 <engine+0xfffbfaf8>
- 2f4:	1a1c00        	sub.s	f1, f12, f0
- 2f7:	fa7950        	wfr	f7, a9
- 2fa:	fa5060        	neg.s	f5, f0
- 2fd:	0020c6        	j	384 <cs80v2::Engine::control_tick()+0x384>
- 300:	000091        	l32r	a9, fffc0300 <engine+0xfffbfb04>
- 303:	fa1950        	wfr	f1, a9
- 306:	fa6950        	wfr	f6, a9
- 309:	000091        	l32r	a9, fffc030c <engine+0xfffbfb10>
- 30c:	4a1090        	madd.s	f1, f0, f9
- 30f:	fa5950        	wfr	f5, a9
- 312:	000091        	l32r	a9, fffc0314 <engine+0xfffbfb18>
- 315:	4a5090        	madd.s	f5, f0, f9
- 318:	fa7950        	wfr	f7, a9
- 31b:	001946        	j	384 <cs80v2::Engine::control_tick()+0x384>
- 31e:	00          	.byte	00
- 31f:	00          	.byte	00
- 320:	000091        	l32r	a9, fffc0320 <engine+0xfffbfb24>
- 323:	fa7950        	wfr	f7, a9
- 326:	4b0070        	olt.s	b0, f0, f7
- 329:	000091        	l32r	a9, fffc032c <engine+0xfffbfb30>
- 32c:	480076        	bf	b0, 378 <cs80v2::Engine::control_tick()+0x378>
- 32f:	fa6950        	wfr	f6, a9
- 332:	fa5f00        	mov.s	f5, f15
- 335:	fa1c00        	mov.s	f1, f12
- 338:	001206        	j	384 <cs80v2::Engine::control_tick()+0x384>
- 33b:	000091        	l32r	a9, fffc033c <engine+0xfffbfb40>
- 33e:	fa2c00        	mov.s	f2, f12
- 341:	5a2090        	msub.s	f2, f0, f9
- 344:	fa6950        	wfr	f6, a9
- 347:	000091        	l32r	a9, fffc0348 <engine+0xfffbfb4c>
- 34a:	fa7950        	wfr	f7, a9
- 34d:	000091        	l32r	a9, fffc0350 <engine+0xfffbfb54>
- 350:	fa1210        	abs.s	f1, f2
- 353:	fa0950        	wfr	f0, a9
- 356:	2a2200        	mul.s	f2, f2, f0
- 359:	1a1c10        	sub.s	f1, f12, f1
- 35c:	000091        	l32r	a9, fffc035c <engine+0xfffbfb60>
- 35f:	2a1120        	mul.s	f1, f1, f2
- 362:	fa2950        	wfr	f2, a9
- 365:	fa0110        	abs.s	f0, f1
- 368:	1a00c0        	sub.s	f0, f0, f12
- 36b:	2a2120        	mul.s	f2, f1, f2
- 36e:	4a1020        	madd.s	f1, f0, f2
- 371:	1a51c0        	sub.s	f5, f1, f12
- 374:	000306        	j	384 <cs80v2::Engine::control_tick()+0x384>
- 377:	00          	.byte	00
- 378:	fa1950        	wfr	f1, a9
- 37b:	000091        	l32r	a9, fffc037c <engine+0xfffbfb80>
- 37e:	fa6100        	mov.s	f6, f1
- 381:	fa5950        	wfr	f5, a9
- 384:	e198      	l32i.n	a9, a1, 56
- 386:	0c0d03        	lsi	f0, a13, 48
- 389:	0e0923        	lsi	f2, a9, 56
- 38c:	090d33        	lsi	f3, a13, 36
- 38f:	0f0d83        	lsi	f8, a13, 60
- 392:	4a3200        	madd.s	f3, f2, f0
- 395:	0a0d43        	lsi	f4, a13, 40
- 398:	100d03        	lsi	f0, a13, 64
- 39b:	0b0d23        	lsi	f2, a13, 44
- 39e:	4a40e0        	madd.s	f4, f0, f14
- 3a1:	4a38e0        	madd.s	f3, f8, f14
- 3a4:	3b0392        	l8ui	a9, a3, 59
- 3a7:	2a2270        	mul.s	f2, f2, f7
- 3aa:	239900        	sext	a9, a9, 7
- 3ad:	2a3310        	mul.s	f3, f3, f1
- 3b0:	2a1410        	mul.s	f1, f4, f1
- 3b3:	ca8900        	float.s	f8, a9, 0
- 3b6:	040303        	lsi	f0, a3, 16
- 3b9:	fa4c00        	mov.s	f4, f12
- 3bc:	084113        	ssi	f1, a1, 32
- 3bf:	4b0080        	olt.s	b0, f0, f8
- 3c2:	4a4250        	madd.s	f4, f2, f5
- 3c5:	180076        	bf	b0, 3e1 <cs80v2::Engine::control_tick()+0x3e1>
- 3c8:	130113        	lsi	f1, a1, 76
- 3cb:	0a0010        	add.s	f0, f0, f1
- 3ce:	4b0800        	olt.s	b0, f8, f0
- 3d1:	031076        	bt	b0, 3d8 <cs80v2::Engine::control_tick()+0x3d8>
- 3d4:	0006c6        	j	3f3 <cs80v2::Engine::control_tick()+0x3f3>
- 3d7:	00          	.byte	00
- 3d8:	044383        	ssi	f8, a3, 16
- 3db:	fa0800        	mov.s	f0, f8
- 3de:	000506        	j	3f6 <cs80v2::Engine::control_tick()+0x3f6>
- 3e1:	4b0800        	olt.s	b0, f8, f0
- 3e4:	0e0076        	bf	b0, 3f6 <cs80v2::Engine::control_tick()+0x3f6>
- 3e7:	130113        	lsi	f1, a1, 76
- 3ea:	1a0010        	sub.s	f0, f0, f1
- 3ed:	4b0080        	olt.s	b0, f0, f8
- 3f0:	e41076        	bt	b0, 3d8 <cs80v2::Engine::control_tick()+0x3d8>
- 3f3:	044303        	ssi	f0, a3, 16
- 3f6:	780da2        	l8ui	a10, a13, 120
- 3f9:	3a9c      	beqz.n	a10, 410 <cs80v2::Engine::control_tick()+0x410>
- 3fb:	0a1070        	add.s	f1, f0, f7
- 3fe:	9aa100        	trunc.s	a10, f1, 0
- 401:	ca0a00        	float.s	f0, a10, 0
- 404:	ffcaa2        	addi	a10, a10, -1
- 407:	ca2a00        	float.s	f2, a10, 0
- 40a:	4b0100        	olt.s	b0, f1, f0
- 40d:	db0200        	movt.s	f0, f2, b0
- 410:	050323        	lsi	f2, a3, 20
- 413:	4b02f0        	olt.s	b0, f2, f15
- 416:	180076        	bf	b0, 432 <cs80v2::Engine::control_tick()+0x432>
- 419:	1b0113        	lsi	f1, a1, 108
- 41c:	0a2210        	add.s	f2, f2, f1
- 41f:	4b0f20        	olt.s	b0, f15, f2
- 422:	061076        	bt	b0, 42c <cs80v2::Engine::control_tick()+0x42c>
- 425:	054323        	ssi	f2, a3, 20
- 428:	000186        	j	432 <cs80v2::Engine::control_tick()+0x432>
- 42b:	00          	.byte	00
- 42c:	0543f3        	ssi	f15, a3, 20
- 42f:	fa2f00        	mov.s	f2, f15
- 432:	090383        	lsi	f8, a3, 36
- 435:	130da3        	lsi	f10, a13, 76
- 438:	150d13        	lsi	f1, a13, 84
- 43b:	c4c992        	addi	a9, a9, -60
- 43e:	2a1810        	mul.s	f1, f8, f1
- 441:	2a88a0        	mul.s	f8, f8, f10
- 444:	caa900        	float.s	f10, a9, 0
- 447:	122d92        	l32i	a9, a13, 72
- 44a:	080353        	lsi	f5, a3, 32
- 44d:	140dd3        	lsi	f13, a13, 80
- 450:	4199      	s32i.n	a9, a1, 16
- 452:	000091        	l32r	a9, fffc0454 <engine+0xfffbfc58>
- 455:	4a15d0        	madd.s	f1, f5, f13
- 458:	fad950        	wfr	f13, a9
- 45b:	2aaad0        	mul.s	f10, f10, f13
- 45e:	6b0610        	ole.s	b0, f6, f1
- 461:	0941a3        	ssi	f10, a1, 36
- 464:	0401a3        	lsi	f10, a1, 16
- 467:	4a8a50        	madd.s	f8, f10, f5
- 46a:	0a4183        	ssi	f8, a1, 40
- 46d:	0b0076        	bf	b0, 47c <cs80v2::Engine::control_tick()+0x47c>
- 470:	0a11c0        	add.s	f1, f1, f12
- 473:	6b0190        	ole.s	b0, f1, f9
- 476:	cb1900        	movf.s	f1, f9, b0
- 479:	000086        	j	47f <cs80v2::Engine::control_tick()+0x47f>
- 47c:	fa1f00        	mov.s	f1, f15
- 47f:	120153        	lsi	f5, a1, 72
- 482:	0a0363        	lsi	f6, a3, 40
- 485:	0a5530        	add.s	f5, f5, f3
- 488:	110133        	lsi	f3, a1, 68
- 48b:	23a8      	l32i.n	a10, a3, 8
- 48d:	2a3360        	mul.s	f3, f3, f6
- 490:	0a0500        	add.s	f0, f5, f0
- 493:	41a9      	s32i.n	a10, a1, 16
- 495:	b3a8      	l32i.n	a10, a3, 44
- 497:	2a3340        	mul.s	f3, f3, f4
- 49a:	0a0020        	add.s	f0, f0, f2
- 49d:	71a9      	s32i.n	a10, a1, 28
- 49f:	0000a1        	l32r	a10, fffc04a0 <engine+0xfffbfca4>
- 4a2:	400392        	l8ui	a9, a3, 64
- 4a5:	0c4103        	ssi	f0, a1, 48
- 4a8:	fa8a50        	wfr	f8, a10
- 4ab:	2a0310        	mul.s	f0, f3, f1
- 4ae:	0000a1        	l32r	a10, fffc04b0 <engine+0xfffbfcb4>
- 4b1:	a4ae72        	movi	a7, 0xfffffea4
- 4b4:	fa5a50        	wfr	f5, a10
- 4b7:	0000a1        	l32r	a10, fffc04b8 <engine+0xfffbfcbc>
- 4ba:	d189      	s32i.n	a8, a1, 52
- 4bc:	038d      	mov.n	a8, a3
- 4be:	737a      	add.n	a7, a3, a7
- 4c0:	0b4103        	ssi	f0, a1, 44
- 4c3:	093d      	mov.n	a3, a9
- 4c5:	fa4a50        	wfr	f4, a10
- 4c8:	24c462        	addi	a6, a4, 36
- 4cb:	0e2d      	mov.n	a2, a14
- 4cd:	0ecd      	mov.n	a12, a14
- 4cf:	0541e3        	ssi	f14, a1, 20
- 4d2:	089d      	mov.n	a9, a8
- 4d4:	000086        	j	4da <cs80v2::Engine::control_tick()+0x4da>
- 4d7:	00          	.byte	00
- 4d8:	120c      	movi.n	a2, 1
- 4da:	800782        	l8ui	a8, a7, 128
- 4dd:	0cd816        	beqz	a8, 5ae <cs80v2::Engine::control_tick()+0x5ae>
- 4e0:	1c0703        	lsi	f0, a7, 112
- 4e3:	1d0713        	lsi	f1, a7, 116
- 4e6:	1e0723        	lsi	f2, a7, 120
- 4e9:	1a1100        	sub.s	f1, f1, f0
- 4ec:	4a0120        	madd.s	f0, f1, f2
- 4ef:	1c4703        	ssi	f0, a7, 112
- 4f2:	021826        	beqi	a8, 1, 4f8 <cs80v2::Engine::control_tick()+0x4f8>
- 4f5:	002d46        	j	5ae <cs80v2::Engine::control_tick()+0x5ae>
- 4f8:	810782        	l8ui	a8, a7, 129
- 4fb:	1f0713        	lsi	f1, a7, 124
- 4fe:	a88c      	beqz.n	a8, 50c <cs80v2::Engine::control_tick()+0x50c>
- 500:	6b0100        	ole.s	b0, f1, f0
- 503:	021076        	bt	b0, 509 <cs80v2::Engine::control_tick()+0x509>
- 506:	002906        	j	5ae <cs80v2::Engine::control_tick()+0x5ae>
- 509:	000206        	j	515 <cs80v2::Engine::control_tick()+0x515>
- 50c:	6b0010        	ole.s	b0, f0, f1
- 50f:	021076        	bt	b0, 515 <cs80v2::Engine::control_tick()+0x515>
- 512:	002606        	j	5ae <cs80v2::Engine::control_tick()+0x5ae>
- 515:	1c4713        	ssi	f1, a7, 112
- 518:	0c0603        	lsi	f0, a6, 48
- 51b:	280723        	lsi	f2, a7, 160
- 51e:	6b01f0        	ole.s	b0, f1, f15
- 521:	2a0020        	mul.s	f0, f0, f2
- 524:	0f0113        	lsi	f1, a1, 60
- 527:	01a082        	movi	a8, 1
- 52a:	c38e00        	movf	a8, a14, b0
- 52d:	2a0100        	mul.s	f0, f1, f0
- 530:	02a0a2        	movi	a10, 2
- 533:	8047a2        	s8i	a10, a7, 128
- 536:	1f47f3        	ssi	f15, a7, 124
- 539:	814782        	s8i	a8, a7, 129
- 53c:	1d47f3        	ssi	f15, a7, 116
- 53f:	6b0c00        	ole.s	b0, f12, f0
- 542:	620076        	bf	b0, 5a8 <cs80v2::Engine::control_tick()+0x5a8>
- 545:	0000a1        	l32r	a10, fffc0548 <engine+0xfffbfd4c>
- 548:	184173        	ssi	f7, a1, 96
- 54b:	174183        	ssi	f8, a1, 92
- 54e:	1661d2        	s32i	a13, a1, 88
- 551:	156192        	s32i	a9, a1, 84
- 554:	1461c2        	s32i	a12, a1, 80
- 557:	fab040        	rfr	a11, f0
- 55a:	000081        	l32r	a8, fffc055c <engine+0xfffbfd60>
- 55d:	0008e0        	callx8	a8
- 560:	000081        	l32r	a8, fffc0560 <engine+0xfffbfd64>
- 563:	0008e0        	callx8	a8
- 566:	000081        	l32r	a8, fffc0568 <engine+0xfffbfd6c>
- 569:	fa0a50        	wfr	f0, a10
- 56c:	fac850        	wfr	f12, a8
- 56f:	080c      	movi.n	a8, 0
- 571:	faf850        	wfr	f15, a8
- 574:	000081        	l32r	a8, fffc0574 <engine+0xfffbfd78>
- 577:	1a0c00        	sub.s	f0, f12, f0
- 57a:	fa9850        	wfr	f9, a8
- 57d:	000081        	l32r	a8, fffc0580 <engine+0xfffbfd84>
- 580:	0000f1        	l32r	a15, fffc0580 <engine+0xfffbfd84>
- 583:	fab850        	wfr	f11, a8
- 586:	000081        	l32r	a8, fffc0588 <engine+0xfffbfd8c>
- 589:	1421c2        	l32i	a12, a1, 80
- 58c:	fa5850        	wfr	f5, a8
- 58f:	000081        	l32r	a8, fffc0590 <engine+0xfffbfd94>
- 592:	152192        	l32i	a9, a1, 84
- 595:	1621d2        	l32i	a13, a1, 88
- 598:	170183        	lsi	f8, a1, 92
- 59b:	180173        	lsi	f7, a1, 96
- 59e:	fa4850        	wfr	f4, a8
- 5a1:	0e0c      	movi.n	a14, 0
- 5a3:	000106        	j	5ab <cs80v2::Engine::control_tick()+0x5ab>
- 5a6:	00          	.byte	00
- 5a7:	00          	.byte	00
- 5a8:	fa0c00        	mov.s	f0, f12
- 5ab:	1e4703        	ssi	f0, a7, 120
- 5ae:	940782        	l8ui	a8, a7, 148
- 5b1:	210763        	lsi	f6, a7, 132
- 5b4:	18cc      	bnez.n	a8, 5b9 <cs80v2::Engine::control_tick()+0x5b9>
- 5b6:	003386        	j	688 <cs80v2::Engine::control_tick()+0x688>
- 5b9:	220703        	lsi	f0, a7, 136
- 5bc:	230713        	lsi	f1, a7, 140
- 5bf:	1a0060        	sub.s	f0, f0, f6
- 5c2:	4a6010        	madd.s	f6, f0, f1
- 5c5:	214763        	ssi	f6, a7, 132
- 5c8:	021826        	beqi	a8, 1, 5ce <cs80v2::Engine::control_tick()+0x5ce>
- 5cb:	002e46        	j	688 <cs80v2::Engine::control_tick()+0x688>
- 5ce:	950782        	l8ui	a8, a7, 149
- 5d1:	240723        	lsi	f2, a7, 144
- 5d4:	c88c      	beqz.n	a8, 5e4 <cs80v2::Engine::control_tick()+0x5e4>
- 5d6:	6b0260        	ole.s	b0, f2, f6
- 5d9:	021076        	bt	b0, 5df <cs80v2::Engine::control_tick()+0x5df>
- 5dc:	002a06        	j	688 <cs80v2::Engine::control_tick()+0x688>
- 5df:	000286        	j	5ed <cs80v2::Engine::control_tick()+0x5ed>
- 5e2:	00          	.byte	00
- 5e3:	00          	.byte	00
- 5e4:	6b0620        	ole.s	b0, f6, f2
- 5e7:	021076        	bt	b0, 5ed <cs80v2::Engine::control_tick()+0x5ed>
- 5ea:	002686        	j	688 <cs80v2::Engine::control_tick()+0x688>
- 5ed:	214723        	ssi	f2, a7, 132
- 5f0:	120603        	lsi	f0, a6, 72
- 5f3:	280733        	lsi	f3, a7, 160
- 5f6:	130613        	lsi	f1, a6, 76
- 5f9:	2a0030        	mul.s	f0, f0, f3
- 5fc:	6b0210        	ole.s	b0, f2, f1
- 5ff:	0f0123        	lsi	f2, a1, 60
- 602:	180c      	movi.n	a8, 1
- 604:	2a0200        	mul.s	f0, f2, f0
- 607:	c38e00        	movf	a8, a14, b0
- 60a:	2a0c      	movi.n	a10, 2
- 60c:	9447a2        	s8i	a10, a7, 148
- 60f:	244713        	ssi	f1, a7, 144
- 612:	954782        	s8i	a8, a7, 149
- 615:	224713        	ssi	f1, a7, 136
- 618:	6b0c00        	ole.s	b0, f12, f0
- 61b:	600076        	bf	b0, 67f <cs80v2::Engine::control_tick()+0x67f>
- 61e:	0000a1        	l32r	a10, fffc0620 <engine+0xfffbfe24>
- 621:	184173        	ssi	f7, a1, 96
- 624:	174183        	ssi	f8, a1, 92
- 627:	1661d2        	s32i	a13, a1, 88
- 62a:	156192        	s32i	a9, a1, 84
- 62d:	1461c2        	s32i	a12, a1, 80
- 630:	fab040        	rfr	a11, f0
- 633:	000081        	l32r	a8, fffc0634 <engine+0xfffbfe38>
- 636:	0008e0        	callx8	a8
- 639:	000081        	l32r	a8, fffc063c <engine+0xfffbfe40>
- 63c:	0008e0        	callx8	a8
- 63f:	000081        	l32r	a8, fffc0640 <engine+0xfffbfe44>
- 642:	fa0a50        	wfr	f0, a10
- 645:	fac850        	wfr	f12, a8
- 648:	080c      	movi.n	a8, 0
- 64a:	faf850        	wfr	f15, a8
- 64d:	000081        	l32r	a8, fffc0650 <engine+0xfffbfe54>
- 650:	1a0c00        	sub.s	f0, f12, f0
- 653:	fa9850        	wfr	f9, a8
- 656:	000081        	l32r	a8, fffc0658 <engine+0xfffbfe5c>
- 659:	0000f1        	l32r	a15, fffc065c <engine+0xfffbfe60>
- 65c:	fab850        	wfr	f11, a8
- 65f:	000081        	l32r	a8, fffc0660 <engine+0xfffbfe64>
- 662:	1421c2        	l32i	a12, a1, 80
- 665:	fa5850        	wfr	f5, a8
- 668:	000081        	l32r	a8, fffc0668 <engine+0xfffbfe6c>
- 66b:	152192        	l32i	a9, a1, 84
- 66e:	1621d2        	l32i	a13, a1, 88
- 671:	170183        	lsi	f8, a1, 92
- 674:	180173        	lsi	f7, a1, 96
- 677:	fa4850        	wfr	f4, a8
- 67a:	0e0c      	movi.n	a14, 0
- 67c:	000086        	j	682 <cs80v2::Engine::control_tick()+0x682>
- 67f:	fa0c00        	mov.s	f0, f12
- 682:	210763        	lsi	f6, a7, 132
- 685:	234703        	ssi	f0, a7, 140
- 688:	11a530        	slli	a10, a5, 13
- 68b:	30aa50        	xor	a10, a10, a5
- 68e:	e581a0        	extui	a8, a10, 17, 15
- 691:	3088a0        	xor	a8, a8, a10
- 694:	1158b0        	slli	a5, a8, 5
- 697:	2a0703        	lsi	f0, a7, 168
- 69a:	305580        	xor	a5, a5, a8
- 69d:	000081        	l32r	a8, fffc06a0 <engine+0xfffbfea4>
- 6a0:	ca1500        	float.s	f1, a5, 0
+  35:	051076        	bt	b0, 3e <cs80v2::Engine::control_tick()+0x3e>
+  38:	104803        	ssi	f0, a8, 64
+  3b:	000a86        	j	69 <cs80v2::Engine::control_tick()+0x69>
+  3e:	a8a8      	l32i.n	a10, a8, 40
+  40:	1a00c0        	sub.s	f0, f0, f12
+  43:	119a30        	slli	a9, a10, 13
+  46:	3099a0        	xor	a9, a9, a10
+  49:	e5a190        	extui	a10, a9, 17, 15
+  4c:	30aa90        	xor	a10, a10, a9
+  4f:	119ab0        	slli	a9, a10, 5
+  52:	3099a0        	xor	a9, a9, a10
+  55:	0000a1        	l32r	a10, fffc0058 <engine+0xfffbee28>
+  58:	ca2900        	float.s	f2, a9, 0
+  5b:	fa3a50        	wfr	f3, a10
+  5e:	2a2230        	mul.s	f2, f2, f3
+  61:	a899      	s32i.n	a9, a8, 40
+  63:	104803        	ssi	f0, a8, 64
+  66:	114823        	ssi	f2, a8, 68
+  69:	f8a092        	movi	a9, 248
+  6c:	9e9a      	add.n	a9, a14, a9
+  6e:	1c0992        	l8ui	a9, a9, 28
+  71:	245966        	bnei	a9, 5, 99 <cs80v2::Engine::control_tick()+0x99>
+  74:	a8a8      	l32i.n	a10, a8, 40
+  76:	119a30        	slli	a9, a10, 13
+  79:	3099a0        	xor	a9, a9, a10
+  7c:	e5a190        	extui	a10, a9, 17, 15
+  7f:	30aa90        	xor	a10, a10, a9
+  82:	119ab0        	slli	a9, a10, 5
+  85:	3099a0        	xor	a9, a9, a10
+  88:	ca0900        	float.s	f0, a9, 0
+  8b:	a899      	s32i.n	a9, a8, 40
+  8d:	000091        	l32r	a9, fffc0090 <engine+0xfffbee60>
+  90:	fa2950        	wfr	f2, a9
+  93:	2a0020        	mul.s	f0, f0, f2
+  96:	114803        	ssi	f0, a8, 68
+  99:	080e33        	lsi	f3, a14, 32
+  9c:	0e0823        	lsi	f2, a8, 56
+  9f:	0f0803        	lsi	f0, a8, 60
+  a2:	4a2130        	madd.s	f2, f1, f3
+  a5:	000091        	l32r	a9, fffc00a8 <engine+0xfffbee78>
+  a8:	1a0833        	lsi	f3, a8, 104
+  ab:	fa9950        	wfr	f9, a9
+  ae:	1a42c0        	sub.s	f4, f2, f12
+  b1:	6b0c20        	ole.s	b0, f12, f2
+  b4:	090c      	movi.n	a9, 0
+  b6:	faf950        	wfr	f15, a9
+  b9:	db2400        	movt.s	f2, f4, b0
+  bc:	0e4823        	ssi	f2, a8, 56
+  bf:	230e53        	lsi	f5, a14, 140
+  c2:	fa4c00        	mov.s	f4, f12
+  c5:	4a0150        	madd.s	f0, f1, f5
+  c8:	5a4290        	msub.s	f4, f2, f9
+  cb:	000091        	l32r	a9, fffc00cc <engine+0xfffbee9c>
+  ce:	1a60c0        	sub.s	f6, f0, f12
+  d1:	6b0c00        	ole.s	b0, f12, f0
+  d4:	fa5950        	wfr	f5, a9
+  d7:	2a5450        	mul.s	f5, f4, f5
+  da:	db0600        	movt.s	f0, f6, b0
+  dd:	fa2410        	abs.s	f2, f4
+  e0:	fa4c00        	mov.s	f4, f12
+  e3:	5a4090        	msub.s	f4, f0, f9
+  e6:	1a2c20        	sub.s	f2, f12, f2
+  e9:	0f4803        	ssi	f0, a8, 60
+  ec:	6b0f30        	ole.s	b0, f15, f3
+  ef:	fa0410        	abs.s	f0, f4
+  f2:	2a2250        	mul.s	f2, f2, f5
+  f5:	fa5950        	wfr	f5, a9
+  f8:	2a4450        	mul.s	f4, f4, f5
+  fb:	1a0c00        	sub.s	f0, f12, f0
+  fe:	000091        	l32r	a9, fffc0100 <engine+0xfffbeed0>
+ 101:	fa5210        	abs.s	f5, f2
+ 104:	fa6950        	wfr	f6, a9
+ 107:	2a0040        	mul.s	f0, f0, f4
+ 10a:	1a55c0        	sub.s	f5, f5, f12
+ 10d:	2a6260        	mul.s	f6, f2, f6
+ 110:	fa4010        	abs.s	f4, f0
+ 113:	1a44c0        	sub.s	f4, f4, f12
+ 116:	4a2650        	madd.s	f2, f6, f5
+ 119:	fa5950        	wfr	f5, a9
+ 11c:	2a5050        	mul.s	f5, f0, f5
+ 11f:	024123        	ssi	f2, a1, 8
+ 122:	4a0540        	madd.s	f0, f5, f4
+ 125:	034103        	ssi	f0, a1, 12
+ 128:	080076        	bf	b0, 134 <cs80v2::Engine::control_tick()+0x134>
+ 12b:	5d0e03        	lsi	f0, a14, 0x174
+ 12e:	2a0300        	mul.s	f0, f3, f0
+ 131:	000146        	j	13a <cs80v2::Engine::control_tick()+0x13a>
+ 134:	5e0e03        	lsi	f0, a14, 0x178
+ 137:	2a0300        	mul.s	f0, f3, f0
+ 13a:	5b0e23        	lsi	f2, a14, 0x16c
+ 13d:	4b0f20        	olt.s	b0, f15, f2
+ 140:	3f0076        	bf	b0, 183 <cs80v2::Engine::control_tick()+0x183>
+ 143:	7189      	s32i.n	a8, a1, 28
+ 145:	000081        	l32r	a8, fffc0148 <engine+0xfffbef18>
+ 148:	054103        	ssi	f0, a1, 20
+ 14b:	fa3850        	wfr	f3, a8
+ 14e:	2a0130        	mul.s	f0, f1, f3
+ 151:	61e9      	s32i.n	a14, a1, 24
+ 153:	044113        	ssi	f1, a1, 16
+ 156:	fab240        	rfr	a11, f2
+ 159:	faa040        	rfr	a10, f0
+ 15c:	000081        	l32r	a8, fffc015c <engine+0xfffbef2c>
+ 15f:	0008e0        	callx8	a8
+ 162:	080c      	movi.n	a8, 0
+ 164:	faf850        	wfr	f15, a8
+ 167:	000081        	l32r	a8, fffc0168 <engine+0xfffbef38>
+ 16a:	040113        	lsi	f1, a1, 16
+ 16d:	fac850        	wfr	f12, a8
+ 170:	000081        	l32r	a8, fffc0170 <engine+0xfffbef40>
+ 173:	050103        	lsi	f0, a1, 20
+ 176:	fa9850        	wfr	f9, a8
+ 179:	61e8      	l32i.n	a14, a1, 24
+ 17b:	7188      	l32i.n	a8, a1, 28
+ 17d:	1361a2        	s32i	a10, a1, 76
+ 180:	000146        	j	189 <cs80v2::Engine::control_tick()+0x189>
+ 183:	000091        	l32r	a9, fffc0184 <engine+0xfffbef54>
+ 186:	136192        	s32i	a9, a1, 76
+ 189:	000091        	l32r	a9, fffc018c <engine+0xfffbef5c>
+ 18c:	400e23        	lsi	f2, a14, 0x100
+ 18f:	fa3950        	wfr	f3, a9
+ 192:	2a3130        	mul.s	f3, f1, f3
+ 195:	6b02c0        	ole.s	b0, f2, f12
+ 198:	1b4133        	ssi	f3, a1, 108
+ 19b:	051076        	bt	b0, 1a4 <cs80v2::Engine::control_tick()+0x1a4>
+ 19e:	0041f3        	ssi	f15, a1, 0
+ 1a1:	0005c6        	j	1bc <cs80v2::Engine::control_tick()+0x1bc>
+ 1a4:	1a3c20        	sub.s	f3, f12, f2
+ 1a7:	000091        	l32r	a9, fffc01a8 <engine+0xfffbef78>
+ 1aa:	fa4950        	wfr	f4, a9
+ 1ad:	6b03c0        	ole.s	b0, f3, f12
+ 1b0:	cb3c00        	movf.s	f3, f12, b0
+ 1b3:	004133        	ssi	f3, a1, 0
+ 1b6:	6b0420        	ole.s	b0, f4, f2
+ 1b9:	0b0076        	bf	b0, 1c8 <cs80v2::Engine::control_tick()+0x1c8>
+ 1bc:	0a22c0        	add.s	f2, f2, f12
+ 1bf:	6b02c0        	ole.s	b0, f2, f12
+ 1c2:	cb2c00        	movf.s	f2, f12, b0
+ 1c5:	000086        	j	1cb <cs80v2::Engine::control_tick()+0x1cb>
+ 1c8:	fa2f00        	mov.s	f2, f15
+ 1cb:	f8a092        	movi	a9, 248
+ 1ce:	de9a      	add.n	a13, a14, a9
+ 1d0:	270d33        	lsi	f3, a13, 156
+ 1d3:	1c0853        	lsi	f5, a8, 112
+ 1d6:	1d0843        	lsi	f4, a8, 116
+ 1d9:	2a3350        	mul.s	f3, f3, f5
+ 1dc:	000091        	l32r	a9, fffc01dc <engine+0xfffbefac>
+ 1df:	01deb2        	addmi	a11, a14, 0x100
+ 1e2:	1961b2        	s32i	a11, a1, 100
+ 1e5:	2a3340        	mul.s	f3, f3, f4
+ 1e8:	0000b1        	l32r	a11, fffc01e8 <engine+0xfffbefb8>
+ 1eb:	d8a1f2        	movi	a15, 0x1d8
+ 1ee:	5eba      	add.n	a5, a14, a11
+ 1f0:	114133        	ssi	f3, a1, 68
+ 1f3:	fa3950        	wfr	f3, a9
+ 1f6:	1a0030        	sub.s	f0, f0, f3
+ 1f9:	262d92        	l32i	a9, a13, 152
+ 1fc:	014123        	ssi	f2, a1, 4
+ 1ff:	6199      	s32i.n	a9, a1, 24
+ 201:	000091        	l32r	a9, fffc0204 <engine+0xfffbefd4>
+ 204:	124103        	ssi	f0, a1, 72
+ 207:	fab950        	wfr	f11, a9
+ 20a:	070c      	movi.n	a7, 0
+ 20c:	9efa      	add.n	a9, a14, a15
+ 20e:	8a0c      	movi.n	a10, 8
+ 210:	1d4113        	ssi	f1, a1, 116
+ 213:	0e4d      	mov.n	a4, a14
+ 215:	e189      	s32i.n	a8, a1, 56
+ 217:	1c6152        	s32i	a5, a1, 112
+ 21a:	000186        	j	224 <cs80v2::Engine::control_tick()+0x224>
+ 21d:	1c2192        	l32i	a9, a1, 112
+ 220:	170c      	movi.n	a7, 1
+ 222:	8a1c      	movi.n	a10, 24
+ 224:	f0aaa0        	subx8	a10, a10, a10
+ 227:	118ac0        	slli	a8, a10, 4
+ 22a:	60a1b2        	movi	a11, 0x160
+ 22d:	39ba      	add.n	a3, a9, a11
+ 22f:	c088a0        	sub	a8, a8, a10
+ 232:	0000f1        	l32r	a15, fffc0234 <engine+0xfffbf004>
+ 235:	a08830        	addx4	a8, a8, a3
+ 238:	0e0c      	movi.n	a14, 0
+ 23a:	1a6172        	s32i	a7, a1, 104
+ 23d:	3e0392        	l8ui	a9, a3, 62
+ 240:	19cc      	bnez.n	a9, 245 <cs80v2::Engine::control_tick()+0x245>
+ 242:	025f86        	j	bc4 <cs80v2::Engine::control_tick()+0xbc4>
+ 245:	0e0d23        	lsi	f2, a13, 56
+ 248:	0303e3        	lsi	f14, a3, 12
+ 24b:	fa1c00        	mov.s	f1, f12
+ 24e:	4a12e0        	madd.s	f1, f2, f14
+ 251:	060303        	lsi	f0, a3, 24
+ 254:	100123        	lsi	f2, a1, 64
+ 257:	0358      	l32i.n	a5, a3, 0
+ 259:	4a0120        	madd.s	f0, f1, f2
+ 25c:	6b0c00        	ole.s	b0, f12, f0
+ 25f:	051076        	bt	b0, 268 <cs80v2::Engine::control_tick()+0x268>
+ 262:	064303        	ssi	f0, a3, 24
+ 265:	000a06        	j	291 <cs80v2::Engine::control_tick()+0x291>
+ 268:	11a530        	slli	a10, a5, 13
+ 26b:	30aa50        	xor	a10, a10, a5
+ 26e:	e591a0        	extui	a9, a10, 17, 15
+ 271:	3099a0        	xor	a9, a9, a10
+ 274:	1159b0        	slli	a5, a9, 5
+ 277:	305590        	xor	a5, a5, a9
+ 27a:	000091        	l32r	a9, fffc027c <engine+0xfffbf04c>
+ 27d:	ca1500        	float.s	f1, a5, 0
+ 280:	fa2950        	wfr	f2, a9
+ 283:	1a00c0        	sub.s	f0, f0, f12
+ 286:	2a1120        	mul.s	f1, f1, f2
+ 289:	0359      	s32i.n	a5, a3, 0
+ 28b:	064303        	ssi	f0, a3, 24
+ 28e:	074313        	ssi	f1, a3, 28
+ 291:	1c0d92        	l8ui	a9, a13, 28
+ 294:	055926        	beqi	a9, 5, 29d <cs80v2::Engine::control_tick()+0x29d>
+ 297:	070313        	lsi	f1, a3, 28
+ 29a:	000346        	j	2ab <cs80v2::Engine::control_tick()+0x2ab>
+ 29d:	e198      	l32i.n	a9, a1, 56
+ 29f:	110913        	lsi	f1, a9, 68
+ 2a2:	192192        	l32i	a9, a1, 100
+ 2a5:	074313        	ssi	f1, a3, 28
+ 2a8:	140992        	l8ui	a9, a9, 20
+ 2ab:	613926        	beqi	a9, 3, 310 <cs80v2::Engine::control_tick()+0x310>
+ 2ae:	0a49f6        	bgeui	a9, 4, 2bc <cs80v2::Engine::control_tick()+0x2bc>
+ 2b1:	231926        	beqi	a9, 1, 2d8 <cs80v2::Engine::control_tick()+0x2d8>
+ 2b4:	382926        	beqi	a9, 2, 2f0 <cs80v2::Engine::control_tick()+0x2f0>
+ 2b7:	001c46        	j	32c <cs80v2::Engine::control_tick()+0x32c>
+ 2ba:	00          	.byte	00
+ 2bb:	00          	.byte	00
+ 2bc:	fcc992        	addi	a9, a9, -4
+ 2bf:	749090        	extui	a9, a9, 0, 8
+ 2c2:	6629f6        	bgeui	a9, 2, 32c <cs80v2::Engine::control_tick()+0x32c>
+ 2c5:	000091        	l32r	a9, fffc02c8 <engine+0xfffbf098>
+ 2c8:	1a51c0        	sub.s	f5, f1, f12
+ 2cb:	fa6950        	wfr	f6, a9
+ 2ce:	000091        	l32r	a9, fffc02d0 <engine+0xfffbf0a0>
+ 2d1:	fa7950        	wfr	f7, a9
+ 2d4:	002706        	j	374 <cs80v2::Engine::control_tick()+0x374>
+ 2d7:	00          	.byte	00
+ 2d8:	0a0000        	add.s	f0, f0, f0
+ 2db:	000091        	l32r	a9, fffc02dc <engine+0xfffbf0ac>
+ 2de:	fa6950        	wfr	f6, a9
+ 2e1:	000091        	l32r	a9, fffc02e4 <engine+0xfffbf0b4>
+ 2e4:	1a1c00        	sub.s	f1, f12, f0
+ 2e7:	fa7950        	wfr	f7, a9
+ 2ea:	fa5060        	neg.s	f5, f0
+ 2ed:	0020c6        	j	374 <cs80v2::Engine::control_tick()+0x374>
+ 2f0:	000091        	l32r	a9, fffc02f0 <engine+0xfffbf0c0>
+ 2f3:	fa1950        	wfr	f1, a9
+ 2f6:	fa6950        	wfr	f6, a9
+ 2f9:	000091        	l32r	a9, fffc02fc <engine+0xfffbf0cc>
+ 2fc:	4a1090        	madd.s	f1, f0, f9
+ 2ff:	fa5950        	wfr	f5, a9
+ 302:	000091        	l32r	a9, fffc0304 <engine+0xfffbf0d4>
+ 305:	4a5090        	madd.s	f5, f0, f9
+ 308:	fa7950        	wfr	f7, a9
+ 30b:	001946        	j	374 <cs80v2::Engine::control_tick()+0x374>
+ 30e:	00          	.byte	00
+ 30f:	00          	.byte	00
+ 310:	000091        	l32r	a9, fffc0310 <engine+0xfffbf0e0>
+ 313:	fa7950        	wfr	f7, a9
+ 316:	4b0070        	olt.s	b0, f0, f7
+ 319:	000091        	l32r	a9, fffc031c <engine+0xfffbf0ec>
+ 31c:	480076        	bf	b0, 368 <cs80v2::Engine::control_tick()+0x368>
+ 31f:	fa6950        	wfr	f6, a9
+ 322:	fa5f00        	mov.s	f5, f15
+ 325:	fa1c00        	mov.s	f1, f12
+ 328:	001206        	j	374 <cs80v2::Engine::control_tick()+0x374>
+ 32b:	00          	.byte	00
+ 32c:	000091        	l32r	a9, fffc032c <engine+0xfffbf0fc>
+ 32f:	fa2c00        	mov.s	f2, f12
+ 332:	5a2090        	msub.s	f2, f0, f9
+ 335:	fa6950        	wfr	f6, a9
+ 338:	000091        	l32r	a9, fffc0338 <engine+0xfffbf108>
+ 33b:	fa7950        	wfr	f7, a9
+ 33e:	000091        	l32r	a9, fffc0340 <engine+0xfffbf110>
+ 341:	fa1210        	abs.s	f1, f2
+ 344:	fa0950        	wfr	f0, a9
+ 347:	2a2200        	mul.s	f2, f2, f0
+ 34a:	1a1c10        	sub.s	f1, f12, f1
+ 34d:	000091        	l32r	a9, fffc0350 <engine+0xfffbf120>
+ 350:	2a1120        	mul.s	f1, f1, f2
+ 353:	fa2950        	wfr	f2, a9
+ 356:	fa0110        	abs.s	f0, f1
+ 359:	1a00c0        	sub.s	f0, f0, f12
+ 35c:	2a2120        	mul.s	f2, f1, f2
+ 35f:	4a1020        	madd.s	f1, f0, f2
+ 362:	1a51c0        	sub.s	f5, f1, f12
+ 365:	0002c6        	j	374 <cs80v2::Engine::control_tick()+0x374>
+ 368:	fa1950        	wfr	f1, a9
+ 36b:	000091        	l32r	a9, fffc036c <engine+0xfffbf13c>
+ 36e:	fa6100        	mov.s	f6, f1
+ 371:	fa5950        	wfr	f5, a9
+ 374:	e198      	l32i.n	a9, a1, 56
+ 376:	0c0d03        	lsi	f0, a13, 48
+ 379:	1b0923        	lsi	f2, a9, 108
+ 37c:	090d33        	lsi	f3, a13, 36
+ 37f:	0f0d83        	lsi	f8, a13, 60
+ 382:	4a3200        	madd.s	f3, f2, f0
+ 385:	0a0d43        	lsi	f4, a13, 40
+ 388:	100d03        	lsi	f0, a13, 64
+ 38b:	0b0d23        	lsi	f2, a13, 44
+ 38e:	4a40e0        	madd.s	f4, f0, f14
+ 391:	4a38e0        	madd.s	f3, f8, f14
+ 394:	3b0392        	l8ui	a9, a3, 59
+ 397:	2a2270        	mul.s	f2, f2, f7
+ 39a:	239900        	sext	a9, a9, 7
+ 39d:	2a3310        	mul.s	f3, f3, f1
+ 3a0:	2a1410        	mul.s	f1, f4, f1
+ 3a3:	ca8900        	float.s	f8, a9, 0
+ 3a6:	040303        	lsi	f0, a3, 16
+ 3a9:	fa4c00        	mov.s	f4, f12
+ 3ac:	084113        	ssi	f1, a1, 32
+ 3af:	4b0080        	olt.s	b0, f0, f8
+ 3b2:	4a4250        	madd.s	f4, f2, f5
+ 3b5:	180076        	bf	b0, 3d1 <cs80v2::Engine::control_tick()+0x3d1>
+ 3b8:	130113        	lsi	f1, a1, 76
+ 3bb:	0a0010        	add.s	f0, f0, f1
+ 3be:	4b0800        	olt.s	b0, f8, f0
+ 3c1:	031076        	bt	b0, 3c8 <cs80v2::Engine::control_tick()+0x3c8>
+ 3c4:	0006c6        	j	3e3 <cs80v2::Engine::control_tick()+0x3e3>
+ 3c7:	00          	.byte	00
+ 3c8:	044383        	ssi	f8, a3, 16
+ 3cb:	fa0800        	mov.s	f0, f8
+ 3ce:	000506        	j	3e6 <cs80v2::Engine::control_tick()+0x3e6>
+ 3d1:	4b0800        	olt.s	b0, f8, f0
+ 3d4:	0e0076        	bf	b0, 3e6 <cs80v2::Engine::control_tick()+0x3e6>
+ 3d7:	130113        	lsi	f1, a1, 76
+ 3da:	1a0010        	sub.s	f0, f0, f1
+ 3dd:	4b0080        	olt.s	b0, f0, f8
+ 3e0:	e41076        	bt	b0, 3c8 <cs80v2::Engine::control_tick()+0x3c8>
+ 3e3:	044303        	ssi	f0, a3, 16
+ 3e6:	780da2        	l8ui	a10, a13, 120
+ 3e9:	3a9c      	beqz.n	a10, 400 <cs80v2::Engine::control_tick()+0x400>
+ 3eb:	0a1070        	add.s	f1, f0, f7
+ 3ee:	9aa100        	trunc.s	a10, f1, 0
+ 3f1:	ca0a00        	float.s	f0, a10, 0
+ 3f4:	ffcaa2        	addi	a10, a10, -1
+ 3f7:	ca2a00        	float.s	f2, a10, 0
+ 3fa:	4b0100        	olt.s	b0, f1, f0
+ 3fd:	db0200        	movt.s	f0, f2, b0
+ 400:	050323        	lsi	f2, a3, 20
+ 403:	4b02f0        	olt.s	b0, f2, f15
+ 406:	180076        	bf	b0, 422 <cs80v2::Engine::control_tick()+0x422>
+ 409:	1b0113        	lsi	f1, a1, 108
+ 40c:	0a2210        	add.s	f2, f2, f1
+ 40f:	4b0f20        	olt.s	b0, f15, f2
+ 412:	061076        	bt	b0, 41c <cs80v2::Engine::control_tick()+0x41c>
+ 415:	054323        	ssi	f2, a3, 20
+ 418:	000186        	j	422 <cs80v2::Engine::control_tick()+0x422>
+ 41b:	00          	.byte	00
+ 41c:	0543f3        	ssi	f15, a3, 20
+ 41f:	fa2f00        	mov.s	f2, f15
+ 422:	090383        	lsi	f8, a3, 36
+ 425:	130da3        	lsi	f10, a13, 76
+ 428:	150d13        	lsi	f1, a13, 84
+ 42b:	c4c992        	addi	a9, a9, -60
+ 42e:	2a1810        	mul.s	f1, f8, f1
+ 431:	2a88a0        	mul.s	f8, f8, f10
+ 434:	caa900        	float.s	f10, a9, 0
+ 437:	122d92        	l32i	a9, a13, 72
+ 43a:	080353        	lsi	f5, a3, 32
+ 43d:	140dd3        	lsi	f13, a13, 80
+ 440:	4199      	s32i.n	a9, a1, 16
+ 442:	000091        	l32r	a9, fffc0444 <engine+0xfffbf214>
+ 445:	4a15d0        	madd.s	f1, f5, f13
+ 448:	fad950        	wfr	f13, a9
+ 44b:	2aaad0        	mul.s	f10, f10, f13
+ 44e:	6b0610        	ole.s	b0, f6, f1
+ 451:	0941a3        	ssi	f10, a1, 36
+ 454:	0401a3        	lsi	f10, a1, 16
+ 457:	4a8a50        	madd.s	f8, f10, f5
+ 45a:	0a4183        	ssi	f8, a1, 40
+ 45d:	0b0076        	bf	b0, 46c <cs80v2::Engine::control_tick()+0x46c>
+ 460:	0a11c0        	add.s	f1, f1, f12
+ 463:	6b0190        	ole.s	b0, f1, f9
+ 466:	cb1900        	movf.s	f1, f9, b0
+ 469:	000086        	j	46f <cs80v2::Engine::control_tick()+0x46f>
+ 46c:	fa1f00        	mov.s	f1, f15
+ 46f:	120153        	lsi	f5, a1, 72
+ 472:	0a0363        	lsi	f6, a3, 40
+ 475:	0a5530        	add.s	f5, f5, f3
+ 478:	110133        	lsi	f3, a1, 68
+ 47b:	23a8      	l32i.n	a10, a3, 8
+ 47d:	2a3360        	mul.s	f3, f3, f6
+ 480:	0a0500        	add.s	f0, f5, f0
+ 483:	41a9      	s32i.n	a10, a1, 16
+ 485:	b3a8      	l32i.n	a10, a3, 44
+ 487:	2a3340        	mul.s	f3, f3, f4
+ 48a:	0a0020        	add.s	f0, f0, f2
+ 48d:	71a9      	s32i.n	a10, a1, 28
+ 48f:	0000a1        	l32r	a10, fffc0490 <engine+0xfffbf260>
+ 492:	400392        	l8ui	a9, a3, 64
+ 495:	0c4103        	ssi	f0, a1, 48
+ 498:	fa8a50        	wfr	f8, a10
+ 49b:	2a0310        	mul.s	f0, f3, f1
+ 49e:	0000a1        	l32r	a10, fffc04a0 <engine+0xfffbf270>
+ 4a1:	a4ae72        	movi	a7, 0xfffffea4
+ 4a4:	fa5a50        	wfr	f5, a10
+ 4a7:	0000a1        	l32r	a10, fffc04a8 <engine+0xfffbf278>
+ 4aa:	d189      	s32i.n	a8, a1, 52
+ 4ac:	038d      	mov.n	a8, a3
+ 4ae:	737a      	add.n	a7, a3, a7
+ 4b0:	0b4103        	ssi	f0, a1, 44
+ 4b3:	093d      	mov.n	a3, a9
+ 4b5:	fa4a50        	wfr	f4, a10
+ 4b8:	24c462        	addi	a6, a4, 36
+ 4bb:	0e2d      	mov.n	a2, a14
+ 4bd:	0ecd      	mov.n	a12, a14
+ 4bf:	0541e3        	ssi	f14, a1, 20
+ 4c2:	089d      	mov.n	a9, a8
+ 4c4:	000086        	j	4ca <cs80v2::Engine::control_tick()+0x4ca>
+ 4c7:	00          	.byte	00
+ 4c8:	120c      	movi.n	a2, 1
+ 4ca:	800782        	l8ui	a8, a7, 128
+ 4cd:	0cd816        	beqz	a8, 59e <cs80v2::Engine::control_tick()+0x59e>
+ 4d0:	1c0703        	lsi	f0, a7, 112
+ 4d3:	1d0713        	lsi	f1, a7, 116
+ 4d6:	1e0723        	lsi	f2, a7, 120
+ 4d9:	1a1100        	sub.s	f1, f1, f0
+ 4dc:	4a0120        	madd.s	f0, f1, f2
+ 4df:	1c4703        	ssi	f0, a7, 112
+ 4e2:	021826        	beqi	a8, 1, 4e8 <cs80v2::Engine::control_tick()+0x4e8>
+ 4e5:	002d46        	j	59e <cs80v2::Engine::control_tick()+0x59e>
+ 4e8:	810782        	l8ui	a8, a7, 129
+ 4eb:	1f0713        	lsi	f1, a7, 124
+ 4ee:	a88c      	beqz.n	a8, 4fc <cs80v2::Engine::control_tick()+0x4fc>
+ 4f0:	6b0100        	ole.s	b0, f1, f0
+ 4f3:	021076        	bt	b0, 4f9 <cs80v2::Engine::control_tick()+0x4f9>
+ 4f6:	002906        	j	59e <cs80v2::Engine::control_tick()+0x59e>
+ 4f9:	000206        	j	505 <cs80v2::Engine::control_tick()+0x505>
+ 4fc:	6b0010        	ole.s	b0, f0, f1
+ 4ff:	021076        	bt	b0, 505 <cs80v2::Engine::control_tick()+0x505>
+ 502:	002606        	j	59e <cs80v2::Engine::control_tick()+0x59e>
+ 505:	1c4713        	ssi	f1, a7, 112
+ 508:	0c0603        	lsi	f0, a6, 48
+ 50b:	280723        	lsi	f2, a7, 160
+ 50e:	6b01f0        	ole.s	b0, f1, f15
+ 511:	2a0020        	mul.s	f0, f0, f2
+ 514:	0f0113        	lsi	f1, a1, 60
+ 517:	01a082        	movi	a8, 1
+ 51a:	c38e00        	movf	a8, a14, b0
+ 51d:	2a0100        	mul.s	f0, f1, f0
+ 520:	02a0a2        	movi	a10, 2
+ 523:	8047a2        	s8i	a10, a7, 128
+ 526:	1f47f3        	ssi	f15, a7, 124
+ 529:	814782        	s8i	a8, a7, 129
+ 52c:	1d47f3        	ssi	f15, a7, 116
+ 52f:	6b0c00        	ole.s	b0, f12, f0
+ 532:	620076        	bf	b0, 598 <cs80v2::Engine::control_tick()+0x598>
+ 535:	0000a1        	l32r	a10, fffc0538 <engine+0xfffbf308>
+ 538:	184173        	ssi	f7, a1, 96
+ 53b:	174183        	ssi	f8, a1, 92
+ 53e:	1661d2        	s32i	a13, a1, 88
+ 541:	156192        	s32i	a9, a1, 84
+ 544:	1461c2        	s32i	a12, a1, 80
+ 547:	fab040        	rfr	a11, f0
+ 54a:	000081        	l32r	a8, fffc054c <engine+0xfffbf31c>
+ 54d:	0008e0        	callx8	a8
+ 550:	000081        	l32r	a8, fffc0550 <engine+0xfffbf320>
+ 553:	0008e0        	callx8	a8
+ 556:	000081        	l32r	a8, fffc0558 <engine+0xfffbf328>
+ 559:	fa0a50        	wfr	f0, a10
+ 55c:	fac850        	wfr	f12, a8
+ 55f:	080c      	movi.n	a8, 0
+ 561:	faf850        	wfr	f15, a8
+ 564:	000081        	l32r	a8, fffc0564 <engine+0xfffbf334>
+ 567:	1a0c00        	sub.s	f0, f12, f0
+ 56a:	fa9850        	wfr	f9, a8
+ 56d:	000081        	l32r	a8, fffc0570 <engine+0xfffbf340>
+ 570:	0000f1        	l32r	a15, fffc0570 <engine+0xfffbf340>
+ 573:	fab850        	wfr	f11, a8
+ 576:	000081        	l32r	a8, fffc0578 <engine+0xfffbf348>
+ 579:	1421c2        	l32i	a12, a1, 80
+ 57c:	fa5850        	wfr	f5, a8
+ 57f:	000081        	l32r	a8, fffc0580 <engine+0xfffbf350>
+ 582:	152192        	l32i	a9, a1, 84
+ 585:	1621d2        	l32i	a13, a1, 88
+ 588:	170183        	lsi	f8, a1, 92
+ 58b:	180173        	lsi	f7, a1, 96
+ 58e:	fa4850        	wfr	f4, a8
+ 591:	0e0c      	movi.n	a14, 0
+ 593:	000106        	j	59b <cs80v2::Engine::control_tick()+0x59b>
+ 596:	00          	.byte	00
+ 597:	00          	.byte	00
+ 598:	fa0c00        	mov.s	f0, f12
+ 59b:	1e4703        	ssi	f0, a7, 120
+ 59e:	940782        	l8ui	a8, a7, 148
+ 5a1:	210763        	lsi	f6, a7, 132
+ 5a4:	18cc      	bnez.n	a8, 5a9 <cs80v2::Engine::control_tick()+0x5a9>
+ 5a6:	0033c6        	j	679 <cs80v2::Engine::control_tick()+0x679>
+ 5a9:	220703        	lsi	f0, a7, 136
+ 5ac:	230713        	lsi	f1, a7, 140
+ 5af:	1a0060        	sub.s	f0, f0, f6
+ 5b2:	4a6010        	madd.s	f6, f0, f1
+ 5b5:	214763        	ssi	f6, a7, 132
+ 5b8:	021826        	beqi	a8, 1, 5be <cs80v2::Engine::control_tick()+0x5be>
+ 5bb:	002e86        	j	679 <cs80v2::Engine::control_tick()+0x679>
+ 5be:	950782        	l8ui	a8, a7, 149
+ 5c1:	240723        	lsi	f2, a7, 144
+ 5c4:	c88c      	beqz.n	a8, 5d4 <cs80v2::Engine::control_tick()+0x5d4>
+ 5c6:	6b0260        	ole.s	b0, f2, f6
+ 5c9:	021076        	bt	b0, 5cf <cs80v2::Engine::control_tick()+0x5cf>
+ 5cc:	002a46        	j	679 <cs80v2::Engine::control_tick()+0x679>
+ 5cf:	000286        	j	5dd <cs80v2::Engine::control_tick()+0x5dd>
+ 5d2:	00          	.byte	00
+ 5d3:	00          	.byte	00
+ 5d4:	6b0620        	ole.s	b0, f6, f2
+ 5d7:	021076        	bt	b0, 5dd <cs80v2::Engine::control_tick()+0x5dd>
+ 5da:	0026c6        	j	679 <cs80v2::Engine::control_tick()+0x679>
+ 5dd:	214723        	ssi	f2, a7, 132
+ 5e0:	120603        	lsi	f0, a6, 72
+ 5e3:	280733        	lsi	f3, a7, 160
+ 5e6:	130613        	lsi	f1, a6, 76
+ 5e9:	2a0030        	mul.s	f0, f0, f3
+ 5ec:	6b0210        	ole.s	b0, f2, f1
+ 5ef:	0f0123        	lsi	f2, a1, 60
+ 5f2:	180c      	movi.n	a8, 1
+ 5f4:	2a0200        	mul.s	f0, f2, f0
+ 5f7:	c38e00        	movf	a8, a14, b0
+ 5fa:	2a0c      	movi.n	a10, 2
+ 5fc:	9447a2        	s8i	a10, a7, 148
+ 5ff:	244713        	ssi	f1, a7, 144
+ 602:	954782        	s8i	a8, a7, 149
+ 605:	224713        	ssi	f1, a7, 136
+ 608:	6b0c00        	ole.s	b0, f12, f0
+ 60b:	610076        	bf	b0, 670 <cs80v2::Engine::control_tick()+0x670>
+ 60e:	0000a1        	l32r	a10, fffc0610 <engine+0xfffbf3e0>
+ 611:	184173        	ssi	f7, a1, 96
+ 614:	174183        	ssi	f8, a1, 92
+ 617:	1661d2        	s32i	a13, a1, 88
+ 61a:	156192        	s32i	a9, a1, 84
+ 61d:	1461c2        	s32i	a12, a1, 80
+ 620:	fab040        	rfr	a11, f0
+ 623:	000081        	l32r	a8, fffc0624 <engine+0xfffbf3f4>
+ 626:	0008e0        	callx8	a8
+ 629:	000081        	l32r	a8, fffc062c <engine+0xfffbf3fc>
+ 62c:	0008e0        	callx8	a8
+ 62f:	000081        	l32r	a8, fffc0630 <engine+0xfffbf400>
+ 632:	fa0a50        	wfr	f0, a10
+ 635:	fac850        	wfr	f12, a8
+ 638:	080c      	movi.n	a8, 0
+ 63a:	faf850        	wfr	f15, a8
+ 63d:	000081        	l32r	a8, fffc0640 <engine+0xfffbf410>
+ 640:	1a0c00        	sub.s	f0, f12, f0
+ 643:	fa9850        	wfr	f9, a8
+ 646:	000081        	l32r	a8, fffc0648 <engine+0xfffbf418>
+ 649:	0000f1        	l32r	a15, fffc064c <engine+0xfffbf41c>
+ 64c:	fab850        	wfr	f11, a8
+ 64f:	000081        	l32r	a8, fffc0650 <engine+0xfffbf420>
+ 652:	1421c2        	l32i	a12, a1, 80
+ 655:	fa5850        	wfr	f5, a8
+ 658:	000081        	l32r	a8, fffc0658 <engine+0xfffbf428>
+ 65b:	152192        	l32i	a9, a1, 84
+ 65e:	1621d2        	l32i	a13, a1, 88
+ 661:	170183        	lsi	f8, a1, 92
+ 664:	180173        	lsi	f7, a1, 96
+ 667:	fa4850        	wfr	f4, a8
+ 66a:	0e0c      	movi.n	a14, 0
+ 66c:	0000c6        	j	673 <cs80v2::Engine::control_tick()+0x673>
+ 66f:	00          	.byte	00
+ 670:	fa0c00        	mov.s	f0, f12
+ 673:	210763        	lsi	f6, a7, 132
+ 676:	234703        	ssi	f0, a7, 140
+ 679:	11a530        	slli	a10, a5, 13
+ 67c:	30aa50        	xor	a10, a10, a5
+ 67f:	e581a0        	extui	a8, a10, 17, 15
+ 682:	3088a0        	xor	a8, a8, a10
+ 685:	1158b0        	slli	a5, a8, 5
+ 688:	2a0703        	lsi	f0, a7, 168
+ 68b:	305580        	xor	a5, a5, a8
+ 68e:	000081        	l32r	a8, fffc0690 <engine+0xfffbf460>
+ 691:	ca1500        	float.s	f1, a5, 0
+ 694:	fa3850        	wfr	f3, a8
+ 697:	fa2060        	neg.s	f2, f0
+ 69a:	4a2130        	madd.s	f2, f1, f3
+ 69d:	000081        	l32r	a8, fffc06a0 <engine+0xfffbf470>
+ 6a0:	260713        	lsi	f1, a7, 152
  6a3:	fa3850        	wfr	f3, a8
- 6a6:	fa2060        	neg.s	f2, f0
- 6a9:	4a2130        	madd.s	f2, f1, f3
- 6ac:	000081        	l32r	a8, fffc06ac <engine+0xfffbfeb0>
- 6af:	260713        	lsi	f1, a7, 152
- 6b2:	fa3850        	wfr	f3, a8
- 6b5:	4a0230        	madd.s	f0, f2, f3
- 6b8:	0959      	s32i.n	a5, a9, 0
- 6ba:	0a1010        	add.s	f1, f0, f1
- 6bd:	2a4703        	ssi	f0, a7, 168
- 6c0:	060103        	lsi	f0, a1, 24
- 6c3:	2a1100        	mul.s	f1, f1, f0
- 6c6:	428c      	beqz.n	a2, 6ce <cs80v2::Engine::control_tick()+0x6ce>
- 6c8:	010d03        	lsi	f0, a13, 4
- 6cb:	0a1100        	add.s	f1, f1, f0
- 6ce:	842a      	add.n	a8, a4, a2
- 6d0:	f80882        	l8ui	a8, a8, 248
- 6d3:	0000a1        	l32r	a10, fffc06d4 <engine+0xfffbfed8>
- 6d6:	0c0123        	lsi	f2, a1, 48
- 6d9:	a088a0        	addx4	a8, a8, a10
- 6dc:	000803        	lsi	f0, a8, 0
- 6df:	000081        	l32r	a8, fffc06e0 <engine+0xfffbfee4>
- 6e2:	0a0200        	add.s	f0, f2, f0
- 6e5:	fa2850        	wfr	f2, a8
- 6e8:	000081        	l32r	a8, fffc06e8 <engine+0xfffbfeec>
- 6eb:	4a0120        	madd.s	f0, f1, f2
- 6ee:	fa1850        	wfr	f1, a8
- 6f1:	2a0010        	mul.s	f0, f0, f1
- 6f4:	6b0050        	ole.s	b0, f0, f5
- 6f7:	cb0500        	movf.s	f0, f5, b0
- 6fa:	6b0400        	ole.s	b0, f4, f0
- 6fd:	cb0400        	movf.s	f0, f4, b0
- 700:	9a8000        	trunc.s	a8, f0, 0
- 703:	ca1800        	float.s	f1, a8, 0
- 706:	4b0010        	olt.s	b0, f0, f1
- 709:	040076        	bf	b0, 711 <cs80v2::Engine::control_tick()+0x711>
- 70c:	880b      	addi.n	a8, a8, -1
- 70e:	ca1800        	float.s	f1, a8, 0
- 711:	0000a1        	l32r	a10, fffc0714 <engine+0xfffbff18>
- 714:	1a0010        	sub.s	f0, f0, f1
- 717:	fa2a50        	wfr	f2, a10
- 71a:	0000a1        	l32r	a10, fffc071c <engine+0xfffbff20>
- 71d:	740413        	lsi	f1, a4, 0x1d0
- 720:	faaa50        	wfr	f10, a10
- 723:	0000a1        	l32r	a10, fffc0724 <engine+0xfffbff28>
- 726:	2a1120        	mul.s	f1, f1, f2
- 729:	fa2a50        	wfr	f2, a10
- 72c:	4aa020        	madd.s	f10, f0, f2
- 72f:	0000b1        	l32r	a11, fffc0730 <engine+0xfffbff34>
- 732:	018890        	slli	a8, a8, 23
- 735:	fa3b50        	wfr	f3, a11
- 738:	4a30a0        	madd.s	f3, f0, f10
- 73b:	faac00        	mov.s	f10, f12
- 73e:	a0a210        	addx4	a10, a2, a1
- 741:	020a23        	lsi	f2, a10, 8
- 744:	4aa030        	madd.s	f10, f0, f3
- 747:	11a2e0        	slli	a10, a2, 2
- 74a:	faba40        	rfr	a11, f10
- 74d:	88ba      	add.n	a8, a8, a11
- 74f:	fa0850        	wfr	f0, a8
- 752:	2a0100        	mul.s	f0, f1, f0
- 755:	0000b1        	l32r	a11, fffc0758 <engine+0xfffbff5c>
- 758:	fa1b50        	wfr	f1, a11
- 75b:	6b0010        	ole.s	b0, f0, f1
- 75e:	fa8040        	rfr	a8, f0
- 761:	c38b00        	movf	a8, a11, b0
- 764:	c0bf80        	sub	a11, a15, a8
- 767:	fa1850        	wfr	f1, a8
- 76a:	fa3b50        	wfr	f3, a11
- 76d:	fa0900        	mov.s	f0, f9
- 770:	5a0130        	msub.s	f0, f1, f3
- 773:	fa1900        	mov.s	f1, f9
- 776:	0789      	s32i.n	a8, a7, 0
- 778:	2a0030        	mul.s	f0, f0, f3
- 77b:	fa3850        	wfr	f3, a8
- 77e:	000081        	l32r	a8, fffc0780 <engine+0xfffbff84>
- 781:	5a1300        	msub.s	f1, f3, f0
- 784:	2a0010        	mul.s	f0, f0, f1
- 787:	fa1900        	mov.s	f1, f9
- 78a:	5a1300        	msub.s	f1, f3, f0
- 78d:	2a0100        	mul.s	f0, f1, f0
- 790:	014703        	ssi	f0, a7, 4
- 793:	000613        	lsi	f1, a6, 0
- 796:	010603        	lsi	f0, a6, 4
- 799:	4a0120        	madd.s	f0, f1, f2
- 79c:	fa1850        	wfr	f1, a8
- 79f:	6b0010        	ole.s	b0, f0, f1
- 7a2:	120076        	bf	b0, 7b8 <cs80v2::Engine::control_tick()+0x7b8>
- 7a5:	1a0700        	sub.s	f0, f7, f0
- 7a8:	000081        	l32r	a8, fffc07a8 <engine+0xfffbffac>
- 7ab:	fa1850        	wfr	f1, a8
- 7ae:	6b0010        	ole.s	b0, f0, f1
- 7b1:	cb0100        	movf.s	f0, f1, b0
- 7b4:	000186        	j	7be <cs80v2::Engine::control_tick()+0x7be>
- 7b7:	00          	.byte	00
- 7b8:	000081        	l32r	a8, fffc07b8 <engine+0xfffbffbc>
- 7bb:	fa0850        	wfr	f0, a8
- 7be:	024703        	ssi	f0, a7, 8
- 7c1:	030603        	lsi	f0, a6, 12
- 7c4:	6b00c0        	ole.s	b0, f0, f12
- 7c7:	cb0c00        	movf.s	f0, f12, b0
- 7ca:	6b0f00        	ole.s	b0, f15, f0
- 7cd:	cb0f00        	movf.s	f0, f15, b0
- 7d0:	2a0070        	mul.s	f0, f0, f7
- 7d3:	13fc      	bnez.n	a3, 808 <cs80v2::Engine::control_tick()+0x808>
- 7d5:	030723        	lsi	f2, a7, 12
- 7d8:	000081        	l32r	a8, fffc07d8 <engine+0xfffbffdc>
- 7db:	1a0020        	sub.s	f0, f0, f2
- 7de:	faa850        	wfr	f10, a8
- 7e1:	040713        	lsi	f1, a7, 16
- 7e4:	4a20a0        	madd.s	f2, f0, f10
- 7e7:	fa3160        	neg.s	f3, f1
- 7ea:	034723        	ssi	f2, a7, 12
- 7ed:	020603        	lsi	f0, a6, 8
- 7f0:	6b00c0        	ole.s	b0, f0, f12
- 7f3:	cb0c00        	movf.s	f0, f12, b0
- 7f6:	6b0f00        	ole.s	b0, f15, f0
- 7f9:	cb0f00        	movf.s	f0, f15, b0
- 7fc:	4a3070        	madd.s	f3, f0, f7
- 7ff:	fa0100        	mov.s	f0, f1
- 802:	4a03a0        	madd.s	f0, f3, f10
- 805:	000506        	j	81d <cs80v2::Engine::control_tick()+0x81d>
- 808:	034703        	ssi	f0, a7, 12
- 80b:	020603        	lsi	f0, a6, 8
- 80e:	6b00c0        	ole.s	b0, f0, f12
- 811:	cb0c00        	movf.s	f0, f12, b0
- 814:	6b0f00        	ole.s	b0, f15, f0
- 817:	cb0f00        	movf.s	f0, f15, b0
- 81a:	2a0070        	mul.s	f0, f0, f7
- 81d:	044703        	ssi	f0, a7, 16
- 820:	000081        	l32r	a8, fffc0820 <engine+0xfffc0024>
- 823:	040603        	lsi	f0, a6, 16
- 826:	fa2850        	wfr	f2, a8
- 829:	2a0020        	mul.s	f0, f0, f2
- 82c:	1c0713        	lsi	f1, a7, 112
- 82f:	380682        	l8ui	a8, a6, 56
- 832:	fa2160        	neg.s	f2, f1
- 835:	054703        	ssi	f0, a7, 20
- 838:	9b1280        	movnez.s	f1, f2, a8
- 83b:	0901a3        	lsi	f10, a1, 36
- 83e:	060d23        	lsi	f2, a13, 24
- 841:	040d03        	lsi	f0, a13, 16
- 844:	0701e3        	lsi	f14, a1, 28
- 847:	4a02a0        	madd.s	f0, f2, f10
- 84a:	180633        	lsi	f3, a6, 96
- 84d:	190623        	lsi	f2, a6, 100
- 850:	2707d3        	lsi	f13, a7, 156
- 853:	0a00e0        	add.s	f0, f0, f14
- 856:	0801e3        	lsi	f14, a1, 32
- 859:	0506a3        	lsi	f10, a6, 20
- 85c:	0a00e0        	add.s	f0, f0, f14
- 85f:	0a01e3        	lsi	f14, a1, 40
- 862:	0a00e0        	add.s	f0, f0, f14
- 865:	0401e3        	lsi	f14, a1, 16
- 868:	4a03e0        	madd.s	f0, f3, f14
- 86b:	0a0010        	add.s	f0, f0, f1
- 86e:	050113        	lsi	f1, a1, 20
- 871:	4a0210        	madd.s	f0, f2, f1
- 874:	060113        	lsi	f1, a1, 24
- 877:	4a0d10        	madd.s	f0, f13, f1
- 87a:	2a2070        	mul.s	f2, f0, f7
- 87d:	6b0250        	ole.s	b0, f2, f5
- 880:	cb2500        	movf.s	f2, f5, b0
- 883:	6b0420        	ole.s	b0, f4, f2
- 886:	cb2400        	movf.s	f2, f4, b0
- 889:	9a8200        	trunc.s	a8, f2, 0
- 88c:	ca1800        	float.s	f1, a8, 0
- 88f:	4b0210        	olt.s	b0, f2, f1
- 892:	040076        	bf	b0, 89a <cs80v2::Engine::control_tick()+0x89a>
- 895:	880b      	addi.n	a8, a8, -1
- 897:	ca1800        	float.s	f1, a8, 0
- 89a:	0000b1        	l32r	a11, fffc089c <engine+0xfffc00a0>
- 89d:	1a2210        	sub.s	f2, f2, f1
- 8a0:	faeb50        	wfr	f14, a11
- 8a3:	0000b1        	l32r	a11, fffc08a4 <engine+0xfffc00a8>
- 8a6:	018890        	slli	a8, a8, 23
+ 6a6:	4a0230        	madd.s	f0, f2, f3
+ 6a9:	006952        	s32i	a5, a9, 0
+ 6ac:	0a1010        	add.s	f1, f0, f1
+ 6af:	2a4703        	ssi	f0, a7, 168
+ 6b2:	060103        	lsi	f0, a1, 24
+ 6b5:	2a1100        	mul.s	f1, f1, f0
+ 6b8:	005216        	beqz	a2, 6c1 <cs80v2::Engine::control_tick()+0x6c1>
+ 6bb:	010d03        	lsi	f0, a13, 4
+ 6be:	0a1100        	add.s	f1, f1, f0
+ 6c1:	842a      	add.n	a8, a4, a2
+ 6c3:	f80882        	l8ui	a8, a8, 248
+ 6c6:	0000a1        	l32r	a10, fffc06c8 <engine+0xfffbf498>
+ 6c9:	0c0123        	lsi	f2, a1, 48
+ 6cc:	a088a0        	addx4	a8, a8, a10
+ 6cf:	000803        	lsi	f0, a8, 0
+ 6d2:	000081        	l32r	a8, fffc06d4 <engine+0xfffbf4a4>
+ 6d5:	0a0200        	add.s	f0, f2, f0
+ 6d8:	fa2850        	wfr	f2, a8
+ 6db:	000081        	l32r	a8, fffc06dc <engine+0xfffbf4ac>
+ 6de:	4a0120        	madd.s	f0, f1, f2
+ 6e1:	fa1850        	wfr	f1, a8
+ 6e4:	2a0010        	mul.s	f0, f0, f1
+ 6e7:	6b0050        	ole.s	b0, f0, f5
+ 6ea:	cb0500        	movf.s	f0, f5, b0
+ 6ed:	6b0400        	ole.s	b0, f4, f0
+ 6f0:	cb0400        	movf.s	f0, f4, b0
+ 6f3:	9a8000        	trunc.s	a8, f0, 0
+ 6f6:	ca1800        	float.s	f1, a8, 0
+ 6f9:	4b0010        	olt.s	b0, f0, f1
+ 6fc:	040076        	bf	b0, 704 <cs80v2::Engine::control_tick()+0x704>
+ 6ff:	880b      	addi.n	a8, a8, -1
+ 701:	ca1800        	float.s	f1, a8, 0
+ 704:	0000a1        	l32r	a10, fffc0704 <engine+0xfffbf4d4>
+ 707:	1a0010        	sub.s	f0, f0, f1
+ 70a:	fa2a50        	wfr	f2, a10
+ 70d:	0000a1        	l32r	a10, fffc0710 <engine+0xfffbf4e0>
+ 710:	740413        	lsi	f1, a4, 0x1d0
+ 713:	faaa50        	wfr	f10, a10
+ 716:	0000a1        	l32r	a10, fffc0718 <engine+0xfffbf4e8>
+ 719:	2a1120        	mul.s	f1, f1, f2
+ 71c:	fa2a50        	wfr	f2, a10
+ 71f:	4aa020        	madd.s	f10, f0, f2
+ 722:	0000b1        	l32r	a11, fffc0724 <engine+0xfffbf4f4>
+ 725:	018890        	slli	a8, a8, 23
+ 728:	fa3b50        	wfr	f3, a11
+ 72b:	4a30a0        	madd.s	f3, f0, f10
+ 72e:	faac00        	mov.s	f10, f12
+ 731:	a0a210        	addx4	a10, a2, a1
+ 734:	020a23        	lsi	f2, a10, 8
+ 737:	4aa030        	madd.s	f10, f0, f3
+ 73a:	11a2e0        	slli	a10, a2, 2
+ 73d:	faba40        	rfr	a11, f10
+ 740:	88ba      	add.n	a8, a8, a11
+ 742:	fa0850        	wfr	f0, a8
+ 745:	2a0100        	mul.s	f0, f1, f0
+ 748:	0000b1        	l32r	a11, fffc0748 <engine+0xfffbf518>
+ 74b:	fa1b50        	wfr	f1, a11
+ 74e:	6b0010        	ole.s	b0, f0, f1
+ 751:	fa8040        	rfr	a8, f0
+ 754:	c38b00        	movf	a8, a11, b0
+ 757:	c0bf80        	sub	a11, a15, a8
+ 75a:	fa1850        	wfr	f1, a8
+ 75d:	fa3b50        	wfr	f3, a11
+ 760:	fa0900        	mov.s	f0, f9
+ 763:	5a0130        	msub.s	f0, f1, f3
+ 766:	fa1900        	mov.s	f1, f9
+ 769:	0789      	s32i.n	a8, a7, 0
+ 76b:	2a0030        	mul.s	f0, f0, f3
+ 76e:	fa3850        	wfr	f3, a8
+ 771:	000081        	l32r	a8, fffc0774 <engine+0xfffbf544>
+ 774:	5a1300        	msub.s	f1, f3, f0
+ 777:	2a0010        	mul.s	f0, f0, f1
+ 77a:	fa1900        	mov.s	f1, f9
+ 77d:	5a1300        	msub.s	f1, f3, f0
+ 780:	2a0100        	mul.s	f0, f1, f0
+ 783:	014703        	ssi	f0, a7, 4
+ 786:	000613        	lsi	f1, a6, 0
+ 789:	010603        	lsi	f0, a6, 4
+ 78c:	4a0120        	madd.s	f0, f1, f2
+ 78f:	fa1850        	wfr	f1, a8
+ 792:	6b0010        	ole.s	b0, f0, f1
+ 795:	110076        	bf	b0, 7aa <cs80v2::Engine::control_tick()+0x7aa>
+ 798:	1a0700        	sub.s	f0, f7, f0
+ 79b:	000081        	l32r	a8, fffc079c <engine+0xfffbf56c>
+ 79e:	fa1850        	wfr	f1, a8
+ 7a1:	6b0010        	ole.s	b0, f0, f1
+ 7a4:	cb0100        	movf.s	f0, f1, b0
+ 7a7:	000146        	j	7b0 <cs80v2::Engine::control_tick()+0x7b0>
+ 7aa:	000081        	l32r	a8, fffc07ac <engine+0xfffbf57c>
+ 7ad:	fa0850        	wfr	f0, a8
+ 7b0:	024703        	ssi	f0, a7, 8
+ 7b3:	030603        	lsi	f0, a6, 12
+ 7b6:	6b00c0        	ole.s	b0, f0, f12
+ 7b9:	cb0c00        	movf.s	f0, f12, b0
+ 7bc:	6b0f00        	ole.s	b0, f15, f0
+ 7bf:	cb0f00        	movf.s	f0, f15, b0
+ 7c2:	2a0070        	mul.s	f0, f0, f7
+ 7c5:	33fc      	bnez.n	a3, 7fc <cs80v2::Engine::control_tick()+0x7fc>
+ 7c7:	030723        	lsi	f2, a7, 12
+ 7ca:	000081        	l32r	a8, fffc07cc <engine+0xfffbf59c>
+ 7cd:	1a0020        	sub.s	f0, f0, f2
+ 7d0:	faa850        	wfr	f10, a8
+ 7d3:	040713        	lsi	f1, a7, 16
+ 7d6:	4a20a0        	madd.s	f2, f0, f10
+ 7d9:	fa3160        	neg.s	f3, f1
+ 7dc:	034723        	ssi	f2, a7, 12
+ 7df:	020603        	lsi	f0, a6, 8
+ 7e2:	6b00c0        	ole.s	b0, f0, f12
+ 7e5:	cb0c00        	movf.s	f0, f12, b0
+ 7e8:	6b0f00        	ole.s	b0, f15, f0
+ 7eb:	cb0f00        	movf.s	f0, f15, b0
+ 7ee:	4a3070        	madd.s	f3, f0, f7
+ 7f1:	fa0100        	mov.s	f0, f1
+ 7f4:	4a03a0        	madd.s	f0, f3, f10
+ 7f7:	000586        	j	811 <cs80v2::Engine::control_tick()+0x811>
+ 7fa:	00          	.byte	00
+ 7fb:	00          	.byte	00
+ 7fc:	034703        	ssi	f0, a7, 12
+ 7ff:	020603        	lsi	f0, a6, 8
+ 802:	6b00c0        	ole.s	b0, f0, f12
+ 805:	cb0c00        	movf.s	f0, f12, b0
+ 808:	6b0f00        	ole.s	b0, f15, f0
+ 80b:	cb0f00        	movf.s	f0, f15, b0
+ 80e:	2a0070        	mul.s	f0, f0, f7
+ 811:	044703        	ssi	f0, a7, 16
+ 814:	000081        	l32r	a8, fffc0814 <engine+0xfffbf5e4>
+ 817:	040603        	lsi	f0, a6, 16
+ 81a:	fa2850        	wfr	f2, a8
+ 81d:	2a0020        	mul.s	f0, f0, f2
+ 820:	1c0713        	lsi	f1, a7, 112
+ 823:	380682        	l8ui	a8, a6, 56
+ 826:	fa2160        	neg.s	f2, f1
+ 829:	054703        	ssi	f0, a7, 20
+ 82c:	9b1280        	movnez.s	f1, f2, a8
+ 82f:	0901a3        	lsi	f10, a1, 36
+ 832:	060d23        	lsi	f2, a13, 24
+ 835:	040d03        	lsi	f0, a13, 16
+ 838:	0701e3        	lsi	f14, a1, 28
+ 83b:	4a02a0        	madd.s	f0, f2, f10
+ 83e:	180633        	lsi	f3, a6, 96
+ 841:	190623        	lsi	f2, a6, 100
+ 844:	2707d3        	lsi	f13, a7, 156
+ 847:	0a00e0        	add.s	f0, f0, f14
+ 84a:	0801e3        	lsi	f14, a1, 32
+ 84d:	0506a3        	lsi	f10, a6, 20
+ 850:	0a00e0        	add.s	f0, f0, f14
+ 853:	0a01e3        	lsi	f14, a1, 40
+ 856:	0a00e0        	add.s	f0, f0, f14
+ 859:	0401e3        	lsi	f14, a1, 16
+ 85c:	4a03e0        	madd.s	f0, f3, f14
+ 85f:	0a0010        	add.s	f0, f0, f1
+ 862:	050113        	lsi	f1, a1, 20
+ 865:	4a0210        	madd.s	f0, f2, f1
+ 868:	060113        	lsi	f1, a1, 24
+ 86b:	4a0d10        	madd.s	f0, f13, f1
+ 86e:	2a2070        	mul.s	f2, f0, f7
+ 871:	6b0250        	ole.s	b0, f2, f5
+ 874:	cb2500        	movf.s	f2, f5, b0
+ 877:	6b0420        	ole.s	b0, f4, f2
+ 87a:	cb2400        	movf.s	f2, f4, b0
+ 87d:	9a8200        	trunc.s	a8, f2, 0
+ 880:	ca1800        	float.s	f1, a8, 0
+ 883:	4b0210        	olt.s	b0, f2, f1
+ 886:	040076        	bf	b0, 88e <cs80v2::Engine::control_tick()+0x88e>
+ 889:	880b      	addi.n	a8, a8, -1
+ 88b:	ca1800        	float.s	f1, a8, 0
+ 88e:	0000b1        	l32r	a11, fffc0890 <engine+0xfffbf660>
+ 891:	1a2210        	sub.s	f2, f2, f1
+ 894:	faeb50        	wfr	f14, a11
+ 897:	0000b1        	l32r	a11, fffc0898 <engine+0xfffbf668>
+ 89a:	018890        	slli	a8, a8, 23
+ 89d:	fadb50        	wfr	f13, a11
+ 8a0:	4ae2d0        	madd.s	f14, f2, f13
+ 8a3:	0000b1        	l32r	a11, fffc08a4 <engine+0xfffbf674>
+ 8a6:	050d33        	lsi	f3, a13, 20
  8a9:	fadb50        	wfr	f13, a11
- 8ac:	4ae2d0        	madd.s	f14, f2, f13
- 8af:	0000b1        	l32r	a11, fffc08b0 <engine+0xfffc00b4>
- 8b2:	050d33        	lsi	f3, a13, 20
- 8b5:	fadb50        	wfr	f13, a11
- 8b8:	4ad2e0        	madd.s	f13, f2, f14
- 8bb:	faec00        	mov.s	f14, f12
- 8be:	060613        	lsi	f1, a6, 24
- 8c1:	4ae2d0        	madd.s	f14, f2, f13
- 8c4:	0a1130        	add.s	f1, f1, f3
- 8c7:	740433        	lsi	f3, a4, 0x1d0
- 8ca:	fabe40        	rfr	a11, f14
- 8cd:	88ba      	add.n	a8, a8, a11
- 8cf:	fa2850        	wfr	f2, a8
- 8d2:	2a2a20        	mul.s	f2, f10, f2
- 8d5:	6b0820        	ole.s	b0, f8, f2
- 8d8:	140076        	bf	b0, 8f0 <cs80v2::Engine::control_tick()+0x8f0>
- 8db:	000081        	l32r	a8, fffc08dc <engine+0xfffc00e0>
- 8de:	7304a3        	lsi	f10, a4, 0x1cc
- 8e1:	fad850        	wfr	f13, a8
- 8e4:	2aaad0        	mul.s	f10, f10, f13
- 8e7:	6b0a20        	ole.s	b0, f10, f2
- 8ea:	db2a00        	movt.s	f2, f10, b0
- 8ed:	000086        	j	8f3 <cs80v2::Engine::control_tick()+0x8f3>
- 8f0:	fa2800        	mov.s	f2, f8
- 8f3:	000081        	l32r	a8, fffc08f4 <engine+0xfffc00f8>
- 8f6:	0000b1        	l32r	a11, fffc08f8 <engine+0xfffc00fc>
- 8f9:	faa850        	wfr	f10, a8
- 8fc:	2a33a0        	mul.s	f3, f3, f10
- 8ff:	000081        	l32r	a8, fffc0900 <engine+0xfffc0104>
- 902:	faa850        	wfr	f10, a8
- 905:	6b01a0        	ole.s	b0, f1, f10
- 908:	cb1a00        	movf.s	f1, f10, b0
- 90b:	2aa320        	mul.s	f10, f3, f2
- 90e:	000081        	l32r	a8, fffc0910 <engine+0xfffc0114>
- 911:	6b0f10        	ole.s	b0, f15, f1
- 914:	fa3850        	wfr	f3, a8
- 917:	2a2aa0        	mul.s	f2, f10, f10
- 91a:	000081        	l32r	a8, fffc091c <engine+0xfffc0120>
- 91d:	cb1f00        	movf.s	f1, f15, b0
- 920:	fad850        	wfr	f13, a8
- 923:	5a32d0        	msub.s	f3, f2, f13
- 926:	1a1c10        	sub.s	f1, f12, f1
- 929:	fa8340        	rfr	a8, f3
- 92c:	fa3b50        	wfr	f3, a11
- 92f:	c0bf80        	sub	a11, a15, a8
- 932:	fad850        	wfr	f13, a8
- 935:	faeb50        	wfr	f14, a11
- 938:	1a2320        	sub.s	f2, f3, f2
- 93b:	fa3900        	mov.s	f3, f9
- 93e:	5a3de0        	msub.s	f3, f13, f14
- 941:	0a1110        	add.s	f1, f1, f1
- 944:	2a22a0        	mul.s	f2, f2, f10
+ 8ac:	4ad2e0        	madd.s	f13, f2, f14
+ 8af:	faec00        	mov.s	f14, f12
+ 8b2:	060613        	lsi	f1, a6, 24
+ 8b5:	4ae2d0        	madd.s	f14, f2, f13
+ 8b8:	0a1130        	add.s	f1, f1, f3
+ 8bb:	740433        	lsi	f3, a4, 0x1d0
+ 8be:	fabe40        	rfr	a11, f14
+ 8c1:	88ba      	add.n	a8, a8, a11
+ 8c3:	fa2850        	wfr	f2, a8
+ 8c6:	2a2a20        	mul.s	f2, f10, f2
+ 8c9:	6b0820        	ole.s	b0, f8, f2
+ 8cc:	140076        	bf	b0, 8e4 <cs80v2::Engine::control_tick()+0x8e4>
+ 8cf:	000081        	l32r	a8, fffc08d0 <engine+0xfffbf6a0>
+ 8d2:	7304a3        	lsi	f10, a4, 0x1cc
+ 8d5:	fad850        	wfr	f13, a8
+ 8d8:	2aaad0        	mul.s	f10, f10, f13
+ 8db:	6b0a20        	ole.s	b0, f10, f2
+ 8de:	db2a00        	movt.s	f2, f10, b0
+ 8e1:	000086        	j	8e7 <cs80v2::Engine::control_tick()+0x8e7>
+ 8e4:	fa2800        	mov.s	f2, f8
+ 8e7:	000081        	l32r	a8, fffc08e8 <engine+0xfffbf6b8>
+ 8ea:	0000b1        	l32r	a11, fffc08ec <engine+0xfffbf6bc>
+ 8ed:	faa850        	wfr	f10, a8
+ 8f0:	2a33a0        	mul.s	f3, f3, f10
+ 8f3:	000081        	l32r	a8, fffc08f4 <engine+0xfffbf6c4>
+ 8f6:	faa850        	wfr	f10, a8
+ 8f9:	6b01a0        	ole.s	b0, f1, f10
+ 8fc:	cb1a00        	movf.s	f1, f10, b0
+ 8ff:	2aa320        	mul.s	f10, f3, f2
+ 902:	000081        	l32r	a8, fffc0904 <engine+0xfffbf6d4>
+ 905:	6b0f10        	ole.s	b0, f15, f1
+ 908:	fa3850        	wfr	f3, a8
+ 90b:	2a2aa0        	mul.s	f2, f10, f10
+ 90e:	000081        	l32r	a8, fffc0910 <engine+0xfffbf6e0>
+ 911:	cb1f00        	movf.s	f1, f15, b0
+ 914:	fad850        	wfr	f13, a8
+ 917:	5a32d0        	msub.s	f3, f2, f13
+ 91a:	1a1c10        	sub.s	f1, f12, f1
+ 91d:	fa8340        	rfr	a8, f3
+ 920:	fa3b50        	wfr	f3, a11
+ 923:	c0bf80        	sub	a11, a15, a8
+ 926:	fad850        	wfr	f13, a8
+ 929:	faeb50        	wfr	f14, a11
+ 92c:	1a2320        	sub.s	f2, f3, f2
+ 92f:	fa3900        	mov.s	f3, f9
+ 932:	5a3de0        	msub.s	f3, f13, f14
+ 935:	0a1110        	add.s	f1, f1, f1
+ 938:	2a22a0        	mul.s	f2, f2, f10
+ 93b:	faa900        	mov.s	f10, f9
+ 93e:	2a33e0        	mul.s	f3, f3, f14
+ 941:	5aad30        	msub.s	f10, f13, f3
+ 944:	2a33a0        	mul.s	f3, f3, f10
  947:	faa900        	mov.s	f10, f9
- 94a:	2a33e0        	mul.s	f3, f3, f14
- 94d:	5aad30        	msub.s	f10, f13, f3
- 950:	2a33a0        	mul.s	f3, f3, f10
- 953:	faa900        	mov.s	f10, f9
- 956:	5aad30        	msub.s	f10, f13, f3
- 959:	2a2230        	mul.s	f2, f2, f3
- 95c:	2a22a0        	mul.s	f2, f2, f10
- 95f:	faac00        	mov.s	f10, f12
- 962:	0a3120        	add.s	f3, f1, f2
- 965:	4aa320        	madd.s	f10, f3, f2
- 968:	fa3900        	mov.s	f3, f9
- 96b:	fa8a40        	rfr	a8, f10
- 96e:	c0bf80        	sub	a11, a15, a8
- 971:	fadb50        	wfr	f13, a11
- 974:	5a3ad0        	msub.s	f3, f10, f13
- 977:	faa900        	mov.s	f10, f9
- 97a:	2a33d0        	mul.s	f3, f3, f13
- 97d:	fad850        	wfr	f13, a8
- 980:	5aad30        	msub.s	f10, f13, f3
- 983:	2aa3a0        	mul.s	f10, f3, f10
- 986:	fa3900        	mov.s	f3, f9
- 989:	5a3da0        	msub.s	f3, f13, f10
- 98c:	2a33a0        	mul.s	f3, f3, f10
- 98f:	2aa320        	mul.s	f10, f3, f2
- 992:	2a2a20        	mul.s	f2, f10, f2
- 995:	439c      	beqz.n	a3, 9ad <cs80v2::Engine::control_tick()+0x9ad>
- 997:	084733        	ssi	f3, a7, 32
- 99a:	0947a3        	ssi	f10, a7, 36
- 99d:	0a4723        	ssi	f2, a7, 40
- 9a0:	fa3f00        	mov.s	f3, f15
- 9a3:	faaf00        	mov.s	f10, f15
- 9a6:	fa2f00        	mov.s	f2, f15
- 9a9:	0006c6        	j	9c8 <cs80v2::Engine::control_tick()+0x9c8>
- 9ac:	00          	.byte	00
- 9ad:	0807d3        	lsi	f13, a7, 32
- 9b0:	0907e3        	lsi	f14, a7, 36
- 9b3:	1a33d0        	sub.s	f3, f3, f13
- 9b6:	0a07d3        	lsi	f13, a7, 40
- 9b9:	1aaae0        	sub.s	f10, f10, f14
- 9bc:	1a22d0        	sub.s	f2, f2, f13
- 9bf:	2a33b0        	mul.s	f3, f3, f11
- 9c2:	2aaab0        	mul.s	f10, f10, f11
- 9c5:	2a22b0        	mul.s	f2, f2, f11
- 9c8:	6b0050        	ole.s	b0, f0, f5
- 9cb:	cb0500        	movf.s	f0, f5, b0
- 9ce:	6b0400        	ole.s	b0, f4, f0
- 9d1:	cb0400        	movf.s	f0, f4, b0
- 9d4:	9a8000        	trunc.s	a8, f0, 0
- 9d7:	0c4733        	ssi	f3, a7, 48
- 9da:	ca3800        	float.s	f3, a8, 0
- 9dd:	0d47a3        	ssi	f10, a7, 52
- 9e0:	0e4723        	ssi	f2, a7, 56
- 9e3:	0b4713        	ssi	f1, a7, 44
- 9e6:	4b0030        	olt.s	b0, f0, f3
- 9e9:	0706a3        	lsi	f10, a6, 28
- 9ec:	040076        	bf	b0, 9f4 <cs80v2::Engine::control_tick()+0x9f4>
- 9ef:	880b      	addi.n	a8, a8, -1
- 9f1:	ca3800        	float.s	f3, a8, 0
- 9f4:	0000b1        	l32r	a11, fffc09f4 <engine+0xfffc01f8>
- 9f7:	1a0030        	sub.s	f0, f0, f3
- 9fa:	fadb50        	wfr	f13, a11
- 9fd:	0000b1        	l32r	a11, fffc0a00 <engine+0xfffc0204>
- a00:	018890        	slli	a8, a8, 23
+ 94a:	5aad30        	msub.s	f10, f13, f3
+ 94d:	2a2230        	mul.s	f2, f2, f3
+ 950:	2a22a0        	mul.s	f2, f2, f10
+ 953:	faac00        	mov.s	f10, f12
+ 956:	0a3120        	add.s	f3, f1, f2
+ 959:	4aa320        	madd.s	f10, f3, f2
+ 95c:	fa3900        	mov.s	f3, f9
+ 95f:	fa8a40        	rfr	a8, f10
+ 962:	c0bf80        	sub	a11, a15, a8
+ 965:	fadb50        	wfr	f13, a11
+ 968:	5a3ad0        	msub.s	f3, f10, f13
+ 96b:	faa900        	mov.s	f10, f9
+ 96e:	2a33d0        	mul.s	f3, f3, f13
+ 971:	fad850        	wfr	f13, a8
+ 974:	5aad30        	msub.s	f10, f13, f3
+ 977:	2aa3a0        	mul.s	f10, f3, f10
+ 97a:	fa3900        	mov.s	f3, f9
+ 97d:	5a3da0        	msub.s	f3, f13, f10
+ 980:	2a33a0        	mul.s	f3, f3, f10
+ 983:	2aa320        	mul.s	f10, f3, f2
+ 986:	2a2a20        	mul.s	f2, f10, f2
+ 989:	439c      	beqz.n	a3, 9a1 <cs80v2::Engine::control_tick()+0x9a1>
+ 98b:	084733        	ssi	f3, a7, 32
+ 98e:	0947a3        	ssi	f10, a7, 36
+ 991:	0a4723        	ssi	f2, a7, 40
+ 994:	fa3f00        	mov.s	f3, f15
+ 997:	faaf00        	mov.s	f10, f15
+ 99a:	fa2f00        	mov.s	f2, f15
+ 99d:	0006c6        	j	9bc <cs80v2::Engine::control_tick()+0x9bc>
+ 9a0:	00          	.byte	00
+ 9a1:	0807d3        	lsi	f13, a7, 32
+ 9a4:	0907e3        	lsi	f14, a7, 36
+ 9a7:	1a33d0        	sub.s	f3, f3, f13
+ 9aa:	0a07d3        	lsi	f13, a7, 40
+ 9ad:	1aaae0        	sub.s	f10, f10, f14
+ 9b0:	1a22d0        	sub.s	f2, f2, f13
+ 9b3:	2a33b0        	mul.s	f3, f3, f11
+ 9b6:	2aaab0        	mul.s	f10, f10, f11
+ 9b9:	2a22b0        	mul.s	f2, f2, f11
+ 9bc:	6b0050        	ole.s	b0, f0, f5
+ 9bf:	cb0500        	movf.s	f0, f5, b0
+ 9c2:	6b0400        	ole.s	b0, f4, f0
+ 9c5:	cb0400        	movf.s	f0, f4, b0
+ 9c8:	9a8000        	trunc.s	a8, f0, 0
+ 9cb:	0c4733        	ssi	f3, a7, 48
+ 9ce:	ca3800        	float.s	f3, a8, 0
+ 9d1:	0d47a3        	ssi	f10, a7, 52
+ 9d4:	0e4723        	ssi	f2, a7, 56
+ 9d7:	0b4713        	ssi	f1, a7, 44
+ 9da:	4b0030        	olt.s	b0, f0, f3
+ 9dd:	0706a3        	lsi	f10, a6, 28
+ 9e0:	040076        	bf	b0, 9e8 <cs80v2::Engine::control_tick()+0x9e8>
+ 9e3:	880b      	addi.n	a8, a8, -1
+ 9e5:	ca3800        	float.s	f3, a8, 0
+ 9e8:	0000b1        	l32r	a11, fffc09e8 <engine+0xfffbf7b8>
+ 9eb:	1a0030        	sub.s	f0, f0, f3
+ 9ee:	fadb50        	wfr	f13, a11
+ 9f1:	0000b1        	l32r	a11, fffc09f4 <engine+0xfffbf7c4>
+ 9f4:	018890        	slli	a8, a8, 23
+ 9f7:	fa3b50        	wfr	f3, a11
+ 9fa:	4ad030        	madd.s	f13, f0, f3
+ 9fd:	0000b1        	l32r	a11, fffc0a00 <engine+0xfffbf7d0>
+ a00:	050d23        	lsi	f2, a13, 20
  a03:	fa3b50        	wfr	f3, a11
- a06:	4ad030        	madd.s	f13, f0, f3
- a09:	0000b1        	l32r	a11, fffc0a0c <engine+0xfffc0210>
- a0c:	050d23        	lsi	f2, a13, 20
- a0f:	fa3b50        	wfr	f3, a11
- a12:	4a30d0        	madd.s	f3, f0, f13
- a15:	fadc00        	mov.s	f13, f12
- a18:	080613        	lsi	f1, a6, 32
- a1b:	4ad030        	madd.s	f13, f0, f3
- a1e:	0a1120        	add.s	f1, f1, f2
- a21:	740423        	lsi	f2, a4, 0x1d0
- a24:	fabd40        	rfr	a11, f13
- a27:	88ba      	add.n	a8, a8, a11
- a29:	fa0850        	wfr	f0, a8
- a2c:	2a3a00        	mul.s	f3, f10, f0
- a2f:	fa0800        	mov.s	f0, f8
- a32:	6b0830        	ole.s	b0, f8, f3
- a35:	140076        	bf	b0, a4d <cs80v2::Engine::control_tick()+0xa4d>
- a38:	000081        	l32r	a8, fffc0a38 <engine+0xfffc023c>
- a3b:	730403        	lsi	f0, a4, 0x1cc
- a3e:	faa850        	wfr	f10, a8
- a41:	2a00a0        	mul.s	f0, f0, f10
- a44:	6b0030        	ole.s	b0, f0, f3
- a47:	cb0300        	movf.s	f0, f3, b0
- a4a:	ffffc6        	j	a4d <cs80v2::Engine::control_tick()+0xa4d>
- a4d:	000081        	l32r	a8, fffc0a50 <engine+0xfffc0254>
- a50:	0000b1        	l32r	a11, fffc0a50 <engine+0xfffc0254>
- a53:	fa3850        	wfr	f3, a8
- a56:	2a2230        	mul.s	f2, f2, f3
- a59:	000081        	l32r	a8, fffc0a5c <engine+0xfffc0260>
- a5c:	fa3850        	wfr	f3, a8
- a5f:	6b0130        	ole.s	b0, f1, f3
- a62:	cb1300        	movf.s	f1, f3, b0
- a65:	2a3200        	mul.s	f3, f2, f0
- a68:	000081        	l32r	a8, fffc0a68 <engine+0xfffc026c>
- a6b:	6b0f10        	ole.s	b0, f15, f1
- a6e:	fa2850        	wfr	f2, a8
- a71:	2a0330        	mul.s	f0, f3, f3
- a74:	000081        	l32r	a8, fffc0a74 <engine+0xfffc0278>
- a77:	cb1f00        	movf.s	f1, f15, b0
- a7a:	faa850        	wfr	f10, a8
- a7d:	5a20a0        	msub.s	f2, f0, f10
- a80:	1a1c10        	sub.s	f1, f12, f1
- a83:	fa8240        	rfr	a8, f2
- a86:	fa2b50        	wfr	f2, a11
- a89:	c0bf80        	sub	a11, a15, a8
- a8c:	faa850        	wfr	f10, a8
- a8f:	fadb50        	wfr	f13, a11
- a92:	1a0200        	sub.s	f0, f2, f0
- a95:	fa2900        	mov.s	f2, f9
- a98:	5a2ad0        	msub.s	f2, f10, f13
- a9b:	0a1110        	add.s	f1, f1, f1
- a9e:	2a0030        	mul.s	f0, f0, f3
+ a06:	4a30d0        	madd.s	f3, f0, f13
+ a09:	fadc00        	mov.s	f13, f12
+ a0c:	080613        	lsi	f1, a6, 32
+ a0f:	4ad030        	madd.s	f13, f0, f3
+ a12:	0a1120        	add.s	f1, f1, f2
+ a15:	740423        	lsi	f2, a4, 0x1d0
+ a18:	fabd40        	rfr	a11, f13
+ a1b:	88ba      	add.n	a8, a8, a11
+ a1d:	fa0850        	wfr	f0, a8
+ a20:	2a3a00        	mul.s	f3, f10, f0
+ a23:	fa0800        	mov.s	f0, f8
+ a26:	6b0830        	ole.s	b0, f8, f3
+ a29:	140076        	bf	b0, a41 <cs80v2::Engine::control_tick()+0xa41>
+ a2c:	000081        	l32r	a8, fffc0a2c <engine+0xfffbf7fc>
+ a2f:	730403        	lsi	f0, a4, 0x1cc
+ a32:	faa850        	wfr	f10, a8
+ a35:	2a00a0        	mul.s	f0, f0, f10
+ a38:	6b0030        	ole.s	b0, f0, f3
+ a3b:	cb0300        	movf.s	f0, f3, b0
+ a3e:	ffffc6        	j	a41 <cs80v2::Engine::control_tick()+0xa41>
+ a41:	000081        	l32r	a8, fffc0a44 <engine+0xfffbf814>
+ a44:	0000b1        	l32r	a11, fffc0a44 <engine+0xfffbf814>
+ a47:	fa3850        	wfr	f3, a8
+ a4a:	2a2230        	mul.s	f2, f2, f3
+ a4d:	000081        	l32r	a8, fffc0a50 <engine+0xfffbf820>
+ a50:	fa3850        	wfr	f3, a8
+ a53:	6b0130        	ole.s	b0, f1, f3
+ a56:	cb1300        	movf.s	f1, f3, b0
+ a59:	2a3200        	mul.s	f3, f2, f0
+ a5c:	000081        	l32r	a8, fffc0a5c <engine+0xfffbf82c>
+ a5f:	6b0f10        	ole.s	b0, f15, f1
+ a62:	fa2850        	wfr	f2, a8
+ a65:	2a0330        	mul.s	f0, f3, f3
+ a68:	000081        	l32r	a8, fffc0a68 <engine+0xfffbf838>
+ a6b:	cb1f00        	movf.s	f1, f15, b0
+ a6e:	faa850        	wfr	f10, a8
+ a71:	5a20a0        	msub.s	f2, f0, f10
+ a74:	1a1c10        	sub.s	f1, f12, f1
+ a77:	fa8240        	rfr	a8, f2
+ a7a:	fa2b50        	wfr	f2, a11
+ a7d:	c0bf80        	sub	a11, a15, a8
+ a80:	faa850        	wfr	f10, a8
+ a83:	fadb50        	wfr	f13, a11
+ a86:	1a0200        	sub.s	f0, f2, f0
+ a89:	fa2900        	mov.s	f2, f9
+ a8c:	5a2ad0        	msub.s	f2, f10, f13
+ a8f:	0a1110        	add.s	f1, f1, f1
+ a92:	2a0030        	mul.s	f0, f0, f3
+ a95:	fa3900        	mov.s	f3, f9
+ a98:	2a22d0        	mul.s	f2, f2, f13
+ a9b:	5a3a20        	msub.s	f3, f10, f2
+ a9e:	2a2230        	mul.s	f2, f2, f3
  aa1:	fa3900        	mov.s	f3, f9
- aa4:	2a22d0        	mul.s	f2, f2, f13
- aa7:	5a3a20        	msub.s	f3, f10, f2
- aaa:	2a2230        	mul.s	f2, f2, f3
- aad:	fa3900        	mov.s	f3, f9
- ab0:	5a3a20        	msub.s	f3, f10, f2
- ab3:	2a0020        	mul.s	f0, f0, f2
- ab6:	2a0030        	mul.s	f0, f0, f3
- ab9:	fa3c00        	mov.s	f3, f12
- abc:	0a2100        	add.s	f2, f1, f0
- abf:	4a3200        	madd.s	f3, f2, f0
- ac2:	fa8340        	rfr	a8, f3
- ac5:	c0bf80        	sub	a11, a15, a8
- ac8:	faab50        	wfr	f10, a11
- acb:	fa2850        	wfr	f2, a8
- ace:	fa3900        	mov.s	f3, f9
- ad1:	5a32a0        	msub.s	f3, f2, f10
- ad4:	fa2900        	mov.s	f2, f9
- ad7:	2a33a0        	mul.s	f3, f3, f10
- ada:	faa850        	wfr	f10, a8
- add:	5a2a30        	msub.s	f2, f10, f3
- ae0:	2a3320        	mul.s	f3, f3, f2
- ae3:	fa2900        	mov.s	f2, f9
- ae6:	5a2a30        	msub.s	f2, f10, f3
- ae9:	2a2230        	mul.s	f2, f2, f3
- aec:	2a3200        	mul.s	f3, f2, f0
- aef:	2a0300        	mul.s	f0, f3, f0
- af2:	339c      	beqz.n	a3, b09 <cs80v2::Engine::control_tick()+0xb09>
- af4:	114723        	ssi	f2, a7, 68
- af7:	124733        	ssi	f3, a7, 72
- afa:	134703        	ssi	f0, a7, 76
- afd:	fa2f00        	mov.s	f2, f15
- b00:	fa3f00        	mov.s	f3, f15
- b03:	fa0f00        	mov.s	f0, f15
- b06:	000686        	j	b24 <cs80v2::Engine::control_tick()+0xb24>
- b09:	1107a3        	lsi	f10, a7, 68
- b0c:	1207d3        	lsi	f13, a7, 72
- b0f:	1307e3        	lsi	f14, a7, 76
- b12:	1a22a0        	sub.s	f2, f2, f10
- b15:	1a33d0        	sub.s	f3, f3, f13
- b18:	1a00e0        	sub.s	f0, f0, f14
- b1b:	2a22b0        	mul.s	f2, f2, f11
- b1e:	2a33b0        	mul.s	f3, f3, f11
- b21:	2a00b0        	mul.s	f0, f0, f11
- b24:	164733        	ssi	f3, a7, 88
- b27:	174703        	ssi	f0, a7, 92
- b2a:	154723        	ssi	f2, a7, 84
- b2d:	144713        	ssi	f1, a7, 80
- b30:	160623        	lsi	f2, a6, 88
- b33:	150613        	lsi	f1, a6, 84
- b36:	040133        	lsi	f3, a1, 16
- b39:	290703        	lsi	f0, a7, 164
- b3c:	4a1320        	madd.s	f1, f3, f2
- b3f:	2a0600        	mul.s	f0, f6, f0
- b42:	170623        	lsi	f2, a6, 92
- b45:	050133        	lsi	f3, a1, 20
- b48:	000081        	l32r	a8, fffc0b48 <engine+0xfffc034c>
- b4b:	4a1230        	madd.s	f1, f2, f3
- b4e:	0b0123        	lsi	f2, a1, 44
- b51:	a1aa      	add.n	a10, a1, a10
- b53:	2a0020        	mul.s	f0, f0, f2
- b56:	000a33        	lsi	f3, a10, 0
- b59:	faa850        	wfr	f10, a8
- b5c:	6b01a0        	ole.s	b0, f1, f10
- b5f:	2a0030        	mul.s	f0, f0, f3
- b62:	cb1a00        	movf.s	f1, f10, b0
- b65:	6b0f10        	ole.s	b0, f15, f1
- b68:	cb1f00        	movf.s	f1, f15, b0
- b6b:	2a0010        	mul.s	f0, f0, f1
- b6e:	180723        	lsi	f2, a7, 96
- b71:	0f0633        	lsi	f3, a6, 60
- b74:	fa2260        	neg.s	f2, f2
- b77:	4a2300        	madd.s	f2, f3, f0
- b7a:	1a0713        	lsi	f1, a7, 104
- b7d:	9407a2        	l8ui	a10, a7, 148
- b80:	fa1160        	neg.s	f1, f1
- b83:	2a22b0        	mul.s	f2, f2, f11
- b86:	000081        	l32r	a8, fffc0b88 <engine+0xfffc038c>
- b89:	fccaa2        	addi	a10, a10, -4
- b8c:	fa3850        	wfr	f3, a8
- b8f:	194723        	ssi	f2, a7, 100
- b92:	100623        	lsi	f2, a6, 64
- b95:	180c      	movi.n	a8, 1
- b97:	4a1200        	madd.s	f1, f2, f0
- b9a:	838ea0        	moveqz	a8, a14, a10
- b9d:	4b0360        	olt.s	b0, f3, f6
- ba0:	1a0c      	movi.n	a10, 1
- ba2:	2a01b0        	mul.s	f0, f1, f11
- ba5:	c3ae00        	movf	a10, a14, b0
- ba8:	2088a0        	or	a8, a8, a10
- bab:	20cc80        	or	a12, a12, a8
- bae:	1b4703        	ssi	f0, a7, 108
- bb1:	b0a082        	movi	a8, 176
- bb4:	6cc662        	addi	a6, a6, 108
- bb7:	778a      	add.n	a7, a7, a8
- bb9:	021226        	beqi	a2, 1, bbf <cs80v2::Engine::control_tick()+0xbbf>
- bbc:	fe4606        	j	4d8 <cs80v2::Engine::control_tick()+0x4d8>
- bbf:	4049e2        	s8i	a14, a9, 64
- bc2:	d188      	l32i.n	a8, a1, 52
- bc4:	203990        	or	a3, a9, a9
- bc7:	005c56        	bnez	a12, bd0 <cs80v2::Engine::control_tick()+0xbd0>
- bca:	3e49c2        	s8i	a12, a9, 62
- bcd:	3c49c2        	s8i	a12, a9, 60
- bd0:	a4a192        	movi	a9, 0x1a4
- bd3:	339a      	add.n	a3, a3, a9
- bd5:	021837        	beq	a8, a3, bdb <cs80v2::Engine::control_tick()+0xbdb>
- bd8:	fd9c06        	j	24c <cs80v2::Engine::control_tick()+0x24c>
- bdb:	1a2172        	l32i	a7, a1, 104
- bde:	021726        	beqi	a7, 1, be4 <cs80v2::Engine::control_tick()+0xbe4>
- be1:	fd91c6        	j	22c <cs80v2::Engine::control_tick()+0x22c>
- be4:	e188      	l32i.n	a8, a1, 56
- be6:	f8a092        	movi	a9, 248
- be9:	3008a2        	l8ui	a10, a8, 48
- bec:	949a      	add.n	a9, a4, a9
- bee:	1d0113        	lsi	f1, a1, 116
- bf1:	190923        	lsi	f2, a9, 100
- bf4:	180903        	lsi	f0, a9, 96
- bf7:	070833        	lsi	f3, a8, 28
- bfa:	04ed      	mov.n	a14, a4
- bfc:	511a66        	bnei	a10, 1, c51 <cs80v2::Engine::control_tick()+0xc51>
- bff:	8189      	s32i.n	a8, a1, 32
- c01:	000081        	l32r	a8, fffc0c04 <engine+0xfffc0408>
- c04:	160943        	lsi	f4, a9, 88
- c07:	064103        	ssi	f0, a1, 24
- c0a:	fa0850        	wfr	f0, a8
- c0d:	0a0400        	add.s	f0, f4, f0
- c10:	054123        	ssi	f2, a1, 20
- c13:	044133        	ssi	f3, a1, 16
- c16:	faa140        	rfr	a10, f1
- c19:	fab040        	rfr	a11, f0
- c1c:	7149      	s32i.n	a4, a1, 28
- c1e:	000081        	l32r	a8, fffc0c20 <engine+0xfffc0424>
- c21:	0008e0        	callx8	a8
- c24:	040133        	lsi	f3, a1, 16
- c27:	fa1a50        	wfr	f1, a10
- c2a:	0a3310        	add.s	f3, f3, f1
- c2d:	000081        	l32r	a8, fffc0c30 <engine+0xfffc0434>
- c30:	050123        	lsi	f2, a1, 20
- c33:	fac850        	wfr	f12, a8
- c36:	6b0c30        	ole.s	b0, f12, f3
- c39:	060103        	lsi	f0, a1, 24
- c3c:	8188      	l32i.n	a8, a1, 32
- c3e:	04ed      	mov.n	a14, a4
- c40:	710076        	bf	b0, cb5 <cs80v2::Engine::control_tick()+0xcb5>
- c43:	290c      	movi.n	a9, 2
- c45:	0748c3        	ssi	f12, a8, 28
- c48:	304892        	s8i	a9, a8, 48
- c4b:	fa3c00        	mov.s	f3, f12
- c4e:	001986        	j	cb8 <cs80v2::Engine::control_tick()+0xcb8>
- c51:	632a66        	bnei	a10, 2, cb8 <cs80v2::Engine::control_tick()+0xcb8>
- c54:	7189      	s32i.n	a8, a1, 28
- c56:	000081        	l32r	a8, fffc0c58 <engine+0xfffc045c>
- c59:	170943        	lsi	f4, a9, 92
- c5c:	084103        	ssi	f0, a1, 32
- c5f:	fa0850        	wfr	f0, a8
- c62:	0a0400        	add.s	f0, f4, f0
- c65:	054123        	ssi	f2, a1, 20
- c68:	044133        	ssi	f3, a1, 16
- c6b:	faa140        	rfr	a10, f1
- c6e:	6149      	s32i.n	a4, a1, 24
- c70:	fab040        	rfr	a11, f0
- c73:	000081        	l32r	a8, fffc0c74 <engine+0xfffc0478>
- c76:	0008e0        	callx8	a8
- c79:	040133        	lsi	f3, a1, 16
- c7c:	fa1a50        	wfr	f1, a10
- c7f:	1a3310        	sub.s	f3, f3, f1
- c82:	080c      	movi.n	a8, 0
- c84:	faf850        	wfr	f15, a8
- c87:	000081        	l32r	a8, fffc0c88 <engine+0xfffc048c>
- c8a:	6b03f0        	ole.s	b0, f3, f15
- c8d:	fac850        	wfr	f12, a8
- c90:	050123        	lsi	f2, a1, 20
- c93:	61e8      	l32i.n	a14, a1, 24
- c95:	7188      	l32i.n	a8, a1, 28
- c97:	091076        	bt	b0, ca4 <cs80v2::Engine::control_tick()+0xca4>
- c9a:	080103        	lsi	f0, a1, 32
- c9d:	074833        	ssi	f3, a8, 28
- ca0:	000506        	j	cb8 <cs80v2::Engine::control_tick()+0xcb8>
- ca3:	00          	.byte	00
- ca4:	090c      	movi.n	a9, 0
- ca6:	304892        	s8i	a9, a8, 48
- ca9:	0748f3        	ssi	f15, a8, 28
- cac:	fa9c40        	rfr	a9, f12
- caf:	001ec6        	j	d2e <cs80v2::Engine::control_tick()+0xd2e>
- cb2:	00          	.byte	00
- cb3:	00          	.byte	00
- cb4:	00          	.byte	00
- cb5:	074833        	ssi	f3, a8, 28
- cb8:	000091        	l32r	a9, fffc0cb8 <engine+0xfffc04bc>
- cbb:	fa4950        	wfr	f4, a9
- cbe:	000091        	l32r	a9, fffc0cc0 <engine+0xfffc04c4>
- cc1:	fa1950        	wfr	f1, a9
- cc4:	2a0010        	mul.s	f0, f0, f1
- cc7:	000091        	l32r	a9, fffc0cc8 <engine+0xfffc04cc>
- cca:	fa1950        	wfr	f1, a9
- ccd:	2a0030        	mul.s	f0, f0, f3
- cd0:	6b0040        	ole.s	b0, f0, f4
- cd3:	cb0400        	movf.s	f0, f4, b0
- cd6:	6b0100        	ole.s	b0, f1, f0
- cd9:	cb0100        	movf.s	f0, f1, b0
- cdc:	9a9000        	trunc.s	a9, f0, 0
- cdf:	ca1900        	float.s	f1, a9, 0
- ce2:	4b0010        	olt.s	b0, f0, f1
- ce5:	171076        	bt	b0, d00 <cs80v2::Engine::control_tick()+0xd00>
- ce8:	0000a1        	l32r	a10, fffc0ce8 <engine+0xfffc04ec>
- ceb:	1a0010        	sub.s	f0, f0, f1
- cee:	fa3a50        	wfr	f3, a10
- cf1:	0000a1        	l32r	a10, fffc0cf4 <engine+0xfffc04f8>
- cf4:	019990        	slli	a9, a9, 23
- cf7:	fa1a50        	wfr	f1, a10
- cfa:	4a3010        	madd.s	f3, f0, f1
- cfd:	000646        	j	d1a <cs80v2::Engine::control_tick()+0xd1a>
- d00:	990b      	addi.n	a9, a9, -1
- d02:	ca1900        	float.s	f1, a9, 0
- d05:	0000a1        	l32r	a10, fffc0d08 <engine+0xfffc050c>
- d08:	1a0010        	sub.s	f0, f0, f1
- d0b:	fa3a50        	wfr	f3, a10
- d0e:	0000a1        	l32r	a10, fffc0d10 <engine+0xfffc0514>
- d11:	019990        	slli	a9, a9, 23
- d14:	fa1a50        	wfr	f1, a10
- d17:	4a3010        	madd.s	f3, f0, f1
- d1a:	0000a1        	l32r	a10, fffc0d1c <engine+0xfffc0520>
- d1d:	fa1a50        	wfr	f1, a10
- d20:	4a1030        	madd.s	f1, f0, f3
- d23:	fa3c00        	mov.s	f3, f12
- d26:	4a3010        	madd.s	f3, f0, f1
- d29:	faa340        	rfr	a10, f3
- d2c:	99aa      	add.n	a9, a9, a10
- d2e:	740e03        	lsi	f0, a14, 0x1d0
- d31:	fa1950        	wfr	f1, a9
- d34:	2a0200        	mul.s	f0, f2, f0
- d37:	000091        	l32r	a9, fffc0d38 <engine+0xfffc053c>
- d3a:	0000a1        	l32r	a10, fffc0d3c <engine+0xfffc0540>
- d3d:	51e9      	s32i.n	a14, a1, 20
- d3f:	2a0010        	mul.s	f0, f0, f1
- d42:	fa1950        	wfr	f1, a9
- d45:	6b0010        	ole.s	b0, f0, f1
- d48:	cb0100        	movf.s	f0, f1, b0
- d4b:	064803        	ssi	f0, a8, 24
- d4e:	730e33        	lsi	f3, a14, 0x1cc
- d51:	fab340        	rfr	a11, f3
- d54:	044133        	ssi	f3, a1, 16
- d57:	000081        	l32r	a8, fffc0d58 <engine+0xfffc055c>
- d5a:	0008e0        	callx8	a8
- d5d:	51e8      	l32i.n	a14, a1, 20
- d5f:	192192        	l32i	a9, a1, 100
- d62:	5ede72        	addmi	a7, a14, 0x5e00
- d65:	200923        	lsi	f2, a9, 128
- d68:	190703        	lsi	f0, a7, 100
- d6b:	fa1a50        	wfr	f1, a10
- d6e:	4a0120        	madd.s	f0, f1, f2
- d71:	000081        	l32r	a8, fffc0d74 <engine+0xfffc0578>
- d74:	0000a1        	l32r	a10, fffc0d74 <engine+0xfffc0578>
- d77:	fac850        	wfr	f12, a8
- d7a:	1a40c0        	sub.s	f4, f0, f12
- d7d:	6b0c00        	ole.s	b0, f12, f0
- d80:	fa9a50        	wfr	f9, a10
- d83:	220953        	lsi	f5, a9, 136
- d86:	db0400        	movt.s	f0, f4, b0
- d89:	fa4c00        	mov.s	f4, f12
- d8c:	5a4090        	msub.s	f4, f0, f9
- d8f:	1a0723        	lsi	f2, a7, 104
- d92:	0000a1        	l32r	a10, fffc0d94 <engine+0xfffc0598>
- d95:	4a2150        	madd.s	f2, f1, f5
- d98:	7c0982        	l8ui	a8, a9, 124
- d9b:	fa1410        	abs.s	f1, f4
- d9e:	194703        	ssi	f0, a7, 100
- da1:	fa0a50        	wfr	f0, a10
- da4:	2a4400        	mul.s	f4, f4, f0
- da7:	1a1c10        	sub.s	f1, f12, f1
- daa:	1a52c0        	sub.s	f5, f2, f12
- dad:	0000a1        	l32r	a10, fffc0db0 <engine+0xfffc05b4>
- db0:	6b0c20        	ole.s	b0, f12, f2
- db3:	2a1140        	mul.s	f1, f1, f4
- db6:	fa0a50        	wfr	f0, a10
- db9:	0000a1        	l32r	a10, fffc0dbc <engine+0xfffc05c0>
- dbc:	db2500        	movt.s	f2, f5, b0
- dbf:	fa4110        	abs.s	f4, f1
- dc2:	fa5a50        	wfr	f5, a10
- dc5:	2a5150        	mul.s	f5, f1, f5
- dc8:	1a44c0        	sub.s	f4, f4, f12
- dcb:	0a0c      	movi.n	a10, 0
- dcd:	040133        	lsi	f3, a1, 16
- dd0:	fafa50        	wfr	f15, a10
- dd3:	0000a1        	l32r	a10, fffc0dd4 <engine+0xfffc05d8>
- dd6:	1a4723        	ssi	f2, a7, 104
- dd9:	2a0300        	mul.s	f0, f3, f0
- ddc:	4a1540        	madd.s	f1, f5, f4
- ddf:	7d0992        	l8ui	a9, a9, 125
- de2:	faba50        	wfr	f11, a10
- de5:	98cc      	bnez.n	a8, df2 <cs80v2::Engine::control_tick()+0xdf2>
- de7:	29ec      	bnez.n	a9, e0d <cs80v2::Engine::control_tick()+0xe0d>
- de9:	fa4000        	mov.s	f4, f0
- dec:	fa5f00        	mov.s	f5, f15
- def:	002586        	j	e89 <cs80v2::Engine::control_tick()+0xe89>
- df2:	1921a2        	l32i	a10, a1, 100
- df5:	210a73        	lsi	f7, a10, 132
- df8:	0000a1        	l32r	a10, fffc0df8 <engine+0xfffc05fc>
- dfb:	2a6370        	mul.s	f6, f3, f7
- dfe:	fa4a50        	wfr	f4, a10
- e01:	2a6640        	mul.s	f6, f6, f4
- e04:	2a6610        	mul.s	f6, f6, f1
- e07:	069916        	beqz	a9, e74 <cs80v2::Engine::control_tick()+0xe74>
- e0a:	000086        	j	e10 <cs80v2::Engine::control_tick()+0xe10>
- e0d:	fa6f00        	mov.s	f6, f15
- e10:	fa4c00        	mov.s	f4, f12
- e13:	5a4290        	msub.s	f4, f2, f9
- e16:	000091        	l32r	a9, fffc0e18 <engine+0xfffc061c>
- e19:	1921a2        	l32i	a10, a1, 100
- e1c:	fa8950        	wfr	f8, a9
- e1f:	fa2410        	abs.s	f2, f4
- e22:	2a8480        	mul.s	f8, f4, f8
- e25:	1a2c20        	sub.s	f2, f12, f2
- e28:	230a53        	lsi	f5, a10, 140
- e2b:	000091        	l32r	a9, fffc0e2c <engine+0xfffc0630>
- e2e:	2a7350        	mul.s	f7, f3, f5
- e31:	2a2280        	mul.s	f2, f2, f8
- e34:	fa4950        	wfr	f4, a9
- e37:	000091        	l32r	a9, fffc0e38 <engine+0xfffc063c>
- e3a:	0000b1        	l32r	a11, fffc0e3c <engine+0xfffc0640>
- e3d:	2a7740        	mul.s	f7, f7, f4
- e40:	0a4600        	add.s	f4, f6, f0
- e43:	1a6060        	sub.s	f6, f0, f6
- e46:	fa0950        	wfr	f0, a9
- e49:	2a5500        	mul.s	f5, f5, f0
- e4c:	fa8210        	abs.s	f8, f2
- e4f:	fa0b50        	wfr	f0, a11
- e52:	2a0200        	mul.s	f0, f2, f0
- e55:	1a88c0        	sub.s	f8, f8, f12
- e58:	190c      	movi.n	a9, 1
- e5a:	4a2080        	madd.s	f2, f0, f8
- e5d:	fa0600        	mov.s	f0, f6
- e60:	4a4270        	madd.s	f4, f2, f7
- e63:	5a0270        	msub.s	f0, f2, f7
- e66:	2a5520        	mul.s	f5, f5, f2
- e69:	c89c      	beqz.n	a8, e89 <cs80v2::Engine::control_tick()+0xe89>
- e6b:	210a73        	lsi	f7, a10, 132
- e6e:	089d      	mov.n	a9, a8
- e70:	000246        	j	e7d <cs80v2::Engine::control_tick()+0xe7d>
- e73:	00          	.byte	00
- e74:	0a4600        	add.s	f4, f6, f0
- e77:	1a0060        	sub.s	f0, f0, f6
- e7a:	fa5f00        	mov.s	f5, f15
- e7d:	0000a1        	l32r	a10, fffc0e80 <engine+0xfffc0684>
- e80:	fa2a50        	wfr	f2, a10
- e83:	2a1120        	mul.s	f1, f1, f2
- e86:	4a5170        	madd.s	f5, f1, f7
- e89:	1d0723        	lsi	f2, a7, 116
- e8c:	1b0773        	lsi	f7, a7, 108
- e8f:	1a2c20        	sub.s	f2, f12, f2
- e92:	1c0763        	lsi	f6, a7, 112
- e95:	1e0713        	lsi	f1, a7, 120
- e98:	1a4470        	sub.s	f4, f4, f7
- e9b:	1a0060        	sub.s	f0, f0, f6
- e9e:	0a2250        	add.s	f2, f2, f5
- ea1:	1a1c10        	sub.s	f1, f12, f1
- ea4:	2a44b0        	mul.s	f4, f4, f11
- ea7:	2a00b0        	mul.s	f0, f0, f11
- eaa:	2a22b0        	mul.s	f2, f2, f11
- ead:	1a1150        	sub.s	f1, f1, f5
- eb0:	214743        	ssi	f4, a7, 132
- eb3:	224703        	ssi	f0, a7, 136
- eb6:	234723        	ssi	f2, a7, 140
- eb9:	2a01b0        	mul.s	f0, f1, f11
- ebc:	98cc      	bnez.n	a8, ec9 <cs80v2::Engine::control_tick()+0xec9>
- ebe:	79cc      	bnez.n	a9, ec9 <cs80v2::Engine::control_tick()+0xec9>
- ec0:	fa8f40        	rfr	a8, f15
- ec3:	fa9c40        	rfr	a9, f12
- ec6:	000146        	j	ecf <cs80v2::Engine::control_tick()+0xecf>
- ec9:	000081        	l32r	a8, fffc0ecc <engine+0xfffc06d0>
- ecc:	000091        	l32r	a9, fffc0ecc <engine+0xfffc06d0>
- ecf:	0000a1        	l32r	a10, fffc0ed0 <engine+0xfffc06d4>
- ed2:	244703        	ssi	f0, a7, 144
- ed5:	256782        	s32i	a8, a7, 148
- ed8:	266792        	s32i	a9, a7, 152
- edb:	fab340        	rfr	a11, f3
- ede:	000081        	l32r	a8, fffc0ee0 <engine+0xfffc06e4>
- ee1:	0008e0        	callx8	a8
- ee4:	000081        	l32r	a8, fffc0ee4 <engine+0xfffc06e8>
- ee7:	0008e0        	callx8	a8
- eea:	000081        	l32r	a8, fffc0eec <engine+0xfffc06f0>
- eed:	fa0a50        	wfr	f0, a10
- ef0:	fac850        	wfr	f12, a8
- ef3:	1a0c00        	sub.s	f0, f12, f0
- ef6:	274703        	ssi	f0, a7, 156
- ef9:	f01d      	retw.n
+ aa4:	5a3a20        	msub.s	f3, f10, f2
+ aa7:	2a0020        	mul.s	f0, f0, f2
+ aaa:	2a0030        	mul.s	f0, f0, f3
+ aad:	fa3c00        	mov.s	f3, f12
+ ab0:	0a2100        	add.s	f2, f1, f0
+ ab3:	4a3200        	madd.s	f3, f2, f0
+ ab6:	fa8340        	rfr	a8, f3
+ ab9:	c0bf80        	sub	a11, a15, a8
+ abc:	faab50        	wfr	f10, a11
+ abf:	fa2850        	wfr	f2, a8
+ ac2:	fa3900        	mov.s	f3, f9
+ ac5:	5a32a0        	msub.s	f3, f2, f10
+ ac8:	fa2900        	mov.s	f2, f9
+ acb:	2a33a0        	mul.s	f3, f3, f10
+ ace:	faa850        	wfr	f10, a8
+ ad1:	5a2a30        	msub.s	f2, f10, f3
+ ad4:	2a3320        	mul.s	f3, f3, f2
+ ad7:	fa2900        	mov.s	f2, f9
+ ada:	5a2a30        	msub.s	f2, f10, f3
+ add:	2a2230        	mul.s	f2, f2, f3
+ ae0:	2a3200        	mul.s	f3, f2, f0
+ ae3:	2a0300        	mul.s	f0, f3, f0
+ ae6:	339c      	beqz.n	a3, afd <cs80v2::Engine::control_tick()+0xafd>
+ ae8:	114723        	ssi	f2, a7, 68
+ aeb:	124733        	ssi	f3, a7, 72
+ aee:	134703        	ssi	f0, a7, 76
+ af1:	fa2f00        	mov.s	f2, f15
+ af4:	fa3f00        	mov.s	f3, f15
+ af7:	fa0f00        	mov.s	f0, f15
+ afa:	000686        	j	b18 <cs80v2::Engine::control_tick()+0xb18>
+ afd:	1107a3        	lsi	f10, a7, 68
+ b00:	1207d3        	lsi	f13, a7, 72
+ b03:	1307e3        	lsi	f14, a7, 76
+ b06:	1a22a0        	sub.s	f2, f2, f10
+ b09:	1a33d0        	sub.s	f3, f3, f13
+ b0c:	1a00e0        	sub.s	f0, f0, f14
+ b0f:	2a22b0        	mul.s	f2, f2, f11
+ b12:	2a33b0        	mul.s	f3, f3, f11
+ b15:	2a00b0        	mul.s	f0, f0, f11
+ b18:	164733        	ssi	f3, a7, 88
+ b1b:	174703        	ssi	f0, a7, 92
+ b1e:	154723        	ssi	f2, a7, 84
+ b21:	144713        	ssi	f1, a7, 80
+ b24:	160623        	lsi	f2, a6, 88
+ b27:	150613        	lsi	f1, a6, 84
+ b2a:	040133        	lsi	f3, a1, 16
+ b2d:	290703        	lsi	f0, a7, 164
+ b30:	4a1320        	madd.s	f1, f3, f2
+ b33:	2a0600        	mul.s	f0, f6, f0
+ b36:	170623        	lsi	f2, a6, 92
+ b39:	050133        	lsi	f3, a1, 20
+ b3c:	000081        	l32r	a8, fffc0b3c <engine+0xfffbf90c>
+ b3f:	4a1230        	madd.s	f1, f2, f3
+ b42:	0b0123        	lsi	f2, a1, 44
+ b45:	a1aa      	add.n	a10, a1, a10
+ b47:	2a0020        	mul.s	f0, f0, f2
+ b4a:	000a33        	lsi	f3, a10, 0
+ b4d:	faa850        	wfr	f10, a8
+ b50:	6b01a0        	ole.s	b0, f1, f10
+ b53:	2a0030        	mul.s	f0, f0, f3
+ b56:	cb1a00        	movf.s	f1, f10, b0
+ b59:	6b0f10        	ole.s	b0, f15, f1
+ b5c:	cb1f00        	movf.s	f1, f15, b0
+ b5f:	2a0010        	mul.s	f0, f0, f1
+ b62:	180723        	lsi	f2, a7, 96
+ b65:	0f0633        	lsi	f3, a6, 60
+ b68:	fa2260        	neg.s	f2, f2
+ b6b:	4a2300        	madd.s	f2, f3, f0
+ b6e:	1a0713        	lsi	f1, a7, 104
+ b71:	9407a2        	l8ui	a10, a7, 148
+ b74:	fa1160        	neg.s	f1, f1
+ b77:	2a22b0        	mul.s	f2, f2, f11
+ b7a:	000081        	l32r	a8, fffc0b7c <engine+0xfffbf94c>
+ b7d:	fccaa2        	addi	a10, a10, -4
+ b80:	fa3850        	wfr	f3, a8
+ b83:	194723        	ssi	f2, a7, 100
+ b86:	100623        	lsi	f2, a6, 64
+ b89:	180c      	movi.n	a8, 1
+ b8b:	4a1200        	madd.s	f1, f2, f0
+ b8e:	838ea0        	moveqz	a8, a14, a10
+ b91:	4b0360        	olt.s	b0, f3, f6
+ b94:	1a0c      	movi.n	a10, 1
+ b96:	2a01b0        	mul.s	f0, f1, f11
+ b99:	c3ae00        	movf	a10, a14, b0
+ b9c:	2088a0        	or	a8, a8, a10
+ b9f:	20cc80        	or	a12, a12, a8
+ ba2:	1b4703        	ssi	f0, a7, 108
+ ba5:	b0a082        	movi	a8, 176
+ ba8:	6cc662        	addi	a6, a6, 108
+ bab:	778a      	add.n	a7, a7, a8
+ bad:	021226        	beqi	a2, 1, bb3 <cs80v2::Engine::control_tick()+0xbb3>
+ bb0:	fe4506        	j	4c8 <cs80v2::Engine::control_tick()+0x4c8>
+ bb3:	4049e2        	s8i	a14, a9, 64
+ bb6:	d188      	l32i.n	a8, a1, 52
+ bb8:	203990        	or	a3, a9, a9
+ bbb:	005c56        	bnez	a12, bc4 <cs80v2::Engine::control_tick()+0xbc4>
+ bbe:	3e49c2        	s8i	a12, a9, 62
+ bc1:	3c49c2        	s8i	a12, a9, 60
+ bc4:	a4a192        	movi	a9, 0x1a4
+ bc7:	339a      	add.n	a3, a3, a9
+ bc9:	021837        	beq	a8, a3, bcf <cs80v2::Engine::control_tick()+0xbcf>
+ bcc:	fd9b46        	j	23d <cs80v2::Engine::control_tick()+0x23d>
+ bcf:	1a2172        	l32i	a7, a1, 104
+ bd2:	021726        	beqi	a7, 1, bd8 <cs80v2::Engine::control_tick()+0xbd8>
+ bd5:	fd9106        	j	21d <cs80v2::Engine::control_tick()+0x21d>
+ bd8:	e188      	l32i.n	a8, a1, 56
+ bda:	f8a092        	movi	a9, 248
+ bdd:	6408a2        	l8ui	a10, a8, 100
+ be0:	949a      	add.n	a9, a4, a9
+ be2:	1d0113        	lsi	f1, a1, 116
+ be5:	190923        	lsi	f2, a9, 100
+ be8:	180903        	lsi	f0, a9, 96
+ beb:	140833        	lsi	f3, a8, 80
+ bee:	04ed      	mov.n	a14, a4
+ bf0:	511a66        	bnei	a10, 1, c45 <cs80v2::Engine::control_tick()+0xc45>
+ bf3:	8189      	s32i.n	a8, a1, 32
+ bf5:	000081        	l32r	a8, fffc0bf8 <engine+0xfffbf9c8>
+ bf8:	160943        	lsi	f4, a9, 88
+ bfb:	064103        	ssi	f0, a1, 24
+ bfe:	fa0850        	wfr	f0, a8
+ c01:	0a0400        	add.s	f0, f4, f0
+ c04:	054123        	ssi	f2, a1, 20
+ c07:	044133        	ssi	f3, a1, 16
+ c0a:	faa140        	rfr	a10, f1
+ c0d:	fab040        	rfr	a11, f0
+ c10:	7149      	s32i.n	a4, a1, 28
+ c12:	000081        	l32r	a8, fffc0c14 <engine+0xfffbf9e4>
+ c15:	0008e0        	callx8	a8
+ c18:	040133        	lsi	f3, a1, 16
+ c1b:	fa1a50        	wfr	f1, a10
+ c1e:	0a3310        	add.s	f3, f3, f1
+ c21:	000081        	l32r	a8, fffc0c24 <engine+0xfffbf9f4>
+ c24:	050123        	lsi	f2, a1, 20
+ c27:	fac850        	wfr	f12, a8
+ c2a:	6b0c30        	ole.s	b0, f12, f3
+ c2d:	060103        	lsi	f0, a1, 24
+ c30:	8188      	l32i.n	a8, a1, 32
+ c32:	04ed      	mov.n	a14, a4
+ c34:	710076        	bf	b0, ca9 <cs80v2::Engine::control_tick()+0xca9>
+ c37:	290c      	movi.n	a9, 2
+ c39:	1448c3        	ssi	f12, a8, 80
+ c3c:	644892        	s8i	a9, a8, 100
+ c3f:	fa3c00        	mov.s	f3, f12
+ c42:	001986        	j	cac <cs80v2::Engine::control_tick()+0xcac>
+ c45:	632a66        	bnei	a10, 2, cac <cs80v2::Engine::control_tick()+0xcac>
+ c48:	7189      	s32i.n	a8, a1, 28
+ c4a:	000081        	l32r	a8, fffc0c4c <engine+0xfffbfa1c>
+ c4d:	170943        	lsi	f4, a9, 92
+ c50:	084103        	ssi	f0, a1, 32
+ c53:	fa0850        	wfr	f0, a8
+ c56:	0a0400        	add.s	f0, f4, f0
+ c59:	054123        	ssi	f2, a1, 20
+ c5c:	044133        	ssi	f3, a1, 16
+ c5f:	faa140        	rfr	a10, f1
+ c62:	6149      	s32i.n	a4, a1, 24
+ c64:	fab040        	rfr	a11, f0
+ c67:	000081        	l32r	a8, fffc0c68 <engine+0xfffbfa38>
+ c6a:	0008e0        	callx8	a8
+ c6d:	040133        	lsi	f3, a1, 16
+ c70:	fa1a50        	wfr	f1, a10
+ c73:	1a3310        	sub.s	f3, f3, f1
+ c76:	080c      	movi.n	a8, 0
+ c78:	faf850        	wfr	f15, a8
+ c7b:	000081        	l32r	a8, fffc0c7c <engine+0xfffbfa4c>
+ c7e:	6b03f0        	ole.s	b0, f3, f15
+ c81:	fac850        	wfr	f12, a8
+ c84:	050123        	lsi	f2, a1, 20
+ c87:	61e8      	l32i.n	a14, a1, 24
+ c89:	7188      	l32i.n	a8, a1, 28
+ c8b:	091076        	bt	b0, c98 <cs80v2::Engine::control_tick()+0xc98>
+ c8e:	080103        	lsi	f0, a1, 32
+ c91:	144833        	ssi	f3, a8, 80
+ c94:	000506        	j	cac <cs80v2::Engine::control_tick()+0xcac>
+ c97:	00          	.byte	00
+ c98:	090c      	movi.n	a9, 0
+ c9a:	644892        	s8i	a9, a8, 100
+ c9d:	1448f3        	ssi	f15, a8, 80
+ ca0:	fa9c40        	rfr	a9, f12
+ ca3:	001ec6        	j	d22 <cs80v2::Engine::control_tick()+0xd22>
+ ca6:	00          	.byte	00
+ ca7:	00          	.byte	00
+ ca8:	00          	.byte	00
+ ca9:	144833        	ssi	f3, a8, 80
+ cac:	000091        	l32r	a9, fffc0cac <engine+0xfffbfa7c>
+ caf:	fa4950        	wfr	f4, a9
+ cb2:	000091        	l32r	a9, fffc0cb4 <engine+0xfffbfa84>
+ cb5:	fa1950        	wfr	f1, a9
+ cb8:	2a0010        	mul.s	f0, f0, f1
+ cbb:	000091        	l32r	a9, fffc0cbc <engine+0xfffbfa8c>
+ cbe:	fa1950        	wfr	f1, a9
+ cc1:	2a0030        	mul.s	f0, f0, f3
+ cc4:	6b0040        	ole.s	b0, f0, f4
+ cc7:	cb0400        	movf.s	f0, f4, b0
+ cca:	6b0100        	ole.s	b0, f1, f0
+ ccd:	cb0100        	movf.s	f0, f1, b0
+ cd0:	9a9000        	trunc.s	a9, f0, 0
+ cd3:	ca1900        	float.s	f1, a9, 0
+ cd6:	4b0010        	olt.s	b0, f0, f1
+ cd9:	171076        	bt	b0, cf4 <cs80v2::Engine::control_tick()+0xcf4>
+ cdc:	0000a1        	l32r	a10, fffc0cdc <engine+0xfffbfaac>
+ cdf:	1a0010        	sub.s	f0, f0, f1
+ ce2:	fa3a50        	wfr	f3, a10
+ ce5:	0000a1        	l32r	a10, fffc0ce8 <engine+0xfffbfab8>
+ ce8:	019990        	slli	a9, a9, 23
+ ceb:	fa1a50        	wfr	f1, a10
+ cee:	4a3010        	madd.s	f3, f0, f1
+ cf1:	000646        	j	d0e <cs80v2::Engine::control_tick()+0xd0e>
+ cf4:	990b      	addi.n	a9, a9, -1
+ cf6:	ca1900        	float.s	f1, a9, 0
+ cf9:	0000a1        	l32r	a10, fffc0cfc <engine+0xfffbfacc>
+ cfc:	1a0010        	sub.s	f0, f0, f1
+ cff:	fa3a50        	wfr	f3, a10
+ d02:	0000a1        	l32r	a10, fffc0d04 <engine+0xfffbfad4>
+ d05:	019990        	slli	a9, a9, 23
+ d08:	fa1a50        	wfr	f1, a10
+ d0b:	4a3010        	madd.s	f3, f0, f1
+ d0e:	0000a1        	l32r	a10, fffc0d10 <engine+0xfffbfae0>
+ d11:	fa1a50        	wfr	f1, a10
+ d14:	4a1030        	madd.s	f1, f0, f3
+ d17:	fa3c00        	mov.s	f3, f12
+ d1a:	4a3010        	madd.s	f3, f0, f1
+ d1d:	faa340        	rfr	a10, f3
+ d20:	99aa      	add.n	a9, a9, a10
+ d22:	740e03        	lsi	f0, a14, 0x1d0
+ d25:	fa1950        	wfr	f1, a9
+ d28:	2a0200        	mul.s	f0, f2, f0
+ d2b:	000091        	l32r	a9, fffc0d2c <engine+0xfffbfafc>
+ d2e:	0000a1        	l32r	a10, fffc0d30 <engine+0xfffbfb00>
+ d31:	51e9      	s32i.n	a14, a1, 20
+ d33:	2a0010        	mul.s	f0, f0, f1
+ d36:	fa1950        	wfr	f1, a9
+ d39:	6b0010        	ole.s	b0, f0, f1
+ d3c:	cb0100        	movf.s	f0, f1, b0
+ d3f:	134803        	ssi	f0, a8, 76
+ d42:	730e33        	lsi	f3, a14, 0x1cc
+ d45:	fab340        	rfr	a11, f3
+ d48:	044133        	ssi	f3, a1, 16
+ d4b:	000081        	l32r	a8, fffc0d4c <engine+0xfffbfb1c>
+ d4e:	0008e0        	callx8	a8
+ d51:	51e8      	l32i.n	a14, a1, 20
+ d53:	192192        	l32i	a9, a1, 100
+ d56:	5ede72        	addmi	a7, a14, 0x5e00
+ d59:	200923        	lsi	f2, a9, 128
+ d5c:	190703        	lsi	f0, a7, 100
+ d5f:	fa1a50        	wfr	f1, a10
+ d62:	4a0120        	madd.s	f0, f1, f2
+ d65:	000081        	l32r	a8, fffc0d68 <engine+0xfffbfb38>
+ d68:	0000a1        	l32r	a10, fffc0d68 <engine+0xfffbfb38>
+ d6b:	fac850        	wfr	f12, a8
+ d6e:	1a40c0        	sub.s	f4, f0, f12
+ d71:	6b0c00        	ole.s	b0, f12, f0
+ d74:	fa9a50        	wfr	f9, a10
+ d77:	220953        	lsi	f5, a9, 136
+ d7a:	db0400        	movt.s	f0, f4, b0
+ d7d:	fa4c00        	mov.s	f4, f12
+ d80:	5a4090        	msub.s	f4, f0, f9
+ d83:	1a0723        	lsi	f2, a7, 104
+ d86:	0000a1        	l32r	a10, fffc0d88 <engine+0xfffbfb58>
+ d89:	4a2150        	madd.s	f2, f1, f5
+ d8c:	7c0982        	l8ui	a8, a9, 124
+ d8f:	fa1410        	abs.s	f1, f4
+ d92:	194703        	ssi	f0, a7, 100
+ d95:	fa0a50        	wfr	f0, a10
+ d98:	2a4400        	mul.s	f4, f4, f0
+ d9b:	1a1c10        	sub.s	f1, f12, f1
+ d9e:	1a52c0        	sub.s	f5, f2, f12
+ da1:	0000a1        	l32r	a10, fffc0da4 <engine+0xfffbfb74>
+ da4:	6b0c20        	ole.s	b0, f12, f2
+ da7:	2a1140        	mul.s	f1, f1, f4
+ daa:	fa0a50        	wfr	f0, a10
+ dad:	0000a1        	l32r	a10, fffc0db0 <engine+0xfffbfb80>
+ db0:	db2500        	movt.s	f2, f5, b0
+ db3:	fa4110        	abs.s	f4, f1
+ db6:	fa5a50        	wfr	f5, a10
+ db9:	2a5150        	mul.s	f5, f1, f5
+ dbc:	1a44c0        	sub.s	f4, f4, f12
+ dbf:	0a0c      	movi.n	a10, 0
+ dc1:	040133        	lsi	f3, a1, 16
+ dc4:	fafa50        	wfr	f15, a10
+ dc7:	0000a1        	l32r	a10, fffc0dc8 <engine+0xfffbfb98>
+ dca:	1a4723        	ssi	f2, a7, 104
+ dcd:	2a0300        	mul.s	f0, f3, f0
+ dd0:	4a1540        	madd.s	f1, f5, f4
+ dd3:	7d0992        	l8ui	a9, a9, 125
+ dd6:	faba50        	wfr	f11, a10
+ dd9:	b8cc      	bnez.n	a8, de8 <cs80v2::Engine::control_tick()+0xde8>
+ ddb:	49ec      	bnez.n	a9, e03 <cs80v2::Engine::control_tick()+0xe03>
+ ddd:	fa4000        	mov.s	f4, f0
+ de0:	fa5f00        	mov.s	f5, f15
+ de3:	0025c6        	j	e7e <cs80v2::Engine::control_tick()+0xe7e>
+ de6:	00          	.byte	00
+ de7:	00          	.byte	00
+ de8:	1921a2        	l32i	a10, a1, 100
+ deb:	210a73        	lsi	f7, a10, 132
+ dee:	0000a1        	l32r	a10, fffc0df0 <engine+0xfffbfbc0>
+ df1:	2a6370        	mul.s	f6, f3, f7
+ df4:	fa4a50        	wfr	f4, a10
+ df7:	2a6640        	mul.s	f6, f6, f4
+ dfa:	2a6610        	mul.s	f6, f6, f1
+ dfd:	068916        	beqz	a9, e69 <cs80v2::Engine::control_tick()+0xe69>
+ e00:	000086        	j	e06 <cs80v2::Engine::control_tick()+0xe06>
+ e03:	fa6f00        	mov.s	f6, f15
+ e06:	fa4c00        	mov.s	f4, f12
+ e09:	5a4290        	msub.s	f4, f2, f9
+ e0c:	000091        	l32r	a9, fffc0e0c <engine+0xfffbfbdc>
+ e0f:	1921a2        	l32i	a10, a1, 100
+ e12:	fa8950        	wfr	f8, a9
+ e15:	fa2410        	abs.s	f2, f4
+ e18:	2a8480        	mul.s	f8, f4, f8
+ e1b:	1a2c20        	sub.s	f2, f12, f2
+ e1e:	230a53        	lsi	f5, a10, 140
+ e21:	000091        	l32r	a9, fffc0e24 <engine+0xfffbfbf4>
+ e24:	2a7350        	mul.s	f7, f3, f5
+ e27:	2a2280        	mul.s	f2, f2, f8
+ e2a:	fa4950        	wfr	f4, a9
+ e2d:	000091        	l32r	a9, fffc0e30 <engine+0xfffbfc00>
+ e30:	0000b1        	l32r	a11, fffc0e30 <engine+0xfffbfc00>
+ e33:	2a7740        	mul.s	f7, f7, f4
+ e36:	0a4600        	add.s	f4, f6, f0
+ e39:	1a6060        	sub.s	f6, f0, f6
+ e3c:	fa0950        	wfr	f0, a9
+ e3f:	2a5500        	mul.s	f5, f5, f0
+ e42:	fa8210        	abs.s	f8, f2
+ e45:	fa0b50        	wfr	f0, a11
+ e48:	2a0200        	mul.s	f0, f2, f0
+ e4b:	1a88c0        	sub.s	f8, f8, f12
+ e4e:	190c      	movi.n	a9, 1
+ e50:	4a2080        	madd.s	f2, f0, f8
+ e53:	fa0600        	mov.s	f0, f6
+ e56:	4a4270        	madd.s	f4, f2, f7
+ e59:	5a0270        	msub.s	f0, f2, f7
+ e5c:	2a5520        	mul.s	f5, f5, f2
+ e5f:	b89c      	beqz.n	a8, e7e <cs80v2::Engine::control_tick()+0xe7e>
+ e61:	210a73        	lsi	f7, a10, 132
+ e64:	089d      	mov.n	a9, a8
+ e66:	000206        	j	e72 <cs80v2::Engine::control_tick()+0xe72>
+ e69:	0a4600        	add.s	f4, f6, f0
+ e6c:	1a0060        	sub.s	f0, f0, f6
+ e6f:	fa5f00        	mov.s	f5, f15
+ e72:	0000a1        	l32r	a10, fffc0e74 <engine+0xfffbfc44>
+ e75:	fa2a50        	wfr	f2, a10
+ e78:	2a1120        	mul.s	f1, f1, f2
+ e7b:	4a5170        	madd.s	f5, f1, f7
+ e7e:	1d0723        	lsi	f2, a7, 116
+ e81:	1b0773        	lsi	f7, a7, 108
+ e84:	1a2c20        	sub.s	f2, f12, f2
+ e87:	1c0763        	lsi	f6, a7, 112
+ e8a:	1e0713        	lsi	f1, a7, 120
+ e8d:	1a4470        	sub.s	f4, f4, f7
+ e90:	1a0060        	sub.s	f0, f0, f6
+ e93:	0a2250        	add.s	f2, f2, f5
+ e96:	1a1c10        	sub.s	f1, f12, f1
+ e99:	2a44b0        	mul.s	f4, f4, f11
+ e9c:	2a00b0        	mul.s	f0, f0, f11
+ e9f:	2a22b0        	mul.s	f2, f2, f11
+ ea2:	1a1150        	sub.s	f1, f1, f5
+ ea5:	214743        	ssi	f4, a7, 132
+ ea8:	224703        	ssi	f0, a7, 136
+ eab:	234723        	ssi	f2, a7, 140
+ eae:	2a01b0        	mul.s	f0, f1, f11
+ eb1:	c8cc      	bnez.n	a8, ec1 <cs80v2::Engine::control_tick()+0xec1>
+ eb3:	a9cc      	bnez.n	a9, ec1 <cs80v2::Engine::control_tick()+0xec1>
+ eb5:	fa8f40        	rfr	a8, f15
+ eb8:	fa9c40        	rfr	a9, f12
+ ebb:	000206        	j	ec7 <cs80v2::Engine::control_tick()+0xec7>
+ ebe:	00          	.byte	00
+ ebf:	00          	.byte	00
+ ec0:	00          	.byte	00
+ ec1:	000081        	l32r	a8, fffc0ec4 <engine+0xfffbfc94>
+ ec4:	000091        	l32r	a9, fffc0ec4 <engine+0xfffbfc94>
+ ec7:	0000a1        	l32r	a10, fffc0ec8 <engine+0xfffbfc98>
+ eca:	244703        	ssi	f0, a7, 144
+ ecd:	256782        	s32i	a8, a7, 148
+ ed0:	266792        	s32i	a9, a7, 152
+ ed3:	fab340        	rfr	a11, f3
+ ed6:	000081        	l32r	a8, fffc0ed8 <engine+0xfffbfca8>
+ ed9:	0008e0        	callx8	a8
+ edc:	000081        	l32r	a8, fffc0edc <engine+0xfffbfcac>
+ edf:	0008e0        	callx8	a8
+ ee2:	000081        	l32r	a8, fffc0ee4 <engine+0xfffbfcb4>
+ ee5:	fa0a50        	wfr	f0, a10
+ ee8:	fac850        	wfr	f12, a8
+ eeb:	1a0c00        	sub.s	f0, f12, f0
+ eee:	274703        	ssi	f0, a7, 156
+ ef1:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v26Engine9render_p1ERNS_4LineERmPf:
 
 00000000 <cs80v2::Engine::render_p1(cs80v2::Line&, unsigned long&, float*)>:
    0:	00a136        	entry	a1, 80
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	0102a3        	lsi	f10, a2, 4
    9:	fa3850        	wfr	f3, a8
    c:	2288      	l32i.n	a8, a2, 8
    e:	1ad3a0        	sub.s	f13, f3, f10
   11:	0189      	s32i.n	a8, a1, 0
   13:	3288      	l32i.n	a8, a2, 12
-  15:	000091        	l32r	a9, fffc0018 <engine+0xfffbf81c>
+  15:	000091        	l32r	a9, fffc0018 <engine+0xfffbede8>
   18:	1189      	s32i.n	a8, a1, 4
   1a:	4288      	l32i.n	a8, a2, 16
   1c:	000223        	lsi	f2, a2, 0
@@ -3511,7 +3235,7 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p1ERNS_4LineERmPf:
   ae:	fabb50        	wfr	f11, a11
   b1:	140076        	bf	b0, c9 <cs80v2::Engine::render_p1(cs80v2::Line&, unsigned long&, float*)+0xc9>
   b4:	0001b3        	lsi	f11, a1, 0
-  b7:	000091        	l32r	a9, fffc00b8 <engine+0xfffbf8bc>
+  b7:	000091        	l32r	a9, fffc00b8 <engine+0xfffbee88>
   ba:	2a0b00        	mul.s	f0, f11, f0
   bd:	fab950        	wfr	f11, a9
   c0:	1af700        	sub.s	f15, f7, f0
@@ -3580,7 +3304,7 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
    5:	000233        	lsi	f3, a2, 0
    8:	fa0850        	wfr	f0, a8
    b:	1189      	s32i.n	a8, a1, 4
-   d:	000081        	l32r	a8, fffc0010 <engine+0xfffbf814>
+   d:	000081        	l32r	a8, fffc0010 <engine+0xfffbede0>
   10:	100283        	lsi	f8, a2, 64
   13:	fa1850        	wfr	f1, a8
   16:	162282        	l32i	a8, a2, 88
@@ -3598,10 +3322,10 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
   36:	1c2282        	l32i	a8, a2, 112
   39:	1402d3        	lsi	f13, a2, 80
   3c:	6189      	s32i.n	a8, a1, 24
-  3e:	000081        	l32r	a8, fffc0040 <engine+0xfffbf844>
+  3e:	000081        	l32r	a8, fffc0040 <engine+0xfffbee10>
   41:	1902b3        	lsi	f11, a2, 100
   44:	fa5850        	wfr	f5, a8
-  47:	000081        	l32r	a8, fffc0048 <engine+0xfffbf84c>
+  47:	000081        	l32r	a8, fffc0048 <engine+0xfffbee18>
   4a:	1b02a3        	lsi	f10, a2, 108
   4d:	fa1850        	wfr	f1, a8
   50:	00a082        	movi	a8, 0
@@ -3612,20 +3336,20 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
   5f:	4b0010        	olt.s	b0, f0, f1
   62:	0a3350        	add.s	f3, f3, f5
   65:	f31076        	bt	b0, 5c <cs80v2::Engine::render_p2(cs80v2::Line&, float const*, float*)+0x5c>
-  68:	000081        	l32r	a8, fffc0068 <engine+0xfffbf86c>
+  68:	000081        	l32r	a8, fffc0068 <engine+0xfffbee38>
   6b:	fafd00        	mov.s	f15, f13
   6e:	fae850        	wfr	f14, a8
   71:	0041a3        	ssi	f10, a1, 0
   74:	082c      	movi.n	a8, 32
   76:	d88876        	loop	a8, 152 <cs80v2::Engine::render_p2(cs80v2::Line&, float const*, float*)+0x152>
   79:	010103        	lsi	f0, a1, 4
-  7c:	000091        	l32r	a9, fffc007c <engine+0xfffbf880>
+  7c:	000091        	l32r	a9, fffc007c <engine+0xfffbee4c>
   7f:	0a3300        	add.s	f3, f3, f0
   82:	fa0400        	mov.s	f0, f4
   85:	4a0780        	madd.s	f0, f7, f8
   88:	000313        	lsi	f1, a3, 0
   8b:	fa2950        	wfr	f2, a9
-  8e:	000091        	l32r	a9, fffc0090 <engine+0xfffbf894>
+  8e:	000091        	l32r	a9, fffc0090 <engine+0xfffbee60>
   91:	faa000        	mov.s	f10, f0
   94:	6b0210        	ole.s	b0, f2, f1
   97:	1a0350        	sub.s	f0, f3, f5
@@ -3637,19 +3361,19 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
   a9:	db3000        	movt.s	f3, f0, b0
   ac:	fa2500        	mov.s	f2, f5
   af:	5a23e0        	msub.s	f2, f3, f14
-  b2:	000091        	l32r	a9, fffc00b4 <engine+0xfffbf8b8>
+  b2:	000091        	l32r	a9, fffc00b4 <engine+0xfffbee84>
   b5:	2ad110        	mul.s	f13, f1, f1
   b8:	fa9950        	wfr	f9, a9
   bb:	fa6200        	mov.s	f6, f2
   be:	fa0610        	abs.s	f0, f6
-  c1:	000091        	l32r	a9, fffc00c4 <engine+0xfffbf8c8>
+  c1:	000091        	l32r	a9, fffc00c4 <engine+0xfffbee94>
   c4:	2a6690        	mul.s	f6, f6, f9
   c7:	1a0500        	sub.s	f0, f5, f0
   ca:	fa9950        	wfr	f9, a9
   cd:	1a2140        	sub.s	f2, f1, f4
   d0:	2add90        	mul.s	f13, f13, f9
   d3:	2a0060        	mul.s	f0, f0, f6
-  d6:	000091        	l32r	a9, fffc00d8 <engine+0xfffbf8dc>
+  d6:	000091        	l32r	a9, fffc00d8 <engine+0xfffbeea8>
   d9:	fa6a00        	mov.s	f6, f10
   dc:	5a21d0        	msub.s	f2, f1, f13
   df:	fa1010        	abs.s	f1, f0
@@ -3658,7 +3382,7 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
   e8:	1a1150        	sub.s	f1, f1, f5
   eb:	4a62f0        	madd.s	f6, f2, f15
   ee:	2a2270        	mul.s	f2, f2, f7
-  f1:	000091        	l32r	a9, fffc00f4 <engine+0xfffbf8f8>
+  f1:	000091        	l32r	a9, fffc00f4 <engine+0xfffbeec4>
   f4:	4a0d10        	madd.s	f0, f13, f1
   f7:	000413        	lsi	f1, a4, 0
   fa:	fa4460        	neg.s	f4, f4
@@ -3666,7 +3390,7 @@ Disassembly of section .text._ZN6cs80v26Engine9render_p2ERNS_4LineEPKfPf:
  100:	4a16b0        	madd.s	f1, f6, f11
  103:	4a46e0        	madd.s	f4, f6, f14
  106:	fa6950        	wfr	f6, a9
- 109:	000091        	l32r	a9, fffc010c <engine+0xfffbf910>
+ 109:	000091        	l32r	a9, fffc010c <engine+0xfffbeedc>
  10c:	fa9860        	neg.s	f9, f8
  10f:	fa8950        	wfr	f8, a9
  112:	4a6080        	madd.s	f6, f0, f8
@@ -3704,12 +3428,12 @@ Disassembly of section .text._ZN6cs80v26Engine7mix_busEPKfS2_PfS3_f:
 
 00000000 <cs80v2::Engine::mix_bus(float const*, float const*, float*, float*, float)>:
    0:	004136        	entry	a1, 32
-   3:	60d222        	addmi	a2, a2, 0x6000
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
-   9:	080213        	lsi	f1, a2, 32
-   c:	090253        	lsi	f5, a2, 36
-   f:	0a0203        	lsi	f0, a2, 40
-  12:	0b0243        	lsi	f4, a2, 44
+   3:	6ad222        	addmi	a2, a2, 0x6a00
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
+   9:	150213        	lsi	f1, a2, 84
+   c:	160253        	lsi	f5, a2, 88
+   f:	170203        	lsi	f0, a2, 92
+  12:	180243        	lsi	f4, a2, 96
   15:	fa8850        	wfr	f8, a8
   18:	fa9750        	wfr	f9, a7
   1b:	080c      	movi.n	a8, 0
@@ -3734,28 +3458,28 @@ Disassembly of section .text._ZN6cs80v26Engine7mix_busEPKfS2_PfS3_f:
   4d:	4a2480        	madd.s	f2, f4, f8
   50:	004923        	ssi	f2, a9, 0
   53:	fa4200        	mov.s	f4, f2
-  56:	084213        	ssi	f1, a2, 32
-  59:	094253        	ssi	f5, a2, 36
-  5c:	0a4203        	ssi	f0, a2, 40
-  5f:	0b4223        	ssi	f2, a2, 44
+  56:	154213        	ssi	f1, a2, 84
+  59:	164253        	ssi	f5, a2, 88
+  5c:	174203        	ssi	f0, a2, 92
+  5f:	184223        	ssi	f2, a2, 96
   62:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v26Engine4ringEPfS1_:
 
 00000000 <cs80v2::Engine::ring(float*, float*)>:
    0:	004136        	entry	a1, 32
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	580243        	lsi	f4, a2, 0x160
    9:	fa2850        	wfr	f2, a8
-   c:	000081        	l32r	a8, fffc000c <engine+0xfffbf810>
+   c:	000081        	l32r	a8, fffc000c <engine+0xfffbeddc>
    f:	1a9240        	sub.s	f9, f2, f4
   12:	fa7850        	wfr	f7, a8
-  15:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
-  18:	60d292        	addmi	a9, a2, 0x6000
+  15:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
+  18:	6ad292        	addmi	a9, a2, 0x6a00
   1b:	fa6850        	wfr	f6, a8
-  1e:	000081        	l32r	a8, fffc0020 <engine+0xfffbf824>
-  21:	050913        	lsi	f1, a9, 20
-  24:	060983        	lsi	f8, a9, 24
+  1e:	000081        	l32r	a8, fffc0020 <engine+0xfffbedf0>
+  21:	120913        	lsi	f1, a9, 72
+  24:	130983        	lsi	f8, a9, 76
   27:	fa5850        	wfr	f5, a8
   2a:	20a082        	movi	a8, 32
   2d:	458876        	loop	a8, 76 <cs80v2::Engine::ring(float*, float*)+0x76>
@@ -3783,15 +3507,15 @@ Disassembly of section .text._ZN6cs80v26Engine4ringEPfS1_:
   6e:	2a0030        	mul.s	f0, f0, f3
   71:	004403        	ssi	f0, a4, 0
   74:	444b      	addi.n	a4, a4, 4
-  76:	054913        	ssi	f1, a9, 20
+  76:	124913        	ssi	f1, a9, 72
   79:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v26Engine18render_echo_voicesEPfS1_:
 
 00000000 <cs80v2::Engine::render_echo_voices(float*, float*)>:
    0:	026136        	entry	a1, 0x130
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
-   6:	000061        	l32r	a6, fffc0008 <engine+0xfffbf80c>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
+   6:	000061        	l32r	a6, fffc0008 <engine+0xfffbedd8>
    9:	528a      	add.n	a5, a2, a8
    b:	80a082        	movi	a8, 128
    e:	626a      	add.n	a6, a2, a6
@@ -3808,24 +3532,24 @@ Disassembly of section .text._ZN6cs80v26Engine18render_echo_voicesEPfS1_:
   28:	02cd      	mov.n	a12, a2
   2a:	06bd      	mov.n	a11, a6
   2c:	4061a2        	s32i	a10, a1, 0x100
-  2f:	000081        	l32r	a8, fffc0030 <engine+0xfffbf834>
+  2f:	000081        	l32r	a8, fffc0030 <engine+0xfffbee00>
   32:	0008e0        	callx8	a8
   35:	4021a2        	l32i	a10, a1, 0x100
   38:	20c110        	or	a12, a1, a1
   3b:	20b220        	or	a11, a2, a2
-  3e:	000081        	l32r	a8, fffc0040 <engine+0xfffbf844>
+  3e:	000081        	l32r	a8, fffc0040 <engine+0xfffbee10>
   41:	0008e0        	callx8	a8
   44:	50afa2        	movi	a10, -176
   47:	80a6a0        	add	a10, a6, a10
   4a:	02cd      	mov.n	a12, a2
   4c:	20b660        	or	a11, a6, a6
   4f:	4061a2        	s32i	a10, a1, 0x100
-  52:	000081        	l32r	a8, fffc0054 <engine+0xfffbf858>
+  52:	000081        	l32r	a8, fffc0054 <engine+0xfffbee24>
   55:	0008e0        	callx8	a8
   58:	4021a2        	l32i	a10, a1, 0x100
   5b:	02bd      	mov.n	a11, a2
   5d:	01cd      	mov.n	a12, a1
-  5f:	000081        	l32r	a8, fffc0060 <engine+0xfffbf864>
+  5f:	000081        	l32r	a8, fffc0060 <engine+0xfffbee30>
   62:	0008e0        	callx8	a8
   65:	c0a210        	sub	a10, a2, a1
   68:	fccaa2        	addi	a10, a10, -4
@@ -3857,10 +3581,10 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
 
 00000000 <cs80v2::Plate<float, 2>::init(int)>:
    0:	006136        	entry	a1, 48
-   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbf808>
+   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbedd4>
    6:	058f30        	extui	a8, a3, 31, 1
    9:	b2c360        	mulsh	a12, a3, a6
-   c:	000071        	l32r	a7, fffc000c <engine+0xfffbf810>
+   c:	000071        	l32r	a7, fffc000c <engine+0xfffbeddc>
    f:	883a      	add.n	a8, a8, a3
   11:	21c3c0        	srai	a12, a12, 3
   14:	313f30        	srai	a3, a3, 31
@@ -3874,19 +3598,19 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
   28:	11cce0        	slli	a12, a12, 2
   2b:	0279      	s32i.n	a7, a2, 0
   2d:	07ad      	mov.n	a10, a7
-  2f:	000081        	l32r	a8, fffc0030 <engine+0xfffbf834>
+  2f:	000081        	l32r	a8, fffc0030 <engine+0xfffbee00>
   32:	0008e0        	callx8	a8
   35:	382282        	l32i	a8, a2, 224
   38:	8ea0a2        	movi	a10, 142
   3b:	b26860        	mulsh	a6, a8, a6
   3e:	b2b8a0        	mulsh	a11, a8, a10
-  41:	0000c1        	l32r	a12, fffc0044 <engine+0xfffbf848>
+  41:	0000c1        	l32r	a12, fffc0044 <engine+0xfffbee14>
   44:	82a8a0        	mull	a10, a8, a10
   47:	0d0c      	movi.n	a13, 0
   49:	318f80        	srai	a8, a8, 31
   4c:	216260        	srai	a6, a6, 2
   4f:	c06680        	sub	a6, a6, a8
-  52:	000081        	l32r	a8, fffc0054 <engine+0xfffbf858>
+  52:	000081        	l32r	a8, fffc0054 <engine+0xfffbee24>
   55:	0008e0        	callx8	a8
   58:	5a2b      	addi.n	a5, a10, 2
   5a:	a0a670        	addx4	a10, a6, a7
@@ -3895,15 +3619,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
   62:	046252        	s32i	a5, a2, 16
   65:	056232        	s32i	a3, a2, 20
   68:	0362a2        	s32i	a10, a2, 12
-  6b:	000081        	l32r	a8, fffc006c <engine+0xfffbf870>
+  6b:	000081        	l32r	a8, fffc006c <engine+0xfffbee3c>
   6e:	0008e0        	callx8	a8
   71:	382282        	l32i	a8, a2, 224
   74:	6ba0a2        	movi	a10, 107
   77:	b2ba80        	mulsh	a11, a10, a8
-  7a:	0000c1        	l32r	a12, fffc007c <engine+0xfffbf880>
+  7a:	0000c1        	l32r	a12, fffc007c <engine+0xfffbee4c>
   7d:	82aa80        	mull	a10, a10, a8
   80:	00a0d2        	movi	a13, 0
-  83:	000081        	l32r	a8, fffc0084 <engine+0xfffbf888>
+  83:	000081        	l32r	a8, fffc0084 <engine+0xfffbee54>
   86:	0008e0        	callx8	a8
   89:	665a      	add.n	a6, a6, a5
   8b:	5a2b      	addi.n	a5, a10, 2
@@ -3913,15 +3637,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
   95:	7259      	s32i.n	a5, a2, 28
   97:	8239      	s32i.n	a3, a2, 32
   99:	62a9      	s32i.n	a10, a2, 24
-  9b:	000081        	l32r	a8, fffc009c <engine+0xfffbf8a0>
+  9b:	000081        	l32r	a8, fffc009c <engine+0xfffbee6c>
   9e:	0008e0        	callx8	a8
   a1:	382282        	l32i	a8, a2, 224
   a4:	7ba1a2        	movi	a10, 0x17b
   a7:	b2ba80        	mulsh	a11, a10, a8
-  aa:	0000c1        	l32r	a12, fffc00ac <engine+0xfffbf8b0>
+  aa:	0000c1        	l32r	a12, fffc00ac <engine+0xfffbee7c>
   ad:	82aa80        	mull	a10, a10, a8
   b0:	00a0d2        	movi	a13, 0
-  b3:	000081        	l32r	a8, fffc00b4 <engine+0xfffbf8b8>
+  b3:	000081        	l32r	a8, fffc00b4 <engine+0xfffbee84>
   b6:	0008e0        	callx8	a8
   b9:	556a      	add.n	a5, a5, a6
   bb:	6a2b      	addi.n	a6, a10, 2
@@ -3931,15 +3655,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
   c5:	a269      	s32i.n	a6, a2, 40
   c7:	b239      	s32i.n	a3, a2, 44
   c9:	92a9      	s32i.n	a10, a2, 36
-  cb:	000081        	l32r	a8, fffc00cc <engine+0xfffbf8d0>
+  cb:	000081        	l32r	a8, fffc00cc <engine+0xfffbee9c>
   ce:	0008e0        	callx8	a8
   d1:	382282        	l32i	a8, a2, 224
   d4:	15a1a2        	movi	a10, 0x115
   d7:	b2ba80        	mulsh	a11, a10, a8
-  da:	0000c1        	l32r	a12, fffc00dc <engine+0xfffbf8e0>
+  da:	0000c1        	l32r	a12, fffc00dc <engine+0xfffbeeac>
   dd:	82aa80        	mull	a10, a10, a8
   e0:	00a0d2        	movi	a13, 0
-  e3:	000081        	l32r	a8, fffc00e4 <engine+0xfffbf8e8>
+  e3:	000081        	l32r	a8, fffc00e4 <engine+0xfffbeeb4>
   e6:	0008e0        	callx8	a8
   e9:	565a      	add.n	a5, a6, a5
   eb:	6a2b      	addi.n	a6, a10, 2
@@ -3949,15 +3673,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
   f5:	d269      	s32i.n	a6, a2, 52
   f7:	e239      	s32i.n	a3, a2, 56
   f9:	c2a9      	s32i.n	a10, a2, 48
-  fb:	000081        	l32r	a8, fffc00fc <engine+0xfffbf900>
+  fb:	000081        	l32r	a8, fffc00fc <engine+0xfffbeecc>
   fe:	0008e0        	callx8	a8
  101:	382282        	l32i	a8, a2, 224
  104:	c0a2a2        	movi	a10, 0x2c0
  107:	b2ba80        	mulsh	a11, a10, a8
- 10a:	0000c1        	l32r	a12, fffc010c <engine+0xfffbf910>
+ 10a:	0000c1        	l32r	a12, fffc010c <engine+0xfffbeedc>
  10d:	82aa80        	mull	a10, a10, a8
  110:	0d0c      	movi.n	a13, 0
- 112:	000081        	l32r	a8, fffc0114 <engine+0xfffbf918>
+ 112:	000081        	l32r	a8, fffc0114 <engine+0xfffbeee4>
  115:	0008e0        	callx8	a8
  118:	565a      	add.n	a5, a6, a5
  11a:	02ca62        	addi	a6, a10, 2
@@ -3967,15 +3691,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  126:	106262        	s32i	a6, a2, 64
  129:	116232        	s32i	a3, a2, 68
  12c:	0f62a2        	s32i	a10, a2, 60
- 12f:	000081        	l32r	a8, fffc0130 <engine+0xfffbf934>
+ 12f:	000081        	l32r	a8, fffc0130 <engine+0xfffbef00>
  132:	0008e0        	callx8	a8
- 135:	000081        	l32r	a8, fffc0138 <engine+0xfffbf93c>
+ 135:	000081        	l32r	a8, fffc0138 <engine+0xfffbef08>
  138:	3822a2        	l32i	a10, a2, 224
- 13b:	0000c1        	l32r	a12, fffc013c <engine+0xfffbf940>
+ 13b:	0000c1        	l32r	a12, fffc013c <engine+0xfffbef0c>
  13e:	b2ba80        	mulsh	a11, a10, a8
  141:	82aa80        	mull	a10, a10, a8
  144:	00a0d2        	movi	a13, 0
- 147:	000081        	l32r	a8, fffc0148 <engine+0xfffbf94c>
+ 147:	000081        	l32r	a8, fffc0148 <engine+0xfffbef18>
  14a:	0008e0        	callx8	a8
  14d:	565a      	add.n	a5, a6, a5
  14f:	6a2b      	addi.n	a6, a10, 2
@@ -3985,15 +3709,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  15a:	136262        	s32i	a6, a2, 76
  15d:	146232        	s32i	a3, a2, 80
  160:	1262a2        	s32i	a10, a2, 72
- 163:	000081        	l32r	a8, fffc0164 <engine+0xfffbf968>
+ 163:	000081        	l32r	a8, fffc0164 <engine+0xfffbef34>
  166:	0008e0        	callx8	a8
  169:	382282        	l32i	a8, a2, 224
  16c:	08a7a2        	movi	a10, 0x708
  16f:	b2ba80        	mulsh	a11, a10, a8
- 172:	0000c1        	l32r	a12, fffc0174 <engine+0xfffbf978>
+ 172:	0000c1        	l32r	a12, fffc0174 <engine+0xfffbef44>
  175:	82aa80        	mull	a10, a10, a8
  178:	00a0d2        	movi	a13, 0
- 17b:	000081        	l32r	a8, fffc017c <engine+0xfffbf980>
+ 17b:	000081        	l32r	a8, fffc017c <engine+0xfffbef4c>
  17e:	0008e0        	callx8	a8
  181:	565a      	add.n	a5, a6, a5
  183:	6a2b      	addi.n	a6, a10, 2
@@ -4003,15 +3727,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  18e:	166262        	s32i	a6, a2, 88
  191:	176232        	s32i	a3, a2, 92
  194:	1562a2        	s32i	a10, a2, 84
- 197:	000081        	l32r	a8, fffc0198 <engine+0xfffbf99c>
+ 197:	000081        	l32r	a8, fffc0198 <engine+0xfffbef68>
  19a:	0008e0        	callx8	a8
- 19d:	000081        	l32r	a8, fffc01a0 <engine+0xfffbf9a4>
+ 19d:	000081        	l32r	a8, fffc01a0 <engine+0xfffbef70>
  1a0:	3822a2        	l32i	a10, a2, 224
- 1a3:	0000c1        	l32r	a12, fffc01a4 <engine+0xfffbf9a8>
+ 1a3:	0000c1        	l32r	a12, fffc01a4 <engine+0xfffbef74>
  1a6:	b2ba80        	mulsh	a11, a10, a8
  1a9:	82aa80        	mull	a10, a10, a8
  1ac:	00a0d2        	movi	a13, 0
- 1af:	000081        	l32r	a8, fffc01b0 <engine+0xfffbf9b4>
+ 1af:	000081        	l32r	a8, fffc01b0 <engine+0xfffbef80>
  1b2:	0008e0        	callx8	a8
  1b5:	565a      	add.n	a5, a6, a5
  1b7:	6a2b      	addi.n	a6, a10, 2
@@ -4021,15 +3745,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  1c2:	196262        	s32i	a6, a2, 100
  1c5:	1a6232        	s32i	a3, a2, 104
  1c8:	1862a2        	s32i	a10, a2, 96
- 1cb:	000081        	l32r	a8, fffc01cc <engine+0xfffbf9d0>
+ 1cb:	000081        	l32r	a8, fffc01cc <engine+0xfffbef9c>
  1ce:	0008e0        	callx8	a8
  1d1:	382282        	l32i	a8, a2, 224
  1d4:	aca3a2        	movi	a10, 0x3ac
  1d7:	b2ba80        	mulsh	a11, a10, a8
- 1da:	0000c1        	l32r	a12, fffc01dc <engine+0xfffbf9e0>
+ 1da:	0000c1        	l32r	a12, fffc01dc <engine+0xfffbefac>
  1dd:	82aa80        	mull	a10, a10, a8
  1e0:	00a0d2        	movi	a13, 0
- 1e3:	000081        	l32r	a8, fffc01e4 <engine+0xfffbf9e8>
+ 1e3:	000081        	l32r	a8, fffc01e4 <engine+0xfffbefb4>
  1e6:	0008e0        	callx8	a8
  1e9:	565a      	add.n	a5, a6, a5
  1eb:	6a2b      	addi.n	a6, a10, 2
@@ -4039,15 +3763,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  1f6:	1c6262        	s32i	a6, a2, 112
  1f9:	1d6232        	s32i	a3, a2, 116
  1fc:	1b62a2        	s32i	a10, a2, 108
- 1ff:	000081        	l32r	a8, fffc0200 <engine+0xfffbfa04>
+ 1ff:	000081        	l32r	a8, fffc0200 <engine+0xfffbefd0>
  202:	0008e0        	callx8	a8
- 205:	000081        	l32r	a8, fffc0208 <engine+0xfffbfa0c>
+ 205:	000081        	l32r	a8, fffc0208 <engine+0xfffbefd8>
  208:	3822a2        	l32i	a10, a2, 224
- 20b:	0000c1        	l32r	a12, fffc020c <engine+0xfffbfa10>
+ 20b:	0000c1        	l32r	a12, fffc020c <engine+0xfffbefdc>
  20e:	b2ba80        	mulsh	a11, a10, a8
  211:	82aa80        	mull	a10, a10, a8
  214:	00a0d2        	movi	a13, 0
- 217:	000081        	l32r	a8, fffc0218 <engine+0xfffbfa1c>
+ 217:	000081        	l32r	a8, fffc0218 <engine+0xfffbefe8>
  21a:	0008e0        	callx8	a8
  21d:	565a      	add.n	a5, a6, a5
  21f:	6a2b      	addi.n	a6, a10, 2
@@ -4057,15 +3781,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  22a:	1f6262        	s32i	a6, a2, 124
  22d:	206232        	s32i	a3, a2, 128
  230:	1e62a2        	s32i	a10, a2, 120
- 233:	000081        	l32r	a8, fffc0234 <engine+0xfffbfa38>
+ 233:	000081        	l32r	a8, fffc0234 <engine+0xfffbf004>
  236:	0008e0        	callx8	a8
- 239:	000081        	l32r	a8, fffc023c <engine+0xfffbfa40>
+ 239:	000081        	l32r	a8, fffc023c <engine+0xfffbf00c>
  23c:	3822a2        	l32i	a10, a2, 224
- 23f:	0000c1        	l32r	a12, fffc0240 <engine+0xfffbfa44>
+ 23f:	0000c1        	l32r	a12, fffc0240 <engine+0xfffbf010>
  242:	b2ba80        	mulsh	a11, a10, a8
  245:	82aa80        	mull	a10, a10, a8
  248:	00a0d2        	movi	a13, 0
- 24b:	000081        	l32r	a8, fffc024c <engine+0xfffbfa50>
+ 24b:	000081        	l32r	a8, fffc024c <engine+0xfffbf01c>
  24e:	0008e0        	callx8	a8
  251:	565a      	add.n	a5, a6, a5
  253:	6a2b      	addi.n	a6, a10, 2
@@ -4075,15 +3799,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  25e:	226262        	s32i	a6, a2, 136
  261:	236232        	s32i	a3, a2, 140
  264:	2162a2        	s32i	a10, a2, 132
- 267:	000081        	l32r	a8, fffc0268 <engine+0xfffbfa6c>
+ 267:	000081        	l32r	a8, fffc0268 <engine+0xfffbf038>
  26a:	0008e0        	callx8	a8
- 26d:	000081        	l32r	a8, fffc0270 <engine+0xfffbfa74>
+ 26d:	000081        	l32r	a8, fffc0270 <engine+0xfffbf040>
  270:	3822a2        	l32i	a10, a2, 224
- 273:	0000c1        	l32r	a12, fffc0274 <engine+0xfffbfa78>
+ 273:	0000c1        	l32r	a12, fffc0274 <engine+0xfffbf044>
  276:	b2ba80        	mulsh	a11, a10, a8
  279:	82aa80        	mull	a10, a10, a8
  27c:	00a0d2        	movi	a13, 0
- 27f:	000081        	l32r	a8, fffc0280 <engine+0xfffbfa84>
+ 27f:	000081        	l32r	a8, fffc0280 <engine+0xfffbf050>
  282:	0008e0        	callx8	a8
  285:	665a      	add.n	a6, a6, a5
  287:	5a2b      	addi.n	a5, a10, 2
@@ -4093,172 +3817,172 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  291:	256252        	s32i	a5, a2, 148
  294:	266232        	s32i	a3, a2, 152
  297:	2462a2        	s32i	a10, a2, 144
- 29a:	000081        	l32r	a8, fffc029c <engine+0xfffbfaa0>
+ 29a:	000081        	l32r	a8, fffc029c <engine+0xfffbf06c>
  29d:	0008e0        	callx8	a8
  2a0:	382232        	l32i	a3, a2, 224
  2a3:	0aa1a2        	movi	a10, 0x10a
- 2a6:	0000c1        	l32r	a12, fffc02a8 <engine+0xfffbfaac>
+ 2a6:	0000c1        	l32r	a12, fffc02a8 <engine+0xfffbf078>
  2a9:	b2b3a0        	mulsh	a11, a3, a10
  2ac:	556a      	add.n	a5, a5, a6
  2ae:	82a3a0        	mull	a10, a3, a10
  2b1:	0d0c      	movi.n	a13, 0
  2b3:	486252        	s32i	a5, a2, 0x120
- 2b6:	000081        	l32r	a8, fffc02b8 <engine+0xfffbfabc>
+ 2b6:	000081        	l32r	a8, fffc02b8 <engine+0xfffbf088>
  2b9:	0008e0        	callx8	a8
  2bc:	0a8d      	mov.n	a8, a10
- 2be:	0000a1        	l32r	a10, fffc02c0 <engine+0xfffbfac4>
- 2c1:	0000c1        	l32r	a12, fffc02c4 <engine+0xfffbfac8>
+ 2be:	0000a1        	l32r	a10, fffc02c0 <engine+0xfffbf090>
+ 2c1:	0000c1        	l32r	a12, fffc02c4 <engine+0xfffbf094>
  2c4:	b2b3a0        	mulsh	a11, a3, a10
  2c7:	82a3a0        	mull	a10, a3, a10
  2ca:	0d0c      	movi.n	a13, 0
  2cc:	416282        	s32i	a8, a2, 0x104
- 2cf:	000081        	l32r	a8, fffc02d0 <engine+0xfffbfad4>
+ 2cf:	000081        	l32r	a8, fffc02d0 <engine+0xfffbf0a0>
  2d2:	0008e0        	callx8	a8
  2d5:	0a8d      	mov.n	a8, a10
- 2d7:	0000a1        	l32r	a10, fffc02d8 <engine+0xfffbfadc>
- 2da:	0000c1        	l32r	a12, fffc02dc <engine+0xfffbfae0>
+ 2d7:	0000a1        	l32r	a10, fffc02d8 <engine+0xfffbf0a8>
+ 2da:	0000c1        	l32r	a12, fffc02dc <engine+0xfffbf0ac>
  2dd:	b2b3a0        	mulsh	a11, a3, a10
  2e0:	82a3a0        	mull	a10, a3, a10
  2e3:	0d0c      	movi.n	a13, 0
  2e5:	426282        	s32i	a8, a2, 0x108
- 2e8:	000081        	l32r	a8, fffc02e8 <engine+0xfffbfaec>
+ 2e8:	000081        	l32r	a8, fffc02e8 <engine+0xfffbf0b8>
  2eb:	0008e0        	callx8	a8
  2ee:	0a8d      	mov.n	a8, a10
  2f0:	79a7a2        	movi	a10, 0x779
- 2f3:	0000c1        	l32r	a12, fffc02f4 <engine+0xfffbfaf8>
+ 2f3:	0000c1        	l32r	a12, fffc02f4 <engine+0xfffbf0c4>
  2f6:	b2b3a0        	mulsh	a11, a3, a10
  2f9:	82a3a0        	mull	a10, a3, a10
  2fc:	00a0d2        	movi	a13, 0
  2ff:	436282        	s32i	a8, a2, 0x10c
- 302:	000081        	l32r	a8, fffc0304 <engine+0xfffbfb08>
+ 302:	000081        	l32r	a8, fffc0304 <engine+0xfffbf0d4>
  305:	0008e0        	callx8	a8
  308:	0a8d      	mov.n	a8, a10
  30a:	4fa1a2        	movi	a10, 0x14f
- 30d:	0000c1        	l32r	a12, fffc0310 <engine+0xfffbfb14>
+ 30d:	0000c1        	l32r	a12, fffc0310 <engine+0xfffbf0e0>
  310:	b2b3a0        	mulsh	a11, a3, a10
  313:	82a3a0        	mull	a10, a3, a10
  316:	0d0c      	movi.n	a13, 0
  318:	466282        	s32i	a8, a2, 0x118
- 31b:	000081        	l32r	a8, fffc031c <engine+0xfffbfb20>
+ 31b:	000081        	l32r	a8, fffc031c <engine+0xfffbf0ec>
  31e:	0008e0        	callx8	a8
  321:	0a8d      	mov.n	a8, a10
  323:	cca7a2        	movi	a10, 0x7cc
- 326:	0000c1        	l32r	a12, fffc0328 <engine+0xfffbfb2c>
+ 326:	0000c1        	l32r	a12, fffc0328 <engine+0xfffbf0f8>
  329:	b2b3a0        	mulsh	a11, a3, a10
  32c:	82a3a0        	mull	a10, a3, a10
  32f:	0d0c      	movi.n	a13, 0
  331:	476282        	s32i	a8, a2, 0x11c
- 334:	000081        	l32r	a8, fffc0334 <engine+0xfffbfb38>
+ 334:	000081        	l32r	a8, fffc0334 <engine+0xfffbf104>
  337:	0008e0        	callx8	a8
  33a:	0a8d      	mov.n	a8, a10
  33c:	79a0a2        	movi	a10, 121
- 33f:	0000c1        	l32r	a12, fffc0340 <engine+0xfffbfb44>
+ 33f:	0000c1        	l32r	a12, fffc0340 <engine+0xfffbf110>
  342:	b2b3a0        	mulsh	a11, a3, a10
  345:	82a3a0        	mull	a10, a3, a10
  348:	00a0d2        	movi	a13, 0
  34b:	446282        	s32i	a8, a2, 0x110
- 34e:	000081        	l32r	a8, fffc0350 <engine+0xfffbfb54>
+ 34e:	000081        	l32r	a8, fffc0350 <engine+0xfffbf120>
  351:	0008e0        	callx8	a8
  354:	0a8d      	mov.n	a8, a10
  356:	c6a7a2        	movi	a10, 0x7c6
- 359:	0000c1        	l32r	a12, fffc035c <engine+0xfffbfb60>
+ 359:	0000c1        	l32r	a12, fffc035c <engine+0xfffbf12c>
  35c:	b2b3a0        	mulsh	a11, a3, a10
  35f:	82a3a0        	mull	a10, a3, a10
  362:	0d0c      	movi.n	a13, 0
  364:	456282        	s32i	a8, a2, 0x114
- 367:	000081        	l32r	a8, fffc0368 <engine+0xfffbfb6c>
+ 367:	000081        	l32r	a8, fffc0368 <engine+0xfffbf138>
  36a:	0008e0        	callx8	a8
  36d:	0a8d      	mov.n	a8, a10
  36f:	61a1a2        	movi	a10, 0x161
- 372:	0000c1        	l32r	a12, fffc0374 <engine+0xfffbfb78>
+ 372:	0000c1        	l32r	a12, fffc0374 <engine+0xfffbf144>
  375:	b2b3a0        	mulsh	a11, a3, a10
  378:	82a3a0        	mull	a10, a3, a10
  37b:	0d0c      	movi.n	a13, 0
  37d:	3a6282        	s32i	a8, a2, 232
- 380:	000081        	l32r	a8, fffc0380 <engine+0xfffbfb84>
+ 380:	000081        	l32r	a8, fffc0380 <engine+0xfffbf150>
  383:	0008e0        	callx8	a8
  386:	0a8d      	mov.n	a8, a10
- 388:	0000a1        	l32r	a10, fffc0388 <engine+0xfffbfb8c>
- 38b:	0000c1        	l32r	a12, fffc038c <engine+0xfffbfb90>
+ 388:	0000a1        	l32r	a10, fffc0388 <engine+0xfffbf158>
+ 38b:	0000c1        	l32r	a12, fffc038c <engine+0xfffbf15c>
  38e:	b2b3a0        	mulsh	a11, a3, a10
  391:	82a3a0        	mull	a10, a3, a10
  394:	00a0d2        	movi	a13, 0
  397:	3b6282        	s32i	a8, a2, 236
- 39a:	000081        	l32r	a8, fffc039c <engine+0xfffbfba0>
+ 39a:	000081        	l32r	a8, fffc039c <engine+0xfffbf16c>
  39d:	0008e0        	callx8	a8
  3a0:	0a8d      	mov.n	a8, a10
  3a2:	bba0a2        	movi	a10, 187
- 3a5:	0000c1        	l32r	a12, fffc03a8 <engine+0xfffbfbac>
+ 3a5:	0000c1        	l32r	a12, fffc03a8 <engine+0xfffbf178>
  3a8:	b2b3a0        	mulsh	a11, a3, a10
  3ab:	82a3a0        	mull	a10, a3, a10
  3ae:	0d0c      	movi.n	a13, 0
  3b0:	3c6282        	s32i	a8, a2, 240
- 3b3:	000081        	l32r	a8, fffc03b4 <engine+0xfffbfbb8>
+ 3b3:	000081        	l32r	a8, fffc03b4 <engine+0xfffbf184>
  3b6:	0008e0        	callx8	a8
  3b9:	0a8d      	mov.n	a8, a10
  3bb:	cca4a2        	movi	a10, 0x4cc
- 3be:	0000c1        	l32r	a12, fffc03c0 <engine+0xfffbfbc4>
+ 3be:	0000c1        	l32r	a12, fffc03c0 <engine+0xfffbf190>
  3c1:	b2b3a0        	mulsh	a11, a3, a10
  3c4:	82a3a0        	mull	a10, a3, a10
  3c7:	0d0c      	movi.n	a13, 0
  3c9:	3f6282        	s32i	a8, a2, 252
- 3cc:	000081        	l32r	a8, fffc03cc <engine+0xfffbfbd0>
+ 3cc:	000081        	l32r	a8, fffc03cc <engine+0xfffbf19c>
  3cf:	0008e0        	callx8	a8
  3d2:	0a8d      	mov.n	a8, a10
  3d4:	2aa4a2        	movi	a10, 0x42a
- 3d7:	0000c1        	l32r	a12, fffc03d8 <engine+0xfffbfbdc>
+ 3d7:	0000c1        	l32r	a12, fffc03d8 <engine+0xfffbf1a8>
  3da:	b2b3a0        	mulsh	a11, a3, a10
  3dd:	82a3a0        	mull	a10, a3, a10
  3e0:	00a0d2        	movi	a13, 0
  3e3:	406282        	s32i	a8, a2, 0x100
- 3e6:	000081        	l32r	a8, fffc03e8 <engine+0xfffbfbec>
+ 3e6:	000081        	l32r	a8, fffc03e8 <engine+0xfffbf1b8>
  3e9:	0008e0        	callx8	a8
  3ec:	0a8d      	mov.n	a8, a10
- 3ee:	0000a1        	l32r	a10, fffc03f0 <engine+0xfffbfbf4>
- 3f1:	0000c1        	l32r	a12, fffc03f4 <engine+0xfffbfbf8>
+ 3ee:	0000a1        	l32r	a10, fffc03f0 <engine+0xfffbf1c0>
+ 3f1:	0000c1        	l32r	a12, fffc03f4 <engine+0xfffbf1c4>
  3f4:	b2b3a0        	mulsh	a11, a3, a10
  3f7:	82a3a0        	mull	a10, a3, a10
  3fa:	0d0c      	movi.n	a13, 0
  3fc:	3d6282        	s32i	a8, a2, 244
- 3ff:	000081        	l32r	a8, fffc0400 <engine+0xfffbfc04>
+ 3ff:	000081        	l32r	a8, fffc0400 <engine+0xfffbf1d0>
  402:	0008e0        	callx8	a8
  405:	208aa0        	or	a8, a10, a10
  408:	a0a2a2        	movi	a10, 0x2a0
  40b:	b2b3a0        	mulsh	a11, a3, a10
- 40e:	0000c1        	l32r	a12, fffc0410 <engine+0xfffbfc14>
+ 40e:	0000c1        	l32r	a12, fffc0410 <engine+0xfffbf1e0>
  411:	82a3a0        	mull	a10, a3, a10
  414:	00a0d2        	movi	a13, 0
  417:	3e6282        	s32i	a8, a2, 248
- 41a:	000081        	l32r	a8, fffc041c <engine+0xfffbfc20>
+ 41a:	000081        	l32r	a8, fffc041c <engine+0xfffbf1ec>
  41d:	0008e0        	callx8	a8
  420:	8ca382        	movi	a8, 0x38c
  423:	ca0a00        	float.s	f0, a10, 0
  426:	b2b380        	mulsh	a11, a3, a8
  429:	82a380        	mull	a10, a3, a8
- 42c:	0000c1        	l32r	a12, fffc042c <engine+0xfffbfc30>
+ 42c:	0000c1        	l32r	a12, fffc042c <engine+0xfffbf1fc>
  42f:	0d0c      	movi.n	a13, 0
  431:	324203        	ssi	f0, a2, 200
- 434:	000081        	l32r	a8, fffc0434 <engine+0xfffbfc38>
+ 434:	000081        	l32r	a8, fffc0434 <engine+0xfffbf204>
  437:	0008e0        	callx8	a8
  43a:	ca0a00        	float.s	f0, a10, 0
- 43d:	0000c1        	l32r	a12, fffc0440 <engine+0xfffbfc44>
+ 43d:	0000c1        	l32r	a12, fffc0440 <engine+0xfffbf210>
  440:	31bf30        	srai	a11, a3, 31
  443:	00a0d2        	movi	a13, 0
  446:	334203        	ssi	f0, a2, 204
  449:	11a3c0        	slli	a10, a3, 4
  44c:	404c10        	ssai	28
  44f:	81bb30        	src	a11, a11, a3
- 452:	000081        	l32r	a8, fffc0454 <engine+0xfffbfc58>
+ 452:	000081        	l32r	a8, fffc0454 <engine+0xfffbf224>
  455:	0008e0        	callx8	a8
  458:	ca0300        	float.s	f0, a3, 0
  45b:	ca1a00        	float.s	f1, a10, 0
- 45e:	0000a1        	l32r	a10, fffc0460 <engine+0xfffbfc64>
+ 45e:	0000a1        	l32r	a10, fffc0460 <engine+0xfffbf230>
  461:	fab040        	rfr	a11, f0
  464:	004103        	ssi	f0, a1, 0
  467:	314213        	ssi	f1, a2, 196
- 46a:	000081        	l32r	a8, fffc046c <engine+0xfffbfc70>
+ 46a:	000081        	l32r	a8, fffc046c <engine+0xfffbf23c>
  46d:	0008e0        	callx8	a8
- 470:	000091        	l32r	a9, fffc0470 <engine+0xfffbfc74>
+ 470:	000091        	l32r	a9, fffc0470 <engine+0xfffbf240>
  473:	080c      	movi.n	a8, 0
  475:	000103        	lsi	f0, a1, 0
  478:	fa2950        	wfr	f2, a9
@@ -4272,13 +3996,13 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  490:	286282        	s32i	a8, a2, 160
  493:	276282        	s32i	a8, a2, 156
  496:	2f6282        	s32i	a8, a2, 188
- 499:	000081        	l32r	a8, fffc049c <engine+0xfffbfca0>
+ 499:	000081        	l32r	a8, fffc049c <engine+0xfffbf26c>
  49c:	2a0020        	mul.s	f0, f0, f2
  49f:	2c6282        	s32i	a8, a2, 176
- 4a2:	000081        	l32r	a8, fffc04a4 <engine+0xfffbfca8>
+ 4a2:	000081        	l32r	a8, fffc04a4 <engine+0xfffbf274>
  4a5:	3062a2        	s32i	a10, a2, 192
  4a8:	2d6282        	s32i	a8, a2, 180
- 4ab:	000081        	l32r	a8, fffc04ac <engine+0xfffbfcb0>
+ 4ab:	000081        	l32r	a8, fffc04ac <engine+0xfffbf27c>
  4ae:	9a9000        	trunc.s	a9, f0, 0
  4b1:	2e6282        	s32i	a8, a2, 184
  4b4:	0a19a6        	blti	a9, 1, 4c2 <cs80v2::Plate<float, 2>::init(int)+0x4c2>
@@ -4291,253 +4015,852 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4initEi:
  4c4:	396292        	s32i	a9, a2, 228
  4c7:	f01d      	retw.n
 
+Disassembly of section .text._ZN6cs80v26Engine4initEfRKNS_5PatchE:
+
+00000000 <cs80v2::Engine::init(float, cs80v2::Patch const&)>:
+   0:	006136        	entry	a1, 48
+   3:	000091        	l32r	a9, fffc0004 <engine+0xfffbedd4>
+   6:	fa1350        	wfr	f1, a3
+   9:	028d      	mov.n	a8, a2
+   b:	0a0c      	movi.n	a10, 0
+   d:	048976        	loop	a9, 15 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x15>
+  10:	0048a2        	s8i	a10, a8, 0
+  13:	881b      	addi.n	a8, a8, 1
+  15:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
+  18:	6ad292        	addmi	a9, a2, 0x6a00
+  1b:	fa0850        	wfr	f0, a8
+  1e:	000081        	l32r	a8, fffc0020 <engine+0xfffbedf0>
+  21:	1c4903        	ssi	f0, a9, 112
+  24:	0a6982        	s32i	a8, a9, 40
+  27:	fab140        	rfr	a11, f1
+  2a:	016192        	s32i	a9, a1, 4
+  2d:	734213        	ssi	f1, a2, 0x1cc
+  30:	004113        	ssi	f1, a1, 0
+  33:	faa040        	rfr	a10, f0
+  36:	000081        	l32r	a8, fffc0038 <engine+0xfffbee08>
+  39:	0008e0        	callx8	a8
+  3c:	000081        	l32r	a8, fffc003c <engine+0xfffbee0c>
+  3f:	000113        	lsi	f1, a1, 0
+  42:	fa0850        	wfr	f0, a8
+  45:	2a1100        	mul.s	f1, f1, f0
+  48:	000081        	l32r	a8, fffc0048 <engine+0xfffbee18>
+  4b:	0000c1        	l32r	a12, fffc004c <engine+0xfffbee1c>
+  4e:	fa2a50        	wfr	f2, a10
+  51:	1198      	l32i.n	a9, a1, 4
+  53:	0000a1        	l32r	a10, fffc0054 <engine+0xfffbee24>
+  56:	744223        	ssi	f2, a2, 0x1d0
+  59:	808280        	add	a8, a2, a8
+  5c:	754213        	ssi	f1, a2, 0x1d4
+  5f:	00a0b2        	movi	a11, 0
+  62:	fa0c50        	wfr	f0, a12
+  65:	048a76        	loop	a10, 6d <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x6d>
+  68:	0048b2        	s8i	a11, a8, 0
+  6b:	881b      	addi.n	a8, a8, 1
+  6d:	0000b1        	l32r	a11, fffc0070 <engine+0xfffbee40>
+  70:	5ed272        	addmi	a7, a2, 0x5e00
+  73:	00a4c2        	movi	a12, 0x400
+  76:	1c67b2        	s32i	a11, a7, 112
+  79:	1b67b2        	s32i	a11, a7, 108
+  7c:	0000a1        	l32r	a10, fffc007c <engine+0xfffbee4c>
+  7f:	e8a3b2        	movi	a11, 0x3e8
+  82:	000081        	l32r	a8, fffc0084 <engine+0xfffbee54>
+  85:	2967b2        	s32i	a11, a7, 164
+  88:	1867c2        	s32i	a12, a7, 96
+  8b:	1e4703        	ssi	f0, a7, 120
+  8e:	1d4703        	ssi	f0, a7, 116
+  91:	2b4703        	ssi	f0, a7, 172
+  94:	0b0c      	movi.n	a11, 0
+  96:	048876        	loop	a8, 9e <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x9e>
+  99:	005ab2        	s16i	a11, a10, 0
+  9c:	aa2b      	addi.n	a10, a10, 2
+  9e:	0000a1        	l32r	a10, fffc00a0 <engine+0xfffbee70>
+  a1:	000081        	l32r	a8, fffc00a4 <engine+0xfffbee74>
+  a4:	0b0c      	movi.n	a11, 0
+  a6:	048876        	loop	a8, ae <cs80v2::Engine::init(float, cs80v2::Patch const&)+0xae>
+  a9:	005ab2        	s16i	a11, a10, 0
+  ac:	aa2b      	addi.n	a10, a10, 2
+  ae:	730213        	lsi	f1, a2, 0x1cc
+  b1:	0000a1        	l32r	a10, fffc00b4 <engine+0xfffbee84>
+  b4:	9ab100        	trunc.s	a11, f1, 0
+  b7:	a2aa      	add.n	a10, a2, a10
+  b9:	3199      	s32i.n	a9, a1, 12
+  bb:	000081        	l32r	a8, fffc00bc <engine+0xfffbee8c>
+  be:	0008e0        	callx8	a8
+  c1:	732282        	l32i	a8, a2, 0x1cc
+  c4:	68d262        	addmi	a6, a2, 0x6800
+  c7:	026182        	s32i	a8, a1, 8
+  ca:	000081        	l32r	a8, fffc00cc <engine+0xfffbee9c>
+  cd:	020103        	lsi	f0, a1, 8
+  d0:	fa1850        	wfr	f1, a8
+  d3:	000081        	l32r	a8, fffc00d4 <engine+0xfffbeea4>
+  d6:	0000a1        	l32r	a10, fffc00d8 <engine+0xfffbeea8>
+  d9:	fa2850        	wfr	f2, a8
+  dc:	4a1020        	madd.s	f1, f0, f2
+  df:	60a082        	movi	a8, 96
+  e2:	9a5100        	trunc.s	a5, f1, 0
+  e5:	435580        	min	a5, a5, a8
+  e8:	08a082        	movi	a8, 8
+  eb:	535580        	max	a5, a5, a8
+  ee:	ca1500        	float.s	f1, a5, 0
+  f1:	306652        	s32i	a5, a6, 192
+  f4:	fab140        	rfr	a11, f1
+  f7:	004113        	ssi	f1, a1, 0
+  fa:	000081        	l32r	a8, fffc00fc <engine+0xfffbeecc>
+  fd:	0008e0        	callx8	a8
+ 100:	21b8      	l32i.n	a11, a1, 8
+ 102:	fa2a50        	wfr	f2, a10
+ 105:	0000a1        	l32r	a10, fffc0108 <engine+0xfffbeed8>
+ 108:	354623        	ssi	f2, a6, 212
+ 10b:	000081        	l32r	a8, fffc010c <engine+0xfffbeedc>
+ 10e:	0008e0        	callx8	a8
+ 111:	000081        	l32r	a8, fffc0114 <engine+0xfffbeee4>
+ 114:	fa2a50        	wfr	f2, a10
+ 117:	fa1850        	wfr	f1, a8
+ 11a:	2a1210        	mul.s	f1, f2, f1
+ 11d:	11a9      	s32i.n	a10, a1, 4
+ 11f:	faa140        	rfr	a10, f1
+ 122:	000081        	l32r	a8, fffc0124 <engine+0xfffbeef4>
+ 125:	0008e0        	callx8	a8
+ 128:	000081        	l32r	a8, fffc0128 <engine+0xfffbeef8>
+ 12b:	fa2a50        	wfr	f2, a10
+ 12e:	fa0850        	wfr	f0, a8
+ 131:	000081        	l32r	a8, fffc0134 <engine+0xfffbef04>
+ 134:	1a2020        	sub.s	f2, f0, f2
+ 137:	010103        	lsi	f0, a1, 4
+ 13a:	fa1850        	wfr	f1, a8
+ 13d:	2a1010        	mul.s	f1, f0, f1
+ 140:	384623        	ssi	f2, a6, 224
+ 143:	faa140        	rfr	a10, f1
+ 146:	000081        	l32r	a8, fffc0148 <engine+0xfffbef18>
+ 149:	0008e0        	callx8	a8
+ 14c:	000081        	l32r	a8, fffc014c <engine+0xfffbef1c>
+ 14f:	fa2a50        	wfr	f2, a10
+ 152:	fa0850        	wfr	f0, a8
+ 155:	000081        	l32r	a8, fffc0158 <engine+0xfffbef28>
+ 158:	1a2020        	sub.s	f2, f0, f2
+ 15b:	010103        	lsi	f0, a1, 4
+ 15e:	fa1850        	wfr	f1, a8
+ 161:	2a0010        	mul.s	f0, f0, f1
+ 164:	394623        	ssi	f2, a6, 228
+ 167:	faa040        	rfr	a10, f0
+ 16a:	000081        	l32r	a8, fffc016c <engine+0xfffbef3c>
+ 16d:	0008e0        	callx8	a8
+ 170:	000081        	l32r	a8, fffc0170 <engine+0xfffbef40>
+ 173:	fa2a50        	wfr	f2, a10
+ 176:	fa0850        	wfr	f0, a8
+ 179:	1a2020        	sub.s	f2, f0, f2
+ 17c:	000081        	l32r	a8, fffc017c <engine+0xfffbef4c>
+ 17f:	3198      	l32i.n	a9, a1, 12
+ 181:	000113        	lsi	f1, a1, 0
+ 184:	0b0c      	movi.n	a11, 0
+ 186:	828a      	add.n	a8, a2, a8
+ 188:	3a4623        	ssi	f2, a6, 232
+ 18b:	00a4a2        	movi	a10, 0x400
+ 18e:	048a76        	loop	a10, 196 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x196>
+ 191:	0048b2        	s8i	a11, a8, 0
+ 194:	881b      	addi.n	a8, a8, 1
+ 196:	000081        	l32r	a8, fffc0198 <engine+0xfffbef68>
+ 199:	80a0a2        	movi	a10, 128
+ 19c:	828a      	add.n	a8, a2, a8
+ 19e:	048a76        	loop	a10, 1a6 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x1a6>
+ 1a1:	004803        	ssi	f0, a8, 0
+ 1a4:	884b      	addi.n	a8, a8, 4
+ 1a6:	080c      	movi.n	a8, 0
+ 1a8:	0a0c      	movi.n	a10, 0
+ 1aa:	2e6682        	s32i	a8, a6, 184
+ 1ad:	316682        	s32i	a8, a6, 196
+ 1b0:	336682        	s32i	a8, a6, 204
+ 1b3:	326682        	s32i	a8, a6, 200
+ 1b6:	344613        	ssi	f1, a6, 208
+ 1b9:	3c4603        	ssi	f0, a6, 240
+ 1bc:	3b4603        	ssi	f0, a6, 236
+ 1bf:	374603        	ssi	f0, a6, 220
+ 1c2:	364603        	ssi	f0, a6, 216
+ 1c5:	3d66a2        	s32i	a10, a6, 244
+ 1c8:	f84682        	s8i	a8, a6, 248
+ 1cb:	2f6652        	s32i	a5, a6, 188
+ 1ce:	cca1c2        	movi	a12, 0x1cc
+ 1d1:	04bd      	mov.n	a11, a4
+ 1d3:	02ad      	mov.n	a10, a2
+ 1d5:	0199      	s32i.n	a9, a1, 0
+ 1d7:	000081        	l32r	a8, fffc01d8 <engine+0xfffbefa8>
+ 1da:	0008e0        	callx8	a8
+ 1dd:	670223        	lsi	f2, a2, 0x19c
+ 1e0:	020103        	lsi	f0, a1, 8
+ 1e3:	000081        	l32r	a8, fffc01e4 <engine+0xfffbefb4>
+ 1e6:	6a0213        	lsi	f1, a2, 0x1a8
+ 1e9:	2a2020        	mul.s	f2, f0, f2
+ 1ec:	fa0850        	wfr	f0, a8
+ 1ef:	2a1100        	mul.s	f1, f1, f0
+ 1f2:	010103        	lsi	f0, a1, 4
+ 1f5:	9a8200        	trunc.s	a8, f2, 0
+ 1f8:	0000b1        	l32r	a11, fffc01f8 <engine+0xfffbefc8>
+ 1fb:	2a0100        	mul.s	f0, f1, f0
+ 1fe:	680233        	lsi	f3, a2, 0x1a0
+ 201:	4388b0        	min	a8, a8, a11
+ 204:	160c      	movi.n	a6, 1
+ 206:	538860        	max	a8, a8, a6
+ 209:	faa040        	rfr	a10, f0
+ 20c:	296782        	s32i	a8, a7, 164
+ 20f:	2a4733        	ssi	f3, a7, 168
+ 212:	000081        	l32r	a8, fffc0214 <engine+0xfffbefe4>
+ 215:	0008e0        	callx8	a8
+ 218:	000081        	l32r	a8, fffc0218 <engine+0xfffbefe8>
+ 21b:	fa2a50        	wfr	f2, a10
+ 21e:	828a      	add.n	a8, a2, a8
+ 220:	3828a2        	l32i	a10, a8, 224
+ 223:	000091        	l32r	a9, fffc0224 <engine+0xfffbeff4>
+ 226:	720233        	lsi	f3, a2, 0x1c8
+ 229:	ca1a00        	float.s	f1, a10, 0
+ 22c:	fa0950        	wfr	f0, a9
+ 22f:	2a1130        	mul.s	f1, f1, f3
+ 232:	1a2020        	sub.s	f2, f0, f2
+ 235:	6f0253        	lsi	f5, a2, 0x1bc
+ 238:	700243        	lsi	f4, a2, 0x1c0
+ 23b:	710233        	lsi	f3, a2, 0x1c4
+ 23e:	0000b1        	l32r	a11, fffc0240 <engine+0xfffbf010>
+ 241:	2b4723        	ssi	f2, a7, 172
+ 244:	9aa100        	trunc.s	a10, f1, 0
+ 247:	2c4853        	ssi	f5, a8, 176
+ 24a:	2d4843        	ssi	f4, a8, 180
+ 24d:	2e4833        	ssi	f3, a8, 184
+ 250:	0198      	l32i.n	a9, a1, 0
+ 252:	facb50        	wfr	f12, a11
+ 255:	091aa6        	blti	a10, 1, 262 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x262>
+ 258:	1888      	l32i.n	a8, a8, 4
+ 25a:	062a87        	blt	a10, a8, 264 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x264>
+ 25d:	a80b      	addi.n	a10, a8, -1
+ 25f:	000046        	j	264 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x264>
+ 262:	06ad      	mov.n	a10, a6
+ 264:	0000c1        	l32r	a12, fffc0264 <engine+0xfffbf034>
+ 267:	0000b1        	l32r	a11, fffc0268 <engine+0xfffbf038>
+ 26a:	fa7c50        	wfr	f7, a12
+ 26d:	0000c1        	l32r	a12, fffc0270 <engine+0xfffbf040>
+ 270:	000041        	l32r	a4, fffc0270 <engine+0xfffbf040>
+ 273:	fa8c50        	wfr	f8, a12
+ 276:	0000c1        	l32r	a12, fffc0278 <engine+0xfffbf048>
+ 279:	b2ba      	add.n	a11, a2, a11
+ 27b:	fa9c50        	wfr	f9, a12
+ 27e:	0000c1        	l32r	a12, fffc0280 <engine+0xfffbf050>
+ 281:	424a      	add.n	a4, a2, a4
+ 283:	faac50        	wfr	f10, a12
+ 286:	0000c1        	l32r	a12, fffc0288 <engine+0xfffbf058>
+ 289:	000061        	l32r	a6, fffc028c <engine+0xfffbf05c>
+ 28c:	000081        	l32r	a8, fffc028c <engine+0xfffbf05c>
+ 28f:	fabc50        	wfr	f11, a12
+ 292:	396ba2        	s32i	a10, a11, 228
+ 295:	02fd      	mov.n	a15, a2
+ 297:	030c      	movi.n	a3, 0
+ 299:	b0a052        	movi	a5, 176
+ 29c:	0149      	s32i.n	a4, a1, 0
+ 29e:	002c06        	j	352 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x352>
+ 2a1:	170c      	movi.n	a7, 1
+ 2a3:	11b830        	slli	a11, a8, 13
+ 2a6:	30bb80        	xor	a11, a11, a8
+ 2a9:	e581b0        	extui	a8, a11, 17, 15
+ 2ac:	3088b0        	xor	a8, a8, a11
+ 2af:	11e8b0        	slli	a14, a8, 5
+ 2b2:	30ee80        	xor	a14, a14, a8
+ 2b5:	11be30        	slli	a11, a14, 13
+ 2b8:	30bbe0        	xor	a11, a11, a14
+ 2bb:	e581b0        	extui	a8, a11, 17, 15
+ 2be:	3088b0        	xor	a8, a8, a11
+ 2c1:	11d8b0        	slli	a13, a8, 5
+ 2c4:	30dd80        	xor	a13, a13, a8
+ 2c7:	11bd30        	slli	a11, a13, 13
+ 2ca:	30bbd0        	xor	a11, a11, a13
+ 2cd:	e581b0        	extui	a8, a11, 17, 15
+ 2d0:	3088b0        	xor	a8, a8, a11
+ 2d3:	11c8b0        	slli	a12, a8, 5
+ 2d6:	30cc80        	xor	a12, a12, a8
+ 2d9:	11bc30        	slli	a11, a12, 13
+ 2dc:	30bbc0        	xor	a11, a11, a12
+ 2df:	e581b0        	extui	a8, a11, 17, 15
+ 2e2:	3088b0        	xor	a8, a8, a11
+ 2e5:	11b8b0        	slli	a11, a8, 5
+ 2e8:	30bb80        	xor	a11, a11, a8
+ 2eb:	118b30        	slli	a8, a11, 13
+ 2ee:	3088b0        	xor	a8, a8, a11
+ 2f1:	e54180        	extui	a4, a8, 17, 15
+ 2f4:	308480        	xor	a8, a4, a8
+ 2f7:	1148b0        	slli	a4, a8, 5
+ 2fa:	308480        	xor	a8, a4, a8
+ 2fd:	ca2800        	float.s	f2, a8, 0
+ 300:	fa1000        	mov.s	f1, f0
+ 303:	4a12b0        	madd.s	f1, f2, f11
+ 306:	ca4c00        	float.s	f4, a12, 0
+ 309:	ca3e00        	float.s	f3, a14, 0
+ 30c:	ca2d00        	float.s	f2, a13, 0
+ 30f:	ca6b00        	float.s	f6, a11, 0
+ 312:	fa5000        	mov.s	f5, f0
+ 315:	4a5490        	madd.s	f5, f4, f9
+ 318:	fa4000        	mov.s	f4, f0
+ 31b:	2a3370        	mul.s	f3, f3, f7
+ 31e:	2a2280        	mul.s	f2, f2, f8
+ 321:	4a46a0        	madd.s	f4, f6, f10
+ 324:	2a11c0        	mul.s	f1, f1, f12
+ 327:	9d4a33        	ssi	f3, a10, 0x274
+ 32a:	9e4a23        	ssi	f2, a10, 0x278
+ 32d:	9f4a53        	ssi	f5, a10, 0x27c
+ 330:	a04a43        	ssi	f4, a10, 0x280
+ 333:	764a13        	ssi	f1, a10, 0x1d8
+ 336:	aa5a      	add.n	a10, a10, a5
+ 338:	021726        	beqi	a7, 1, 33e <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x33e>
+ 33b:	ffd886        	j	2a1 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x2a1>
+ 33e:	a86a      	add.n	a10, a8, a6
+ 340:	ce6fa2        	s32i	a10, a15, 0x338
+ 343:	a4a1a2        	movi	a10, 0x1a4
+ 346:	ffaa      	add.n	a15, a15, a10
+ 348:	0000a1        	l32r	a10, fffc0348 <engine+0xfffbf118>
+ 34b:	66aa      	add.n	a6, a6, a10
+ 34d:	01a8      	l32i.n	a10, a1, 0
+ 34f:	061af7        	beq	a10, a15, 359 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x359>
+ 352:	0fad      	mov.n	a10, a15
+ 354:	037d      	mov.n	a7, a3
+ 356:	ffd246        	j	2a3 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x2a3>
+ 359:	0000a1        	l32r	a10, fffc035c <engine+0xfffbf12c>
+ 35c:	000051        	l32r	a5, fffc035c <engine+0xfffbf12c>
+ 35f:	42aa      	add.n	a4, a2, a10
+ 361:	030c      	movi.n	a3, 0
+ 363:	b0a062        	movi	a6, 176
+ 366:	092d      	mov.n	a2, a9
+ 368:	24e030        	extui	a14, a3, 0, 3
+ 36b:	049d      	mov.n	a9, a4
+ 36d:	0f0c      	movi.n	a15, 0
+ 36f:	01e9      	s32i.n	a14, a1, 0
+ 371:	000046        	j	376 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x376>
+ 374:	07fd      	mov.n	a15, a7
+ 376:	11a830        	slli	a10, a8, 13
+ 379:	30aa80        	xor	a10, a10, a8
+ 37c:	e581a0        	extui	a8, a10, 17, 15
+ 37f:	3088a0        	xor	a8, a8, a10
+ 382:	11d8b0        	slli	a13, a8, 5
+ 385:	30dd80        	xor	a13, a13, a8
+ 388:	11ad30        	slli	a10, a13, 13
+ 38b:	30aad0        	xor	a10, a10, a13
+ 38e:	e581a0        	extui	a8, a10, 17, 15
+ 391:	3088a0        	xor	a8, a8, a10
+ 394:	11c8b0        	slli	a12, a8, 5
+ 397:	30cc80        	xor	a12, a12, a8
+ 39a:	11ac30        	slli	a10, a12, 13
+ 39d:	30aac0        	xor	a10, a10, a12
+ 3a0:	e581a0        	extui	a8, a10, 17, 15
+ 3a3:	3088a0        	xor	a8, a8, a10
+ 3a6:	11b8b0        	slli	a11, a8, 5
+ 3a9:	30bb80        	xor	a11, a11, a8
+ 3ac:	11ab30        	slli	a10, a11, 13
+ 3af:	30aab0        	xor	a10, a10, a11
+ 3b2:	e581a0        	extui	a8, a10, 17, 15
+ 3b5:	3088a0        	xor	a8, a8, a10
+ 3b8:	11a8b0        	slli	a10, a8, 5
+ 3bb:	30aa80        	xor	a10, a10, a8
+ 3be:	118a30        	slli	a8, a10, 13
+ 3c1:	3088a0        	xor	a8, a8, a10
+ 3c4:	e5e180        	extui	a14, a8, 17, 15
+ 3c7:	308e80        	xor	a8, a14, a8
+ 3ca:	11e8b0        	slli	a14, a8, 5
+ 3cd:	308e80        	xor	a8, a14, a8
+ 3d0:	ca2800        	float.s	f2, a8, 0
+ 3d3:	fa1000        	mov.s	f1, f0
+ 3d6:	4a12b0        	madd.s	f1, f2, f11
+ 3d9:	ca4b00        	float.s	f4, a11, 0
+ 3dc:	ca3d00        	float.s	f3, a13, 0
+ 3df:	ca2c00        	float.s	f2, a12, 0
+ 3e2:	ca6a00        	float.s	f6, a10, 0
+ 3e5:	fa5000        	mov.s	f5, f0
+ 3e8:	4a5490        	madd.s	f5, f4, f9
+ 3eb:	fa4000        	mov.s	f4, f0
+ 3ee:	2a3370        	mul.s	f3, f3, f7
+ 3f1:	2a2280        	mul.s	f2, f2, f8
+ 3f4:	4a46a0        	madd.s	f4, f6, f10
+ 3f7:	2a11c0        	mul.s	f1, f1, f12
+ 3fa:	274933        	ssi	f3, a9, 156
+ 3fd:	284923        	ssi	f2, a9, 160
+ 400:	294953        	ssi	f5, a9, 164
+ 403:	2a4943        	ssi	f4, a9, 168
+ 406:	004913        	ssi	f1, a9, 0
+ 409:	996a      	add.n	a9, a9, a6
+ 40b:	021f26        	beqi	a15, 1, 411 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x411>
+ 40e:	ffd886        	j	374 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x374>
+ 411:	01e8      	l32i.n	a14, a1, 0
+ 413:	a4a192        	movi	a9, 0x1a4
+ 416:	eefa      	add.n	a14, a14, a15
+ 418:	82ee50        	mull	a14, a14, a5
+ 41b:	33fa      	add.n	a3, a3, a15
+ 41d:	ee8a      	add.n	a14, a14, a8
+ 41f:	5864e2        	s32i	a14, a4, 0x160
+ 422:	449a      	add.n	a4, a4, a9
+ 424:	891c      	movi.n	a9, 24
+ 426:	021397        	beq	a3, a9, 42c <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x42c>
+ 429:	ffcec6        	j	368 <cs80v2::Engine::init(float, cs80v2::Patch const&)+0x368>
+ 42c:	f87c      	movi.n	a8, -1
+ 42e:	d289      	s32i.n	a8, a2, 52
+ 430:	1d4203        	ssi	f0, a2, 116
+ 433:	f01d      	retw.n
+
 Disassembly of section .text._ZN6cs80v210OutLimiter7processILi32EEEvPfS2_:
 
 00000000 <void cs80v2::OutLimiter::process<32>(float*, float*)>:
-   0:	006136        	entry	a1, 48
-   3:	0c0c      	movi.n	a12, 0
-   5:	80a0d2        	movi	a13, 128
-   8:	03ed      	mov.n	a14, a3
-   a:	d3da      	add.n	a13, a3, a13
-   c:	04ad      	mov.n	a10, a4
-   e:	039d      	mov.n	a9, a3
-  10:	fa4c50        	wfr	f4, a12
-  13:	082c      	movi.n	a8, 32
-  15:	1b8876        	loop	a8, 34 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x34>
-  18:	000903        	lsi	f0, a9, 0
-  1b:	000a13        	lsi	f1, a10, 0
-  1e:	fa0010        	abs.s	f0, f0
-  21:	fa1110        	abs.s	f1, f1
-  24:	6b0100        	ole.s	b0, f1, f0
-  27:	cb0100        	movf.s	f0, f1, b0
-  2a:	6b0040        	ole.s	b0, f0, f4
-  2d:	cb4000        	movf.s	f4, f0, b0
-  30:	994b      	addi.n	a9, a9, 4
-  32:	aa4b      	addi.n	a10, a10, 4
-  34:	030203        	lsi	f0, a2, 12
-  37:	000081        	l32r	a8, fffc0038 <engine+0xfffbf83c>
-  3a:	6b0400        	ole.s	b0, f4, f0
-  3d:	cb0400        	movf.s	f0, f4, b0
-  40:	034203        	ssi	f0, a2, 12
-  43:	fa0850        	wfr	f0, a8
-  46:	4b0040        	olt.s	b0, f0, f4
-  49:	000253        	lsi	f5, a2, 0
-  4c:	490076        	bf	b0, 99 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x99>
-  4f:	31c9      	s32i.n	a12, a1, 12
-  51:	024153        	ssi	f5, a1, 8
-  54:	11e9      	s32i.n	a14, a1, 4
-  56:	01d9      	s32i.n	a13, a1, 0
-  58:	fab440        	rfr	a11, f4
-  5b:	20a880        	or	a10, a8, a8
-  5e:	000081        	l32r	a8, fffc0060 <engine+0xfffbf864>
-  61:	0008e0        	callx8	a8
-  64:	020153        	lsi	f5, a1, 8
-  67:	fa3a50        	wfr	f3, a10
-  6a:	6b0530        	ole.s	b0, f5, f3
-  6d:	1a4350        	sub.s	f4, f3, f5
-  70:	01d8      	l32i.n	a13, a1, 0
-  72:	11e8      	l32i.n	a14, a1, 4
-  74:	31c8      	l32i.n	a12, a1, 12
-  76:	131076        	bt	b0, 8d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x8d>
-  79:	000081        	l32r	a8, fffc007c <engine+0xfffbf880>
-  7c:	8b0c      	movi.n	a11, 8
-  7e:	fa2850        	wfr	f2, a8
-  81:	000081        	l32r	a8, fffc0084 <engine+0xfffbf888>
-  84:	fa0850        	wfr	f0, a8
-  87:	2a4400        	mul.s	f4, f4, f0
-  8a:	002446        	j	11f <void cs80v2::OutLimiter::process<32>(float*, float*)+0x11f>
-  8d:	010203        	lsi	f0, a2, 4
-  90:	2a0400        	mul.s	f0, f4, f0
-  93:	0a3050        	add.s	f3, f0, f5
-  96:	001786        	j	f8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xf8>
-  99:	000081        	l32r	a8, fffc009c <engine+0xfffbf8a0>
-  9c:	fa1850        	wfr	f1, a8
-  9f:	6b0510        	ole.s	b0, f5, f1
-  a2:	1a0150        	sub.s	f0, f1, f5
-  a5:	171076        	bt	b0, c0 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xc0>
-  a8:	000081        	l32r	a8, fffc00a8 <engine+0xfffbf8ac>
-  ab:	8b0c      	movi.n	a11, 8
-  ad:	fa2850        	wfr	f2, a8
-  b0:	000081        	l32r	a8, fffc00b0 <engine+0xfffbf8b4>
-  b3:	fa3850        	wfr	f3, a8
-  b6:	2a4030        	mul.s	f4, f0, f3
-  b9:	fa3100        	mov.s	f3, f1
-  bc:	0017c6        	j	11f <void cs80v2::OutLimiter::process<32>(float*, float*)+0x11f>
-  bf:	00          	.byte	00
-  c0:	010223        	lsi	f2, a2, 4
-  c3:	2b0510        	oeq.s	b0, f5, f1
-  c6:	2a0020        	mul.s	f0, f0, f2
-  c9:	0a3050        	add.s	f3, f0, f5
-  cc:	280076        	bf	b0, f8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xf8>
-  cf:	2b0310        	oeq.s	b0, f3, f1
-  d2:	061076        	bt	b0, dc <void cs80v2::OutLimiter::process<32>(float*, float*)+0xdc>
-  d5:	1a0310        	sub.s	f0, f3, f1
-  d8:	000706        	j	f8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xf8>
-  db:	00          	.byte	00
-  dc:	000081        	l32r	a8, fffc00dc <engine+0xfffbf8e0>
-  df:	fa2850        	wfr	f2, a8
-  e2:	6b0420        	ole.s	b0, f4, f2
-  e5:	020076        	bf	b0, eb <void cs80v2::OutLimiter::process<32>(float*, float*)+0xeb>
-  e8:	006886        	j	28e <void cs80v2::OutLimiter::process<32>(float*, float*)+0x28e>
-  eb:	fa5300        	mov.s	f5, f3
-  ee:	fa4c50        	wfr	f4, a12
-  f1:	0b2c      	movi.n	a11, 32
-  f3:	000a06        	j	11f <void cs80v2::OutLimiter::process<32>(float*, float*)+0x11f>
-  f6:	00          	.byte	00
-  f7:	00          	.byte	00
-  f8:	000081        	l32r	a8, fffc00f8 <engine+0xfffbf8fc>
-  fb:	4b0350        	olt.s	b0, f3, f5
-  fe:	fa2850        	wfr	f2, a8
- 101:	0f0076        	bf	b0, 114 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x114>
- 104:	000081        	l32r	a8, fffc0104 <engine+0xfffbf908>
- 107:	8b0c      	movi.n	a11, 8
- 109:	fa1850        	wfr	f1, a8
- 10c:	2a4010        	mul.s	f4, f0, f1
- 10f:	000306        	j	11f <void cs80v2::OutLimiter::process<32>(float*, float*)+0x11f>
- 112:	00          	.byte	00
- 113:	00          	.byte	00
- 114:	000081        	l32r	a8, fffc0114 <engine+0xfffbf918>
- 117:	0b2c      	movi.n	a11, 32
- 119:	fa1850        	wfr	f1, a8
- 11c:	2a4010        	mul.s	f4, f0, f1
- 11f:	000081        	l32r	a8, fffc0120 <engine+0xfffbf924>
- 122:	11abe0        	slli	a10, a11, 2
- 125:	fccaa2        	addi	a10, a10, -4
- 128:	fa1850        	wfr	f1, a8
- 12b:	000081        	l32r	a8, fffc012c <engine+0xfffbf930>
- 12e:	41a2a0        	srli	a10, a10, 2
- 131:	0000f1        	l32r	a15, fffc0134 <engine+0xfffbf938>
- 134:	fa6850        	wfr	f6, a8
- 137:	a03b30        	addx4	a3, a11, a3
- 13a:	049d      	mov.n	a9, a4
- 13c:	aa1b      	addi.n	a10, a10, 1
- 13e:	868a76        	loop	a10, 1c8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1c8>
- 141:	0a5540        	add.s	f5, f5, f4
- 144:	000e03        	lsi	f0, a14, 0
- 147:	fa7c50        	wfr	f7, a12
- 14a:	2a0500        	mul.s	f0, f5, f0
- 14d:	fa8040        	rfr	a8, f0
- 150:	fa0010        	abs.s	f0, f0
- 153:	6b0200        	ole.s	b0, f2, f0
- 156:	160076        	bf	b0, 170 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x170>
- 159:	6b0010        	ole.s	b0, f0, f1
- 15c:	fa7f50        	wfr	f7, a15
- 15f:	0d0076        	bf	b0, 170 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x170>
- 162:	1a7020        	sub.s	f7, f0, f2
- 165:	2a7770        	mul.s	f7, f7, f7
- 168:	2a7760        	mul.s	f7, f7, f6
- 16b:	000046        	j	170 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x170>
- 16e:	00          	.byte	00
- 16f:	00          	.byte	00
- 170:	6b0010        	ole.s	b0, f0, f1
- 173:	cb0100        	movf.s	f0, f1, b0
- 176:	1a0070        	sub.s	f0, f0, f7
- 179:	fa0010        	abs.s	f0, f0
- 17c:	fa7060        	neg.s	f7, f0
- 17f:	ab0780        	movltz.s	f0, f7, a8
- 182:	004e03        	ssi	f0, a14, 0
- 185:	000903        	lsi	f0, a9, 0
- 188:	fa7c50        	wfr	f7, a12
- 18b:	2a0500        	mul.s	f0, f5, f0
- 18e:	fa8040        	rfr	a8, f0
- 191:	fa0010        	abs.s	f0, f0
- 194:	6b0200        	ole.s	b0, f2, f0
- 197:	140076        	bf	b0, 1af <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1af>
- 19a:	6b0010        	ole.s	b0, f0, f1
- 19d:	fa7f50        	wfr	f7, a15
- 1a0:	0b0076        	bf	b0, 1af <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1af>
- 1a3:	1a7020        	sub.s	f7, f0, f2
- 1a6:	2a7770        	mul.s	f7, f7, f7
- 1a9:	2a7760        	mul.s	f7, f7, f6
- 1ac:	ffffc6        	j	1af <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1af>
- 1af:	6b0010        	ole.s	b0, f0, f1
- 1b2:	cb0100        	movf.s	f0, f1, b0
- 1b5:	1a0070        	sub.s	f0, f0, f7
- 1b8:	ee4b      	addi.n	a14, a14, 4
- 1ba:	fa0010        	abs.s	f0, f0
- 1bd:	fa7060        	neg.s	f7, f0
- 1c0:	ab0780        	movltz.s	f0, f7, a8
- 1c3:	004903        	ssi	f0, a9, 0
- 1c6:	994b      	addi.n	a9, a9, 4
- 1c8:	02cb66        	bnei	a11, 32, 1ce <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1ce>
- 1cb:	002786        	j	26d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x26d>
- 1ce:	c09d30        	sub	a9, a13, a3
- 1d1:	000081        	l32r	a8, fffc01d4 <engine+0xfffbf9d8>
- 1d4:	fcc992        	addi	a9, a9, -4
- 1d7:	419290        	srli	a9, a9, 2
- 1da:	0000a1        	l32r	a10, fffc01dc <engine+0xfffbf9e0>
- 1dd:	fa5850        	wfr	f5, a8
- 1e0:	20c442        	addi	a4, a4, 32
- 1e3:	991b      	addi.n	a9, a9, 1
- 1e5:	848976        	loop	a9, 26d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x26d>
- 1e8:	000303        	lsi	f0, a3, 0
- 1eb:	fa4c50        	wfr	f4, a12
- 1ee:	2a0300        	mul.s	f0, f3, f0
- 1f1:	fa8040        	rfr	a8, f0
- 1f4:	fa0010        	abs.s	f0, f0
- 1f7:	6b0200        	ole.s	b0, f2, f0
- 1fa:	160076        	bf	b0, 214 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x214>
- 1fd:	6b0010        	ole.s	b0, f0, f1
- 200:	fa4a50        	wfr	f4, a10
- 203:	0d0076        	bf	b0, 214 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x214>
- 206:	1a4020        	sub.s	f4, f0, f2
- 209:	2a4440        	mul.s	f4, f4, f4
- 20c:	2a4450        	mul.s	f4, f4, f5
- 20f:	000046        	j	214 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x214>
- 212:	00          	.byte	00
- 213:	00          	.byte	00
- 214:	6b0010        	ole.s	b0, f0, f1
- 217:	cb0100        	movf.s	f0, f1, b0
- 21a:	1a0040        	sub.s	f0, f0, f4
- 21d:	fa0010        	abs.s	f0, f0
- 220:	fa4060        	neg.s	f4, f0
- 223:	ab0480        	movltz.s	f0, f4, a8
- 226:	004303        	ssi	f0, a3, 0
- 229:	000403        	lsi	f0, a4, 0
- 22c:	fa4c50        	wfr	f4, a12
- 22f:	2a0300        	mul.s	f0, f3, f0
- 232:	fa8040        	rfr	a8, f0
- 235:	fa0010        	abs.s	f0, f0
- 238:	6b0200        	ole.s	b0, f2, f0
- 23b:	150076        	bf	b0, 254 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x254>
- 23e:	6b0010        	ole.s	b0, f0, f1
- 241:	fa4a50        	wfr	f4, a10
- 244:	0c0076        	bf	b0, 254 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x254>
- 247:	1a4020        	sub.s	f4, f0, f2
- 24a:	2a4440        	mul.s	f4, f4, f4
- 24d:	2a4450        	mul.s	f4, f4, f5
- 250:	000006        	j	254 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x254>
- 253:	00          	.byte	00
- 254:	6b0010        	ole.s	b0, f0, f1
- 257:	cb0100        	movf.s	f0, f1, b0
- 25a:	1a0040        	sub.s	f0, f0, f4
- 25d:	334b      	addi.n	a3, a3, 4
- 25f:	fa0010        	abs.s	f0, f0
- 262:	fa4060        	neg.s	f4, f0
- 265:	ab0480        	movltz.s	f0, f4, a8
- 268:	004403        	ssi	f0, a4, 0
- 26b:	444b      	addi.n	a4, a4, 4
- 26d:	000081        	l32r	a8, fffc0270 <engine+0xfffbfa74>
- 270:	020203        	lsi	f0, a2, 8
- 273:	fa1850        	wfr	f1, a8
- 276:	000081        	l32r	a8, fffc0278 <engine+0xfffbfa7c>
- 279:	4b0130        	olt.s	b0, f1, f3
- 27c:	fa1850        	wfr	f1, a8
- 27f:	cb1300        	movf.s	f1, f3, b0
- 282:	6b0030        	ole.s	b0, f0, f3
- 285:	cb0300        	movf.s	f0, f3, b0
- 288:	004213        	ssi	f1, a2, 0
- 28b:	024203        	ssi	f0, a2, 8
- 28e:	f01d      	retw.n
+   0:	00a136        	entry	a1, 80
+   3:	027d      	mov.n	a7, a2
+   5:	0ad222        	addmi	a2, a2, 0xa00
+   8:	400282        	l8ui	a8, a2, 64
+   b:	2189      	s32i.n	a8, a1, 8
+   d:	4b5856        	bnez	a8, 4c6 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x4c6>
+  10:	080c      	movi.n	a8, 0
+  12:	fa2850        	wfr	f2, a8
+  15:	03dd      	mov.n	a13, a3
+  17:	04cd      	mov.n	a12, a4
+  19:	04ad      	mov.n	a10, a4
+  1b:	209330        	or	a9, a3, a3
+  1e:	20a082        	movi	a8, 32
+  21:	1b8876        	loop	a8, 40 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x40>
+  24:	000903        	lsi	f0, a9, 0
+  27:	000a13        	lsi	f1, a10, 0
+  2a:	fa0010        	abs.s	f0, f0
+  2d:	fa1110        	abs.s	f1, f1
+  30:	6b0100        	ole.s	b0, f1, f0
+  33:	cb0100        	movf.s	f0, f1, b0
+  36:	6b0020        	ole.s	b0, f0, f2
+  39:	cb2000        	movf.s	f2, f0, b0
+  3c:	994b      	addi.n	a9, a9, 4
+  3e:	aa4b      	addi.n	a10, a10, 4
+  40:	0f0203        	lsi	f0, a2, 60
+  43:	000081        	l32r	a8, fffc0044 <engine+0xfffbee14>
+  46:	6b0200        	ole.s	b0, f2, f0
+  49:	cb0200        	movf.s	f0, f2, b0
+  4c:	0f4203        	ssi	f0, a2, 60
+  4f:	fa0850        	wfr	f0, a8
+  52:	6b0200        	ole.s	b0, f2, f0
+  55:	2238      	l32i.n	a3, a2, 8
+  57:	5258      	l32i.n	a5, a2, 20
+  59:	0248      	l32i.n	a4, a2, 0
+  5b:	021076        	bt	b0, 61 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x61>
+  5e:	000246        	j	6b <void cs80v2::OutLimiter::process<32>(float*, float*)+0x6b>
+  61:	158c      	beqz.n	a5, 66 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x66>
+  63:	000106        	j	6b <void cs80v2::OutLimiter::process<32>(float*, float*)+0x6b>
+  66:	1288      	l32i.n	a8, a2, 4
+  68:	08b837        	bgeu	a8, a3, 74 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x74>
+  6b:	000081        	l32r	a8, fffc006c <engine+0xfffbee3c>
+  6e:	fa2850        	wfr	f2, a8
+  71:	001506        	j	c9 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xc9>
+  74:	000081        	l32r	a8, fffc0074 <engine+0xfffbee44>
+  77:	080203        	lsi	f0, a2, 32
+  7a:	fa2850        	wfr	f2, a8
+  7d:	2b0020        	oeq.s	b0, f0, f2
+  80:	450076        	bf	b0, c9 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xc9>
+  83:	090203        	lsi	f0, a2, 36
+  86:	2b0020        	oeq.s	b0, f0, f2
+  89:	3c0076        	bf	b0, c9 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xc9>
+  8c:	830b      	addi.n	a8, a3, -1
+  8e:	20c492        	addi	a9, a4, 32
+  91:	60e080        	neg	a14, a8
+  94:	0a2c      	movi.n	a10, 32
+  96:	2b8a76        	loop	a10, c5 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xc5>
+  99:	000d03        	lsi	f0, a13, 0
+  9c:	64b040        	extui	a11, a4, 0, 7
+  9f:	a0bb70        	addx4	a11, a11, a7
+  a2:	004b03        	ssi	f0, a11, 0
+  a5:	000c03        	lsi	f0, a12, 0
+  a8:	8e4a      	add.n	a8, a14, a4
+  aa:	648080        	extui	a8, a8, 0, 7
+  ad:	804b03        	ssi	f0, a11, 0x200
+  b0:	a08870        	addx4	a8, a8, a7
+  b3:	000803        	lsi	f0, a8, 0
+  b6:	441b      	addi.n	a4, a4, 1
+  b8:	004d03        	ssi	f0, a13, 0
+  bb:	800803        	lsi	f0, a8, 0x200
+  be:	dd4b      	addi.n	a13, a13, 4
+  c0:	004c03        	ssi	f0, a12, 0
+  c3:	cc4b      	addi.n	a12, a12, 4
+  c5:	0299      	s32i.n	a9, a2, 0
+  c7:	f01d      	retw.n
+  c9:	0000a1        	l32r	a10, fffc00cc <engine+0xfffbee9c>
+  cc:	04d782        	addmi	a8, a7, 0x400
+  cf:	a189      	s32i.n	a8, a1, 40
+  d1:	930b      	addi.n	a9, a3, -1
+  d3:	a08380        	addx4	a8, a3, a8
+  d6:	fa3a50        	wfr	f3, a10
+  d9:	b189      	s32i.n	a8, a1, 44
+  db:	20c4a2        	addi	a10, a4, 32
+  de:	608090        	neg	a8, a9
+  e1:	0e0243        	lsi	f4, a2, 56
+  e4:	01a9      	s32i.n	a10, a1, 0
+  e6:	1189      	s32i.n	a8, a1, 4
+  e8:	000d53        	lsi	f5, a13, 0
+  eb:	000c63        	lsi	f6, a12, 0
+  ee:	fa0510        	abs.s	f0, f5
+  f1:	fa1610        	abs.s	f1, f6
+  f4:	6b0010        	ole.s	b0, f0, f1
+  f7:	db0100        	movt.s	f0, f1, b0
+  fa:	fab040        	rfr	a11, f0
+  fd:	35bc      	beqz.n	a5, 134 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x134>
+  ff:	42a8      	l32i.n	a10, a2, 16
+ 101:	21e8      	l32i.n	a14, a1, 8
+ 103:	058d      	mov.n	a8, a5
+ 105:	000486        	j	11b <void cs80v2::OutLimiter::process<32>(float*, float*)+0x11b>
+ 108:	64a0f0        	extui	a10, a15, 0, 7
+ 10b:	1e0c      	movi.n	a14, 1
+ 10d:	88cc      	bnez.n	a8, 119 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x119>
+ 10f:	42a9      	s32i.n	a10, a2, 16
+ 111:	5289      	s32i.n	a8, a2, 20
+ 113:	085d      	mov.n	a5, a8
+ 115:	0006c6        	j	134 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x134>
+ 118:	00          	.byte	00
+ 119:	086d      	mov.n	a6, a8
+ 11b:	02da92        	addmi	a9, a10, 0x200
+ 11e:	a09970        	addx4	a9, a9, a7
+ 121:	0998      	l32i.n	a9, a9, 0
+ 123:	fa1b      	addi.n	a15, a10, 1
+ 125:	939a      	add.n	a9, a3, a9
+ 127:	880b      	addi.n	a8, a8, -1
+ 129:	dbb497        	bgeu	a4, a9, 108 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x108>
+ 12c:	4e8c      	beqz.n	a14, 134 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x134>
+ 12e:	42a9      	s32i.n	a10, a2, 16
+ 130:	5269      	s32i.n	a6, a2, 20
+ 132:	065d      	mov.n	a5, a6
+ 134:	000081        	l32r	a8, fffc0134 <engine+0xfffbef04>
+ 137:	fa1b50        	wfr	f1, a11
+ 13a:	fa0850        	wfr	f0, a8
+ 13d:	4b0010        	olt.s	b0, f0, f1
+ 140:	021076        	bt	b0, 146 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x146>
+ 143:	004186        	j	24d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x24d>
+ 146:	000091        	l32r	a9, fffc0148 <engine+0xfffbef18>
+ 149:	118b70        	slli	a8, a11, 9
+ 14c:	418980        	srli	a8, a8, 9
+ 14f:	208890        	or	a8, a8, a9
+ 152:	000091        	l32r	a9, fffc0154 <engine+0xfffbef24>
+ 155:	fa7850        	wfr	f7, a8
+ 158:	fa0950        	wfr	f0, a9
+ 15b:	000091        	l32r	a9, fffc015c <engine+0xfffbef2c>
+ 15e:	75b7b0        	extui	a11, a11, 23, 8
+ 161:	fa1950        	wfr	f1, a9
+ 164:	4a0170        	madd.s	f0, f1, f7
+ 167:	80cbb2        	addi	a11, a11, -128
+ 16a:	ca1b00        	float.s	f1, a11, 0
+ 16d:	000081        	l32r	a8, fffc0170 <engine+0xfffbef40>
+ 170:	4a1070        	madd.s	f1, f0, f7
+ 173:	fa0850        	wfr	f0, a8
+ 176:	000081        	l32r	a8, fffc0178 <engine+0xfffbef48>
+ 179:	1a0100        	sub.s	f0, f1, f0
+ 17c:	fa7850        	wfr	f7, a8
+ 17f:	000081        	l32r	a8, fffc0180 <engine+0xfffbef50>
+ 182:	2a0070        	mul.s	f0, f0, f7
+ 185:	fa7850        	wfr	f7, a8
+ 188:	4b0170        	olt.s	b0, f1, f7
+ 18b:	0e1076        	bt	b0, 19d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x19d>
+ 18e:	000081        	l32r	a8, fffc0190 <engine+0xfffbef60>
+ 191:	fa1850        	wfr	f1, a8
+ 194:	0a0010        	add.s	f0, f0, f1
+ 197:	0005c6        	j	1b2 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1b2>
+ 19a:	00          	.byte	00
+ 19b:	00          	.byte	00
+ 19c:	00          	.byte	00
+ 19d:	000081        	l32r	a8, fffc01a0 <engine+0xfffbef70>
+ 1a0:	fa1850        	wfr	f1, a8
+ 1a3:	0a0010        	add.s	f0, f0, f1
+ 1a6:	000081        	l32r	a8, fffc01a8 <engine+0xfffbef78>
+ 1a9:	fa1850        	wfr	f1, a8
+ 1ac:	2a0000        	mul.s	f0, f0, f0
+ 1af:	2a0010        	mul.s	f0, f0, f1
+ 1b2:	000081        	l32r	a8, fffc01b4 <engine+0xfffbef84>
+ 1b5:	fa1850        	wfr	f1, a8
+ 1b8:	000081        	l32r	a8, fffc01b8 <engine+0xfffbef88>
+ 1bb:	fa7850        	wfr	f7, a8
+ 1be:	2a0070        	mul.s	f0, f0, f7
+ 1c1:	6b0100        	ole.s	b0, f1, f0
+ 1c4:	cb0100        	movf.s	f0, f1, b0
+ 1c7:	9a9000        	trunc.s	a9, f0, 0
+ 1ca:	ca1900        	float.s	f1, a9, 0
+ 1cd:	4b0010        	olt.s	b0, f0, f1
+ 1d0:	040076        	bf	b0, 1d8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x1d8>
+ 1d3:	990b      	addi.n	a9, a9, -1
+ 1d5:	ca1900        	float.s	f1, a9, 0
+ 1d8:	000081        	l32r	a8, fffc01d8 <engine+0xfffbefa8>
+ 1db:	1a0010        	sub.s	f0, f0, f1
+ 1de:	fa7850        	wfr	f7, a8
+ 1e1:	000081        	l32r	a8, fffc01e4 <engine+0xfffbefb4>
+ 1e4:	019990        	slli	a9, a9, 23
+ 1e7:	fa1850        	wfr	f1, a8
+ 1ea:	4a7010        	madd.s	f7, f0, f1
+ 1ed:	000081        	l32r	a8, fffc01f0 <engine+0xfffbefc0>
+ 1f0:	fa1850        	wfr	f1, a8
+ 1f3:	4a1070        	madd.s	f1, f0, f7
+ 1f6:	fa7200        	mov.s	f7, f2
+ 1f9:	4a7010        	madd.s	f7, f0, f1
+ 1fc:	fa8740        	rfr	a8, f7
+ 1ff:	998a      	add.n	a9, a9, a8
+ 201:	fa1950        	wfr	f1, a9
+ 204:	4b0120        	olt.s	b0, f1, f2
+ 207:	420076        	bf	b0, 24d <void cs80v2::OutLimiter::process<32>(float*, float*)+0x24d>
+ 20a:	42b8      	l32i.n	a11, a2, 16
+ 20c:	80a1f2        	movi	a15, 0x180
+ 20f:	eb0b      	addi.n	a14, a11, -1
+ 211:	05ad      	mov.n	a10, a5
+ 213:	d5cc      	bnez.n	a5, 224 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x224>
+ 215:	150c      	movi.n	a5, 1
+ 217:	000806        	j	23b <void cs80v2::OutLimiter::process<32>(float*, float*)+0x23b>
+ 21a:	550b      	addi.n	a5, a5, -1
+ 21c:	aa0b      	addi.n	a10, a10, -1
+ 21e:	2acc      	bnez.n	a10, 224 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x224>
+ 220:	fffc46        	j	215 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x215>
+ 223:	00          	.byte	00
+ 224:	8e5a      	add.n	a8, a14, a5
+ 226:	648080        	extui	a8, a8, 0, 7
+ 229:	88fa      	add.n	a8, a8, a15
+ 22b:	a08870        	addx4	a8, a8, a7
+ 22e:	000803        	lsi	f0, a8, 0
+ 231:	6b0100        	ole.s	b0, f1, f0
+ 234:	e21076        	bt	b0, 21a <void cs80v2::OutLimiter::process<32>(float*, float*)+0x21a>
+ 237:	b5ba      	add.n	a11, a5, a11
+ 239:	551b      	addi.n	a5, a5, 1
+ 23b:	6480b0        	extui	a8, a11, 0, 7
+ 23e:	a08870        	addx4	a8, a8, a7
+ 241:	06d8a2        	addmi	a10, a8, 0x600
+ 244:	0a99      	s32i.n	a9, a10, 0
+ 246:	08d882        	addmi	a8, a8, 0x800
+ 249:	0849      	s32i.n	a4, a8, 0
+ 24b:	5259      	s32i.n	a5, a2, 20
+ 24d:	3288      	l32i.n	a8, a2, 12
+ 24f:	060213        	lsi	f1, a2, 24
+ 252:	a09870        	addx4	a9, a8, a7
+ 255:	04d992        	addmi	a9, a9, 0x400
+ 258:	000903        	lsi	f0, a9, 0
+ 25b:	881b      	addi.n	a8, a8, 1
+ 25d:	23f516        	beqz	a5, 4a0 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x4a0>
+ 260:	42a8      	l32i.n	a10, a2, 16
+ 262:	a0aa70        	addx4	a10, a10, a7
+ 265:	06daa2        	addmi	a10, a10, 0x600
+ 268:	000a73        	lsi	f7, a10, 0
+ 26b:	0a1710        	add.s	f1, f7, f1
+ 26e:	1a0100        	sub.s	f0, f1, f0
+ 271:	064203        	ssi	f0, a2, 24
+ 274:	004973        	ssi	f7, a9, 0
+ 277:	051387        	beq	a3, a8, 280 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x280>
+ 27a:	3289      	s32i.n	a8, a2, 12
+ 27c:	000c06        	j	2b0 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2b0>
+ 27f:	00          	.byte	00
+ 280:	080c      	movi.n	a8, 0
+ 282:	3289      	s32i.n	a8, a2, 12
+ 284:	03ac      	beqz.n	a3, 2a8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2a8>
+ 286:	b188      	l32i.n	a8, a1, 44
+ 288:	a198      	l32i.n	a9, a1, 40
+ 28a:	0a0c      	movi.n	a10, 0
+ 28c:	c08890        	sub	a8, a8, a9
+ 28f:	fcc882        	addi	a8, a8, -4
+ 292:	418280        	srli	a8, a8, 2
+ 295:	fa0a50        	wfr	f0, a10
+ 298:	881b      	addi.n	a8, a8, 1
+ 29a:	078876        	loop	a8, 2a5 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2a5>
+ 29d:	000913        	lsi	f1, a9, 0
+ 2a0:	994b      	addi.n	a9, a9, 4
+ 2a2:	0a0010        	add.s	f0, f0, f1
+ 2a5:	000106        	j	2ad <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2ad>
+ 2a8:	080c      	movi.n	a8, 0
+ 2aa:	fa0850        	wfr	f0, a8
+ 2ad:	064203        	ssi	f0, a2, 24
+ 2b0:	6b0270        	ole.s	b0, f2, f7
+ 2b3:	080c      	movi.n	a8, 0
+ 2b5:	070076        	bf	b0, 2c0 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2c0>
+ 2b8:	1288      	l32i.n	a8, a2, 4
+ 2ba:	881b      	addi.n	a8, a8, 1
+ 2bc:	000006        	j	2c0 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2c0>
+ 2bf:	00          	.byte	00
+ 2c0:	070273        	lsi	f7, a2, 28
+ 2c3:	080213        	lsi	f1, a2, 32
+ 2c6:	2a0070        	mul.s	f0, f0, f7
+ 2c9:	1289      	s32i.n	a8, a2, 4
+ 2cb:	6b0020        	ole.s	b0, f0, f2
+ 2ce:	cb0200        	movf.s	f0, f2, b0
+ 2d1:	6b0100        	ole.s	b0, f1, f0
+ 2d4:	0c0076        	bf	b0, 2e4 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2e4>
+ 2d7:	1a8010        	sub.s	f8, f0, f1
+ 2da:	0a0273        	lsi	f7, a2, 40
+ 2dd:	4a1870        	madd.s	f1, f8, f7
+ 2e0:	0000c6        	j	2e7 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2e7>
+ 2e3:	00          	.byte	00
+ 2e4:	fa1000        	mov.s	f1, f0
+ 2e7:	090273        	lsi	f7, a2, 36
+ 2ea:	4b0070        	olt.s	b0, f0, f7
+ 2ed:	1a8070        	sub.s	f8, f0, f7
+ 2f0:	050076        	bf	b0, 2f9 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2f9>
+ 2f3:	0b0293        	lsi	f9, a2, 44
+ 2f6:	000086        	j	2fc <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2fc>
+ 2f9:	0c0293        	lsi	f9, a2, 48
+ 2fc:	000091        	l32r	a9, fffc02fc <engine+0xfffbf0cc>
+ 2ff:	fa0700        	mov.s	f0, f7
+ 302:	4a0890        	madd.s	f0, f8, f9
+ 305:	fa7950        	wfr	f7, a9
+ 308:	000091        	l32r	a9, fffc0308 <engine+0xfffbf0d8>
+ 30b:	6b0170        	ole.s	b0, f1, f7
+ 30e:	cb1200        	movf.s	f1, f2, b0
+ 311:	fa7950        	wfr	f7, a9
+ 314:	084213        	ssi	f1, a2, 32
+ 317:	094203        	ssi	f0, a2, 36
+ 31a:	4b0700        	olt.s	b0, f7, f0
+ 31d:	0b0076        	bf	b0, 32c <void cs80v2::OutLimiter::process<32>(float*, float*)+0x32c>
+ 320:	628830        	saltu	a8, a8, a3
+ 323:	051826        	beqi	a8, 1, 32c <void cs80v2::OutLimiter::process<32>(float*, float*)+0x32c>
+ 326:	094223        	ssi	f2, a2, 36
+ 329:	fa0200        	mov.s	f0, f2
+ 32c:	1188      	l32i.n	a8, a1, 4
+ 32e:	649040        	extui	a9, a4, 0, 7
+ 331:	884a      	add.n	a8, a8, a4
+ 333:	a09970        	addx4	a9, a9, a7
+ 336:	648080        	extui	a8, a8, 0, 7
+ 339:	004953        	ssi	f5, a9, 0
+ 33c:	804963        	ssi	f6, a9, 0x200
+ 33f:	a08870        	addx4	a8, a8, a7
+ 342:	6b0100        	ole.s	b0, f1, f0
+ 345:	000853        	lsi	f5, a8, 0
+ 348:	cb1000        	movf.s	f1, f0, b0
+ 34b:	2a0150        	mul.s	f0, f1, f5
+ 34e:	6b0410        	ole.s	b0, f4, f1
+ 351:	cb4100        	movf.s	f4, f1, b0
+ 354:	fa9040        	rfr	a9, f0
+ 357:	fa0010        	abs.s	f0, f0
+ 35a:	6b0030        	ole.s	b0, f0, f3
+ 35d:	020076        	bf	b0, 363 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x363>
+ 360:	002106        	j	3e8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x3e8>
+ 363:	0000a1        	l32r	a10, fffc0364 <engine+0xfffbf134>
+ 366:	fa5a50        	wfr	f5, a10
+ 369:	4b0050        	olt.s	b0, f0, f5
+ 36c:	690076        	bf	b0, 3d9 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x3d9>
+ 36f:	5189      	s32i.n	a8, a1, 20
+ 371:	000081        	l32r	a8, fffc0374 <engine+0xfffbf144>
+ 374:	1a0030        	sub.s	f0, f0, f3
+ 377:	fa5850        	wfr	f5, a8
+ 37a:	000081        	l32r	a8, fffc037c <engine+0xfffbf14c>
+ 37d:	034113        	ssi	f1, a1, 12
+ 380:	fa1850        	wfr	f1, a8
+ 383:	2a0010        	mul.s	f0, f0, f1
+ 386:	000081        	l32r	a8, fffc0388 <engine+0xfffbf158>
+ 389:	094123        	ssi	f2, a1, 36
+ 38c:	fa1850        	wfr	f1, a8
+ 38f:	2a6000        	mul.s	f6, f0, f0
+ 392:	81d9      	s32i.n	a13, a1, 32
+ 394:	71c9      	s32i.n	a12, a1, 28
+ 396:	064143        	ssi	f4, a1, 24
+ 399:	0a7650        	add.s	f7, f6, f5
+ 39c:	4a5610        	madd.s	f5, f6, f1
+ 39f:	4199      	s32i.n	a9, a1, 16
+ 3a1:	2a0700        	mul.s	f0, f7, f0
+ 3a4:	fab540        	rfr	a11, f5
+ 3a7:	faa040        	rfr	a10, f0
+ 3aa:	000081        	l32r	a8, fffc03ac <engine+0xfffbf17c>
+ 3ad:	0008e0        	callx8	a8
+ 3b0:	000081        	l32r	a8, fffc03b0 <engine+0xfffbf180>
+ 3b3:	fa5a50        	wfr	f5, a10
+ 3b6:	fa0850        	wfr	f0, a8
+ 3b9:	fa3850        	wfr	f3, a8
+ 3bc:	000081        	l32r	a8, fffc03bc <engine+0xfffbf18c>
+ 3bf:	4198      	l32i.n	a9, a1, 16
+ 3c1:	fa1850        	wfr	f1, a8
+ 3c4:	4a0510        	madd.s	f0, f5, f1
+ 3c7:	5188      	l32i.n	a8, a1, 20
+ 3c9:	030113        	lsi	f1, a1, 12
+ 3cc:	060143        	lsi	f4, a1, 24
+ 3cf:	71c8      	l32i.n	a12, a1, 28
+ 3d1:	81d8      	l32i.n	a13, a1, 32
+ 3d3:	090123        	lsi	f2, a1, 36
+ 3d6:	000086        	j	3dc <void cs80v2::OutLimiter::process<32>(float*, float*)+0x3dc>
+ 3d9:	fa0200        	mov.s	f0, f2
+ 3dc:	fa0010        	abs.s	f0, f0
+ 3df:	fa5060        	neg.s	f5, f0
+ 3e2:	ab0590        	movltz.s	f0, f5, a9
+ 3e5:	fa9040        	rfr	a9, f0
+ 3e8:	0d99      	s32i.n	a9, a13, 0
+ 3ea:	800803        	lsi	f0, a8, 0x200
+ 3ed:	2a0100        	mul.s	f0, f1, f0
+ 3f0:	fa8040        	rfr	a8, f0
+ 3f3:	fa0010        	abs.s	f0, f0
+ 3f6:	6b0030        	ole.s	b0, f0, f3
+ 3f9:	020076        	bf	b0, 3ff <void cs80v2::OutLimiter::process<32>(float*, float*)+0x3ff>
+ 3fc:	002106        	j	484 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x484>
+ 3ff:	000091        	l32r	a9, fffc0400 <engine+0xfffbf1d0>
+ 402:	fa5950        	wfr	f5, a9
+ 405:	4b0050        	olt.s	b0, f0, f5
+ 408:	690076        	bf	b0, 475 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x475>
+ 40b:	4189      	s32i.n	a8, a1, 16
+ 40d:	000081        	l32r	a8, fffc0410 <engine+0xfffbf1e0>
+ 410:	1a0030        	sub.s	f0, f0, f3
+ 413:	fa5850        	wfr	f5, a8
+ 416:	000081        	l32r	a8, fffc0418 <engine+0xfffbf1e8>
+ 419:	034113        	ssi	f1, a1, 12
+ 41c:	fa1850        	wfr	f1, a8
+ 41f:	2a0010        	mul.s	f0, f0, f1
+ 422:	000081        	l32r	a8, fffc0424 <engine+0xfffbf1f4>
+ 425:	084123        	ssi	f2, a1, 32
+ 428:	fa1850        	wfr	f1, a8
+ 42b:	2a6000        	mul.s	f6, f0, f0
+ 42e:	0761d2        	s32i	a13, a1, 28
+ 431:	0661c2        	s32i	a12, a1, 24
+ 434:	054143        	ssi	f4, a1, 20
+ 437:	0a7650        	add.s	f7, f6, f5
+ 43a:	4a5610        	madd.s	f5, f6, f1
+ 43d:	2a0700        	mul.s	f0, f7, f0
+ 440:	fab540        	rfr	a11, f5
+ 443:	faa040        	rfr	a10, f0
+ 446:	000081        	l32r	a8, fffc0448 <engine+0xfffbf218>
+ 449:	0008e0        	callx8	a8
+ 44c:	000081        	l32r	a8, fffc044c <engine+0xfffbf21c>
+ 44f:	fa5a50        	wfr	f5, a10
+ 452:	fa0850        	wfr	f0, a8
+ 455:	fa3850        	wfr	f3, a8
+ 458:	000081        	l32r	a8, fffc0458 <engine+0xfffbf228>
+ 45b:	050143        	lsi	f4, a1, 20
+ 45e:	fa1850        	wfr	f1, a8
+ 461:	4a0510        	madd.s	f0, f5, f1
+ 464:	4188      	l32i.n	a8, a1, 16
+ 466:	030113        	lsi	f1, a1, 12
+ 469:	61c8      	l32i.n	a12, a1, 24
+ 46b:	71d8      	l32i.n	a13, a1, 28
+ 46d:	080123        	lsi	f2, a1, 32
+ 470:	000106        	j	478 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x478>
+ 473:	00          	.byte	00
+ 474:	00          	.byte	00
+ 475:	fa0200        	mov.s	f0, f2
+ 478:	fa0010        	abs.s	f0, f0
+ 47b:	fa5060        	neg.s	f5, f0
+ 47e:	ab0580        	movltz.s	f0, f5, a8
+ 481:	fa8040        	rfr	a8, f0
+ 484:	0c89      	s32i.n	a8, a12, 0
+ 486:	0188      	l32i.n	a8, a1, 0
+ 488:	0d4213        	ssi	f1, a2, 52
+ 48b:	441b      	addi.n	a4, a4, 1
+ 48d:	dd4b      	addi.n	a13, a13, 4
+ 48f:	cc4b      	addi.n	a12, a12, 4
+ 491:	021487        	beq	a4, a8, 497 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x497>
+ 494:	ff1406        	j	e8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0xe8>
+ 497:	0249      	s32i.n	a4, a2, 0
+ 499:	0e4243        	ssi	f4, a2, 56
+ 49c:	f01d      	retw.n
+ 49e:	00          	.byte	00
+ 49f:	00          	.byte	00
+ 4a0:	0a1120        	add.s	f1, f1, f2
+ 4a3:	1a0100        	sub.s	f0, f1, f0
+ 4a6:	064203        	ssi	f0, a2, 24
+ 4a9:	004923        	ssi	f2, a9, 0
+ 4ac:	041387        	beq	a3, a8, 4b4 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x4b4>
+ 4af:	3289      	s32i.n	a8, a2, 12
+ 4b1:	ff80c6        	j	2b8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2b8>
+ 4b4:	3259      	s32i.n	a5, a2, 12
+ 4b6:	fa7200        	mov.s	f7, f2
+ 4b9:	dc9356        	bnez	a3, 286 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x286>
+ 4bc:	080c      	movi.n	a8, 0
+ 4be:	6289      	s32i.n	a8, a2, 24
+ 4c0:	fa0850        	wfr	f0, a8
+ 4c3:	ff7c46        	j	2b8 <void cs80v2::OutLimiter::process<32>(float*, float*)+0x2b8>
+ 4c6:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
 
 00000000 <cs80v2::Plate<float, 1>::init(int)>:
    0:	006136        	entry	a1, 48
-   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbf808>
+   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbedd4>
    6:	319f30        	srai	a9, a3, 31
    9:	b2c360        	mulsh	a12, a3, a6
-   c:	000071        	l32r	a7, fffc000c <engine+0xfffbf810>
+   c:	000071        	l32r	a7, fffc000c <engine+0xfffbeddc>
    f:	21c2c0        	srai	a12, a12, 2
   12:	c0cc90        	sub	a12, a12, a9
   15:	038d      	mov.n	a8, a3
@@ -4549,19 +4872,19 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
   22:	11cce0        	slli	a12, a12, 2
   25:	006272        	s32i	a7, a2, 0
   28:	20a770        	or	a10, a7, a7
-  2b:	000081        	l32r	a8, fffc002c <engine+0xfffbf830>
+  2b:	000081        	l32r	a8, fffc002c <engine+0xfffbedfc>
   2e:	0008e0        	callx8	a8
   31:	382282        	l32i	a8, a2, 224
   34:	8ea0a2        	movi	a10, 142
   37:	b26860        	mulsh	a6, a8, a6
   3a:	b2b8a0        	mulsh	a11, a8, a10
-  3d:	0000c1        	l32r	a12, fffc0040 <engine+0xfffbf844>
+  3d:	0000c1        	l32r	a12, fffc0040 <engine+0xfffbee10>
   40:	82a8a0        	mull	a10, a8, a10
   43:	0d0c      	movi.n	a13, 0
   45:	318f80        	srai	a8, a8, 31
   48:	216260        	srai	a6, a6, 2
   4b:	c06680        	sub	a6, a6, a8
-  4e:	000081        	l32r	a8, fffc0050 <engine+0xfffbf854>
+  4e:	000081        	l32r	a8, fffc0050 <engine+0xfffbee20>
   51:	0008e0        	callx8	a8
   54:	5a2b      	addi.n	a5, a10, 2
   56:	a0a670        	addx4	a10, a6, a7
@@ -4570,15 +4893,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
   5e:	046252        	s32i	a5, a2, 16
   61:	056232        	s32i	a3, a2, 20
   64:	0362a2        	s32i	a10, a2, 12
-  67:	000081        	l32r	a8, fffc0068 <engine+0xfffbf86c>
+  67:	000081        	l32r	a8, fffc0068 <engine+0xfffbee38>
   6a:	0008e0        	callx8	a8
   6d:	382282        	l32i	a8, a2, 224
   70:	6ba0a2        	movi	a10, 107
   73:	b2ba80        	mulsh	a11, a10, a8
-  76:	0000c1        	l32r	a12, fffc0078 <engine+0xfffbf87c>
+  76:	0000c1        	l32r	a12, fffc0078 <engine+0xfffbee48>
   79:	82aa80        	mull	a10, a10, a8
   7c:	00a0d2        	movi	a13, 0
-  7f:	000081        	l32r	a8, fffc0080 <engine+0xfffbf884>
+  7f:	000081        	l32r	a8, fffc0080 <engine+0xfffbee50>
   82:	0008e0        	callx8	a8
   85:	665a      	add.n	a6, a6, a5
   87:	5a2b      	addi.n	a5, a10, 2
@@ -4588,15 +4911,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
   91:	7259      	s32i.n	a5, a2, 28
   93:	8239      	s32i.n	a3, a2, 32
   95:	62a9      	s32i.n	a10, a2, 24
-  97:	000081        	l32r	a8, fffc0098 <engine+0xfffbf89c>
+  97:	000081        	l32r	a8, fffc0098 <engine+0xfffbee68>
   9a:	0008e0        	callx8	a8
   9d:	382282        	l32i	a8, a2, 224
   a0:	7ba1a2        	movi	a10, 0x17b
   a3:	b2ba80        	mulsh	a11, a10, a8
-  a6:	0000c1        	l32r	a12, fffc00a8 <engine+0xfffbf8ac>
+  a6:	0000c1        	l32r	a12, fffc00a8 <engine+0xfffbee78>
   a9:	82aa80        	mull	a10, a10, a8
   ac:	00a0d2        	movi	a13, 0
-  af:	000081        	l32r	a8, fffc00b0 <engine+0xfffbf8b4>
+  af:	000081        	l32r	a8, fffc00b0 <engine+0xfffbee80>
   b2:	0008e0        	callx8	a8
   b5:	556a      	add.n	a5, a5, a6
   b7:	6a2b      	addi.n	a6, a10, 2
@@ -4606,15 +4929,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
   c1:	a269      	s32i.n	a6, a2, 40
   c3:	b239      	s32i.n	a3, a2, 44
   c5:	92a9      	s32i.n	a10, a2, 36
-  c7:	000081        	l32r	a8, fffc00c8 <engine+0xfffbf8cc>
+  c7:	000081        	l32r	a8, fffc00c8 <engine+0xfffbee98>
   ca:	0008e0        	callx8	a8
   cd:	382282        	l32i	a8, a2, 224
   d0:	15a1a2        	movi	a10, 0x115
   d3:	b2ba80        	mulsh	a11, a10, a8
-  d6:	0000c1        	l32r	a12, fffc00d8 <engine+0xfffbf8dc>
+  d6:	0000c1        	l32r	a12, fffc00d8 <engine+0xfffbeea8>
   d9:	82aa80        	mull	a10, a10, a8
   dc:	00a0d2        	movi	a13, 0
-  df:	000081        	l32r	a8, fffc00e0 <engine+0xfffbf8e4>
+  df:	000081        	l32r	a8, fffc00e0 <engine+0xfffbeeb0>
   e2:	0008e0        	callx8	a8
   e5:	565a      	add.n	a5, a6, a5
   e7:	6a2b      	addi.n	a6, a10, 2
@@ -4624,15 +4947,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
   f1:	d269      	s32i.n	a6, a2, 52
   f3:	e239      	s32i.n	a3, a2, 56
   f5:	c2a9      	s32i.n	a10, a2, 48
-  f7:	000081        	l32r	a8, fffc00f8 <engine+0xfffbf8fc>
+  f7:	000081        	l32r	a8, fffc00f8 <engine+0xfffbeec8>
   fa:	0008e0        	callx8	a8
   fd:	382282        	l32i	a8, a2, 224
  100:	c0a2a2        	movi	a10, 0x2c0
  103:	b2ba80        	mulsh	a11, a10, a8
- 106:	0000c1        	l32r	a12, fffc0108 <engine+0xfffbf90c>
+ 106:	0000c1        	l32r	a12, fffc0108 <engine+0xfffbeed8>
  109:	82aa80        	mull	a10, a10, a8
  10c:	0d0c      	movi.n	a13, 0
- 10e:	000081        	l32r	a8, fffc0110 <engine+0xfffbf914>
+ 10e:	000081        	l32r	a8, fffc0110 <engine+0xfffbeee0>
  111:	0008e0        	callx8	a8
  114:	565a      	add.n	a5, a6, a5
  116:	02ca62        	addi	a6, a10, 2
@@ -4642,15 +4965,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  122:	106262        	s32i	a6, a2, 64
  125:	116232        	s32i	a3, a2, 68
  128:	0f62a2        	s32i	a10, a2, 60
- 12b:	000081        	l32r	a8, fffc012c <engine+0xfffbf930>
+ 12b:	000081        	l32r	a8, fffc012c <engine+0xfffbeefc>
  12e:	0008e0        	callx8	a8
- 131:	000081        	l32r	a8, fffc0134 <engine+0xfffbf938>
+ 131:	000081        	l32r	a8, fffc0134 <engine+0xfffbef04>
  134:	3822a2        	l32i	a10, a2, 224
- 137:	0000c1        	l32r	a12, fffc0138 <engine+0xfffbf93c>
+ 137:	0000c1        	l32r	a12, fffc0138 <engine+0xfffbef08>
  13a:	b2ba80        	mulsh	a11, a10, a8
  13d:	82aa80        	mull	a10, a10, a8
  140:	00a0d2        	movi	a13, 0
- 143:	000081        	l32r	a8, fffc0144 <engine+0xfffbf948>
+ 143:	000081        	l32r	a8, fffc0144 <engine+0xfffbef14>
  146:	0008e0        	callx8	a8
  149:	565a      	add.n	a5, a6, a5
  14b:	6a2b      	addi.n	a6, a10, 2
@@ -4660,15 +4983,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  156:	136262        	s32i	a6, a2, 76
  159:	146232        	s32i	a3, a2, 80
  15c:	1262a2        	s32i	a10, a2, 72
- 15f:	000081        	l32r	a8, fffc0160 <engine+0xfffbf964>
+ 15f:	000081        	l32r	a8, fffc0160 <engine+0xfffbef30>
  162:	0008e0        	callx8	a8
  165:	382282        	l32i	a8, a2, 224
  168:	08a7a2        	movi	a10, 0x708
  16b:	b2ba80        	mulsh	a11, a10, a8
- 16e:	0000c1        	l32r	a12, fffc0170 <engine+0xfffbf974>
+ 16e:	0000c1        	l32r	a12, fffc0170 <engine+0xfffbef40>
  171:	82aa80        	mull	a10, a10, a8
  174:	00a0d2        	movi	a13, 0
- 177:	000081        	l32r	a8, fffc0178 <engine+0xfffbf97c>
+ 177:	000081        	l32r	a8, fffc0178 <engine+0xfffbef48>
  17a:	0008e0        	callx8	a8
  17d:	565a      	add.n	a5, a6, a5
  17f:	6a2b      	addi.n	a6, a10, 2
@@ -4678,15 +5001,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  18a:	166262        	s32i	a6, a2, 88
  18d:	176232        	s32i	a3, a2, 92
  190:	1562a2        	s32i	a10, a2, 84
- 193:	000081        	l32r	a8, fffc0194 <engine+0xfffbf998>
+ 193:	000081        	l32r	a8, fffc0194 <engine+0xfffbef64>
  196:	0008e0        	callx8	a8
- 199:	000081        	l32r	a8, fffc019c <engine+0xfffbf9a0>
+ 199:	000081        	l32r	a8, fffc019c <engine+0xfffbef6c>
  19c:	3822a2        	l32i	a10, a2, 224
- 19f:	0000c1        	l32r	a12, fffc01a0 <engine+0xfffbf9a4>
+ 19f:	0000c1        	l32r	a12, fffc01a0 <engine+0xfffbef70>
  1a2:	b2ba80        	mulsh	a11, a10, a8
  1a5:	82aa80        	mull	a10, a10, a8
  1a8:	00a0d2        	movi	a13, 0
- 1ab:	000081        	l32r	a8, fffc01ac <engine+0xfffbf9b0>
+ 1ab:	000081        	l32r	a8, fffc01ac <engine+0xfffbef7c>
  1ae:	0008e0        	callx8	a8
  1b1:	565a      	add.n	a5, a6, a5
  1b3:	6a2b      	addi.n	a6, a10, 2
@@ -4696,15 +5019,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  1be:	196262        	s32i	a6, a2, 100
  1c1:	1a6232        	s32i	a3, a2, 104
  1c4:	1862a2        	s32i	a10, a2, 96
- 1c7:	000081        	l32r	a8, fffc01c8 <engine+0xfffbf9cc>
+ 1c7:	000081        	l32r	a8, fffc01c8 <engine+0xfffbef98>
  1ca:	0008e0        	callx8	a8
  1cd:	382282        	l32i	a8, a2, 224
  1d0:	aca3a2        	movi	a10, 0x3ac
  1d3:	b2ba80        	mulsh	a11, a10, a8
- 1d6:	0000c1        	l32r	a12, fffc01d8 <engine+0xfffbf9dc>
+ 1d6:	0000c1        	l32r	a12, fffc01d8 <engine+0xfffbefa8>
  1d9:	82aa80        	mull	a10, a10, a8
  1dc:	00a0d2        	movi	a13, 0
- 1df:	000081        	l32r	a8, fffc01e0 <engine+0xfffbf9e4>
+ 1df:	000081        	l32r	a8, fffc01e0 <engine+0xfffbefb0>
  1e2:	0008e0        	callx8	a8
  1e5:	565a      	add.n	a5, a6, a5
  1e7:	6a2b      	addi.n	a6, a10, 2
@@ -4714,15 +5037,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  1f2:	1c6262        	s32i	a6, a2, 112
  1f5:	1d6232        	s32i	a3, a2, 116
  1f8:	1b62a2        	s32i	a10, a2, 108
- 1fb:	000081        	l32r	a8, fffc01fc <engine+0xfffbfa00>
+ 1fb:	000081        	l32r	a8, fffc01fc <engine+0xfffbefcc>
  1fe:	0008e0        	callx8	a8
- 201:	000081        	l32r	a8, fffc0204 <engine+0xfffbfa08>
+ 201:	000081        	l32r	a8, fffc0204 <engine+0xfffbefd4>
  204:	3822a2        	l32i	a10, a2, 224
- 207:	0000c1        	l32r	a12, fffc0208 <engine+0xfffbfa0c>
+ 207:	0000c1        	l32r	a12, fffc0208 <engine+0xfffbefd8>
  20a:	b2ba80        	mulsh	a11, a10, a8
  20d:	82aa80        	mull	a10, a10, a8
  210:	00a0d2        	movi	a13, 0
- 213:	000081        	l32r	a8, fffc0214 <engine+0xfffbfa18>
+ 213:	000081        	l32r	a8, fffc0214 <engine+0xfffbefe4>
  216:	0008e0        	callx8	a8
  219:	565a      	add.n	a5, a6, a5
  21b:	6a2b      	addi.n	a6, a10, 2
@@ -4732,15 +5055,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  226:	1f6262        	s32i	a6, a2, 124
  229:	206232        	s32i	a3, a2, 128
  22c:	1e62a2        	s32i	a10, a2, 120
- 22f:	000081        	l32r	a8, fffc0230 <engine+0xfffbfa34>
+ 22f:	000081        	l32r	a8, fffc0230 <engine+0xfffbf000>
  232:	0008e0        	callx8	a8
- 235:	000081        	l32r	a8, fffc0238 <engine+0xfffbfa3c>
+ 235:	000081        	l32r	a8, fffc0238 <engine+0xfffbf008>
  238:	3822a2        	l32i	a10, a2, 224
- 23b:	0000c1        	l32r	a12, fffc023c <engine+0xfffbfa40>
+ 23b:	0000c1        	l32r	a12, fffc023c <engine+0xfffbf00c>
  23e:	b2ba80        	mulsh	a11, a10, a8
  241:	82aa80        	mull	a10, a10, a8
  244:	00a0d2        	movi	a13, 0
- 247:	000081        	l32r	a8, fffc0248 <engine+0xfffbfa4c>
+ 247:	000081        	l32r	a8, fffc0248 <engine+0xfffbf018>
  24a:	0008e0        	callx8	a8
  24d:	565a      	add.n	a5, a6, a5
  24f:	6a2b      	addi.n	a6, a10, 2
@@ -4750,15 +5073,15 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  25a:	226262        	s32i	a6, a2, 136
  25d:	236232        	s32i	a3, a2, 140
  260:	2162a2        	s32i	a10, a2, 132
- 263:	000081        	l32r	a8, fffc0264 <engine+0xfffbfa68>
+ 263:	000081        	l32r	a8, fffc0264 <engine+0xfffbf034>
  266:	0008e0        	callx8	a8
- 269:	000081        	l32r	a8, fffc026c <engine+0xfffbfa70>
+ 269:	000081        	l32r	a8, fffc026c <engine+0xfffbf03c>
  26c:	3822a2        	l32i	a10, a2, 224
- 26f:	0000c1        	l32r	a12, fffc0270 <engine+0xfffbfa74>
+ 26f:	0000c1        	l32r	a12, fffc0270 <engine+0xfffbf040>
  272:	b2ba80        	mulsh	a11, a10, a8
  275:	82aa80        	mull	a10, a10, a8
  278:	00a0d2        	movi	a13, 0
- 27b:	000081        	l32r	a8, fffc027c <engine+0xfffbfa80>
+ 27b:	000081        	l32r	a8, fffc027c <engine+0xfffbf04c>
  27e:	0008e0        	callx8	a8
  281:	665a      	add.n	a6, a6, a5
  283:	5a2b      	addi.n	a5, a10, 2
@@ -4768,172 +5091,172 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  28d:	256252        	s32i	a5, a2, 148
  290:	266232        	s32i	a3, a2, 152
  293:	2462a2        	s32i	a10, a2, 144
- 296:	000081        	l32r	a8, fffc0298 <engine+0xfffbfa9c>
+ 296:	000081        	l32r	a8, fffc0298 <engine+0xfffbf068>
  299:	0008e0        	callx8	a8
  29c:	382232        	l32i	a3, a2, 224
  29f:	0aa1a2        	movi	a10, 0x10a
- 2a2:	0000c1        	l32r	a12, fffc02a4 <engine+0xfffbfaa8>
+ 2a2:	0000c1        	l32r	a12, fffc02a4 <engine+0xfffbf074>
  2a5:	b2b3a0        	mulsh	a11, a3, a10
  2a8:	556a      	add.n	a5, a5, a6
  2aa:	82a3a0        	mull	a10, a3, a10
  2ad:	0d0c      	movi.n	a13, 0
  2af:	486252        	s32i	a5, a2, 0x120
- 2b2:	000081        	l32r	a8, fffc02b4 <engine+0xfffbfab8>
+ 2b2:	000081        	l32r	a8, fffc02b4 <engine+0xfffbf084>
  2b5:	0008e0        	callx8	a8
  2b8:	0a8d      	mov.n	a8, a10
- 2ba:	0000a1        	l32r	a10, fffc02bc <engine+0xfffbfac0>
- 2bd:	0000c1        	l32r	a12, fffc02c0 <engine+0xfffbfac4>
+ 2ba:	0000a1        	l32r	a10, fffc02bc <engine+0xfffbf08c>
+ 2bd:	0000c1        	l32r	a12, fffc02c0 <engine+0xfffbf090>
  2c0:	b2b3a0        	mulsh	a11, a3, a10
  2c3:	82a3a0        	mull	a10, a3, a10
  2c6:	0d0c      	movi.n	a13, 0
  2c8:	416282        	s32i	a8, a2, 0x104
- 2cb:	000081        	l32r	a8, fffc02cc <engine+0xfffbfad0>
+ 2cb:	000081        	l32r	a8, fffc02cc <engine+0xfffbf09c>
  2ce:	0008e0        	callx8	a8
  2d1:	0a8d      	mov.n	a8, a10
- 2d3:	0000a1        	l32r	a10, fffc02d4 <engine+0xfffbfad8>
- 2d6:	0000c1        	l32r	a12, fffc02d8 <engine+0xfffbfadc>
+ 2d3:	0000a1        	l32r	a10, fffc02d4 <engine+0xfffbf0a4>
+ 2d6:	0000c1        	l32r	a12, fffc02d8 <engine+0xfffbf0a8>
  2d9:	b2b3a0        	mulsh	a11, a3, a10
  2dc:	82a3a0        	mull	a10, a3, a10
  2df:	0d0c      	movi.n	a13, 0
  2e1:	426282        	s32i	a8, a2, 0x108
- 2e4:	000081        	l32r	a8, fffc02e4 <engine+0xfffbfae8>
+ 2e4:	000081        	l32r	a8, fffc02e4 <engine+0xfffbf0b4>
  2e7:	0008e0        	callx8	a8
  2ea:	0a8d      	mov.n	a8, a10
  2ec:	79a7a2        	movi	a10, 0x779
- 2ef:	0000c1        	l32r	a12, fffc02f0 <engine+0xfffbfaf4>
+ 2ef:	0000c1        	l32r	a12, fffc02f0 <engine+0xfffbf0c0>
  2f2:	b2b3a0        	mulsh	a11, a3, a10
  2f5:	82a3a0        	mull	a10, a3, a10
  2f8:	00a0d2        	movi	a13, 0
  2fb:	436282        	s32i	a8, a2, 0x10c
- 2fe:	000081        	l32r	a8, fffc0300 <engine+0xfffbfb04>
+ 2fe:	000081        	l32r	a8, fffc0300 <engine+0xfffbf0d0>
  301:	0008e0        	callx8	a8
  304:	0a8d      	mov.n	a8, a10
  306:	4fa1a2        	movi	a10, 0x14f
- 309:	0000c1        	l32r	a12, fffc030c <engine+0xfffbfb10>
+ 309:	0000c1        	l32r	a12, fffc030c <engine+0xfffbf0dc>
  30c:	b2b3a0        	mulsh	a11, a3, a10
  30f:	82a3a0        	mull	a10, a3, a10
  312:	0d0c      	movi.n	a13, 0
  314:	466282        	s32i	a8, a2, 0x118
- 317:	000081        	l32r	a8, fffc0318 <engine+0xfffbfb1c>
+ 317:	000081        	l32r	a8, fffc0318 <engine+0xfffbf0e8>
  31a:	0008e0        	callx8	a8
  31d:	0a8d      	mov.n	a8, a10
  31f:	cca7a2        	movi	a10, 0x7cc
- 322:	0000c1        	l32r	a12, fffc0324 <engine+0xfffbfb28>
+ 322:	0000c1        	l32r	a12, fffc0324 <engine+0xfffbf0f4>
  325:	b2b3a0        	mulsh	a11, a3, a10
  328:	82a3a0        	mull	a10, a3, a10
  32b:	0d0c      	movi.n	a13, 0
  32d:	476282        	s32i	a8, a2, 0x11c
- 330:	000081        	l32r	a8, fffc0330 <engine+0xfffbfb34>
+ 330:	000081        	l32r	a8, fffc0330 <engine+0xfffbf100>
  333:	0008e0        	callx8	a8
  336:	0a8d      	mov.n	a8, a10
  338:	79a0a2        	movi	a10, 121
- 33b:	0000c1        	l32r	a12, fffc033c <engine+0xfffbfb40>
+ 33b:	0000c1        	l32r	a12, fffc033c <engine+0xfffbf10c>
  33e:	b2b3a0        	mulsh	a11, a3, a10
  341:	82a3a0        	mull	a10, a3, a10
  344:	00a0d2        	movi	a13, 0
  347:	446282        	s32i	a8, a2, 0x110
- 34a:	000081        	l32r	a8, fffc034c <engine+0xfffbfb50>
+ 34a:	000081        	l32r	a8, fffc034c <engine+0xfffbf11c>
  34d:	0008e0        	callx8	a8
  350:	0a8d      	mov.n	a8, a10
  352:	c6a7a2        	movi	a10, 0x7c6
- 355:	0000c1        	l32r	a12, fffc0358 <engine+0xfffbfb5c>
+ 355:	0000c1        	l32r	a12, fffc0358 <engine+0xfffbf128>
  358:	b2b3a0        	mulsh	a11, a3, a10
  35b:	82a3a0        	mull	a10, a3, a10
  35e:	0d0c      	movi.n	a13, 0
  360:	456282        	s32i	a8, a2, 0x114
- 363:	000081        	l32r	a8, fffc0364 <engine+0xfffbfb68>
+ 363:	000081        	l32r	a8, fffc0364 <engine+0xfffbf134>
  366:	0008e0        	callx8	a8
  369:	0a8d      	mov.n	a8, a10
  36b:	61a1a2        	movi	a10, 0x161
- 36e:	0000c1        	l32r	a12, fffc0370 <engine+0xfffbfb74>
+ 36e:	0000c1        	l32r	a12, fffc0370 <engine+0xfffbf140>
  371:	b2b3a0        	mulsh	a11, a3, a10
  374:	82a3a0        	mull	a10, a3, a10
  377:	0d0c      	movi.n	a13, 0
  379:	3a6282        	s32i	a8, a2, 232
- 37c:	000081        	l32r	a8, fffc037c <engine+0xfffbfb80>
+ 37c:	000081        	l32r	a8, fffc037c <engine+0xfffbf14c>
  37f:	0008e0        	callx8	a8
  382:	0a8d      	mov.n	a8, a10
- 384:	0000a1        	l32r	a10, fffc0384 <engine+0xfffbfb88>
- 387:	0000c1        	l32r	a12, fffc0388 <engine+0xfffbfb8c>
+ 384:	0000a1        	l32r	a10, fffc0384 <engine+0xfffbf154>
+ 387:	0000c1        	l32r	a12, fffc0388 <engine+0xfffbf158>
  38a:	b2b3a0        	mulsh	a11, a3, a10
  38d:	82a3a0        	mull	a10, a3, a10
  390:	00a0d2        	movi	a13, 0
  393:	3b6282        	s32i	a8, a2, 236
- 396:	000081        	l32r	a8, fffc0398 <engine+0xfffbfb9c>
+ 396:	000081        	l32r	a8, fffc0398 <engine+0xfffbf168>
  399:	0008e0        	callx8	a8
  39c:	0a8d      	mov.n	a8, a10
  39e:	bba0a2        	movi	a10, 187
- 3a1:	0000c1        	l32r	a12, fffc03a4 <engine+0xfffbfba8>
+ 3a1:	0000c1        	l32r	a12, fffc03a4 <engine+0xfffbf174>
  3a4:	b2b3a0        	mulsh	a11, a3, a10
  3a7:	82a3a0        	mull	a10, a3, a10
  3aa:	0d0c      	movi.n	a13, 0
  3ac:	3c6282        	s32i	a8, a2, 240
- 3af:	000081        	l32r	a8, fffc03b0 <engine+0xfffbfbb4>
+ 3af:	000081        	l32r	a8, fffc03b0 <engine+0xfffbf180>
  3b2:	0008e0        	callx8	a8
  3b5:	0a8d      	mov.n	a8, a10
  3b7:	cca4a2        	movi	a10, 0x4cc
- 3ba:	0000c1        	l32r	a12, fffc03bc <engine+0xfffbfbc0>
+ 3ba:	0000c1        	l32r	a12, fffc03bc <engine+0xfffbf18c>
  3bd:	b2b3a0        	mulsh	a11, a3, a10
  3c0:	82a3a0        	mull	a10, a3, a10
  3c3:	0d0c      	movi.n	a13, 0
  3c5:	3f6282        	s32i	a8, a2, 252
- 3c8:	000081        	l32r	a8, fffc03c8 <engine+0xfffbfbcc>
+ 3c8:	000081        	l32r	a8, fffc03c8 <engine+0xfffbf198>
  3cb:	0008e0        	callx8	a8
  3ce:	0a8d      	mov.n	a8, a10
  3d0:	2aa4a2        	movi	a10, 0x42a
- 3d3:	0000c1        	l32r	a12, fffc03d4 <engine+0xfffbfbd8>
+ 3d3:	0000c1        	l32r	a12, fffc03d4 <engine+0xfffbf1a4>
  3d6:	b2b3a0        	mulsh	a11, a3, a10
  3d9:	82a3a0        	mull	a10, a3, a10
  3dc:	00a0d2        	movi	a13, 0
  3df:	406282        	s32i	a8, a2, 0x100
- 3e2:	000081        	l32r	a8, fffc03e4 <engine+0xfffbfbe8>
+ 3e2:	000081        	l32r	a8, fffc03e4 <engine+0xfffbf1b4>
  3e5:	0008e0        	callx8	a8
  3e8:	0a8d      	mov.n	a8, a10
- 3ea:	0000a1        	l32r	a10, fffc03ec <engine+0xfffbfbf0>
- 3ed:	0000c1        	l32r	a12, fffc03f0 <engine+0xfffbfbf4>
+ 3ea:	0000a1        	l32r	a10, fffc03ec <engine+0xfffbf1bc>
+ 3ed:	0000c1        	l32r	a12, fffc03f0 <engine+0xfffbf1c0>
  3f0:	b2b3a0        	mulsh	a11, a3, a10
  3f3:	82a3a0        	mull	a10, a3, a10
  3f6:	0d0c      	movi.n	a13, 0
  3f8:	3d6282        	s32i	a8, a2, 244
- 3fb:	000081        	l32r	a8, fffc03fc <engine+0xfffbfc00>
+ 3fb:	000081        	l32r	a8, fffc03fc <engine+0xfffbf1cc>
  3fe:	0008e0        	callx8	a8
  401:	208aa0        	or	a8, a10, a10
  404:	a0a2a2        	movi	a10, 0x2a0
  407:	b2b3a0        	mulsh	a11, a3, a10
- 40a:	0000c1        	l32r	a12, fffc040c <engine+0xfffbfc10>
+ 40a:	0000c1        	l32r	a12, fffc040c <engine+0xfffbf1dc>
  40d:	82a3a0        	mull	a10, a3, a10
  410:	00a0d2        	movi	a13, 0
  413:	3e6282        	s32i	a8, a2, 248
- 416:	000081        	l32r	a8, fffc0418 <engine+0xfffbfc1c>
+ 416:	000081        	l32r	a8, fffc0418 <engine+0xfffbf1e8>
  419:	0008e0        	callx8	a8
  41c:	8ca382        	movi	a8, 0x38c
  41f:	ca0a00        	float.s	f0, a10, 0
  422:	b2b380        	mulsh	a11, a3, a8
  425:	82a380        	mull	a10, a3, a8
- 428:	0000c1        	l32r	a12, fffc0428 <engine+0xfffbfc2c>
+ 428:	0000c1        	l32r	a12, fffc0428 <engine+0xfffbf1f8>
  42b:	0d0c      	movi.n	a13, 0
  42d:	324203        	ssi	f0, a2, 200
- 430:	000081        	l32r	a8, fffc0430 <engine+0xfffbfc34>
+ 430:	000081        	l32r	a8, fffc0430 <engine+0xfffbf200>
  433:	0008e0        	callx8	a8
  436:	ca0a00        	float.s	f0, a10, 0
- 439:	0000c1        	l32r	a12, fffc043c <engine+0xfffbfc40>
+ 439:	0000c1        	l32r	a12, fffc043c <engine+0xfffbf20c>
  43c:	31bf30        	srai	a11, a3, 31
  43f:	00a0d2        	movi	a13, 0
  442:	334203        	ssi	f0, a2, 204
  445:	11a3c0        	slli	a10, a3, 4
  448:	404c10        	ssai	28
  44b:	81bb30        	src	a11, a11, a3
- 44e:	000081        	l32r	a8, fffc0450 <engine+0xfffbfc54>
+ 44e:	000081        	l32r	a8, fffc0450 <engine+0xfffbf220>
  451:	0008e0        	callx8	a8
  454:	ca0300        	float.s	f0, a3, 0
  457:	ca1a00        	float.s	f1, a10, 0
- 45a:	0000a1        	l32r	a10, fffc045c <engine+0xfffbfc60>
+ 45a:	0000a1        	l32r	a10, fffc045c <engine+0xfffbf22c>
  45d:	fab040        	rfr	a11, f0
  460:	004103        	ssi	f0, a1, 0
  463:	314213        	ssi	f1, a2, 196
- 466:	000081        	l32r	a8, fffc0468 <engine+0xfffbfc6c>
+ 466:	000081        	l32r	a8, fffc0468 <engine+0xfffbf238>
  469:	0008e0        	callx8	a8
- 46c:	000091        	l32r	a9, fffc046c <engine+0xfffbfc70>
+ 46c:	000091        	l32r	a9, fffc046c <engine+0xfffbf23c>
  46f:	080c      	movi.n	a8, 0
  471:	000103        	lsi	f0, a1, 0
  474:	fa2950        	wfr	f2, a9
@@ -4947,13 +5270,13 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4initEi:
  48c:	286282        	s32i	a8, a2, 160
  48f:	276282        	s32i	a8, a2, 156
  492:	2f6282        	s32i	a8, a2, 188
- 495:	000081        	l32r	a8, fffc0498 <engine+0xfffbfc9c>
+ 495:	000081        	l32r	a8, fffc0498 <engine+0xfffbf268>
  498:	2a0020        	mul.s	f0, f0, f2
  49b:	2c6282        	s32i	a8, a2, 176
- 49e:	000081        	l32r	a8, fffc04a0 <engine+0xfffbfca4>
+ 49e:	000081        	l32r	a8, fffc04a0 <engine+0xfffbf270>
  4a1:	3062a2        	s32i	a10, a2, 192
  4a4:	2d6282        	s32i	a8, a2, 180
- 4a7:	000081        	l32r	a8, fffc04a8 <engine+0xfffbfcac>
+ 4a7:	000081        	l32r	a8, fffc04a8 <engine+0xfffbf278>
  4aa:	9a9000        	trunc.s	a9, f0, 0
  4ad:	2e6282        	s32i	a8, a2, 184
  4b0:	0a19a6        	blti	a9, 1, 4be <cs80v2::Plate<float, 1>::init(int)+0x4be>
@@ -4970,10 +5293,10 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
 
 00000000 <cs80v2::Plate<short, 1>::init(int)>:
    0:	006136        	entry	a1, 48
-   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbf808>
+   3:	000061        	l32r	a6, fffc0004 <engine+0xfffbedd4>
    6:	319f30        	srai	a9, a3, 31
    9:	b2c360        	mulsh	a12, a3, a6
-   c:	000071        	l32r	a7, fffc000c <engine+0xfffbf810>
+   c:	000071        	l32r	a7, fffc000c <engine+0xfffbeddc>
    f:	21c2c0        	srai	a12, a12, 2
   12:	c0cc90        	sub	a12, a12, a9
   15:	038d      	mov.n	a8, a3
@@ -4985,19 +5308,19 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
   22:	80ccc0        	add	a12, a12, a12
   25:	006272        	s32i	a7, a2, 0
   28:	20a770        	or	a10, a7, a7
-  2b:	000081        	l32r	a8, fffc002c <engine+0xfffbf830>
+  2b:	000081        	l32r	a8, fffc002c <engine+0xfffbedfc>
   2e:	0008e0        	callx8	a8
   31:	382282        	l32i	a8, a2, 224
   34:	8ea0a2        	movi	a10, 142
   37:	b26860        	mulsh	a6, a8, a6
   3a:	b2b8a0        	mulsh	a11, a8, a10
-  3d:	0000c1        	l32r	a12, fffc0040 <engine+0xfffbf844>
+  3d:	0000c1        	l32r	a12, fffc0040 <engine+0xfffbee10>
   40:	82a8a0        	mull	a10, a8, a10
   43:	0d0c      	movi.n	a13, 0
   45:	318f80        	srai	a8, a8, 31
   48:	216260        	srai	a6, a6, 2
   4b:	c06680        	sub	a6, a6, a8
-  4e:	000081        	l32r	a8, fffc0050 <engine+0xfffbf854>
+  4e:	000081        	l32r	a8, fffc0050 <engine+0xfffbee20>
   51:	0008e0        	callx8	a8
   54:	5a2b      	addi.n	a5, a10, 2
   56:	90a670        	addx2	a10, a6, a7
@@ -5006,15 +5329,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
   5d:	4259      	s32i.n	a5, a2, 16
   5f:	5239      	s32i.n	a3, a2, 20
   61:	32a9      	s32i.n	a10, a2, 12
-  63:	000081        	l32r	a8, fffc0064 <engine+0xfffbf868>
+  63:	000081        	l32r	a8, fffc0064 <engine+0xfffbee34>
   66:	0008e0        	callx8	a8
   69:	382282        	l32i	a8, a2, 224
   6c:	6ba0a2        	movi	a10, 107
   6f:	b2ba80        	mulsh	a11, a10, a8
-  72:	0000c1        	l32r	a12, fffc0074 <engine+0xfffbf878>
+  72:	0000c1        	l32r	a12, fffc0074 <engine+0xfffbee44>
   75:	82aa80        	mull	a10, a10, a8
   78:	0d0c      	movi.n	a13, 0
-  7a:	000081        	l32r	a8, fffc007c <engine+0xfffbf880>
+  7a:	000081        	l32r	a8, fffc007c <engine+0xfffbee4c>
   7d:	0008e0        	callx8	a8
   80:	665a      	add.n	a6, a6, a5
   82:	5a2b      	addi.n	a5, a10, 2
@@ -5024,15 +5347,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
   8b:	7259      	s32i.n	a5, a2, 28
   8d:	086232        	s32i	a3, a2, 32
   90:	0662a2        	s32i	a10, a2, 24
-  93:	000081        	l32r	a8, fffc0094 <engine+0xfffbf898>
+  93:	000081        	l32r	a8, fffc0094 <engine+0xfffbee64>
   96:	0008e0        	callx8	a8
   99:	382282        	l32i	a8, a2, 224
   9c:	7ba1a2        	movi	a10, 0x17b
   9f:	b2ba80        	mulsh	a11, a10, a8
-  a2:	0000c1        	l32r	a12, fffc00a4 <engine+0xfffbf8a8>
+  a2:	0000c1        	l32r	a12, fffc00a4 <engine+0xfffbee74>
   a5:	82aa80        	mull	a10, a10, a8
   a8:	0d0c      	movi.n	a13, 0
-  aa:	000081        	l32r	a8, fffc00ac <engine+0xfffbf8b0>
+  aa:	000081        	l32r	a8, fffc00ac <engine+0xfffbee7c>
   ad:	0008e0        	callx8	a8
   b0:	556a      	add.n	a5, a5, a6
   b2:	6a2b      	addi.n	a6, a10, 2
@@ -5042,15 +5365,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
   bb:	a269      	s32i.n	a6, a2, 40
   bd:	0b6232        	s32i	a3, a2, 44
   c0:	0962a2        	s32i	a10, a2, 36
-  c3:	000081        	l32r	a8, fffc00c4 <engine+0xfffbf8c8>
+  c3:	000081        	l32r	a8, fffc00c4 <engine+0xfffbee94>
   c6:	0008e0        	callx8	a8
   c9:	382282        	l32i	a8, a2, 224
   cc:	15a1a2        	movi	a10, 0x115
   cf:	b2ba80        	mulsh	a11, a10, a8
-  d2:	0000c1        	l32r	a12, fffc00d4 <engine+0xfffbf8d8>
+  d2:	0000c1        	l32r	a12, fffc00d4 <engine+0xfffbeea4>
   d5:	82aa80        	mull	a10, a10, a8
   d8:	0d0c      	movi.n	a13, 0
-  da:	000081        	l32r	a8, fffc00dc <engine+0xfffbf8e0>
+  da:	000081        	l32r	a8, fffc00dc <engine+0xfffbeeac>
   dd:	0008e0        	callx8	a8
   e0:	565a      	add.n	a5, a6, a5
   e2:	6a2b      	addi.n	a6, a10, 2
@@ -5060,15 +5383,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
   eb:	d269      	s32i.n	a6, a2, 52
   ed:	0e6232        	s32i	a3, a2, 56
   f0:	0c62a2        	s32i	a10, a2, 48
-  f3:	000081        	l32r	a8, fffc00f4 <engine+0xfffbf8f8>
+  f3:	000081        	l32r	a8, fffc00f4 <engine+0xfffbeec4>
   f6:	0008e0        	callx8	a8
   f9:	382282        	l32i	a8, a2, 224
   fc:	c0a2a2        	movi	a10, 0x2c0
   ff:	b2ba80        	mulsh	a11, a10, a8
- 102:	0000c1        	l32r	a12, fffc0104 <engine+0xfffbf908>
+ 102:	0000c1        	l32r	a12, fffc0104 <engine+0xfffbeed4>
  105:	82aa80        	mull	a10, a10, a8
  108:	0d0c      	movi.n	a13, 0
- 10a:	000081        	l32r	a8, fffc010c <engine+0xfffbf910>
+ 10a:	000081        	l32r	a8, fffc010c <engine+0xfffbeedc>
  10d:	0008e0        	callx8	a8
  110:	565a      	add.n	a5, a6, a5
  112:	6a2b      	addi.n	a6, a10, 2
@@ -5078,15 +5401,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  11b:	106262        	s32i	a6, a2, 64
  11e:	116232        	s32i	a3, a2, 68
  121:	f2a9      	s32i.n	a10, a2, 60
- 123:	000081        	l32r	a8, fffc0124 <engine+0xfffbf928>
+ 123:	000081        	l32r	a8, fffc0124 <engine+0xfffbeef4>
  126:	0008e0        	callx8	a8
- 129:	000081        	l32r	a8, fffc012c <engine+0xfffbf930>
+ 129:	000081        	l32r	a8, fffc012c <engine+0xfffbeefc>
  12c:	3822a2        	l32i	a10, a2, 224
- 12f:	0000c1        	l32r	a12, fffc0130 <engine+0xfffbf934>
+ 12f:	0000c1        	l32r	a12, fffc0130 <engine+0xfffbef00>
  132:	b2ba80        	mulsh	a11, a10, a8
  135:	82aa80        	mull	a10, a10, a8
  138:	0d0c      	movi.n	a13, 0
- 13a:	000081        	l32r	a8, fffc013c <engine+0xfffbf940>
+ 13a:	000081        	l32r	a8, fffc013c <engine+0xfffbef0c>
  13d:	0008e0        	callx8	a8
  140:	565a      	add.n	a5, a6, a5
  142:	02ca62        	addi	a6, a10, 2
@@ -5096,15 +5419,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  14e:	136262        	s32i	a6, a2, 76
  151:	146232        	s32i	a3, a2, 80
  154:	1262a2        	s32i	a10, a2, 72
- 157:	000081        	l32r	a8, fffc0158 <engine+0xfffbf95c>
+ 157:	000081        	l32r	a8, fffc0158 <engine+0xfffbef28>
  15a:	0008e0        	callx8	a8
  15d:	382282        	l32i	a8, a2, 224
  160:	08a7a2        	movi	a10, 0x708
  163:	b2ba80        	mulsh	a11, a10, a8
- 166:	0000c1        	l32r	a12, fffc0168 <engine+0xfffbf96c>
+ 166:	0000c1        	l32r	a12, fffc0168 <engine+0xfffbef38>
  169:	82aa80        	mull	a10, a10, a8
  16c:	0d0c      	movi.n	a13, 0
- 16e:	000081        	l32r	a8, fffc0170 <engine+0xfffbf974>
+ 16e:	000081        	l32r	a8, fffc0170 <engine+0xfffbef40>
  171:	0008e0        	callx8	a8
  174:	565a      	add.n	a5, a6, a5
  176:	02ca62        	addi	a6, a10, 2
@@ -5114,15 +5437,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  182:	166262        	s32i	a6, a2, 88
  185:	176232        	s32i	a3, a2, 92
  188:	1562a2        	s32i	a10, a2, 84
- 18b:	000081        	l32r	a8, fffc018c <engine+0xfffbf990>
+ 18b:	000081        	l32r	a8, fffc018c <engine+0xfffbef5c>
  18e:	0008e0        	callx8	a8
- 191:	000081        	l32r	a8, fffc0194 <engine+0xfffbf998>
+ 191:	000081        	l32r	a8, fffc0194 <engine+0xfffbef64>
  194:	3822a2        	l32i	a10, a2, 224
- 197:	0000c1        	l32r	a12, fffc0198 <engine+0xfffbf99c>
+ 197:	0000c1        	l32r	a12, fffc0198 <engine+0xfffbef68>
  19a:	b2ba80        	mulsh	a11, a10, a8
  19d:	82aa80        	mull	a10, a10, a8
  1a0:	0d0c      	movi.n	a13, 0
- 1a2:	000081        	l32r	a8, fffc01a4 <engine+0xfffbf9a8>
+ 1a2:	000081        	l32r	a8, fffc01a4 <engine+0xfffbef74>
  1a5:	0008e0        	callx8	a8
  1a8:	565a      	add.n	a5, a6, a5
  1aa:	02ca62        	addi	a6, a10, 2
@@ -5132,15 +5455,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  1b6:	196262        	s32i	a6, a2, 100
  1b9:	1a6232        	s32i	a3, a2, 104
  1bc:	1862a2        	s32i	a10, a2, 96
- 1bf:	000081        	l32r	a8, fffc01c0 <engine+0xfffbf9c4>
+ 1bf:	000081        	l32r	a8, fffc01c0 <engine+0xfffbef90>
  1c2:	0008e0        	callx8	a8
  1c5:	382282        	l32i	a8, a2, 224
  1c8:	aca3a2        	movi	a10, 0x3ac
  1cb:	b2ba80        	mulsh	a11, a10, a8
- 1ce:	0000c1        	l32r	a12, fffc01d0 <engine+0xfffbf9d4>
+ 1ce:	0000c1        	l32r	a12, fffc01d0 <engine+0xfffbefa0>
  1d1:	82aa80        	mull	a10, a10, a8
  1d4:	0d0c      	movi.n	a13, 0
- 1d6:	000081        	l32r	a8, fffc01d8 <engine+0xfffbf9dc>
+ 1d6:	000081        	l32r	a8, fffc01d8 <engine+0xfffbefa8>
  1d9:	0008e0        	callx8	a8
  1dc:	565a      	add.n	a5, a6, a5
  1de:	02ca62        	addi	a6, a10, 2
@@ -5150,15 +5473,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  1ea:	1c6262        	s32i	a6, a2, 112
  1ed:	1d6232        	s32i	a3, a2, 116
  1f0:	1b62a2        	s32i	a10, a2, 108
- 1f3:	000081        	l32r	a8, fffc01f4 <engine+0xfffbf9f8>
+ 1f3:	000081        	l32r	a8, fffc01f4 <engine+0xfffbefc4>
  1f6:	0008e0        	callx8	a8
- 1f9:	000081        	l32r	a8, fffc01fc <engine+0xfffbfa00>
+ 1f9:	000081        	l32r	a8, fffc01fc <engine+0xfffbefcc>
  1fc:	3822a2        	l32i	a10, a2, 224
- 1ff:	0000c1        	l32r	a12, fffc0200 <engine+0xfffbfa04>
+ 1ff:	0000c1        	l32r	a12, fffc0200 <engine+0xfffbefd0>
  202:	b2ba80        	mulsh	a11, a10, a8
  205:	82aa80        	mull	a10, a10, a8
  208:	0d0c      	movi.n	a13, 0
- 20a:	000081        	l32r	a8, fffc020c <engine+0xfffbfa10>
+ 20a:	000081        	l32r	a8, fffc020c <engine+0xfffbefdc>
  20d:	0008e0        	callx8	a8
  210:	565a      	add.n	a5, a6, a5
  212:	02ca62        	addi	a6, a10, 2
@@ -5168,15 +5491,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  21e:	1f6262        	s32i	a6, a2, 124
  221:	206232        	s32i	a3, a2, 128
  224:	1e62a2        	s32i	a10, a2, 120
- 227:	000081        	l32r	a8, fffc0228 <engine+0xfffbfa2c>
+ 227:	000081        	l32r	a8, fffc0228 <engine+0xfffbeff8>
  22a:	0008e0        	callx8	a8
- 22d:	000081        	l32r	a8, fffc0230 <engine+0xfffbfa34>
+ 22d:	000081        	l32r	a8, fffc0230 <engine+0xfffbf000>
  230:	3822a2        	l32i	a10, a2, 224
- 233:	0000c1        	l32r	a12, fffc0234 <engine+0xfffbfa38>
+ 233:	0000c1        	l32r	a12, fffc0234 <engine+0xfffbf004>
  236:	b2ba80        	mulsh	a11, a10, a8
  239:	82aa80        	mull	a10, a10, a8
  23c:	0d0c      	movi.n	a13, 0
- 23e:	000081        	l32r	a8, fffc0240 <engine+0xfffbfa44>
+ 23e:	000081        	l32r	a8, fffc0240 <engine+0xfffbf010>
  241:	0008e0        	callx8	a8
  244:	565a      	add.n	a5, a6, a5
  246:	02ca62        	addi	a6, a10, 2
@@ -5186,15 +5509,15 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  252:	226262        	s32i	a6, a2, 136
  255:	236232        	s32i	a3, a2, 140
  258:	2162a2        	s32i	a10, a2, 132
- 25b:	000081        	l32r	a8, fffc025c <engine+0xfffbfa60>
+ 25b:	000081        	l32r	a8, fffc025c <engine+0xfffbf02c>
  25e:	0008e0        	callx8	a8
- 261:	000081        	l32r	a8, fffc0264 <engine+0xfffbfa68>
+ 261:	000081        	l32r	a8, fffc0264 <engine+0xfffbf034>
  264:	3822a2        	l32i	a10, a2, 224
- 267:	0000c1        	l32r	a12, fffc0268 <engine+0xfffbfa6c>
+ 267:	0000c1        	l32r	a12, fffc0268 <engine+0xfffbf038>
  26a:	b2ba80        	mulsh	a11, a10, a8
  26d:	82aa80        	mull	a10, a10, a8
  270:	0d0c      	movi.n	a13, 0
- 272:	000081        	l32r	a8, fffc0274 <engine+0xfffbfa78>
+ 272:	000081        	l32r	a8, fffc0274 <engine+0xfffbf044>
  275:	0008e0        	callx8	a8
  278:	665a      	add.n	a6, a6, a5
  27a:	5a2b      	addi.n	a5, a10, 2
@@ -5204,172 +5527,172 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  285:	256252        	s32i	a5, a2, 148
  288:	266232        	s32i	a3, a2, 152
  28b:	2462a2        	s32i	a10, a2, 144
- 28e:	000081        	l32r	a8, fffc0290 <engine+0xfffbfa94>
+ 28e:	000081        	l32r	a8, fffc0290 <engine+0xfffbf060>
  291:	0008e0        	callx8	a8
  294:	382232        	l32i	a3, a2, 224
  297:	0aa1a2        	movi	a10, 0x10a
- 29a:	0000c1        	l32r	a12, fffc029c <engine+0xfffbfaa0>
+ 29a:	0000c1        	l32r	a12, fffc029c <engine+0xfffbf06c>
  29d:	b2b3a0        	mulsh	a11, a3, a10
  2a0:	556a      	add.n	a5, a5, a6
  2a2:	82a3a0        	mull	a10, a3, a10
  2a5:	0d0c      	movi.n	a13, 0
  2a7:	486252        	s32i	a5, a2, 0x120
- 2aa:	000081        	l32r	a8, fffc02ac <engine+0xfffbfab0>
+ 2aa:	000081        	l32r	a8, fffc02ac <engine+0xfffbf07c>
  2ad:	0008e0        	callx8	a8
  2b0:	0a8d      	mov.n	a8, a10
- 2b2:	0000a1        	l32r	a10, fffc02b4 <engine+0xfffbfab8>
- 2b5:	0000c1        	l32r	a12, fffc02b8 <engine+0xfffbfabc>
+ 2b2:	0000a1        	l32r	a10, fffc02b4 <engine+0xfffbf084>
+ 2b5:	0000c1        	l32r	a12, fffc02b8 <engine+0xfffbf088>
  2b8:	b2b3a0        	mulsh	a11, a3, a10
  2bb:	82a3a0        	mull	a10, a3, a10
  2be:	0d0c      	movi.n	a13, 0
  2c0:	416282        	s32i	a8, a2, 0x104
- 2c3:	000081        	l32r	a8, fffc02c4 <engine+0xfffbfac8>
+ 2c3:	000081        	l32r	a8, fffc02c4 <engine+0xfffbf094>
  2c6:	0008e0        	callx8	a8
  2c9:	0a8d      	mov.n	a8, a10
- 2cb:	0000a1        	l32r	a10, fffc02cc <engine+0xfffbfad0>
- 2ce:	0000c1        	l32r	a12, fffc02d0 <engine+0xfffbfad4>
+ 2cb:	0000a1        	l32r	a10, fffc02cc <engine+0xfffbf09c>
+ 2ce:	0000c1        	l32r	a12, fffc02d0 <engine+0xfffbf0a0>
  2d1:	b2b3a0        	mulsh	a11, a3, a10
  2d4:	82a3a0        	mull	a10, a3, a10
  2d7:	0d0c      	movi.n	a13, 0
  2d9:	426282        	s32i	a8, a2, 0x108
- 2dc:	000081        	l32r	a8, fffc02dc <engine+0xfffbfae0>
+ 2dc:	000081        	l32r	a8, fffc02dc <engine+0xfffbf0ac>
  2df:	0008e0        	callx8	a8
  2e2:	0a8d      	mov.n	a8, a10
  2e4:	79a7a2        	movi	a10, 0x779
- 2e7:	0000c1        	l32r	a12, fffc02e8 <engine+0xfffbfaec>
+ 2e7:	0000c1        	l32r	a12, fffc02e8 <engine+0xfffbf0b8>
  2ea:	b2b3a0        	mulsh	a11, a3, a10
  2ed:	82a3a0        	mull	a10, a3, a10
  2f0:	00a0d2        	movi	a13, 0
  2f3:	436282        	s32i	a8, a2, 0x10c
- 2f6:	000081        	l32r	a8, fffc02f8 <engine+0xfffbfafc>
+ 2f6:	000081        	l32r	a8, fffc02f8 <engine+0xfffbf0c8>
  2f9:	0008e0        	callx8	a8
  2fc:	0a8d      	mov.n	a8, a10
  2fe:	4fa1a2        	movi	a10, 0x14f
- 301:	0000c1        	l32r	a12, fffc0304 <engine+0xfffbfb08>
+ 301:	0000c1        	l32r	a12, fffc0304 <engine+0xfffbf0d4>
  304:	b2b3a0        	mulsh	a11, a3, a10
  307:	82a3a0        	mull	a10, a3, a10
  30a:	0d0c      	movi.n	a13, 0
  30c:	466282        	s32i	a8, a2, 0x118
- 30f:	000081        	l32r	a8, fffc0310 <engine+0xfffbfb14>
+ 30f:	000081        	l32r	a8, fffc0310 <engine+0xfffbf0e0>
  312:	0008e0        	callx8	a8
  315:	0a8d      	mov.n	a8, a10
  317:	cca7a2        	movi	a10, 0x7cc
- 31a:	0000c1        	l32r	a12, fffc031c <engine+0xfffbfb20>
+ 31a:	0000c1        	l32r	a12, fffc031c <engine+0xfffbf0ec>
  31d:	b2b3a0        	mulsh	a11, a3, a10
  320:	82a3a0        	mull	a10, a3, a10
  323:	0d0c      	movi.n	a13, 0
  325:	476282        	s32i	a8, a2, 0x11c
- 328:	000081        	l32r	a8, fffc0328 <engine+0xfffbfb2c>
+ 328:	000081        	l32r	a8, fffc0328 <engine+0xfffbf0f8>
  32b:	0008e0        	callx8	a8
  32e:	0a8d      	mov.n	a8, a10
  330:	79a0a2        	movi	a10, 121
- 333:	0000c1        	l32r	a12, fffc0334 <engine+0xfffbfb38>
+ 333:	0000c1        	l32r	a12, fffc0334 <engine+0xfffbf104>
  336:	b2b3a0        	mulsh	a11, a3, a10
  339:	82a3a0        	mull	a10, a3, a10
  33c:	00a0d2        	movi	a13, 0
  33f:	446282        	s32i	a8, a2, 0x110
- 342:	000081        	l32r	a8, fffc0344 <engine+0xfffbfb48>
+ 342:	000081        	l32r	a8, fffc0344 <engine+0xfffbf114>
  345:	0008e0        	callx8	a8
  348:	0a8d      	mov.n	a8, a10
  34a:	c6a7a2        	movi	a10, 0x7c6
- 34d:	0000c1        	l32r	a12, fffc0350 <engine+0xfffbfb54>
+ 34d:	0000c1        	l32r	a12, fffc0350 <engine+0xfffbf120>
  350:	b2b3a0        	mulsh	a11, a3, a10
  353:	82a3a0        	mull	a10, a3, a10
  356:	0d0c      	movi.n	a13, 0
  358:	456282        	s32i	a8, a2, 0x114
- 35b:	000081        	l32r	a8, fffc035c <engine+0xfffbfb60>
+ 35b:	000081        	l32r	a8, fffc035c <engine+0xfffbf12c>
  35e:	0008e0        	callx8	a8
  361:	0a8d      	mov.n	a8, a10
  363:	61a1a2        	movi	a10, 0x161
- 366:	0000c1        	l32r	a12, fffc0368 <engine+0xfffbfb6c>
+ 366:	0000c1        	l32r	a12, fffc0368 <engine+0xfffbf138>
  369:	b2b3a0        	mulsh	a11, a3, a10
  36c:	82a3a0        	mull	a10, a3, a10
  36f:	0d0c      	movi.n	a13, 0
  371:	3a6282        	s32i	a8, a2, 232
- 374:	000081        	l32r	a8, fffc0374 <engine+0xfffbfb78>
+ 374:	000081        	l32r	a8, fffc0374 <engine+0xfffbf144>
  377:	0008e0        	callx8	a8
  37a:	0a8d      	mov.n	a8, a10
- 37c:	0000a1        	l32r	a10, fffc037c <engine+0xfffbfb80>
- 37f:	0000c1        	l32r	a12, fffc0380 <engine+0xfffbfb84>
+ 37c:	0000a1        	l32r	a10, fffc037c <engine+0xfffbf14c>
+ 37f:	0000c1        	l32r	a12, fffc0380 <engine+0xfffbf150>
  382:	b2b3a0        	mulsh	a11, a3, a10
  385:	82a3a0        	mull	a10, a3, a10
  388:	00a0d2        	movi	a13, 0
  38b:	3b6282        	s32i	a8, a2, 236
- 38e:	000081        	l32r	a8, fffc0390 <engine+0xfffbfb94>
+ 38e:	000081        	l32r	a8, fffc0390 <engine+0xfffbf160>
  391:	0008e0        	callx8	a8
  394:	0a8d      	mov.n	a8, a10
  396:	bba0a2        	movi	a10, 187
- 399:	0000c1        	l32r	a12, fffc039c <engine+0xfffbfba0>
+ 399:	0000c1        	l32r	a12, fffc039c <engine+0xfffbf16c>
  39c:	b2b3a0        	mulsh	a11, a3, a10
  39f:	82a3a0        	mull	a10, a3, a10
  3a2:	0d0c      	movi.n	a13, 0
  3a4:	3c6282        	s32i	a8, a2, 240
- 3a7:	000081        	l32r	a8, fffc03a8 <engine+0xfffbfbac>
+ 3a7:	000081        	l32r	a8, fffc03a8 <engine+0xfffbf178>
  3aa:	0008e0        	callx8	a8
  3ad:	0a8d      	mov.n	a8, a10
  3af:	cca4a2        	movi	a10, 0x4cc
- 3b2:	0000c1        	l32r	a12, fffc03b4 <engine+0xfffbfbb8>
+ 3b2:	0000c1        	l32r	a12, fffc03b4 <engine+0xfffbf184>
  3b5:	b2b3a0        	mulsh	a11, a3, a10
  3b8:	82a3a0        	mull	a10, a3, a10
  3bb:	0d0c      	movi.n	a13, 0
  3bd:	3f6282        	s32i	a8, a2, 252
- 3c0:	000081        	l32r	a8, fffc03c0 <engine+0xfffbfbc4>
+ 3c0:	000081        	l32r	a8, fffc03c0 <engine+0xfffbf190>
  3c3:	0008e0        	callx8	a8
  3c6:	0a8d      	mov.n	a8, a10
  3c8:	2aa4a2        	movi	a10, 0x42a
- 3cb:	0000c1        	l32r	a12, fffc03cc <engine+0xfffbfbd0>
+ 3cb:	0000c1        	l32r	a12, fffc03cc <engine+0xfffbf19c>
  3ce:	b2b3a0        	mulsh	a11, a3, a10
  3d1:	82a3a0        	mull	a10, a3, a10
  3d4:	00a0d2        	movi	a13, 0
  3d7:	406282        	s32i	a8, a2, 0x100
- 3da:	000081        	l32r	a8, fffc03dc <engine+0xfffbfbe0>
+ 3da:	000081        	l32r	a8, fffc03dc <engine+0xfffbf1ac>
  3dd:	0008e0        	callx8	a8
  3e0:	0a8d      	mov.n	a8, a10
- 3e2:	0000a1        	l32r	a10, fffc03e4 <engine+0xfffbfbe8>
- 3e5:	0000c1        	l32r	a12, fffc03e8 <engine+0xfffbfbec>
+ 3e2:	0000a1        	l32r	a10, fffc03e4 <engine+0xfffbf1b4>
+ 3e5:	0000c1        	l32r	a12, fffc03e8 <engine+0xfffbf1b8>
  3e8:	b2b3a0        	mulsh	a11, a3, a10
  3eb:	82a3a0        	mull	a10, a3, a10
  3ee:	0d0c      	movi.n	a13, 0
  3f0:	3d6282        	s32i	a8, a2, 244
- 3f3:	000081        	l32r	a8, fffc03f4 <engine+0xfffbfbf8>
+ 3f3:	000081        	l32r	a8, fffc03f4 <engine+0xfffbf1c4>
  3f6:	0008e0        	callx8	a8
  3f9:	208aa0        	or	a8, a10, a10
  3fc:	a0a2a2        	movi	a10, 0x2a0
  3ff:	b2b3a0        	mulsh	a11, a3, a10
- 402:	0000c1        	l32r	a12, fffc0404 <engine+0xfffbfc08>
+ 402:	0000c1        	l32r	a12, fffc0404 <engine+0xfffbf1d4>
  405:	82a3a0        	mull	a10, a3, a10
  408:	00a0d2        	movi	a13, 0
  40b:	3e6282        	s32i	a8, a2, 248
- 40e:	000081        	l32r	a8, fffc0410 <engine+0xfffbfc14>
+ 40e:	000081        	l32r	a8, fffc0410 <engine+0xfffbf1e0>
  411:	0008e0        	callx8	a8
  414:	8ca382        	movi	a8, 0x38c
  417:	ca0a00        	float.s	f0, a10, 0
  41a:	b2b380        	mulsh	a11, a3, a8
  41d:	82a380        	mull	a10, a3, a8
- 420:	0000c1        	l32r	a12, fffc0420 <engine+0xfffbfc24>
+ 420:	0000c1        	l32r	a12, fffc0420 <engine+0xfffbf1f0>
  423:	0d0c      	movi.n	a13, 0
  425:	324203        	ssi	f0, a2, 200
- 428:	000081        	l32r	a8, fffc0428 <engine+0xfffbfc2c>
+ 428:	000081        	l32r	a8, fffc0428 <engine+0xfffbf1f8>
  42b:	0008e0        	callx8	a8
  42e:	ca0a00        	float.s	f0, a10, 0
- 431:	0000c1        	l32r	a12, fffc0434 <engine+0xfffbfc38>
+ 431:	0000c1        	l32r	a12, fffc0434 <engine+0xfffbf204>
  434:	31bf30        	srai	a11, a3, 31
  437:	00a0d2        	movi	a13, 0
  43a:	334203        	ssi	f0, a2, 204
  43d:	11a3c0        	slli	a10, a3, 4
  440:	404c10        	ssai	28
  443:	81bb30        	src	a11, a11, a3
- 446:	000081        	l32r	a8, fffc0448 <engine+0xfffbfc4c>
+ 446:	000081        	l32r	a8, fffc0448 <engine+0xfffbf218>
  449:	0008e0        	callx8	a8
  44c:	ca0300        	float.s	f0, a3, 0
  44f:	ca1a00        	float.s	f1, a10, 0
- 452:	0000a1        	l32r	a10, fffc0454 <engine+0xfffbfc58>
+ 452:	0000a1        	l32r	a10, fffc0454 <engine+0xfffbf224>
  455:	fab040        	rfr	a11, f0
  458:	004103        	ssi	f0, a1, 0
  45b:	314213        	ssi	f1, a2, 196
- 45e:	000081        	l32r	a8, fffc0460 <engine+0xfffbfc64>
+ 45e:	000081        	l32r	a8, fffc0460 <engine+0xfffbf230>
  461:	0008e0        	callx8	a8
- 464:	000091        	l32r	a9, fffc0464 <engine+0xfffbfc68>
+ 464:	000091        	l32r	a9, fffc0464 <engine+0xfffbf234>
  467:	080c      	movi.n	a8, 0
  469:	000103        	lsi	f0, a1, 0
  46c:	fa2950        	wfr	f2, a9
@@ -5383,13 +5706,13 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4initEi:
  484:	286282        	s32i	a8, a2, 160
  487:	276282        	s32i	a8, a2, 156
  48a:	2f6282        	s32i	a8, a2, 188
- 48d:	000081        	l32r	a8, fffc0490 <engine+0xfffbfc94>
+ 48d:	000081        	l32r	a8, fffc0490 <engine+0xfffbf260>
  490:	2a0020        	mul.s	f0, f0, f2
  493:	2c6282        	s32i	a8, a2, 176
- 496:	000081        	l32r	a8, fffc0498 <engine+0xfffbfc9c>
+ 496:	000081        	l32r	a8, fffc0498 <engine+0xfffbf268>
  499:	3062a2        	s32i	a10, a2, 192
  49c:	2d6282        	s32i	a8, a2, 180
- 49f:	000081        	l32r	a8, fffc04a0 <engine+0xfffbfca4>
+ 49f:	000081        	l32r	a8, fffc04a0 <engine+0xfffbf270>
  4a2:	9a9000        	trunc.s	a9, f0, 0
  4a5:	2e6282        	s32i	a8, a2, 184
  4a8:	0a19a6        	blti	a9, 1, 4b6 <cs80v2::Plate<short, 1>::init(int)+0x4b6>
@@ -5407,7 +5730,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
 00000000 <cs80v2::Plate<float, 2>::step(float, float, float, float&, float&)>:
    0:	00c136        	entry	a1, 96
    3:	360203        	lsi	f0, a2, 216
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
    9:	370213        	lsi	f1, a2, 220
    c:	fa2850        	wfr	f2, a8
    f:	fa0060        	neg.s	f0, f0
@@ -5437,7 +5760,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
   50:	1a1100        	sub.s	f1, f1, f0
   53:	5298      	l32i.n	a9, a2, 20
   55:	32c8      	l32i.n	a12, a2, 12
-  57:	0000a1        	l32r	a10, fffc0058 <engine+0xfffbf85c>
+  57:	0000a1        	l32r	a10, fffc0058 <engine+0xfffbee28>
   5a:	4a0210        	madd.s	f0, f2, f1
   5d:	a0c9c0        	addx4	a12, a9, a12
   60:	fa6a50        	wfr	f6, a10
@@ -5465,7 +5788,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
   99:	a0d9d0        	addx4	a13, a9, a13
   9c:	004b33        	ssi	f3, a11, 0
   9f:	82a9      	s32i.n	a10, a2, 32
-  a1:	0000a1        	l32r	a10, fffc00a4 <engine+0xfffbf8a8>
+  a1:	0000a1        	l32r	a10, fffc00a4 <engine+0xfffbee74>
   a4:	a179      	s32i.n	a7, a1, 40
   a6:	000d23        	lsi	f2, a13, 0
   a9:	fa5a50        	wfr	f5, a10
@@ -5514,7 +5837,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
  11c:	1a4470        	sub.s	f4, f4, f7
  11f:	1a2300        	sub.s	f2, f3, f0
  122:	2b0233        	lsi	f3, a2, 172
- 125:	000091        	l32r	a9, fffc0128 <engine+0xfffbf92c>
+ 125:	000091        	l32r	a9, fffc0128 <engine+0xfffbeef8>
  128:	0a3130        	add.s	f3, f1, f3
  12b:	4a0420        	madd.s	f0, f4, f2
  12e:	fa5950        	wfr	f5, a9
@@ -5531,7 +5854,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
  14e:	1162b2        	s32i	a11, a2, 68
  151:	000a23        	lsi	f2, a10, 0
  154:	004a03        	ssi	f0, a10, 0
- 157:	0000a1        	l32r	a10, fffc0158 <engine+0xfffbf95c>
+ 157:	0000a1        	l32r	a10, fffc0158 <engine+0xfffbef28>
  15a:	280203        	lsi	f0, a2, 160
  15d:	2d0233        	lsi	f3, a2, 180
  160:	fa7a50        	wfr	f7, a10
@@ -5548,7 +5871,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
  17f:	51d9      	s32i.n	a13, a1, 20
  181:	146292        	s32i	a9, a2, 80
  184:	284203        	ssi	f0, a2, 160
- 187:	0000e1        	l32r	a14, fffc0188 <engine+0xfffbf98c>
+ 187:	0000e1        	l32r	a14, fffc0188 <engine+0xfffbef58>
  18a:	71c9      	s32i.n	a12, a1, 28
  18c:	a0cbc0        	addx4	a12, a11, a12
  18f:	000c43        	lsi	f4, a12, 0
@@ -5728,7 +6051,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE4stepEfffRfS2_:
  36d:	3b22b2        	l32i	a11, a2, 236
  370:	3c22a2        	l32i	a10, a2, 240
  373:	1a0020        	sub.s	f0, f0, f2
- 376:	000051        	l32r	a5, fffc0378 <engine+0xfffbfb7c>
+ 376:	000051        	l32r	a5, fffc0378 <engine+0xfffbf148>
  379:	c0b9b0        	sub	a11, a9, a11
  37c:	c099a0        	sub	a9, a9, a10
  37f:	61a8      	l32i.n	a10, a1, 24
@@ -5800,31 +6123,31 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE7processEPKfPfS4_f:
 
 00000000 <cs80v2::Plate<float, 2>::process(float const*, float*, float*, float)>:
    0:	00a136        	entry	a1, 80
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	2f0283        	lsi	f8, a2, 188
    9:	fa7850        	wfr	f7, a8
-   c:	000081        	l32r	a8, fffc000c <engine+0xfffbf810>
+   c:	000081        	l32r	a8, fffc000c <engine+0xfffbeddc>
    f:	300203        	lsi	f0, a2, 192
   12:	fa1850        	wfr	f1, a8
   15:	4a8010        	madd.s	f8, f0, f1
-  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
+  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
   1b:	310293        	lsi	f9, a2, 196
   1e:	fa1850        	wfr	f1, a8
   21:	1a0870        	sub.s	f0, f8, f7
   24:	6b0780        	ole.s	b0, f7, f8
-  27:	000081        	l32r	a8, fffc0028 <engine+0xfffbf82c>
+  27:	000081        	l32r	a8, fffc0028 <engine+0xfffbedf8>
   2a:	320233        	lsi	f3, a2, 200
   2d:	db8000        	movt.s	f8, f0, b0
   30:	fa0700        	mov.s	f0, f7
   33:	5a0810        	msub.s	f0, f8, f1
   36:	fa1850        	wfr	f1, a8
-  39:	000081        	l32r	a8, fffc003c <engine+0xfffbf840>
+  39:	000081        	l32r	a8, fffc003c <engine+0xfffbee0c>
   3c:	2f4283        	ssi	f8, a2, 188
   3f:	fa4010        	abs.s	f4, f0
   42:	1a4740        	sub.s	f4, f7, f4
   45:	2a0010        	mul.s	f0, f0, f1
   48:	fa1850        	wfr	f1, a8
-  4b:	000081        	l32r	a8, fffc004c <engine+0xfffbf850>
+  4b:	000081        	l32r	a8, fffc004c <engine+0xfffbee1c>
   4e:	330223        	lsi	f2, a2, 204
   51:	2a4400        	mul.s	f4, f4, f0
   54:	fa0850        	wfr	f0, a8
@@ -5846,7 +6169,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE7processEPKfPfS4_f:
   83:	094123        	ssi	f2, a1, 36
   86:	010333        	lsi	f3, a3, 4
   89:	000323        	lsi	f2, a3, 0
-  8c:	000081        	l32r	a8, fffc008c <engine+0xfffbf890>
+  8c:	000081        	l32r	a8, fffc008c <engine+0xfffbee5c>
   8f:	0a2230        	add.s	f2, f2, f3
   92:	064103        	ssi	f0, a1, 24
   95:	fa0850        	wfr	f0, a8
@@ -5860,7 +6183,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi2EE7processEPKfPfS4_f:
   a9:	074153        	ssi	f5, a1, 28
   ac:	054113        	ssi	f1, a1, 20
   af:	044163        	ssi	f6, a1, 16
-  b2:	000081        	l32r	a8, fffc00b4 <engine+0xfffbf8b8>
+  b2:	000081        	l32r	a8, fffc00b4 <engine+0xfffbee84>
   b5:	0008e0        	callx8	a8
   b8:	050113        	lsi	f1, a1, 20
   bb:	000423        	lsi	f2, a4, 0
@@ -5897,7 +6220,7 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
 00000000 <cs80v2::Engine::post(float*, float*, float*, float*)>:
    0:	044136        	entry	a1, 0x220
    3:	f8a072        	movi	a7, 248
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
    9:	727a      	add.n	a7, a2, a7
    b:	030703        	lsi	f0, a7, 12
    e:	fa2850        	wfr	f2, a8
@@ -5910,7 +6233,7 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
   20:	01d1e2        	addmi	a14, a1, 0x100
   23:	04dd      	mov.n	a13, a4
   25:	02ad      	mov.n	a10, a2
-  27:	000081        	l32r	a8, fffc0028 <engine+0xfffbf82c>
+  27:	000081        	l32r	a8, fffc0028 <engine+0xfffbedf8>
   2a:	0008e0        	callx8	a8
   2d:	1a0703        	lsi	f0, a7, 104
   30:	080c      	movi.n	a8, 0
@@ -5920,19 +6243,19 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
   3b:	01d1c2        	addmi	a12, a1, 0x100
   3e:	04bd      	mov.n	a11, a4
   40:	20a220        	or	a10, a2, a2
-  43:	000081        	l32r	a8, fffc0044 <engine+0xfffbf848>
+  43:	000081        	l32r	a8, fffc0044 <engine+0xfffbee14>
   46:	0008e0        	callx8	a8
-  49:	0000a1        	l32r	a10, fffc004c <engine+0xfffbf850>
+  49:	0000a1        	l32r	a10, fffc004c <engine+0xfffbee1c>
   4c:	80a182        	movi	a8, 0x180
   4f:	b18a      	add.n	a11, a1, a8
   51:	06ed      	mov.n	a14, a6
   53:	05dd      	mov.n	a13, a5
   55:	01d1c2        	addmi	a12, a1, 0x100
   58:	80a2a0        	add	a10, a2, a10
-  5b:	000081        	l32r	a8, fffc005c <engine+0xfffbf860>
+  5b:	000081        	l32r	a8, fffc005c <engine+0xfffbee2c>
   5e:	0008e0        	callx8	a8
   61:	01d232        	addmi	a3, a2, 0x100
-  64:	000091        	l32r	a9, fffc0064 <engine+0xfffbf868>
+  64:	000091        	l32r	a9, fffc0064 <engine+0xfffbee34>
   67:	980382        	l8ui	a8, a3, 152
   6a:	fa2950        	wfr	f2, a9
   6d:	6c2866        	bnei	a8, 2, dd <cs80v2::Engine::post(float*, float*, float*, float*)+0xdd>
@@ -5954,9 +6277,9 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
   92:	01cd      	mov.n	a12, a1
   94:	20b440        	or	a11, a4, a4
   97:	20a220        	or	a10, a2, a2
-  9a:	000081        	l32r	a8, fffc009c <engine+0xfffbf8a0>
+  9a:	000081        	l32r	a8, fffc009c <engine+0xfffbee6c>
   9d:	0008e0        	callx8	a8
-  a0:	0000d1        	l32r	a13, fffc00a0 <engine+0xfffbf8a4>
+  a0:	0000d1        	l32r	a13, fffc00a0 <engine+0xfffbee70>
   a3:	290313        	lsi	f1, a3, 164
   a6:	059d      	mov.n	a9, a5
   a8:	04ad      	mov.n	a10, a4
@@ -5986,23 +6309,23 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
   e5:	07cd      	mov.n	a12, a7
   e7:	05bd      	mov.n	a11, a5
   e9:	04ad      	mov.n	a10, a4
-  eb:	000081        	l32r	a8, fffc00ec <engine+0xfffbf8f0>
+  eb:	000081        	l32r	a8, fffc00ec <engine+0xfffbeebc>
   ee:	0008e0        	callx8	a8
   f1:	07cd      	mov.n	a12, a7
   f3:	06bd      	mov.n	a11, a6
   f5:	01ad      	mov.n	a10, a1
-  f7:	000081        	l32r	a8, fffc00f8 <engine+0xfffbf8fc>
+  f7:	000081        	l32r	a8, fffc00f8 <engine+0xfffbeec8>
   fa:	0008e0        	callx8	a8
-  fd:	0000a1        	l32r	a10, fffc0100 <engine+0xfffbf904>
+  fd:	0000a1        	l32r	a10, fffc0100 <engine+0xfffbeed0>
  100:	2923f2        	l32i	a15, a3, 164
  103:	06ed      	mov.n	a14, a6
  105:	05dd      	mov.n	a13, a5
  107:	01cd      	mov.n	a12, a1
  109:	20b440        	or	a11, a4, a4
  10c:	80a2a0        	add	a10, a2, a10
- 10f:	000081        	l32r	a8, fffc0110 <engine+0xfffbf914>
+ 10f:	000081        	l32r	a8, fffc0110 <engine+0xfffbeee0>
  112:	0008e0        	callx8	a8
- 115:	000081        	l32r	a8, fffc0118 <engine+0xfffbf91c>
+ 115:	000081        	l32r	a8, fffc0118 <engine+0xfffbeee8>
  118:	fa2850        	wfr	f2, a8
  11b:	2e0333        	lsi	f3, a3, 184
  11e:	080c      	movi.n	a8, 0
@@ -6022,19 +6345,19 @@ Disassembly of section .text._ZN6cs80v26Engine4postEPfS1_S1_S1_:
  141:	2a0020        	mul.s	f0, f0, f2
  144:	004903        	ssi	f0, a9, 0
  147:	994b      	addi.n	a9, a9, 4
- 149:	0000a1        	l32r	a10, fffc014c <engine+0xfffbf950>
+ 149:	0000a1        	l32r	a10, fffc014c <engine+0xfffbef1c>
  14c:	fae340        	rfr	a14, f3
  14f:	06dd      	mov.n	a13, a6
  151:	05cd      	mov.n	a12, a5
  153:	01bd      	mov.n	a11, a1
  155:	a2aa      	add.n	a10, a2, a10
- 157:	000081        	l32r	a8, fffc0158 <engine+0xfffbf95c>
+ 157:	000081        	l32r	a8, fffc0158 <engine+0xfffbef28>
  15a:	0008e0        	callx8	a8
- 15d:	0000a1        	l32r	a10, fffc0160 <engine+0xfffbf964>
+ 15d:	0000a1        	l32r	a10, fffc0160 <engine+0xfffbef30>
  160:	06cd      	mov.n	a12, a6
  162:	05bd      	mov.n	a11, a5
  164:	a2aa      	add.n	a10, a2, a10
- 166:	000081        	l32r	a8, fffc0168 <engine+0xfffbf96c>
+ 166:	000081        	l32r	a8, fffc0168 <engine+0xfffbef38>
  169:	0008e0        	callx8	a8
  16c:	f01d      	retw.n
 
@@ -6043,25 +6366,25 @@ Disassembly of section .text._ZN6cs80v26Engine7processEPfS1_i:
 00000000 <cs80v2::Engine::process(float*, float*, int)>:
    0:	038136        	entry	a1, 0x1c0
    3:	0215e6        	bgei	a5, 1, 9 <cs80v2::Engine::process(float*, float*, int)+0x9>
-   6:	003d06        	j	fe <cs80v2::Engine::process(float*, float*, int)+0xfe>
+   6:	003c86        	j	fc <cs80v2::Engine::process(float*, float*, int)+0xfc>
    9:	096c      	movi.n	a9, -32
    b:	850b      	addi.n	a8, a5, -1
    d:	108890        	and	a8, a8, a9
-  10:	000091        	l32r	a9, fffc0010 <engine+0xfffbf814>
+  10:	000091        	l32r	a9, fffc0010 <engine+0xfffbede0>
   13:	20c882        	addi	a8, a8, 32
   16:	616132        	s32i	a3, a1, 0x184
   19:	626142        	s32i	a4, a1, 0x188
   1c:	636182        	s32i	a8, a1, 0x18c
   1f:	070c      	movi.n	a7, 0
-  21:	5fd262        	addmi	a6, a2, 0x5f00
+  21:	6ad262        	addmi	a6, a2, 0x6a00
   24:	329a      	add.n	a3, a2, a9
   26:	606122        	s32i	a2, a1, 0x180
   29:	602152        	l32i	a5, a1, 0x180
   2c:	05ad      	mov.n	a10, a5
-  2e:	000081        	l32r	a8, fffc0030 <engine+0xfffbf834>
+  2e:	000081        	l32r	a8, fffc0030 <engine+0xfffbee00>
   31:	0008e0        	callx8	a8
   34:	05ad      	mov.n	a10, a5
-  36:	000081        	l32r	a8, fffc0038 <engine+0xfffbf83c>
+  36:	000081        	l32r	a8, fffc0038 <engine+0xfffbee08>
   39:	0008e0        	callx8	a8
   3c:	01d192        	addmi	a9, a1, 0x100
   3f:	0a0c      	movi.n	a10, 0
@@ -6091,24 +6414,24 @@ Disassembly of section .text._ZN6cs80v26Engine7processEPfS1_i:
   78:	02bd      	mov.n	a11, a2
   7a:	20a770        	or	a10, a7, a7
   7d:	f8ac      	beqz.n	a8, b0 <cs80v2::Engine::process(float*, float*, int)+0xb0>
-  7f:	000081        	l32r	a8, fffc0080 <engine+0xfffbf884>
+  7f:	000081        	l32r	a8, fffc0080 <engine+0xfffbee50>
   82:	0008e0        	callx8	a8
   85:	07ad      	mov.n	a10, a7
   87:	01d1c2        	addmi	a12, a1, 0x100
   8a:	01bd      	mov.n	a11, a1
-  8c:	000081        	l32r	a8, fffc008c <engine+0xfffbf890>
+  8c:	000081        	l32r	a8, fffc008c <engine+0xfffbee5c>
   8f:	0008e0        	callx8	a8
   92:	725a      	add.n	a7, a2, a5
   94:	01cd      	mov.n	a12, a1
   96:	02bd      	mov.n	a11, a2
   98:	20a770        	or	a10, a7, a7
-  9b:	000081        	l32r	a8, fffc009c <engine+0xfffbf8a0>
+  9b:	000081        	l32r	a8, fffc009c <engine+0xfffbee6c>
   9e:	0008e0        	callx8	a8
   a1:	80a0c2        	movi	a12, 128
   a4:	cc1a      	add.n	a12, a12, a1
   a6:	01bd      	mov.n	a11, a1
   a8:	07ad      	mov.n	a10, a7
-  aa:	000081        	l32r	a8, fffc00ac <engine+0xfffbf8b0>
+  aa:	000081        	l32r	a8, fffc00ac <engine+0xfffbee7c>
   ad:	0008e0        	callx8	a8
   b0:	a4a182        	movi	a8, 0x1a4
   b3:	228a      	add.n	a2, a2, a8
@@ -6125,28 +6448,28 @@ Disassembly of section .text._ZN6cs80v26Engine7processEPfS1_i:
   cf:	642172        	l32i	a7, a1, 0x190
   d2:	063d      	mov.n	a3, a6
   d4:	086d      	mov.n	a6, a8
-  d6:	000081        	l32r	a8, fffc00d8 <engine+0xfffbf8dc>
+  d6:	000081        	l32r	a8, fffc00d8 <engine+0xfffbeea8>
   d9:	0008e0        	callx8	a8
-  dc:	3b2682        	l32i	a8, a6, 236
-  df:	20c772        	addi	a7, a7, 32
-  e2:	20c882        	addi	a8, a8, 32
-  e5:	3b6682        	s32i	a8, a6, 236
-  e8:	80a082        	movi	a8, 128
-  eb:	958a      	add.n	a9, a5, a8
-  ed:	848a      	add.n	a8, a4, a8
-  ef:	626182        	s32i	a8, a1, 0x188
-  f2:	632182        	l32i	a8, a1, 0x18c
-  f5:	616192        	s32i	a9, a1, 0x184
-  f8:	021787        	beq	a7, a8, fe <cs80v2::Engine::process(float*, float*, int)+0xfe>
-  fb:	ffca86        	j	29 <cs80v2::Engine::process(float*, float*, int)+0x29>
-  fe:	f01d      	retw.n
+  dc:	8688      	l32i.n	a8, a6, 32
+  de:	20c772        	addi	a7, a7, 32
+  e1:	20c882        	addi	a8, a8, 32
+  e4:	8689      	s32i.n	a8, a6, 32
+  e6:	80a082        	movi	a8, 128
+  e9:	958a      	add.n	a9, a5, a8
+  eb:	848a      	add.n	a8, a4, a8
+  ed:	626182        	s32i	a8, a1, 0x188
+  f0:	632182        	l32i	a8, a1, 0x18c
+  f3:	616192        	s32i	a9, a1, 0x184
+  f6:	021787        	beq	a7, a8, fc <cs80v2::Engine::process(float*, float*, int)+0xfc>
+  f9:	ffcb06        	j	29 <cs80v2::Engine::process(float*, float*, int)+0x29>
+  fc:	f01d      	retw.n
 
 Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
 
 00000000 <cs80v2::Plate<float, 1>::step(float, float, float, float&, float&)>:
    0:	00c136        	entry	a1, 96
    3:	360203        	lsi	f0, a2, 216
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
    9:	370213        	lsi	f1, a2, 220
    c:	fa2850        	wfr	f2, a8
    f:	fa0060        	neg.s	f0, f0
@@ -6176,7 +6499,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
   50:	1a1100        	sub.s	f1, f1, f0
   53:	5298      	l32i.n	a9, a2, 20
   55:	32c8      	l32i.n	a12, a2, 12
-  57:	0000a1        	l32r	a10, fffc0058 <engine+0xfffbf85c>
+  57:	0000a1        	l32r	a10, fffc0058 <engine+0xfffbee28>
   5a:	4a0210        	madd.s	f0, f2, f1
   5d:	a0c9c0        	addx4	a12, a9, a12
   60:	fa6a50        	wfr	f6, a10
@@ -6204,7 +6527,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
   99:	a0d9d0        	addx4	a13, a9, a13
   9c:	004b33        	ssi	f3, a11, 0
   9f:	82a9      	s32i.n	a10, a2, 32
-  a1:	0000a1        	l32r	a10, fffc00a4 <engine+0xfffbf8a8>
+  a1:	0000a1        	l32r	a10, fffc00a4 <engine+0xfffbee74>
   a4:	a179      	s32i.n	a7, a1, 40
   a6:	000d23        	lsi	f2, a13, 0
   a9:	fa5a50        	wfr	f5, a10
@@ -6253,7 +6576,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
  11c:	1a4470        	sub.s	f4, f4, f7
  11f:	1a2300        	sub.s	f2, f3, f0
  122:	2b0233        	lsi	f3, a2, 172
- 125:	000091        	l32r	a9, fffc0128 <engine+0xfffbf92c>
+ 125:	000091        	l32r	a9, fffc0128 <engine+0xfffbeef8>
  128:	0a3130        	add.s	f3, f1, f3
  12b:	4a0420        	madd.s	f0, f4, f2
  12e:	fa5950        	wfr	f5, a9
@@ -6270,7 +6593,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
  14e:	1162b2        	s32i	a11, a2, 68
  151:	000a23        	lsi	f2, a10, 0
  154:	004a03        	ssi	f0, a10, 0
- 157:	0000a1        	l32r	a10, fffc0158 <engine+0xfffbf95c>
+ 157:	0000a1        	l32r	a10, fffc0158 <engine+0xfffbef28>
  15a:	280203        	lsi	f0, a2, 160
  15d:	2d0233        	lsi	f3, a2, 180
  160:	fa7a50        	wfr	f7, a10
@@ -6287,7 +6610,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
  17f:	51d9      	s32i.n	a13, a1, 20
  181:	146292        	s32i	a9, a2, 80
  184:	284203        	ssi	f0, a2, 160
- 187:	0000e1        	l32r	a14, fffc0188 <engine+0xfffbf98c>
+ 187:	0000e1        	l32r	a14, fffc0188 <engine+0xfffbef58>
  18a:	71c9      	s32i.n	a12, a1, 28
  18c:	a0cbc0        	addx4	a12, a11, a12
  18f:	000c43        	lsi	f4, a12, 0
@@ -6467,7 +6790,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE4stepEfffRfS2_:
  36d:	3b22b2        	l32i	a11, a2, 236
  370:	3c22a2        	l32i	a10, a2, 240
  373:	1a0020        	sub.s	f0, f0, f2
- 376:	000051        	l32r	a5, fffc0378 <engine+0xfffbfb7c>
+ 376:	000051        	l32r	a5, fffc0378 <engine+0xfffbf148>
  379:	c0b9b0        	sub	a11, a9, a11
  37c:	c099a0        	sub	a9, a9, a10
  37f:	61a8      	l32i.n	a10, a1, 24
@@ -6539,14 +6862,14 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE7processEPKfPfS4_f:
 
 00000000 <cs80v2::Plate<float, 1>::process(float const*, float*, float*, float)>:
    0:	008136        	entry	a1, 64
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	2f0253        	lsi	f5, a2, 188
    9:	fa4850        	wfr	f4, a8
-   c:	000081        	l32r	a8, fffc000c <engine+0xfffbf810>
+   c:	000081        	l32r	a8, fffc000c <engine+0xfffbeddc>
    f:	300203        	lsi	f0, a2, 192
   12:	fa1850        	wfr	f1, a8
   15:	4a5010        	madd.s	f5, f0, f1
-  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
+  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
   1b:	fa1400        	mov.s	f1, f4
   1e:	310273        	lsi	f7, a2, 196
   21:	1a0540        	sub.s	f0, f5, f4
@@ -6555,13 +6878,13 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE7processEPKfPfS4_f:
   2a:	db5000        	movt.s	f5, f0, b0
   2d:	fa0850        	wfr	f0, a8
   30:	5a1500        	msub.s	f1, f5, f0
-  33:	000081        	l32r	a8, fffc0034 <engine+0xfffbf838>
+  33:	000081        	l32r	a8, fffc0034 <engine+0xfffbee04>
   36:	2f4253        	ssi	f5, a2, 188
   39:	fa6850        	wfr	f6, a8
   3c:	fa3110        	abs.s	f3, f1
   3f:	2a6160        	mul.s	f6, f1, f6
   42:	1a3430        	sub.s	f3, f4, f3
-  45:	000081        	l32r	a8, fffc0048 <engine+0xfffbf84c>
+  45:	000081        	l32r	a8, fffc0048 <engine+0xfffbee18>
   48:	330203        	lsi	f0, a2, 204
   4b:	fa1650        	wfr	f1, a6
   4e:	2a3360        	mul.s	f3, f3, f6
@@ -6585,7 +6908,7 @@ Disassembly of section .text._ZN6cs80v25PlateIfLi1EE7processEPKfPfS4_f:
   80:	e14b      	addi.n	a14, a1, 4
   82:	02ad      	mov.n	a10, a2
   84:	044113        	ssi	f1, a1, 16
-  87:	000081        	l32r	a8, fffc0088 <engine+0xfffbf88c>
+  87:	000081        	l32r	a8, fffc0088 <engine+0xfffbee58>
   8a:	0008e0        	callx8	a8
   8d:	000403        	lsi	f0, a4, 0
   90:	010123        	lsi	f2, a1, 4
@@ -6607,21 +6930,21 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
 00000000 <cs80v2::Plate<short, 1>::step(float, float, float, float&, float&)>:
    0:	00e136        	entry	a1, 112
    3:	360223        	lsi	f2, a2, 216
-   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbf80c>
+   6:	000081        	l32r	a8, fffc0008 <engine+0xfffbedd8>
    9:	370203        	lsi	f0, a2, 220
    c:	fa1850        	wfr	f1, a8
    f:	fa2260        	neg.s	f2, f2
   12:	4a2010        	madd.s	f2, f0, f1
   15:	fa5350        	wfr	f5, a3
-  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
+  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
   1b:	22c8      	l32i.n	a12, a2, 8
   1d:	0a2250        	add.s	f2, f2, f5
   20:	fa4850        	wfr	f4, a8
-  23:	000081        	l32r	a8, fffc0024 <engine+0xfffbf828>
+  23:	000081        	l32r	a8, fffc0024 <engine+0xfffbedf4>
   26:	12b8      	l32i.n	a11, a2, 4
   28:	2a3240        	mul.s	f3, f2, f4
   2b:	fa1850        	wfr	f1, a8
-  2e:	000081        	l32r	a8, fffc0030 <engine+0xfffbf834>
+  2e:	000081        	l32r	a8, fffc0030 <engine+0xfffbee00>
   31:	ac1b      	addi.n	a10, a12, 1
   33:	6b0130        	ole.s	b0, f1, f3
   36:	fa0850        	wfr	f0, a8
@@ -6645,7 +6968,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
   68:	9099d0        	addx2	a9, a9, a13
   6b:	0099b2        	l16si	a11, a9, 0
   6e:	270253        	lsi	f5, a2, 156
-  71:	0000c1        	l32r	a12, fffc0074 <engine+0xfffbf878>
+  71:	0000c1        	l32r	a12, fffc0074 <engine+0xfffbee44>
   74:	5298      	l32i.n	a9, a2, 20
   76:	32a8      	l32i.n	a10, a2, 12
   78:	ca2b00        	float.s	f2, a11, 0
@@ -6658,7 +6981,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
   8d:	ca2b00        	float.s	f2, a11, 0
   90:	4a5760        	madd.s	f5, f7, f6
   93:	2a2230        	mul.s	f2, f2, f3
-  96:	0000b1        	l32r	a11, fffc0098 <engine+0xfffbf89c>
+  96:	0000b1        	l32r	a11, fffc0098 <engine+0xfffbee68>
   99:	42d8      	l32i.n	a13, a2, 16
   9b:	fa8b50        	wfr	f8, a11
   9e:	faa500        	mov.s	f10, f5
@@ -6709,7 +7032,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
  119:	b2c8      	l32i.n	a12, a2, 44
  11b:	82b9      	s32i.n	a11, a2, 32
  11d:	caa300        	float.s	f10, a3, 0
- 120:	0000b1        	l32r	a11, fffc0120 <engine+0xfffbf924>
+ 120:	0000b1        	l32r	a11, fffc0120 <engine+0xfffbeef0>
  123:	907c70        	addx2	a7, a12, a7
  126:	1a77a0        	sub.s	f7, f7, f10
  129:	faab50        	wfr	f10, a11
@@ -6757,7 +7080,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
  19a:	5a56a0        	msub.s	f5, f6, f10
  19d:	aa9a      	add.n	a10, a10, a9
  19f:	cd1b      	addi.n	a12, a13, 1
- 1a1:	000091        	l32r	a9, fffc01a4 <engine+0xfffbf9a8>
+ 1a1:	000091        	l32r	a9, fffc01a4 <engine+0xfffbef74>
  1a4:	2a2540        	mul.s	f2, f5, f4
  1a7:	90dd60        	addx2	a13, a13, a6
  1aa:	90aa60        	addx2	a10, a10, a6
@@ -6797,7 +7120,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
  20c:	2a9b40        	mul.s	f9, f11, f4
  20f:	5a2b60        	msub.s	f2, f11, f6
  212:	2d02c3        	lsi	f12, a2, 180
- 215:	0000e1        	l32r	a14, fffc0218 <engine+0xfffbfa1c>
+ 215:	0000e1        	l32r	a14, fffc0218 <engine+0xfffbefe8>
  218:	6b0190        	ole.s	b0, f1, f9
  21b:	cb9100        	movf.s	f9, f1, b0
  21e:	6b0900        	ole.s	b0, f9, f0
@@ -6825,7 +7148,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
  260:	009fb2        	l16si	a11, a15, 0
  263:	4aa520        	madd.s	f10, f5, f2
  266:	ca2b00        	float.s	f2, a11, 0
- 269:	0000e1        	l32r	a14, fffc026c <engine+0xfffbfa70>
+ 269:	0000e1        	l32r	a14, fffc026c <engine+0xfffbf03c>
  26c:	2a2230        	mul.s	f2, f2, f3
  26f:	2842a3        	ssi	f10, a2, 160
  272:	faca00        	mov.s	f12, f10
@@ -7063,7 +7386,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE4stepEfffRfS2_:
  4f2:	71c8      	l32i.n	a12, a1, 28
  4f4:	2a1190        	mul.s	f1, f1, f9
  4f7:	3b22a2        	l32i	a10, a2, 236
- 4fa:	000041        	l32r	a4, fffc04fc <engine+0xfffbfd00>
+ 4fa:	000041        	l32r	a4, fffc04fc <engine+0xfffbf2cc>
  4fd:	c0a9a0        	sub	a10, a9, a10
  500:	c099b0        	sub	a9, a9, a11
  503:	0cbd      	mov.n	a11, a12
@@ -7144,14 +7467,14 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE7processEPKfPfS4_f:
 
 00000000 <cs80v2::Plate<short, 1>::process(float const*, float*, float*, float)>:
    0:	008136        	entry	a1, 64
-   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbf808>
+   3:	000081        	l32r	a8, fffc0004 <engine+0xfffbedd4>
    6:	2f0253        	lsi	f5, a2, 188
    9:	fa4850        	wfr	f4, a8
-   c:	000081        	l32r	a8, fffc000c <engine+0xfffbf810>
+   c:	000081        	l32r	a8, fffc000c <engine+0xfffbeddc>
    f:	300203        	lsi	f0, a2, 192
   12:	fa1850        	wfr	f1, a8
   15:	4a5010        	madd.s	f5, f0, f1
-  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbf81c>
+  18:	000081        	l32r	a8, fffc0018 <engine+0xfffbede8>
   1b:	fa1400        	mov.s	f1, f4
   1e:	310273        	lsi	f7, a2, 196
   21:	1a0540        	sub.s	f0, f5, f4
@@ -7160,13 +7483,13 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE7processEPKfPfS4_f:
   2a:	db5000        	movt.s	f5, f0, b0
   2d:	fa0850        	wfr	f0, a8
   30:	5a1500        	msub.s	f1, f5, f0
-  33:	000081        	l32r	a8, fffc0034 <engine+0xfffbf838>
+  33:	000081        	l32r	a8, fffc0034 <engine+0xfffbee04>
   36:	2f4253        	ssi	f5, a2, 188
   39:	fa6850        	wfr	f6, a8
   3c:	fa3110        	abs.s	f3, f1
   3f:	2a6160        	mul.s	f6, f1, f6
   42:	1a3430        	sub.s	f3, f4, f3
-  45:	000081        	l32r	a8, fffc0048 <engine+0xfffbf84c>
+  45:	000081        	l32r	a8, fffc0048 <engine+0xfffbee18>
   48:	330203        	lsi	f0, a2, 204
   4b:	fa1650        	wfr	f1, a6
   4e:	2a3360        	mul.s	f3, f3, f6
@@ -7190,7 +7513,7 @@ Disassembly of section .text._ZN6cs80v25PlateIsLi1EE7processEPKfPfS4_f:
   80:	e14b      	addi.n	a14, a1, 4
   82:	02ad      	mov.n	a10, a2
   84:	044113        	ssi	f1, a1, 16
-  87:	000081        	l32r	a8, fffc0088 <engine+0xfffbf88c>
+  87:	000081        	l32r	a8, fffc0088 <engine+0xfffbee58>
   8a:	0008e0        	callx8	a8
   8d:	000403        	lsi	f0, a4, 0
   90:	010123        	lsi	f2, a1, 4

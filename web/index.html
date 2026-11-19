@@ -7,7 +7,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="alternate icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 <header>
@@ -45,6 +49,7 @@
           <div class="bar"><div id="cpu-avg"></div><div id="cpu-peak"></div></div>
           <span id="cpu-text">CPU -</span>
         </div>
+        <div class="dim small">cs80 <span id="app-version"></span></div>
         <h3>This preset</h3>
         <div id="preset-info" class="dim small">-</div>
       </div>
@@ -63,6 +68,30 @@
     <h2>Presets</h2>
     <select id="bank" aria-label="Bank"></select>
     <div class="pname"><span id="preset-name" title="Double-click to reset the preset to its stored values"></span><button id="reset-preset" title="Put every panel control back to this preset's stored values">Reset preset</button></div>
+    <div id="save-box" class="savebox">
+      <div class="save-row">
+        <button id="save" class="primary" title="Save the sound as you hear it to the selected User slot (Ctrl+S)">Save</button>
+        <button id="save-as" title="Save under a new name, to a User slot you pick">Save as…</button>
+      </div>
+      <div id="save-target" class="dim small"></div>
+      <form id="save-form" class="save-form" hidden>
+        <input type="text" id="save-name" maxlength="40" autocomplete="off" spellcheck="false" aria-label="Preset name">
+        <select id="save-slot" aria-label="User slot"></select>
+        <div class="save-row"><button id="save-ok" class="primary" type="submit">Save</button><button id="save-cancel" type="button">Cancel</button></div>
+      </form>
+      <div id="save-ask" class="save-ask" hidden role="alertdialog" aria-labelledby="save-ask-text">
+        <div id="save-ask-text"></div>
+        <div class="save-row"><button id="save-ask-ok" class="primary">Replace</button><button id="save-ask-no">Cancel</button></div>
+      </div>
+      <div class="save-tools">
+        <button id="user-rename" title="Rename the selected User preset">Rename</button>
+        <button id="user-delete" title="Delete the selected User preset">Delete</button>
+        <button id="user-export" title="Download the User bank as a JSON file">Export</button>
+        <button id="user-import" title="Load a User bank (or one preset) from a JSON file">Import</button>
+        <button id="user-undo" hidden title="Bring back the User bank as it was before the last change">Undo</button>
+        <input type="file" id="user-file" accept="application/json,.json" hidden>
+      </div>
+    </div>
     <div class="nav"><button id="prev">Prev</button><button id="next">Next</button></div>
     <ol id="presets"></ol>
     <div class="io">
@@ -99,6 +128,7 @@
     </div>
     <div id="legend-map"></div>
     <div class="lfoot"><span class="dim">Favourites (click to load, shift-click to save the current preset)</span><span id="favs"></span></div>
+    <div id="pc-hint" class="dim small"></div>
   </div>
 </section>
 
@@ -129,7 +159,7 @@
     <div id="learn-got" class="mono dim small"></div>
   </div>
 </div>
-<script src="perf.js?v=14"></script>
-<script src="app.js?v=15"></script>
+<script src="perf.js?v=15"></script>
+<script src="app.js?v=16"></script>
 </body>
 </html>

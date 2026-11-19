@@ -6,6 +6,6 @@ Play it at https://leblancfg.com/cs80/ in a browser with Web MIDI.
 
 The controls are tuned for an M-Audio Oxygen 49 (MKV): the Learn wizard maps its knobs, sliders and pads, and slider 9 stands in for the aftertouch it lacks. Other controllers work through Learn too.
 
-The library has 160 sounds: Yamaha manual patches, Vangelis and Porcaro panels, and translations of Arturia's CS-80V factory presets under their original names.
+The library has 160 sounds: Yamaha manual patches, Vangelis and Porcaro panels, and translations of Arturia's CS-80V factory presets under their original names. Your own sounds go in the User bank (Save, under the preset name), which stays in the browser and exports to JSON.
 
 MIT licensed.

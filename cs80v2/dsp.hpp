@@ -208,49 +208,142 @@ constexpr int ECHO_LEN = 65536; /* 1.37 s at 48 kHz per side */
 CS80_PSRAM inline int16_t g_echo_l[ECHO_LEN];
 CS80_PSRAM inline int16_t g_echo_r[ECHO_LEN];
 
-/* Output stage, after the effects: a block-rate peak limiter and a quadratic
-   soft clip, ceiling -1 dBFS. The gain stage reads the peak of the 32-sample
-   block it is about to scale (that block is already rendered, so there is no
-   added latency), pulls the block peak down to -1.5 dBFS (reached within 8
-   samples) and recovers over about 120 ms. The soft clip catches what the ramp misses:
-   it is linear up to -3 dBFS, bends quadratically, and never exceeds the
-   ceiling. Below -3 dBFS output and with no recent overs, the stage is a
-   no-op (gain 1, clip linear). On the ESP32-S3 that idle path is 10
-   instructions per stereo sample; limiting costs about 55 plus one soft-float
-   divide per block (REPORT-v2.md section 11). */
+/* log2 for the limiter's gain computer: exponent bits plus a quadratic on the
+   mantissa, |err| < 0.005 (0.03 dB) */
+static inline float fast_log2(float x)
+{
+    union { float f; int32_t i; } u;
+    u.f = x;
+    float const e = (float)(((u.i >> 23) & 255) - 128);
+    u.i = (u.i & 0x007FFFFF) | 0x3F800000;
+    return e + (-0.34484843f * u.f + 2.02466578f) * u.f - 0.67487759f;
+}
+
+/* Output stage, after the effects: a stereo-linked look-ahead peak limiter,
+   ceiling -1 dBFS, then a tanh-shaped safety clip that only a missed peak
+   reaches.
+     - gain computer: soft knee 4 dB wide around the ceiling (gain reduction
+       starts near -3 dBFS and is ratio infinity above the ceiling), on the louder
+       of the two channels;
+     - look-ahead: the audio is delayed D - 1 samples (D = 1.5 ms, 72 at
+       48 kHz). The gain is the minimum of the computer's gain over the last D
+       samples, averaged over D samples, so every peak is met by a smooth
+       1.5 ms ramp that has already reached it, instead of a jump;
+     - program-dependent release: a fast follower (50 ms) and a slow one
+       (attack 100 ms, release 700 ms), and the lower of the two applies. A
+       lone transient barely moves the slow follower and recovers in about
+       50 ms; sustained limiting drags it down, so the gain stays steady
+       instead of pumping on every waveform peak and recovers gently;
+     - safety clip: linear up to -0.5 dBFS, then tanh up to 0 dBFS. The
+       limiter aims at -1.05 dBFS, so the 0.03 dB error of the log approximation
+       still leaves its output under -1 dBFS and the clip is a last resort only.
+   With quiet input and no limiting in the last D samples the stage only
+   delays the audio. g is the gain applied last, gmin and peak_in are meters
+   (lowest gain and highest input since the host last reset them). */
 struct OutLimiter {
-    static constexpr float CEIL = 0.891251f;   /* -1 dBFS */
-    static constexpr float THRESH = 0.841395f; /* -1.5 dBFS: gain-stage target for block peaks */
-    static constexpr float KNEE = 0.707946f;   /* -3 dBFS: the soft clip starts bending */
-    static constexpr float W = 2.0f * (CEIL - KNEE);
-    static constexpr float K = 1.0f / (2.0f * W);
-    float g, rel, gmin, peak_in;
-    void init(float sr, int block) { g = gmin = 1.0f; peak_in = 0.0f; rel = 1.0f - expf(-(float)block / (0.12f * sr)); }
-    static inline float clip(float x)
+    static constexpr float CEIL_DB = -1.05f;    /* aimed 0.05 dB under -1 dBFS: the log approximation's margin */
+    static constexpr float KNEE_DB = 4.0f;
+    static constexpr float KNEE_LO = 0.703882f; /* -3.05 dBFS = CEIL_DB - KNEE_DB / 2 */
+    static constexpr float SAFE = 0.944061f;    /* -0.5 dBFS: the safety clip starts here */
+    static constexpr int DMAX = 128;            /* ring size (power of 2) */
+    float dl[DMAX], dr[DMAX], box[DMAX], dq_v[DMAX];
+    uint32_t dq_i[DMAX];
+    uint32_t n, since;
+    int D, pos, dq_h, dq_c;
+    float sum, inv_d, gf, gs, kf, ksa, ksr;
+    float g, gmin, peak_in;
+    bool bypass;
+
+    void init(float sr, int)
+    {
+        int d = (int)(0.0015f * sr + 0.5f);
+        D = d < 8 ? 8 : (d > 96 ? 96 : d);
+        inv_d = 1.0f / (float)D;
+        kf = 1.0f - expf(-1.0f / (0.05f * sr));
+        ksa = 1.0f - expf(-1.0f / (0.10f * sr));
+        ksr = 1.0f - expf(-1.0f / (0.70f * sr));
+        for (int i = 0; i != DMAX; ++i) { dl[i] = dr[i] = 0.0f; box[i] = 1.0f; }
+        n = 0; since = (uint32_t)D; pos = 0; dq_h = dq_c = 0;
+        sum = (float)D; gf = gs = g = gmin = 1.0f; peak_in = 0.0f;
+        bypass = false;
+    }
+    int latency() const { return D - 1; }
+
+    /* gain that brings a peak of a (linear) to the knee curve */
+    static inline float computer(float a)
+    {
+        float const x = 6.0206f * fast_log2(a) - CEIL_DB; /* dB over the ceiling */
+        float const gr = x >= 0.5f * KNEE_DB ? x : (x + 0.5f * KNEE_DB) * (x + 0.5f * KNEE_DB) * (0.5f / KNEE_DB);
+        return fast_exp2(gr * -0.1660964f);
+    }
+    static inline float safety(float x)
     {
         float const a = fabsf(x);
-        float e = a - KNEE;
-        e = e < 0.0f ? 0.0f : (e > W ? W : e);
-        float const y = (a < KNEE + W ? a : KNEE + W) - K * e * e;
-        return copysignf(y, x);
+        if (a <= SAFE) return x;
+        float const u = (a - SAFE) * (1.0f / (1.0f - SAFE));
+        float const t = u >= 3.0f ? 1.0f : u * (27.0f + u * u) / (27.0f + 9.0f * u * u); /* tanh, Pade */
+        return copysignf(SAFE + (1.0f - SAFE) * t, x);
     }
+
     template <int N> CS80_IRAM void process(float* l, float* r)
     {
+        if (bypass) return;
         float p = 0.0f;
         for (int i = 0; i != N; ++i) { float const a = fabsf(l[i]), b = fabsf(r[i]); p = a > p ? a : p; p = b > p ? b : p; }
         peak_in = p > peak_in ? p : peak_in;
-        float const t = p > THRESH ? THRESH / p : 1.0f;
-        float const g1 = t < g ? t : g + (t - g) * rel;
-        if (g == 1.0f && g1 == 1.0f && p <= KNEE) return; /* nothing to do: the common case */
-        /* attack: reach the new gain within the first quarter of the block; release: ramp over the block */
-        int const M = g1 < g ? N / 4 : N;
-        float const dg = (g1 - g) * (1.0f / M);
-        float gg = g;
-        int i = 0;
-        for (; i != M; ++i) { gg += dg; l[i] = clip(l[i] * gg); r[i] = clip(r[i] * gg); }
-        for (; i != N; ++i) { l[i] = clip(l[i] * g1); r[i] = clip(r[i] * g1); }
-        g = g1 > 0.99999f ? 1.0f : g1;
-        gmin = g1 < gmin ? g1 : gmin;
+        int const mask = DMAX - 1, lag = D - 1;
+        if (p <= KNEE_LO && dq_c == 0 && since >= (uint32_t)D && gf == 1.0f && gs == 1.0f) {
+            /* idle: nothing to limit in this block or the look-ahead window, just the delay */
+            for (int i = 0; i != N; ++i) {
+                int const w = (int)(n + i) & mask, rd = (int)(n + i - lag) & mask;
+                dl[w] = l[i]; dr[w] = r[i];
+                l[i] = dl[rd]; r[i] = dr[rd];
+            }
+            n += N;
+            return;
+        }
+        float gm = gmin;
+        for (int i = 0; i != N; ++i, ++n) {
+            float const xl = l[i], xr = r[i];
+            float const a = fabsf(xl) > fabsf(xr) ? fabsf(xl) : fabsf(xr);
+            /* running minimum of the computer's gain over the last D samples (monotonic queue;
+               a gain of 1 never becomes the minimum, so it is not queued) */
+            while (dq_c && dq_i[dq_h] + (uint32_t)D <= n) { dq_h = (dq_h + 1) & mask; --dq_c; }
+            if (a > KNEE_LO) {
+                float const t = computer(a);
+                if (t < 1.0f) {
+                    while (dq_c && dq_v[(dq_h + dq_c - 1) & mask] >= t) --dq_c;
+                    int const k = (dq_h + dq_c) & mask;
+                    dq_v[k] = t; dq_i[k] = n; ++dq_c;
+                }
+            }
+            float const h = dq_c ? dq_v[dq_h] : 1.0f;
+            /* D-sample average of the held minimum: a ramp that reaches each peak's gain by the
+               time the delayed peak comes out */
+            sum += h - box[pos];
+            box[pos] = h;
+            if (++pos == D) {
+                pos = 0;
+                float s = 0.0f;
+                for (int j = 0; j != D; ++j) s += box[j]; /* re-sum once per window against drift */
+                sum = s;
+            }
+            since = h < 1.0f ? 0 : since + 1;
+            float b = sum * inv_d;
+            b = b > 1.0f ? 1.0f : b;
+            gf = b < gf ? b : gf + (b - gf) * kf;
+            gs += (b - gs) * (b < gs ? ksa : ksr);
+            if (gf > 0.99999f) gf = 1.0f;
+            if (gs > 0.9999f && since >= (uint32_t)D) gs = 1.0f;
+            float const gg = gf < gs ? gf : gs;
+            gm = gg < gm ? gg : gm;
+            int const w = (int)n & mask, rd = (int)(n - lag) & mask;
+            dl[w] = xl; dr[w] = xr;
+            l[i] = safety(dl[rd] * gg);
+            r[i] = safety(dr[rd] * gg);
+            g = gg;
+        }
+        gmin = gm;
     }
 };
 

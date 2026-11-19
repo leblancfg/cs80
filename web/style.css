@@ -55,6 +55,22 @@ main { flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: 230p
 #browser .nav button { flex: 1; }
 #browser .io { display: flex; gap: 6px; margin-top: 10px; }
 #browser .io button { flex: 1; padding: 4px 6px; font-size: 13px; }
+/* Save: right under the preset name, so it is the first thing after picking a sound */
+.savebox { margin-top: 8px; padding: 6px; border: 1px solid var(--line); border-radius: 4px; background: rgba(129,91,164,.12); display: grid; gap: 5px; }
+.savebox .save-row { display: flex; gap: 6px; }
+.savebox .save-row button { flex: 1; padding: 3px 6px; }
+#save { background: #815ba4; border-color: #815ba4; color: var(--fg); }
+#save-target { line-height: 1.3; overflow-wrap: anywhere; }
+.save-form { display: grid; gap: 5px; }
+.save-form[hidden], .save-ask[hidden] { display: none; }
+.save-form input { width: 100%; }
+.save-ask { display: grid; gap: 5px; padding: 5px; border: 1px solid var(--yellow); border-radius: 3px; font-size: 13px; }
+.save-tools { display: flex; flex-wrap: wrap; gap: 4px; }
+.save-tools button { flex: 1 1 0; min-width: 0; padding: 1px 2px; font-size: 11px; }
+.save-tools button:disabled { opacity: .45; cursor: default; }
+#presets.user li span { white-space: pre; }
+#presets li.empty { color: var(--muted); font-style: italic; }
+#presets li.target { box-shadow: inset 0 0 0 1px #815ba4; }
 #paste-box { margin-top: 6px; display: grid; gap: 6px; }
 #paste-box[hidden] { display: none; }
 #presets { list-style: none; margin: 0; padding: 0; font-size: 14px; }
@@ -175,8 +191,7 @@ button:disabled { opacity: .45; cursor: default; }
 .ftitle::before { left: 0; } .ftitle::after { right: 0; }
 .frow { display: flex; gap: 0; flex: 1; align-items: stretch; }
 .fstrip { padding-top: 6px; border-top: 1px solid #2c2a27; }
-.fextras { margin-left: auto; display: flex; flex-direction: column; border: 1px dashed #4d6f6d; border-radius: 4px; padding: 0 4px 2px; background: rgba(91,196,191,.04); }
-.fextitle { font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); text-align: center; margin: 1px 0 -1px; }
+.fextras { margin-left: auto; display: flex; flex-direction: column; border-left: 1px solid #2c2a27; }
 
 .fctl { width: 36px; display: flex; flex-direction: column; align-items: center; position: relative; }
 .fsc { font-size: 7.5px; letter-spacing: .06em; color: var(--ink2); line-height: 10px; height: 10px; white-space: nowrap; }
@@ -199,7 +214,7 @@ button:disabled { opacity: .45; cursor: default; }
 .cap-r { background: linear-gradient(#e8403a, #b01f1c); }
 .cap-y { background: linear-gradient(#ffe24a, #e1bb10); }
 .cap-k { background: linear-gradient(#48464a, #1c1b1d); box-shadow: 0 2px 2px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.25); }
-.cap-x { background: linear-gradient(#7fd9d4, #3b9f9a); }
+.cap-x { background: linear-gradient(#c9c8c3, #9c9b96); }
 .drag .fcap { cursor: grabbing; }
 .fctl.hit .fcap, .fctl.drag .fcap { box-shadow: 0 0 0 2px var(--yellow), 0 0 10px 2px rgba(254,196,24,.7); }
 .fctl.hit .flab { color: var(--yellow); }

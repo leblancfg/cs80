@@ -97,7 +97,7 @@ inline void apply_param(Patch& p, int id, float x)
         case P_SUB_VCA: q.sub_vca = x; break;
         case P_FEET_I: q.feet[0] = (uint8_t)(x * 5.99f); break;
         case P_FEET_II: q.feet[1] = (uint8_t)(x * 5.99f); break;
-        case P_MIX: q.mix = bip(x); break;
+        case P_MIX: q.mix = -bip(x); break; /* as on the faceplate: lever up = channel I, down = II */
         case P_PAN: q.pan_spread = x; break;
         case P_DETUNE: q.detune_cents = 100.0f * bip(x); break;
         case P_BRILLIANCE: q.brilliance = 3.0f * bip(x); break;
