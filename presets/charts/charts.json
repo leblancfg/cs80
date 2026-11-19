@@ -1,0 +1,1128 @@
+{
+ "charts": [
+  {
+   "bank": "Brass",
+   "name": "Porcaro Brass (chart)",
+   "reference": "Steve Porcaro's CS-80 brass (Toto 'Africa', 'Human Nature'): the Brass 1 + Brass 2 preset tones. Porcaro selects BRA 1 / BRA 2 on CS-80 V4 (MusicTech, 1:47); Anthony Marinelli's hardware CS-80 'Africa' shows the same two tone-selector buttons lit (0:24). Panel values: Yamaha manual pp. 28-30.",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://www.youtube.com/watch?v=EgDsAAtG5jk&t=107s",
+    "https://www.youtube.com/watch?v=GQyRf92gUKA&t=24s",
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Brass 1"
+    },
+    "II": {
+     "tone": "Brass 2"
+    }
+   },
+   "panel": {
+    "feet_I": "8'",
+    "feet_II": "8'",
+    "detune": 0,
+    "mix": 0
+   },
+   "notes": [
+    "Detune and Mix read at the centre and both Feet at 8' on Porcaro's V4 panel; sub oscillator and ring modulator off"
+   ]
+  },
+  {
+   "bank": "Brass",
+   "name": "Yamaha Brass 3 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Brass 1 (I) and Brass 3 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Brass 1"
+    },
+    "II": {
+     "tone": "Brass 3"
+    }
+   },
+   "panel": {
+    "detune": 0
+   },
+   "notes": []
+  },
+  {
+   "bank": "Brass",
+   "name": "Chariots Horn (chart)",
+   "reference": "Vangelis 'Chariots of Fire' horn, panel by Caustic on CS-80 V3 (lookmumnocomputer forum, 2021); read by eye from the screenshot",
+   "chart_source": "vangelis_lmnc-forum_caustic_chariots-of-fire-horn_cs80v3.jpg",
+   "source_urls": [
+    "https://lookmumnocomputer.discourse.group/t/vangelis-brass-how-to/3365"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 5.3,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 2.1,
+      "lpf": 4.5,
+      "res_l": 6.8,
+      "il": 3.5,
+      "al": 8.0,
+      "fa": 6.5,
+      "fd": 8.0,
+      "fr": 5.9,
+      "vcf_level": 10.0,
+      "sine": 2.9,
+      "a": 3.3,
+      "d": 7.3,
+      "s": 10.0,
+      "r": 2.9,
+      "level": 4.1,
+      "init_bril": 3.9,
+      "init_level": 3.9,
+      "after_bril": 3.9,
+      "after_level": 2.6
+     }
+    },
+    "II": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.3,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.1,
+      "res_h": 3.5,
+      "lpf": 4.5,
+      "res_l": 5.9,
+      "il": 3.3,
+      "al": 7.1,
+      "fa": 6.8,
+      "fd": 8.2,
+      "fr": 5.3,
+      "vcf_level": 10.0,
+      "sine": 2.3,
+      "a": 3.7,
+      "d": 6.0,
+      "s": 10.0,
+      "r": 2.8,
+      "level": 4.6,
+      "init_bril": 3.1,
+      "init_level": 4.0,
+      "after_bril": 3.4,
+      "after_level": 3.1
+     }
+    }
+   },
+   "panel": {
+    "feet_I": "8'",
+    "feet_II": "8'",
+    "detune": 0,
+    "mix": 0
+   },
+   "notes": [
+    "Detune lever drawn just off centre (about +0.6 of 5 on V3's own scale, not hardware cents); entered as centre",
+    "sub oscillator and ring modulator levers up (off); V3 chorus and delay not copied"
+   ]
+  },
+  {
+   "bank": "Pads",
+   "name": "Tears in Rain Swell (chart)",
+   "reference": "Vangelis 'Tears in Rain' (Blade Runner) swell, Reverb Machine's CS-80 V4 patch 'Tears in Rain Swell I'; read by eye from the article screenshot",
+   "chart_source": "vangelis_reverbmachine_tears-in-rain_cs80v4_2026.jpg",
+   "source_urls": [
+    "https://reverbmachine.com/blog/vangelis-tears-in-rain-blade-runner/"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 3.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 4.4,
+      "res_l": 0.0,
+      "il": 10.0,
+      "al": 10.0,
+      "fa": 10.0,
+      "fd": 8.3,
+      "fr": 6.3,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 10.0,
+      "d": 9.4,
+      "s": 5.7,
+      "r": 7.2,
+      "level": 10.0,
+      "init_bril": 10.0,
+      "init_level": 10.0,
+      "after_bril": 4.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 2.9,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 10.0,
+      "res_l": 0.0,
+      "il": 0.0,
+      "al": 0.0,
+      "fa": 0.0,
+      "fd": 5.9,
+      "fr": 0.0,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 0.0,
+      "d": 6.4,
+      "s": 10.0,
+      "r": 0.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "feet_I": "8'",
+    "feet_II": "8'",
+    "detune": 0,
+    "mix": -4,
+    "sub": {
+     "function": "sine",
+     "speed": 3,
+     "vco": 1.5
+    },
+    "touch": {
+     "vco": 6
+    },
+    "sustain": 4,
+    "portamento": 4,
+    "chorus": {
+     "on": true,
+     "tremolo": false,
+     "speed": 3,
+     "depth": 6
+    }
+   },
+   "notes": [
+    "Mix drawn near channel I; channel II's bright, instant layer sits underneath",
+    "sub-osc vibrato light, deeper with after-touch (touch VCO pulled about 60%)",
+    "V4's Release/Portamento sliders and chorus knobs read approximately"
+   ]
+  },
+  {
+   "bank": "Brass",
+   "name": "Trumpet (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 24: Trumpet (B, ch II)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    },
+    "II": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 4.1,
+      "res_l": 0.0,
+      "il": 10.0,
+      "al": 10.0,
+      "fa": 4.2,
+      "fd": 6.6,
+      "fr": 2.6,
+      "vcf_level": 10.0,
+      "sine": 1.1,
+      "a": 6.2,
+      "d": 6.3,
+      "s": 8.2,
+      "r": 3.1,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": 5,
+    "sub": {
+     "speed": 5,
+     "vco": 1
+    }
+   },
+   "notes": [
+    "manual: sub-osc sine, speed about mid, VCO slightly down (vibrato)"
+   ]
+  },
+  {
+   "bank": "Woodwinds",
+   "name": "Clarinet (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 24: Clarinet (A, ch I)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 4.1,
+      "res_l": 0.0,
+      "il": 8.0,
+      "al": 6.0,
+      "fa": 4.1,
+      "fd": 6.1,
+      "fr": 2.1,
+      "vcf_level": 10.0,
+      "sine": 0.2,
+      "a": 6.2,
+      "d": 6.1,
+      "s": 8.1,
+      "r": 2.3,
+      "level": 10.0,
+      "init_bril": 0.1,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": -5,
+    "sub": {
+     "speed": 5,
+     "vco": 1
+    }
+   },
+   "notes": [
+    "manual: sub-osc sine, speed about mid, VCO slightly down (vibrato)"
+   ]
+  },
+  {
+   "bank": "Woodwinds",
+   "name": "Flute (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 25: Flute (A, ch I)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 4.4,
+      "res_l": 0.0,
+      "il": 2.5,
+      "al": 2.5,
+      "fa": 3.9,
+      "fd": 6.1,
+      "fr": 2.3,
+      "vcf_level": 9.9,
+      "sine": 0.0,
+      "a": 10.0,
+      "d": 6.0,
+      "s": 8.0,
+      "r": 1.9,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.1,
+      "after_bril": 0.1,
+      "after_level": 0.1
+     }
+    },
+    "II": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": -5,
+    "sub": {
+     "speed": 5,
+     "vcf": 1
+    }
+   },
+   "notes": [
+    "manual: sub-osc sine, VCF slightly down"
+   ]
+  },
+  {
+   "bank": "Woodwinds",
+   "name": "Oboe (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 26: Oboe (A, ch I)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 10.0,
+      "noise": 0.0,
+      "hpf": 3.1,
+      "res_h": 0.0,
+      "lpf": 4.0,
+      "res_l": 0.0,
+      "il": 3.9,
+      "al": 4.0,
+      "fa": 3.9,
+      "fd": 6.1,
+      "fr": 2.0,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 5.2,
+      "d": 6.2,
+      "s": 8.0,
+      "r": 2.1,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.1
+     }
+    },
+    "II": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": -5,
+    "sub": {
+     "speed": 5,
+     "vcf": 5
+    }
+   },
+   "notes": [
+    "manual: sub-osc sine, VCF about mid"
+   ]
+  },
+  {
+   "bank": "Strings",
+   "name": "Multiple Strings (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 26: Multiple Strings (B, ch II)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 6.1,
+      "pwm": 1.9,
+      "pw": 6.1,
+      "noise": 0.0,
+      "hpf": 3.7,
+      "res_h": 0.0,
+      "lpf": 4.0,
+      "res_l": 0.0,
+      "il": 4.0,
+      "al": 4.0,
+      "fa": 8.4,
+      "fd": 6.2,
+      "fr": 4.6,
+      "vcf_level": 10.0,
+      "sine": 0.1,
+      "a": 8.5,
+      "d": 6.2,
+      "s": 8.1,
+      "r": 5.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.1
+     }
+    },
+    "II": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 6.1,
+      "pwm": 1.9,
+      "pw": 6.1,
+      "noise": 0.0,
+      "hpf": 3.7,
+      "res_h": 0.0,
+      "lpf": 4.0,
+      "res_l": 0.0,
+      "il": 4.0,
+      "al": 4.0,
+      "fa": 8.4,
+      "fd": 6.2,
+      "fr": 4.6,
+      "vcf_level": 10.0,
+      "sine": 0.1,
+      "a": 8.5,
+      "d": 6.2,
+      "s": 8.1,
+      "r": 5.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.1
+     }
+    }
+   },
+   "panel": {
+    "feet_I": "16'",
+    "feet_II": "8'",
+    "detune": 0.4,
+    "mix": 0,
+    "sub": {
+     "speed": 5,
+     "vco": 1
+    }
+   },
+   "notes": [
+    "manual text: the same patch on both panels, Feet 16' and 8', 'detuning channel II slightly' (+0.4 of 5 = 8 cents)",
+    "sub-osc VCO drawn about 40% down in the diagram; 1 used here (the diagram's mark is ambiguous)"
+   ]
+  },
+  {
+   "bank": "Strings",
+   "name": "Mellow Strings (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 50: filled-in example on the blank programming diagram",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 5.3,
+      "res_l": 0.0,
+      "il": 0.0,
+      "al": 0.0,
+      "fa": 0.0,
+      "fd": 0.0,
+      "fr": 0.0,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 5.5,
+      "d": 7.7,
+      "s": 6.5,
+      "r": 1.6,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 5.9,
+      "res_l": 0.0,
+      "il": 0.0,
+      "al": 0.0,
+      "fa": 0.0,
+      "fd": 0.0,
+      "fr": 0.0,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 5.4,
+      "d": 9.3,
+      "s": 6.7,
+      "r": 1.9,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "feet_I": "8'",
+    "feet_II": "8'",
+    "detune": -0.4,
+    "mix": 0,
+    "sub": {
+     "speed": 3.3,
+     "vco": 1.5
+    },
+    "chorus": {
+     "on": true,
+     "tremolo": true,
+     "speed": 3,
+     "depth": 3
+    }
+   },
+   "notes": [
+    "felt-pen detune mark slightly flat of centre (about -0.4 of 5 = -8 cents)",
+    "tremolo on, speed and depth about 10 o'clock"
+   ]
+  },
+  {
+   "bank": "Sub Osc and Motion",
+   "name": "Solo Violin (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 25: Solo Violin (B, ch II)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    },
+    "II": {
+     "square": false,
+     "saw": true,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 2.1,
+      "res_l": 0.0,
+      "il": 0.0,
+      "al": 0.1,
+      "fa": 4.3,
+      "fd": 6.1,
+      "fr": 2.5,
+      "vcf_level": 10.0,
+      "sine": 0.2,
+      "a": 8.0,
+      "d": 6.2,
+      "s": 7.9,
+      "r": 2.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.1,
+      "after_bril": 0.1,
+      "after_level": 0.1
+     }
+    }
+   },
+   "panel": {
+    "mix": 5,
+    "sub": {
+     "speed": 5,
+     "vcf": 3
+    },
+    "touch": {
+     "vco": 4
+    }
+   },
+   "notes": [
+    "manual: sub-osc sine to the VCF, vibrato from after-touch (Touch Response VCO)"
+   ]
+  },
+  {
+   "bank": "Keys and Organs",
+   "name": "Clavichord (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 26: Clavichord (A, ch I)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 10.0,
+      "noise": 0.0,
+      "hpf": 3.6,
+      "res_h": 0.0,
+      "lpf": 4.0,
+      "res_l": 0.0,
+      "il": 10.0,
+      "al": 10.0,
+      "fa": 0.2,
+      "fd": 5.9,
+      "fr": 4.1,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 0.4,
+      "d": 6.0,
+      "s": 7.8,
+      "r": 4.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": -5
+   },
+   "notes": [
+    "manual: no sub-osc modulation, PW 90%"
+   ]
+  },
+  {
+   "bank": "Bells and Plucks",
+   "name": "Bells and Gongs (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 26: Bells & Gongs (B, ch II)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "low",
+   "channels": {
+    "I": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    },
+    "II": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 0.0,
+      "hpf": 3.6,
+      "res_h": 0.0,
+      "lpf": 4.1,
+      "res_l": 0.0,
+      "il": 10.0,
+      "al": 10.0,
+      "fa": 0.0,
+      "fd": 6.0,
+      "fr": 4.2,
+      "vcf_level": 9.9,
+      "sine": 0.0,
+      "a": 0.0,
+      "d": 6.0,
+      "s": 7.9,
+      "r": 4.0,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": 5,
+    "feet_II": "4'",
+    "ring": {
+     "speed": 10,
+     "mod": 10,
+     "depth": 0
+    }
+   },
+   "notes": [
+    "manual: ring modulator Speed and Modulation fully engaged, Feet 4' for bells"
+   ]
+  },
+  {
+   "bank": "Bells and Plucks",
+   "name": "Pizzicato (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 27: Pizzicato (ch I)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": true,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 9.9,
+      "noise": 0.0,
+      "hpf": 0.0,
+      "res_h": 0.0,
+      "lpf": 3.6,
+      "res_l": 0.0,
+      "il": 9.9,
+      "al": 10.0,
+      "fa": 0.0,
+      "fd": 6.1,
+      "fr": 6.1,
+      "vcf_level": 10.0,
+      "sine": 0.0,
+      "a": 0.0,
+      "d": 6.0,
+      "s": 3.9,
+      "r": 4.2,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "tone": "Organ 1",
+     "sliders": {
+      "level": 0.0
+     }
+    }
+   },
+   "panel": {
+    "mix": -5,
+    "sub": {
+     "speed": 4,
+     "vca": 4
+    }
+   },
+   "notes": [
+    "manual: sub-osc VCA about 40% down"
+   ]
+  },
+  {
+   "bank": "FX",
+   "name": "Timpani (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), p. 27: Timpani (mallet on I, drum on II)",
+   "chart_source": "yamaha-cs80-owners-manual_p24-27_example-patches_transcription.csv",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "medium",
+   "channels": {
+    "I": {
+     "square": false,
+     "saw": false,
+     "sliders": {
+      "speed": 0.0,
+      "pwm": 0.0,
+      "pw": 0.0,
+      "noise": 10.0,
+      "hpf": 3.7,
+      "res_h": 0.0,
+      "lpf": 2.9,
+      "res_l": 0.0,
+      "il": 9.9,
+      "al": 6.3,
+      "fa": 0.0,
+      "fd": 6.1,
+      "fr": 6.4,
+      "vcf_level": 10.0,
+      "sine": 0.1,
+      "a": 0.1,
+      "d": 5.9,
+      "s": 4.5,
+      "r": 6.6,
+      "level": 10.0,
+      "init_bril": 0.0,
+      "init_level": 0.0,
+      "after_bril": 0.0,
+      "after_level": 0.0
+     }
+    },
+    "II": {
+     "square": true,
+     "saw": true,
+     "sliders": {
+      "speed": 2.8,
+      "pwm": 6.0,
+      "pw": 6.0,
+      "noise": 0.3,
+      "hpf": 3.7,
+      "res_h": 0.0,
+      "lpf": 3.7,
+      "res_l": 6.3,
+      "il": 4.4,
+      "al": 4.5,
+      "fa": 0.1,
+      "fd": 6.2,
+      "fr": 8.7,
+      "vcf_level": 10.0,
+      "sine": 6.7,
+      "a": 0.3,
+      "d": 5.6,
+      "s": 5.7,
+      "r": 5.8,
+      "level": 10.0,
+      "init_bril": 0.1,
+      "init_level": 0.1,
+      "after_bril": 0.1,
+      "after_level": 0.1
+     }
+    }
+   },
+   "panel": {
+    "feet_I": "8'",
+    "feet_II": "16'",
+    "detune": 0,
+    "mix": 0,
+    "sub": {
+     "speed": 3.5,
+     "vca": 3.5
+    }
+   },
+   "notes": [
+    "manual: Feet II at 16', sub-osc to the VCA about 35% down"
+   ]
+  },
+  {
+   "bank": "Strings",
+   "name": "Yamaha Strings 1 + 2 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Strings 1 (I) and Strings 2 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Strings 1"
+    },
+    "II": {
+     "tone": "Strings 2"
+    }
+   },
+   "panel": {},
+   "notes": []
+  },
+  {
+   "bank": "Keys and Organs",
+   "name": "Yamaha Organ 1 + 2 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Organ 1 (I) and Organ 2 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Organ 1"
+    },
+    "II": {
+     "tone": "Organ 2"
+    }
+   },
+   "panel": {},
+   "notes": []
+  },
+  {
+   "bank": "Keys and Organs",
+   "name": "Yamaha Electric Piano (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Electric Piano (I) and Electric Piano (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Electric Piano"
+    },
+    "II": {
+     "tone": "Electric Piano"
+    }
+   },
+   "panel": {
+    "mix": -5
+   },
+   "notes": []
+  },
+  {
+   "bank": "Bells and Plucks",
+   "name": "Yamaha Harpsichord 1 + 2 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Harpsichord 1 (I) and Harpsichord 2 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Harpsichord 1"
+    },
+    "II": {
+     "tone": "Harpsichord 2"
+    }
+   },
+   "panel": {},
+   "notes": []
+  },
+  {
+   "bank": "Bass",
+   "name": "Yamaha Bass (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Bass (I) and Bass (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Bass"
+    },
+    "II": {
+     "tone": "Bass"
+    }
+   },
+   "panel": {
+    "mix": 5
+   },
+   "notes": []
+  },
+  {
+   "bank": "Leads",
+   "name": "Yamaha Funky 1 + 2 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Funky 1 (I) and Funky 2 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Funky 1"
+    },
+    "II": {
+     "tone": "Funky 2"
+    }
+   },
+   "panel": {},
+   "notes": []
+  },
+  {
+   "bank": "Leads",
+   "name": "Yamaha Funky 3 + 4 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Funky 3 (I) and Funky 4 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Funky 3"
+    },
+    "II": {
+     "tone": "Funky 4"
+    }
+   },
+   "panel": {},
+   "notes": []
+  },
+  {
+   "bank": "Bells and Plucks",
+   "name": "Yamaha Guitar 1 + 2 (chart)",
+   "reference": "Yamaha CS-80 owner's manual (1977), pp. 28-30: preset tones Guitar 1 (I) and Guitar 2 (II) as panel settings",
+   "chart_source": "presets/charts/yamaha_preset_tones.json",
+   "source_urls": [
+    "https://archive.org/details/synthmanual-yamaha-cs-80-owners-manual"
+   ],
+   "confidence": "high",
+   "channels": {
+    "I": {
+     "tone": "Guitar 1"
+    },
+    "II": {
+     "tone": "Guitar 2"
+    }
+   },
+   "panel": {},
+   "notes": []
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+toolchain/
+build/
+wav/
+out/
+cs80v2/cs80v2
+cs80v2/cs80v2_o3n
+cs80v2/*.o
+__pycache__/
+*.log

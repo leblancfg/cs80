@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CS-80 Synth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
+</head>
+<body>
+<header>
+  <h1>CS-80 Synth</h1>
+  <button id="start" class="primary">Start audio</button>
+  <label>MIDI input <select id="midi-in" disabled><option>No MIDI in this browser</option></select></label>
+  <button id="setup-open">Set up my controller</button>
+  <div id="meter" title="Output level in dBFS: bar = RMS, tick = peak. LIM lights when the output limiter (ceiling -1 dBFS) is turning the sound down.">
+    <div class="bar"><div id="meter-rms"></div><div id="meter-peak"></div></div>
+    <span id="meter-text" class="mono">-inf dB</span><span id="meter-gr" class="mono">LIM</span>
+  </div>
+  <details id="advanced"><summary>Advanced</summary>
+    <div class="adv-grid">
+      <div>
+        <h3>Controller</h3>
+        <label title="Learned controls are the normal mode. Fixed maps are for keyboards programmed to those CC numbers.">Control map <select id="cc-map"><option value="perf">Learned controls</option><option value="0">Oxygen fixed CCs</option><option value="1">PM-80 fixed CCs</option></select></label>
+        <p><button id="assign-open">Assign a control</button> <span class="dim small">Then move any slider, knob or pad. Double-clicking a label on the panel does the same for that control.</span></p>
+        <div id="assign-box" hidden>Assign <select id="assign-target"></select>: now move a control. <button id="assign-cancel">Cancel</button></div>
+        <div id="monitor" class="mono">last MIDI: -</div>
+      </div>
+      <div>
+        <h3>Play</h3>
+        <div id="perf">
+          <label>Bend <input type="range" id="bend" min="-8192" max="8191" value="0"></label>
+          <label>Mod wheel <input type="range" id="mod" min="0" max="127" value="0"></label>
+          <label>Aftertouch <input type="range" id="pressure" min="0" max="127" value="0"></label>
+          <label class="check"><input type="checkbox" id="sustain"> Sustain</label>
+          <span class="dim small">Computer keys: C and V change velocity.</span>
+        </div>
+        <p><button id="panic">Stop all notes</button></p>
+      </div>
+      <div>
+        <h3>Engine</h3>
+        <div id="cpu" title="Audio render time as a share of the real-time budget">
+          <div class="bar"><div id="cpu-avg"></div><div id="cpu-peak"></div></div>
+          <span id="cpu-text">CPU -</span>
+        </div>
+        <h3>This preset</h3>
+        <div id="preset-info" class="dim small">-</div>
+      </div>
+    </div>
+  </details>
+</header>
+<div id="status" class="status">Press Start audio to hear the synth.</div>
+<div id="learn-nudge" class="nudge" hidden>
+  <span id="learn-nudge-text"></span>
+  <button id="learn-nudge-setup" class="primary">Set up my controller</button>
+  <button id="learn-nudge-x">Not now</button>
+</div>
+
+<main>
+  <aside id="browser">
+    <h2>Presets</h2>
+    <select id="bank" aria-label="Bank"></select>
+    <div class="pname"><span id="preset-name" title="Double-click to reset the preset to its stored values"></span><button id="reset-preset" title="Put every panel control back to this preset's stored values">Reset preset</button></div>
+    <div class="nav"><button id="prev">Prev</button><button id="next">Next</button></div>
+    <ol id="presets"></ol>
+    <div class="io">
+      <button id="copy" title="Copy the current sound as text">Copy settings</button>
+      <button id="paste-open" title="Paste settings copied earlier">Load settings</button>
+    </div>
+    <div id="paste-box" hidden>
+      <textarea id="paste" rows="4" spellcheck="false" placeholder="Paste copied settings here"></textarea>
+      <button id="load-json">Load</button>
+    </div>
+  </aside>
+  <section id="sound">
+    <div id="panel"><p class="dim">Press Start audio to show the CS-80 panel.</p></div>
+  </section>
+</main>
+
+<section id="perform">
+  <div class="view-tabs" role="tablist" aria-label="Bottom view">
+    <button id="tab-keyboard" role="tab" aria-controls="keyboard-view" aria-selected="true">Keyboard</button>
+    <button id="tab-legend" role="tab" aria-controls="legend" aria-selected="false">Controls</button>
+  </div>
+  <div id="keyboard-view" role="tabpanel" aria-labelledby="tab-keyboard">
+    <div id="keyboard"></div>
+    <div class="dim small">Computer keys A to ; play notes. Z and X change octave. <span id="kbd-state" class="mono"></span></div>
+  </div>
+  <div id="legend" role="tabpanel" aria-labelledby="tab-legend" hidden>
+    <div class="lhead">
+      <strong id="legend-title"></strong>
+      <button id="learn-open">Learn controller</button>
+      <button id="export-layout" title="Save your controller setup to a file">Save to file</button>
+      <button id="import-layout" title="Load a controller setup file">Load from file</button>
+      <button id="reset-setup" title="Forget the learned controller, control changes and favourites">Reset controller setup</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+    <div id="legend-map"></div>
+    <div class="lfoot"><span class="dim">Favourites (click to load, shift-click to save the current preset)</span><span id="favs"></span></div>
+  </div>
+</section>
+
+
+<div id="setup" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="setup-title">
+  <div class="card setup-card">
+    <div id="setup-step" class="dim small"></div>
+    <div id="setup-title" class="big"></div>
+    <div id="setup-body"></div>
+    <ul id="setup-checks" aria-live="polite"></ul>
+    <div id="setup-extra" class="row"></div>
+    <div class="row"><button id="setup-back">Back</button><button id="setup-skip">Skip</button><span class="grow"></span><button id="setup-close">Close</button><button id="setup-next" class="primary">Next</button></div>
+  </div>
+</div>
+
+<div id="learn" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="learn-prompt">
+  <div class="card">
+    <div id="learn-step" class="dim small"></div>
+    <div id="learn-prompt" class="big"></div>
+    <div id="learn-does" class="dim"></div>
+    <div id="learn-hint" class="hint"></div>
+    <div id="learn-conflict" class="conflict" hidden>
+      <p id="learn-conflict-text"></p>
+      <p id="learn-conflict-how" class="small"></p>
+      <div class="row"><button id="learn-skip-pads" class="primary">Skip pads</button><button id="learn-retry">Try again</button><span class="grow"></span><button id="learn-shared" class="linkish" title="Keys that send the same note will also trigger the action">Use anyway</button></div>
+    </div>
+    <div class="row"><button id="learn-back">Back</button><button id="learn-skip">Skip</button><button id="learn-skip-group" hidden></button><span class="grow"></span><button id="learn-cancel">Cancel</button><button id="learn-done" class="primary">Finish and save</button></div>
+    <div id="learn-got" class="mono dim small"></div>
+  </div>
+</div>
+<script src="perf.js?v=14"></script>
+<script src="app.js?v=15"></script>
+</body>
+</html>
