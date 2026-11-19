@@ -80,7 +80,9 @@ try {
   await cdp('Page.navigate', { url });
   for (let i = 0; i < 50 && !(await evaluate(`document.querySelector('#midi-in')?.options.length > 1`)); i++) await sleep(200);
   const served = await evaluate(`[...document.scripts].map(s => s.getAttribute('src')).join(' ')`);
-  check(/app\.js\?v=16/.test(served), 'served page uses the new app.js version: ' + served);
+  check(/app\.js\?v=17/.test(served), 'served page uses the new app.js version: ' + served);
+  check(await evaluate(`(() => { const a = $('about'); return !!a && a.href === 'https://github.com/leblancfg/cs80#readme' && a.checkVisibility(); })()`), 'header links to the README on GitHub');
+  check(await evaluate(`['og:title', 'og:description', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:image:alt'].every(p => document.querySelector('meta[property="' + p + '"]')?.content) && document.querySelector('meta[name="twitter:card"]')?.content === 'summary_large_image' && /^https:\\/\\/.+\\/og\\.png$/.test(document.querySelector('meta[property="og:image"]').content)`), 'Open Graph and Twitter card tags, absolute og:image');
   check(await evaluate(`$('midi-in').selectedOptions[0].textContent === 'Oxygen 49 USB MIDI'`), 'MIDI: the USB MIDI port is selected, not the Mackie port');
   check(await evaluate(`!$('learn-nudge').hidden && /Set up my controller/.test($('learn-nudge').textContent)`), 'first connect offers the guided setup');
 

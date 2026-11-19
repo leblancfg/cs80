@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2 (2026-11-19)
+
+- Link previews: Open Graph and Twitter card tags with a 1200x630 image of the faceplate (`web/og.png`), so a shared link shows the panel, the title and one line about the synth.
+- An "About / source" link in the header, next to Advanced, opens the README on GitHub.
+
 ## v0.1.1 (2026-11-19)
 
 - Level: the library sits at -18.5 dBFS RMS on the chord test instead of -13, so a brass chord peaks near -6.5 dBFS and raising a level slider has room. The old builder allowed 8 dB of limiting on that chord, which left half the library in the limiter. The level sliders themselves were not mis-scaled: they are linear everywhere, and a log taper does not balance Yamaha's preset tones any better (REPORT-v2.md section 13).

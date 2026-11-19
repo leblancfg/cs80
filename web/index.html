@@ -4,6 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CS-80 Synth</title>
+<meta name="description" content="A browser recreation of the Yamaha CS-80 polysynth, played with Web MIDI, with 160 sounds.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leblancfg.com/cs80/">
+<meta property="og:title" content="CS-80 v2">
+<meta property="og:description" content="A browser recreation of the Yamaha CS-80 polysynth, played with Web MIDI, with 160 sounds.">
+<meta property="og:image" content="https://leblancfg.com/cs80/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The CS-80 v2 faceplate in the browser: two channels of sliders for VCO, VCF, VCA and touch response.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CS-80 v2">
+<meta name="twitter:description" content="A browser recreation of the Yamaha CS-80 polysynth, played with Web MIDI, with 160 sounds.">
+<meta name="twitter:image" content="https://leblancfg.com/cs80/og.png">
+<meta name="twitter:image:alt" content="The CS-80 v2 faceplate in the browser: two channels of sliders for VCO, VCF, VCA and touch response.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +26,7 @@
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="alternate icon" href="favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 <header>
@@ -23,6 +38,7 @@
     <div class="bar"><div id="meter-rms"></div><div id="meter-peak"></div></div>
     <span id="meter-text" class="mono">-inf dB</span><span id="meter-gr" class="mono">LIM</span>
   </div>
+  <a id="about" href="https://github.com/leblancfg/cs80#readme" target="_blank" rel="noopener" title="README and source code on GitHub">About / source</a>
   <details id="advanced"><summary>Advanced</summary>
     <div class="adv-grid">
       <div>
@@ -160,6 +176,6 @@
   </div>
 </div>
 <script src="perf.js?v=15"></script>
-<script src="app.js?v=16"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>

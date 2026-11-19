@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir _site
           cp web/index.html web/app.js web/perf.js web/style.css web/cs80-worklet.js web/cs80v2.wasm web/presets-library.json \
-            web/favicon.svg web/favicon-32.png web/favicon.ico web/apple-touch-icon.png _site/
+            web/favicon.svg web/favicon-32.png web/favicon.ico web/apple-touch-icon.png web/og.png _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

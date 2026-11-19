@@ -90,7 +90,10 @@ input[type=range] { width: 100%; accent-color: var(--cyan); }
 input[type=checkbox] { accent-color: var(--green); }
 
 #perform { border-top: 1px solid var(--line); padding: 6px 16px 8px; }
+#about, #about:visited { margin-left: auto; font-size: 12px; color: var(--muted); }
+#about:hover { color: var(--cyan); }
 #advanced { margin-left: auto; }
+#about + #advanced { margin-left: 0; }
 #advanced > summary { font-size: 13px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; list-style: none; }
 #advanced > summary::before { content: '\25B8 '; }
 #advanced[open] > summary::before { content: '\25BE '; }
